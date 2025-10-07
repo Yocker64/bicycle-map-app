@@ -1,4 +1,19 @@
 {
+  "name": "bicycle-map-app",
+  "version": "1.0.0",
+  "description": "Custom template for all the future web development projects I will be coding!",
+  "homepage": "https://github.com/Yocker64/bicycle-map-app#readme",
+  "bugs": {
+    "url": "https://github.com/Yocker64/bicycle-map-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yocker64/bicycle-map-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "template.html",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -8,6 +23,9 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
@@ -21,9 +39,6 @@
     "webpack": "^5.99.6",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
-  },
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
   },
   "eslintConfig": {
     "extends": [
