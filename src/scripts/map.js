@@ -1,6 +1,6 @@
-import './styles/fontsAndReset.css';
-import './styles/styles.css';
-import { addMap } from './scripts/gpsRealTime';
+import '../styles/fontsAndReset.css';
+import '../styles/styles.css';
+import { addMap } from './gpsRealTime';
 
 function addScript(src, type) {
   const s = document.createElement(type);

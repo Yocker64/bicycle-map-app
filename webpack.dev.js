@@ -4,26 +4,38 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+    map: './src/scripts/map.js',
+
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   devtool: 'eval-source-map',
   devServer: {
-    watchFiles: ['./src/template.html'],
+    watchFiles: ['./src/template.html', './src/*.html'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
+      filename: 'index.html',
+      chunks: ['main'],
+    }),
+   
+    new HtmlWebpackPlugin({
+      template: './src/map.html',
+      filename: 'map.html',
+      chunks: ['map'],
     }),
   ],
   module: {
     rules: [
       {
         test: /\.js$/,
-        type: 'javascript/auto', // 👈 tells Webpack to treat .js as module
+        type: 'javascript/auto',
       },
       {
         test: /\.css$/i,
