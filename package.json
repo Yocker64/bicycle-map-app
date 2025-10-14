@@ -2,13 +2,13 @@
   "name": "bicycle-map-app",
   "version": "1.0.0",
   "description": "Custom template for all the future web development projects I will be coding!",
-  "homepage": "https://github.com/Yocker64/bicycle-map-app#readme",
+  "homepage": "https://github.com/haimamire/bicycle-map-app#readme",
   "bugs": {
-    "url": "https://github.com/Yocker64/bicycle-map-app/issues"
+    "url": "https://github.com/haimamire/bicycle-map-app/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yocker64/bicycle-map-app.git"
+    "url": "git+https://github.com/haimamire/bicycle-map-app.git"
   },
   "license": "ISC",
   "author": "",
@@ -25,6 +25,7 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "modern-normalize": "^3.0.1"
   },
   "devDependencies": {
@@ -44,19 +45,5 @@
     "extends": [
       "wesbos"
     ]
-  },
-  "name": "bicycle-map-app",
-  "version": "1.0.0",
-  "description": "Custom template for all the future web development projects I will be coding!",
-  "main": "template.html",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haimamire/bicycle-map-app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/haimamire/bicycle-map-app/issues"
-  },
-  "homepage": "https://github.com/haimamire/bicycle-map-app#readme"
+  }
 }
