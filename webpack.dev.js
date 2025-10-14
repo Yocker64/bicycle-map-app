@@ -7,7 +7,6 @@ module.exports = {
   entry: {
     main: './src/index.js',
     map: './src/scripts/map.js',
-
   },
   output: {
     filename: '[name].bundle.js',
@@ -24,7 +23,7 @@ module.exports = {
       filename: 'index.html',
       chunks: ['main'],
     }),
-   
+
     new HtmlWebpackPlugin({
       template: './src/map.html',
       filename: 'map.html',
