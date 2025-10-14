@@ -1,19 +1,18 @@
-export function addImagesOnMap() {
+import { addPolyline } from './polyline';
+
+export function addImagesOnMap(lat, lng, imageSrc, desc, link) {
   /* eslint-disable no-undef */
   /**
    * image on map
    */
 
   // config map
-  let config = {
+  const config = {
     minZoom: 1,
     maxZoom: 18,
   };
   // magnification with which the map will start
   const zoom = 15;
-  // co-ordinates
-  const lat = 34.98493616431302;
-  const lng = 135.75248977767515;
 
   // calling map
   const map = L.map("map", config).setView([lat, lng], zoom);
@@ -25,6 +24,27 @@ export function addImagesOnMap() {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
+  // define array of points to use for line
+  const points = [
+    [34.99635656226577, 135.7323981442834],
+    [34.996354357252464, 135.74123869756127],
+    [34.996552791853354, 135.74894277323145],
+    [34.996492398769384, 135.75208654192207],
+    [34.998617623320214, 135.75199905011456],
+    [34.998705056082976, 135.7524003697808],
+    [34.996512214095766, 135.75267787807172],
+    [34.99642827639192, 135.7595387363582],
+  ];
+
+  // add polyline to map
+  L.polyline(points, {
+    color: "red",
+    opacity: 0.5,
+    weight: 20,
+  })
+    .bindPopup("polygon")
+    .addTo(map);
+
   // new icon
   const funny = L.icon({
     iconUrl: "http://grzegorztomicki.pl/serwisy/pin.png",
@@ -34,8 +54,7 @@ export function addImagesOnMap() {
   });
 
   // custom popup image + text
-  const customPopup =
-    '<div class="customPopup"><figure><img src="https://www.kcg.ac.jp/images/facilities/school_building_ekimae2-2x.jpg"><figcaption>Source: wikipedia.org</figcaption></figure><div>京都コンピュータ学院は1963年に創立された日本で最初のコンピュータ教育機関である。京都大学理学部（多くは宇宙物理学教室）出身の有志により設立された。 <a href="https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E5%AD%A6%E9%99%A2" target="_blank">→ show more</a></div></div>';
+  const customPopup = `<div class="customPopup"><figure><img src=${imageSrc}><figcaption>Source: wikipedia.org</figcaption></figure><div>${desc}<a href="${link}" target="_blank">→ show more</a></div></div>`;
 
   // specify popup options
   const customOptions = {
