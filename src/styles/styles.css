@@ -44,13 +44,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* PAGE STYLING */
 
-#wrapper {
+#video {
 	position: absolute;
     top: 0;
     left: 0;
     border: 0;
-    z-index: 1; /* <-- this plays a key roll for it to work */
-    width: 100%; /* <-- this plays a key roll for it to work */
+    z-index: 1;
+    width: 100%;
     height: 100%;
 	margin:0;
 	padding:0;
