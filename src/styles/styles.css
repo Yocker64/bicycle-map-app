@@ -1,73 +1,57 @@
-*,
-:after,
-:before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-html {
-    height: 100%;
+* {
+  margin: 0;
 }
 
-body,
-html,
-#map {
-    width: 100%;
-    height: 100%;
-}
-
-#map {
-    position: relative;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
 }
 
 body {
-    position: relative;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.screen {
-    position: absolute;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* PAGE STYLING */
+
+#video {
+	position: absolute;
     top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-}
-
-.btn-active {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    border-radius: 5px;
-    background: red;
-    color: #fff;
+    left: 0;
     border: 0;
-    line-height: 120%;
-    margin: auto;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background 0.3s ease-in-out;
-}
-
-.btn-active:hover {
-    background: #000;
-}
-
-.description {
-    width: 250px;
-    font-size: 16px;
-    color: #333;
-    padding: 10px 14px;
-    background-color: hsla(0, 0%, 100%, 0.8);
-    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-    border-radius: 5px;
-    line-height: 120%;
-    border: 1px solid grey;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+	margin:0;
+	padding:0;
 }
