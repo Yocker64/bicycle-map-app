@@ -8,8 +8,13 @@ import { myFunc } from "./battoFunction";
 
 // JavaScript for toggling the mobile menu and the tours dropdown
 document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< HEAD
 myFunc();
 
+=======
+
+  console.log("ssssss");
+>>>>>>> 59a589722316d821d85a0511eedfcbc676e4d900
   addImagesOnMap(
     34.98493616431302,
     135.75248977767515,
