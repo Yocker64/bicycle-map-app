@@ -42,34 +42,96 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* VARIABLES DECLARATIONS */
+
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --light-blue: #0ea5e9;
+  --dark-blue: #4f46e5;
+  --red: #EA5B6F;
+  --orange: #FF894F;
+  --yellow: #FFCB61;
+}
+
 /* PAGE STYLING */
+
+:root {
+  font-family: var(--system-ui);
+  color: white;
+}
 
 body {
   min-height: 100lvh;
 }
 
-.main-container {
-  background-color: #77BEF0;
-  height: 100lvh;
+header {
+  background-color: var(--light-blue);
+  padding: 1.5rem 0;
+  height: 10lvh;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.header-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.header-container nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.header-container nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  min-height: 90lvh;
+  background: linear-gradient(to bottom, var(--light-blue) 0%, var(--dark-blue) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main-container p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .map-button {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
-  background-color: #FF894F;
+  background-color: var(--red);
   border: 0;
-  border-radius: 10px;
+  border-radius: 100px;
   padding: 10px 30px;
+  transition: background 0.3s ease;
 }
 
 .map-button:hover {
-  background-color: #EA5B6F;
+  background-color: var(--orange);
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: white;
+  transition: background 0.3s ease;
 }
 
 #video {
@@ -82,4 +144,15 @@ a {
     height: 70%;
 	margin:0;
 	padding:0;
+}
+
+.background-media {
+
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
 }
