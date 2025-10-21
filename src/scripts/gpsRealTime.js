@@ -1,4 +1,8 @@
+import { myFunc } from './battoFunction';
+
 export function addMap() {
+  myFunc();
+
   /* eslint-disable no-undef */
   /**
    * leaflet routing machine

@@ -3,9 +3,13 @@ import '../styles/styles.css';
 import { addMap } from './gpsRealTime';
 import { addImagesOnMap } from './imageOnMap';
 import { addPolyline } from './polyline';
+import { myFunc } from "./battoFunction";
+
 
 // JavaScript for toggling the mobile menu and the tours dropdown
 document.addEventListener('DOMContentLoaded', () => {
+myFunc();
+
   addImagesOnMap(
     34.98493616431302,
     135.75248977767515,

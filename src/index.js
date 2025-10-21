@@ -1,6 +1,11 @@
 import './styles/fontsAndReset.css';
 import './styles/styles.css';
 import { addMap } from './scripts/gpsRealTime';
+import { myFunc } from './scripts/battoFunction';
+
+document.addEventListener('DOMContentLoaded', () => {
+  myFunc();
+});
 
 function addScript(src, type) {
   const s = document.createElement(type);
