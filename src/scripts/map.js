@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   // This adds all of the lines we are gonna use for the routes and cycle lanes
+  addMarkers(MAP);
   addPolyline(MAP);
- addMarkers(MAP)
+
   // Add the images of points of interest
 });
