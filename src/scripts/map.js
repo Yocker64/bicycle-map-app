@@ -6,6 +6,8 @@ import { addPolyline } from './polyline';
 
 // JavaScript for toggling the mobile menu and the tours dropdown
 document.addEventListener('DOMContentLoaded', () => {
+
+  console.log("ssssss");
   addImagesOnMap(
     34.98493616431302,
     135.75248977767515,
