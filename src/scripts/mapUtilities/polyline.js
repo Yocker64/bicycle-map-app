@@ -1,22 +1,8 @@
-export function addPolyline() {
+export function addPolyline(map) {
   /* eslint-disable no-undef */
   /**
    * Polyline
    */
-
-  // config map
-  const config = {
-    minZoom: 7,
-    maxZoom: 18,
-  };
-  // magnification with which the map will start
-  const zoom = 18;
-  // co-ordinates
-  const lat = 52.22999;
-  const lng = 21.01258;
-
-  // calling map
-  const map = L.map('map', config).setView([lat, lng], zoom);
 
   // Used to load and display tile layers on the map
   // Most tile servers require attribution, which you can set under `Layer`
@@ -41,7 +27,7 @@ export function addPolyline() {
   L.polyline(points, {
     color: 'red',
     opacity: 0.5,
-    weight: 20,
+    weight: 5,
   })
     .bindPopup('polygon')
     .addTo(map);

@@ -1,11 +1,7 @@
 import './styles/fontsAndReset.css';
 import './styles/styles.css';
-import { addMap } from './scripts/gpsRealTime';
-import { myFunc } from './scripts/battoFunction';
 
-document.addEventListener('DOMContentLoaded', () => {
-  myFunc();
-});
+document.addEventListener('DOMContentLoaded', () => {});
 
 function addScript(src, type) {
   const s = document.createElement(type);
@@ -33,5 +29,3 @@ btnActive.addEventListener('click', () => {
     addScript('./script.js', 'script');
   }, 1000);
 });
-
-addMap();
