@@ -1,3 +1,4 @@
+import lines from './linesData.js'
 // Global variable to store the polyline layer
 let polylineLayer = null;
 
