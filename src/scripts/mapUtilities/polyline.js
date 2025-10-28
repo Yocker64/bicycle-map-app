@@ -7,8 +7,9 @@ export function addPolyline(map) {
   const lines = [
     [getLine('keinawa')],
     [getLine('nanajo1')],
+    [getLine('gojo1')],
   ];
-  
+
   // Create polyline layer
   polylineLayer = L.polyline(lines, {
     color: 'red',
