@@ -25,7 +25,6 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
     "modern-normalize": "^3.0.1"
   },
   "devDependencies": {
