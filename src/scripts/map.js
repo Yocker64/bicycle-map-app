@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     zoom,
   );
 
+  // Sets map bounds
+  MAP.setMaxBounds([
+    [34.878806783147816, 135.63638914020237],
+    [35.08720985235213, 135.85607464186808]
+  ]);
+
   /*= =============================================
               TILE LAYER and WMS
   ================================================ */
@@ -85,6 +91,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addMarkers(MAP);
   addPolyline(MAP);
-
-  // Add the images of points of interest
 });
+
