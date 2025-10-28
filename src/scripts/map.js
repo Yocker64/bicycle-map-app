@@ -30,15 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
               TILE LAYER and WMS
   ================================================ */
   // defaultLayer layer
-  const defaultLayer = L.tileLayer(
-    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  );
-  defaultLayer.addTo(MAP);
-  MAP.addLayer(defaultLayer);
+  // const defaultLayer = L.tileLayer(
+  //   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  //   {
+  //     attribution:
+  //       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  //   },
+  // );
+  // defaultLayer.addTo(MAP);
+  // MAP.addLayer(defaultLayer);
 
   const cyclingLayer = L.tileLayer(
     'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
@@ -47,17 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
       attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }
   );
-
-  cyclingLayer.addTo(MAP);
+  // cyclingLayer.addTo(MAP);
+  MAP.addLayer(cyclingLayer);
 
   // google street
-  const googleLayer = L.tileLayer(
-    'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-    {
-      maxZoom: 18,
-      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-    },
-  );
+  // const googleLayer = L.tileLayer(
+  //   'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+  //   {
+  //     maxZoom: 18,
+  //     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+  //   },
+  // );
 
   // google satellite
   const satelliteLayer = L.tileLayer(
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
                   LAYER CONTROL
   ================================================ */
   const baseMaps = {
-    'Default': defaultLayer,
+    // 'Default': defaultLayer,
     'Cycling': cyclingLayer,
-    'Google Street': googleLayer,
+    // 'Google Street': googleLayer,
     'Google Satellite': satelliteLayer,
   };
   const overlayMaps = {};
@@ -92,4 +92,3 @@ document.addEventListener('DOMContentLoaded', () => {
   addMarkers(MAP);
   addPolyline(MAP);
 });
-
