@@ -1,6 +1,7 @@
 import './styles/fontsAndReset.css';
 import './styles/styles.css';
-import { addMap } from './scripts/gpsRealTime';
+
+document.addEventListener('DOMContentLoaded', () => {});
 
 function addScript(src, type) {
   const s = document.createElement(type);
@@ -28,5 +29,3 @@ btnActive.addEventListener('click', () => {
     addScript('./script.js', 'script');
   }, 1000);
 });
-
-addMap();
