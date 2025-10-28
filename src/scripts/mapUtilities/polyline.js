@@ -1,4 +1,4 @@
-import lines from './linesData.js'
+import lines from './linesData.js';
 // Global variable to store the polyline layer
 let polylineLayer = null;
 
@@ -35,7 +35,6 @@ export function addPolyline(map) {
   polylineLayer.addTo(map);
 
   // Create and add control buttons
-  createPolylineControls(map);
 }
 
 function createPolylineControls(map) {
