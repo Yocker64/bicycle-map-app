@@ -23,48 +23,44 @@ document.addEventListener('DOMContentLoaded', () => {
   /*= =============================================
               TILE LAYER and WMS
   ================================================ */
-  // osm layer
-  const osm = L.tileLayer(
+  // defaultLayer layer
+  const defaultLayer = L.tileLayer(
     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     },
   );
-  osm.addTo(MAP);
-  MAP.addLayer(osm);
+  defaultLayer.addTo(MAP);
+  MAP.addLayer(defaultLayer);
 
-  // dark map
-  const dark = L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  const cyclingLayer = L.tileLayer(
+    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
     {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
       maxZoom: 18,
-    },
+      attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }
   );
-  // dark.addTo(map)
+
+  cyclingLayer.addTo(MAP);
 
   // google street
-  const googleStreets = L.tileLayer(
+  const googleLayer = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
     {
       maxZoom: 18,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  // googleStreets.addTo(map);
 
   // google satellite
-  const googleSat = L.tileLayer(
+  const satelliteLayer = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
     {
       maxZoom: 18,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  googleSat.addTo(MAP);
 
   const wms = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
     layers: 'geoapp:admin',
@@ -77,10 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
                   LAYER CONTROL
   ================================================ */
   const baseMaps = {
-    OSM: osm,
-    Dark: dark,
-    'Google Street': googleStreets,
-    'Google Satellite': googleSat,
+    'Default': defaultLayer,
+    'Cycling': cyclingLayer,
+    'Google Street': googleLayer,
+    'Google Satellite': satelliteLayer,
   };
   const overlayMaps = {};
 

@@ -20,7 +20,7 @@ export function addPolyline(map) {
   }).bindPopup('Route Path');
 
   // Add polyline to map by default
-  polylineLayer.addTo(map);
+  // polylineLayer.addTo(map);
 
   // Create and add control buttons
 }
