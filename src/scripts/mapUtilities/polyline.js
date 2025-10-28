@@ -23,7 +23,6 @@ export function addPolyline(map) {
   polylineLayer.addTo(map);
 
   // Create and add control buttons
-  createPolylineControls(map);
 }
 
 function createPolylineControls(map) {
