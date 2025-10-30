@@ -2,7 +2,7 @@
 import '../styles/fontsAndReset.css';
 import '../styles/styles.css';
 import '../styles/mapstyles.css';
-import { addPolyline } from './mapUtilities/polyline';
+import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
 import { initGPS } from './gpsRealTime';
 
@@ -30,17 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /*= =============================================
               TILE LAYER and WMS
   ================================================ */
-  // defaultLayer layer
-  // const defaultLayer = L.tileLayer(
-  //   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-  //   {
-  //     attribution:
-  //       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  //   },
-  // );
-  // defaultLayer.addTo(MAP);
-  // MAP.addLayer(defaultLayer);
-
   const cyclingLayer = L.tileLayer(
     'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
     {
@@ -48,17 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }
   );
-  // cyclingLayer.addTo(MAP);
   MAP.addLayer(cyclingLayer);
-
-  // google street
-  // const googleLayer = L.tileLayer(
-  //   'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-  //   {
-  //     maxZoom: 18,
-  //     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-  //   },
-  // );
 
   // google satellite
   const satelliteLayer = L.tileLayer(
@@ -67,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       maxZoom: 18,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
-  );
+  );  
 
   const wms = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
     layers: 'geoapp:admin',
@@ -80,13 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   LAYER CONTROL
   ================================================ */
   const baseMaps = {
-    // 'Default': defaultLayer,
     'Cycling': cyclingLayer,
-    // 'Google Street': googleLayer,
     'Google Satellite': satelliteLayer,
   };
   const overlayMaps = {};
 
+  L.control.zoom({ position: "bottomleft" }).addTo(MAP);
   L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(MAP);
 
   // This adds all of the lines we are gonna use for the routes and cycle lanes
