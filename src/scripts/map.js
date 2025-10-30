@@ -4,7 +4,7 @@ import '../styles/mapstyles.css';
 
 import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
-// import { addMarkers } from './mapUtilities/points';
+import { addMarkers } from './mapUtilities/points';
 import { initGPS } from './gpsRealTime';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addLayers(MAP);
   addPolyline(MAP);
-  // addMarkers(MAP);
+  addMarkers(MAP);
   initGPS(MAP);//resets location per one second
 });
