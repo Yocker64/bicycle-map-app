@@ -4,6 +4,7 @@ import '../styles/styles.css';
 import '../styles/mapstyles.css';
 import { addPolyline } from './mapUtilities/polyline';
 import { addMarkers } from './mapUtilities/points';
+import { initGPS } from './gpsRealTime';
 
 document.addEventListener('DOMContentLoaded', () => {
   // config map
@@ -91,4 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addMarkers(MAP);
   addPolyline(MAP);
+  initGPS(MAP);//resets location per one second
 });

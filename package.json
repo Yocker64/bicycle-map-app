@@ -45,5 +45,19 @@
     "extends": [
       "wesbos"
     ]
-  }
+  },
+  "name": "bicycle-map-app",
+  "description": "Custom template for all the future web development projects I will be coding!",
+  "version": "1.0.0",
+  "main": "template.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batireedui0327/bicycle-map-app.git"
+  },
+  "author": "Bat-Ireedui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batireedui0327/bicycle-map-app/issues"
+  },
+  "homepage": "https://github.com/batireedui0327/bicycle-map-app#readme"
 }
