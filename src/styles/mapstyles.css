@@ -66,6 +66,15 @@ img {
     background: #c82333;
 }
 
+.leaflet-control-zoom {
+    position: fixed;
+    top: 89dvh;
+}
+
+.leaflet-control-layers {
+    
+}
+
 .leaflet-control-layers-list {
     display: flex;
     flex-direction: column;
