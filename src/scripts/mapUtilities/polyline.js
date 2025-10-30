@@ -1,29 +1,17 @@
-import lines from './linesData.js';
+import {getLine} from './linesData.js'
 // Global variable to store the polyline layer
 let polylineLayer = null;
 
 export function addPolyline(map) {
-  /* eslint-disable no-undef */
-  /**
-   * Polyline with show/hide functionality
-   */
 
-  // Define array of points to use for line
-  const points = [
-    [34.99635656226577, 135.7323981442834],
-    [34.996354357252464, 135.74123869756127],
-    [34.996552791853354, 135.74894277323145],
-    [34.996492398769384, 135.75208654192207],
-    [34.998617623320214, 135.75199905011456],
-    [34.998705056082976, 135.7524003697808],
-    [34.996512214095766, 135.75267787807172],
-    [34.99642827639192, 135.7595387363582],
-    [34.9959782546342, 135.76694203803277],
-    [34.994396786588645, 135.7756358653961],
+  const lines = [
+    [getLine('keinawa')],
+    [getLine('nanajo1')],
+    [getLine('gojo1')],
   ];
 
   // Create polyline layer
-  polylineLayer = L.polyline(points, {
+  polylineLayer = L.polyline(lines, {
     color: 'red',
     opacity: 0.7,
     weight: 5,
@@ -32,7 +20,7 @@ export function addPolyline(map) {
   }).bindPopup('Route Path');
 
   // Add polyline to map by default
-  polylineLayer.addTo(map);
+  // polylineLayer.addTo(map);
 
   // Create and add control buttons
 }
@@ -167,7 +155,7 @@ export function addMultiplePolylines(map, polylineData = []) {
 
   // Add new polylines
   polylineData.forEach((data, index) => {
-    const polyline = L.polyline(data.points, {
+    const polyline = L.polyline(data.lines, {
       color: data.color || 'red',
       opacity: data.opacity || 0.7,
       weight: data.weight || 5,
