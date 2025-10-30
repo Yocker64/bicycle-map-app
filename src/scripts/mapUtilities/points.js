@@ -1,16 +1,7 @@
 /* eslint-disable no-undef */
-import { imagesDescsLinks, DataAccess } from './pointsData.js';
+import { imagesDescsLinks, DataAccess } from './pointsData';
 
 export function addMarkers(map) {
-  // Used to load and display tile layers on the map
-  L.tileLayer(
-    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
-    {
-      attribution:
-        '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  ).addTo(map);
-
   // Create custom colored icons
   const createColoredIcon = (color) =>
     L.divIcon({
