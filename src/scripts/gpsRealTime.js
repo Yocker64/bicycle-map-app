@@ -8,7 +8,7 @@
 
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
-    console.log("Geolocation is not supported by this browser.");
+    console.log('Geolocation is not supported by this browser.');
     return;
   }
 
@@ -30,6 +30,13 @@ export function initGPS(MAP) {
     if (emaLat == null) {
       emaLat = lat; emaLon = lon;
       return [lat, lon];
+    // if there is old marker, it will remove it
+    if (marker) {
+      MAP.removeLayer(marker);
+    }
+    // if there is old accuracy circle, it will remove it
+    if (accuracyCircle) {
+      MAP.removeLayer(accuracyCircle);
     }
     emaLat = ALPHA * lat + (1 - ALPHA) * emaLat;
     emaLon = ALPHA * lon + (1 - ALPHA) * emaLon;
@@ -58,6 +65,33 @@ export function initGPS(MAP) {
       stroke: false,
       fillOpacity: 0.2
     }).addTo(MAP);
+    // new marker
+    marker = L.marker([lat, lon]).addTo(MAP).bindPopup('You are here');
+
+    // new accuracy circle (dependent on accuracy)
+    accuracyCircle = L.circle([lat, lon], {
+      radius: acc, // by meter
+      stroke: false, // no border
+      fillOpacity: 0.2, // fancy color configuration
+    }).addTo(MAP);
+
+    // If u wanna see debug:
+    // console.log("Lat:", lat, "Lon:", lon, "Acc:", acc, "m");
+  }
+
+  function tick() {
+    navigator.geolocation.getCurrentPosition(
+      updatePosition,
+      (err) => {
+        console.log('Geolocation error:', err);
+      },
+      {
+        enableHighAccuracy: true, // best GPS
+        maximumAge: 0,
+        timeout: 10000,
+      },
+    );
+  }
 
     // зөвхөн сайн үед л төвлөрүүлнэ (үсрэлтийг багасгана)
     if (acc <= THRESH || acc < bestAcc) {
@@ -71,4 +105,6 @@ export function initGPS(MAP) {
     (err) => console.log("Geolocation error:", err),
     { enableHighAccuracy: true, maximumAge: 0, timeout: 20000 }
   );
+  // constantly resets
+  setInterval(tick, 1000);
 }

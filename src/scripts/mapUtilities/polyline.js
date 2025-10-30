@@ -1,9 +1,9 @@
-import {getLine} from './linesData.js'
+/* eslint-disable no-undef */
+import { getLine } from './linesData.js';
 // Global variable to store the polyline layer
 let polylineLayer = null;
 
 export function addPolyline(map) {
-
   const lines = [
     [getLine('keinawa')],
     [getLine('nanajo1')],
