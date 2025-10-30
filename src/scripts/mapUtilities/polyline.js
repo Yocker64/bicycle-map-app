@@ -1,5 +1,4 @@
-/* eslint-disable no-undef */
-import { getLine } from './linesData.js';
+import { getLine } from './polylinesData';
 // Global variable to store the polyline layer
 let polylineLayer = null;
 
