@@ -66,13 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   googleSat.addTo(MAP);
 
-  const wms = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
-    layers: 'geoapp:admin',
-    format: 'image/png',
-    transparent: true,
-    attribution: 'wms test',
-  });
-
   /*= =============================================
                   LAYER CONTROL
   ================================================ */
@@ -89,6 +82,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addMarkers(MAP);
   addPolyline(MAP);
-
-  // Add the images of points of interest
 });
