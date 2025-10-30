@@ -1,0 +1,884 @@
+[
+    {
+      "link": "https://www.google.com/maps/place/Kon%27s+Cycle/data=!4m7!3m6!1s0x6001064a1063da59:0x9a2ca1a6749196a8!8m2!3d34.9998431!4d135.7324021!16s%2Fg%2F1w0h_hww!19sChIJWdpjEEoGAWARqJaRdKahLJo?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kon's Cycle",
+      "lat": 34.9998431,
+      "lng": 135.7324021,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%82%B5%E3%82%AC%E3%83%8E%E3%80%90%E5%87%BA%E5%BC%B5%E4%BF%AE%E7%90%86%E5%B0%82%E9%96%80%E3%80%91%E2%80%BB%E5%BA%97%E8%88%97%E3%81%AA%E3%81%97/data=!4m7!3m6!1s0x6001079f5280781f:0xf9f9054830f3741a!8m2!3d35.0012622!4d135.7375894!16s%2Fg%2F11j934630w!19sChIJH3iAUp8HAWARGnTzMEgF-fk?authuser=0&hl=es-419&rclk=1",
+      "desc": "自転車サガノ【出張修理専門】※店舗なし",
+      "lat": 35.0012622,
+      "lng": 135.7375894,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/AEON+Cycle+Shop/data=!4m7!3m6!1s0x6001064ea7aa2d35:0x4f86088cf449df25!8m2!3d34.9970686!4d135.7276593!16s%2Fg%2F11gnp8r4pn!19sChIJNS2qp04GAWARJd9J9IwIhk8?authuser=0&hl=es-419&rclk=1",
+      "desc": "AEON Cycle Shop",
+      "lat": 34.9970686,
+      "lng": 135.7276593,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%83%90%E3%82%A4%E3%82%B7%E3%82%AF%E3%83%AB%E3%82%B9%E3%83%88%E3%82%A2+%E3%83%95%E3%83%AA%E3%83%BC/data=!4m7!3m6!1s0x6001066ad8de2f9b:0xf85b2b07893bb534!8m2!3d34.9905461!4d135.7325982!16s%2Fg%2F11c5s7kj3t!19sChIJmy_e2GoGAWARNLU7iQcrW_g?authuser=0&hl=es-419&rclk=1",
+      "desc": "バイシクルストア フリー",
+      "lat": 34.9905461,
+      "lng": 135.7325982,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Eirin+Tanbaguchi/data=!4m7!3m6!1s0x60010624b38e3cb9:0x6d3da16561a06a3c!8m2!3d34.9959078!4d135.7428262!16s%2Fg%2F1ptz9r037!19sChIJuTyOsyQGAWARPGqgYWWhPW0?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Eirin Tanbaguchi",
+      "lat": 34.9959078,
+      "lng": 135.7428262,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Pals/data=!4m7!3m6!1s0x6001064849bee559:0x666004d3341f0868!8m2!3d34.996387!4d135.731888!16s%2Fg%2F1pv000cdc!19sChIJWeW-SUgGAWARaAgfNNMEYGY?authuser=0&hl=es-419&rclk=1",
+      "desc": "Pals",
+      "lat": 34.996387,
+      "lng": 135.731888,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E4%BF%AE%E7%90%86+%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB/data=!4m7!3m6!1s0x600107c72584488b:0x5a892a5d13117450!8m2!3d35.0025347!4d135.7462421!16s%2Fg%2F11j7qs8tv5!19sChIJi0iEJccHAWARUHQRE10qiVo?authuser=0&hl=es-419&rclk=1",
+      "desc": "自転車修理 ドクターサイクル",
+      "lat": 35.0025347,
+      "lng": 135.7462421,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E5%B2%A1%E6%9C%AC%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x6001063147b32369:0xb396ffc4b2e13984!8m2!3d35.0010773!4d135.7385968!16s%2Fg%2F1tfnyh58!19sChIJaSOzRzEGAWARhDnhssT_lrM?authuser=0&hl=es-419&rclk=1",
+      "desc": "岡本自転車商会",
+      "lat": 35.0010773,
+      "lng": 135.7385968,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/CycleDream/data=!4m7!3m6!1s0x600107a91e7ad8e3:0xb89aafebb99a1765!8m2!3d35.00338!4d135.717479!16s%2Fg%2F1tfbssqp!19sChIJ49h6HqkHAWARZReaueuvmrg?authuser=0&hl=es-419&rclk=1",
+      "desc": "CycleDream",
+      "lat": 35.00338,
+      "lng": 135.717479,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B9%E3%81%82%E3%81%95%E3%81%B2%E8%91%9B%E9%87%8E%E5%A4%A7%E8%B7%AF%E5%9B%9B%E6%9D%A1%E5%BA%97/data=!4m7!3m6!1s0x600107a7b876e11b:0xd87439c4d5340d55!8m2!3d35.0021875!4d135.7192114!16s%2Fg%2F11krwq8j8p!19sChIJG-F2uKcHAWARVQ001cQ5dNg?authuser=0&hl=es-419&rclk=1",
+      "desc": "サイクルベースあさひ葛野大路四条店",
+      "lat": 35.0021875,
+      "lng": 135.7192114,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Bicycle+Q-bei+Nij%C5%8D/data=!4m7!3m6!1s0x600107cd3d795555:0x619c98a27faac73f!8m2!3d35.008682!4d135.7409563!16s%2Fg%2F11bxg5nm_3!19sChIJVVV5Pc0HAWARP8eqf6KYnGE?authuser=0&hl=es-419&rclk=1",
+      "desc": "Bicycle Q-bei Nijō",
+      "lat": 35.008682,
+      "lng": 135.7409563,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%83%A0%E3%83%A9%E3%82%BF%E3%83%BB%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB/data=!4m7!3m6!1s0x6001063187f662cf:0x20b53cdd870e043a!8m2!3d35.0030417!4d135.7407755!16s%2Fg%2F11b7ss_n0f!19sChIJz2L2hzEGAWAROgQOh908tSA?authuser=0&hl=es-419&rclk=1",
+      "desc": "ムラタ・サイクル",
+      "lat": 35.0030417,
+      "lng": 135.7407755,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/LATTESTbike+%E4%BA%AC%E9%83%BD%E4%B8%89%E6%9D%A1%E5%BA%97/data=!4m7!3m6!1s0x6001070fb39f7eaf:0x7fac99dfffc04e01!8m2!3d35.0086363!4d135.7447953!16s%2Fg%2F11f779d177!19sChIJr36fsw8HAWARAU7A_9-ZrH8?authuser=0&hl=es-419&rclk=1",
+      "desc": "LATTESTbike 京都三条店",
+      "lat": 35.0086363,
+      "lng": 135.7447953,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%AD%E3%83%8F%E3%82%BF%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x600107448b739091:0x2f2e1c05b6b26cd5!8m2!3d34.9992014!4d135.7323531!16s%2Fg%2F11gnsdcs7k!19sChIJkZBzi0QHAWAR1WyytgUcLi8?authuser=0&hl=es-419&rclk=1",
+      "desc": "キハタ商会",
+      "lat": 34.9992014,
+      "lng": 135.7323531,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Parusu+Kyoto+Nishioji+Gojoten+Seibikojo/data=!4m7!3m6!1s0x600106485cf0debd:0xdc082e05432a22a6!8m2!3d34.9955202!4d135.7312575!16s%2Fg%2F11_r3xt9b!19sChIJvd7wXEgGAWARpiIqQwUuCNw?authuser=0&hl=es-419&rclk=1",
+      "desc": "Parusu Kyoto Nishioji Gojoten Seibikojo",
+      "lat": 34.9955202,
+      "lng": 135.7312575,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Humhumhug+Cycle+Center+Kyoto%28%E4%BA%AC%E9%83%BD%E2%80%A2%E8%87%AA%E8%BB%A2%E8%BB%8A%E4%BF%AE%E7%90%86%E2%80%A2RENTALCYCLE%EF%BC%89/data=!4m7!3m6!1s0x600108814cfa71a3:0x568be601c10aa385!8m2!3d35.0110928!4d135.7567055!16s%2Fg%2F11cntm2sx3!19sChIJo3H6TIEIAWARhaMKwQHmi1Y?authuser=0&hl=es-419&rclk=1",
+      "desc": "Humhumhug Cycle Center Kyoto(京都•自転車修理•RENTALCYCLE）",
+      "lat": 35.0110928,
+      "lng": 135.7567055,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E6%9D%BE%E9%87%8E%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x600106448cca43a7:0x5f813c450d5322fc!8m2!3d34.9877797!4d135.7256199!16s%2Fg%2F11hyl5jyn4!19sChIJp0PKjEQGAWAR_CJTDUU8gV8?authuser=0&hl=es-419&rclk=1",
+      "desc": "松野自転車商会",
+      "lat": 34.9877797,
+      "lng": 135.7256199,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%AB%B9%E5%86%85%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%BA%97/data=!4m7!3m6!1s0x600107c97ab0867b:0x88062a38153aaa0b!8m2!3d35.0103024!4d135.7360394!16s%2Fg%2F1tc_8kqr!19sChIJe4aweskHAWARC6o6FTgqBog?authuser=0&hl=es-419&rclk=1",
+      "desc": "竹内自転車店",
+      "lat": 35.0103024,
+      "lng": 135.7360394,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E3%81%98%E3%81%A6%E3%82%93%E3%81%97%E3%82%83/data=!4m7!3m6!1s0x600107002ef153bb:0x11016b4468a2925a!8m2!3d34.9948063!4d135.712229!16s%2Fg%2F12m95g4_p!19sChIJu1PxLgAHAWARWpKiaERrARE?authuser=0&hl=es-419&rclk=1",
+      "desc": "みんなのじてんしゃ",
+      "lat": 34.9948063,
+      "lng": 135.712229,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Fun+Cycling+%E4%BA%AC%E9%83%BD%EF%BC%88%E8%87%AA%E8%BB%A2%E8%BB%8A%E8%B2%A9%E5%A3%B2%E3%83%BB%E4%BF%AE%E7%90%86%E5%BA%97%EF%BC%89/data=!4m7!3m6!1s0x6001078756098625:0x659596a6057f1920!8m2!3d34.9790612!4d135.7073032!16s%2Fg%2F11jncnxtgc!19sChIJJYYJVocHAWARIBl_BaaWlWU?authuser=0&hl=es-419&rclk=1",
+      "desc": "Fun Cycling 京都（自転車販売・修理店）",
+      "lat": 34.9790612,
+      "lng": 135.7073032,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Iwai+Cycle+Kizuyabashi/data=!4m7!3m6!1s0x6001061c53c39531:0xcdfb6f83f1804a3b!8m2!3d34.9873693!4d135.7495168!16s%2Fg%2F11b5pjmx2n!19sChIJMZXDUxwGAWARO0qA8YNv-80?authuser=0&hl=es-419&rclk=1",
+      "desc": "Iwai Cycle Kizuyabashi",
+      "lat": 34.9873693,
+      "lng": 135.7495168,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Kyubee+Hakubaicho/data=!4m7!3m6!1s0x600107948375c25d:0x60e12a9ec90a7f2e!8m2!3d35.0251078!4d135.731309!16s%2Fg%2F1tcwlgcw!19sChIJXcJ1g5QHAWARLn8KyZ4q4WA?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kyubee Hakubaicho",
+      "lat": 35.0251078,
+      "lng": 135.731309,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Ryou+Cycle/data=!4m7!3m6!1s0x6001072dd7121cd1:0xe9be542eca9e06a7!8m2!3d34.9975967!4d135.7519487!16s%2Fg%2F11ckvv9b9v!19sChIJ0RwS1y0HAWARpwaeyi5Uvuk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Ryou Cycle",
+      "lat": 34.9975967,
+      "lng": 135.7519487,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Base+Asahi+Kuj%C5%8D/data=!4m7!3m6!1s0x600108acb31b08f7:0xd17b5e6efa6053f5!8m2!3d34.9797389!4d135.7576146!16s%2Fg%2F11c5_k9jxk!19sChIJ9wgbs6wIAWAR9VNg-m5ee9E?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Base Asahi Kujō",
+      "lat": 34.9797389,
+      "lng": 135.7576146,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Reco/data=!4m7!3m6!1s0x600107bdf725b9ff:0x616a7bf1fae1544b!8m2!3d35.019029!4d135.727696!16s%2Fg%2F11bbvpl1zt!19sChIJ_7kl970HAWARS1Th-vF7amE?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Reco",
+      "lat": 35.019029,
+      "lng": 135.727696,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Mori+Bicycle+Shop/data=!4m7!3m6!1s0x6001087fd58509f7:0x59fd147036549a33!8m2!3d35.0136971!4d135.7542885!16s%2Fg%2F11f1wbfjkt!19sChIJ9wmF1X8IAWARM5pUNnAU_Vk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Mori Bicycle Shop",
+      "lat": 35.0136971,
+      "lng": 135.7542885,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Sakaida+Auto+Center/data=!4m7!3m6!1s0x6001064aedb6f8fb:0xeb74c81045721db3!8m2!3d35.0027065!4d135.732233!16s%2Fg%2F1tcy460_!19sChIJ-_i27UoGAWARsx1yRRDIdOs?authuser=0&hl=es-419&rclk=1",
+      "desc": "Sakaida Auto Center",
+      "lat": 35.0027065,
+      "lng": 135.732233,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Winning+Bell/data=!4m7!3m6!1s0x6001070ac6da8cd7:0x3b5cd5ae36516023!8m2!3d35.01164!4d135.713229!16s%2Fg%2F1tcvbsyl!19sChIJ14zaxgoHAWARI2BRNq7VXDs?authuser=0&hl=es-419&rclk=1",
+      "desc": "Winning Bell",
+      "lat": 35.01164,
+      "lng": 135.713229,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/CYCLE+DOI/data=!4m7!3m6!1s0x6001062809bbbb3d:0xda99153fa051040!8m2!3d35.0034882!4d135.7513061!16s%2Fg%2F11bx1r_7g7!19sChIJPbu7CSgGAWARQBAF-lORqQ0?authuser=0&hl=es-419&rclk=1",
+      "desc": "CYCLE DOI",
+      "lat": 35.0034882,
+      "lng": 135.7513061,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/VELMO%EF%BD%9CWELB+%E4%BA%AC%E9%83%BDBASE+%E3%82%A2%E3%83%99%E3%83%B3%E3%83%88%E3%82%A5%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%95%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/data=!4m7!3m6!1s0x6001077baa2f0be5:0x1236c4b0c4f8e0d3!8m2!3d34.9831758!4d135.7246569!16s%2Fg%2F11tx7h5cc5!19sChIJ5QsvqnsHAWAR0-D4xLDENhI?authuser=0&hl=es-419&rclk=1",
+      "desc": "VELMO｜WELB 京都BASE アベントゥーライフ株式会社",
+      "lat": 34.9831758,
+      "lng": 135.7246569,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle/data=!4m7!3m6!1s0x6001071d4e1e25b9:0x28209d866bdb40ce!8m2!3d34.9913514!4d135.7043896!16s%2Fg%2F1tdft0p_!19sChIJuSUeTh0HAWARzkDba4adICg?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle",
+      "lat": 34.9913514,
+      "lng": 135.7043896,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Daiwa+Cycle+Katsura/data=!4m7!3m6!1s0x6001078edaa7d28b:0x3e2a6b9f3027ca92!8m2!3d34.9732354!4d135.7095829!16s%2Fg%2F11rkctgfcp!19sChIJi9Kn2o4HAWARksonMJ9rKj4?authuser=0&hl=es-419&rclk=1",
+      "desc": "Daiwa Cycle Katsura",
+      "lat": 34.9732354,
+      "lng": 135.7095829,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%81%98%E3%81%A6%E3%82%93%E3%81%97%E3%82%83%E5%B7%A5%E6%88%BF%E3%83%94%E3%83%A5%E3%82%A2/data=!4m7!3m6!1s0x6001062ce706134b:0xb70a744ea57212d!8m2!3d35.0084552!4d135.7454328!16s%2Fg%2F1thnnp3z!19sChIJSxMG5ywGAWARLSFX6kSncAs?authuser=0&hl=es-419&rclk=1",
+      "desc": "じてんしゃ工房ピュア",
+      "lat": 35.0084552,
+      "lng": 135.7454328,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%83%80%E3%82%A4%E3%83%AF%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%ABSTYLE+%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%ABKYOTO%E5%BA%97/data=!4m7!3m6!1s0x600109b649d4d0c3:0xe81f43d4c52007af!8m2!3d34.9829409!4d135.7555196!16s%2Fg%2F11vd9sh1gr!19sChIJw9DUSbYJAWARrwcgxdRDH-g?authuser=0&hl=es-419&rclk=1",
+      "desc": "ダイワサイクルSTYLE イオンモールKYOTO店",
+      "lat": 34.9829409,
+      "lng": 135.7555196,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Base+Asahi/data=!4m7!3m6!1s0x6000f0d57d78ce53:0xb438320a483e5362!8m2!3d35.0096605!4d135.7430235!16s%2Fg%2F1hhp623_b!19sChIJU854fdXwAGARYlM-SAoyOLQ?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Base Asahi",
+      "lat": 35.0096605,
+      "lng": 135.7430235,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E6%9D%B1%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/data=!4m7!3m6!1s0x60010788b08cf263:0x5fa4f3a610c4c66d!8m2!3d34.9910066!4d135.7188395!16s%2Fg%2F11kpk7szkg!19sChIJY_KMsIgHAWARbcbEEKbzpF8?authuser=0&hl=es-419&rclk=1",
+      "desc": "東サイクルショップ",
+      "lat": 34.9910066,
+      "lng": 135.7188395,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Custom+Pro+Shop+R%27s+Cycle/data=!4m7!3m6!1s0x600107c53c322677:0x919b945231204adb!8m2!3d35.0182127!4d135.7415736!16s%2Fg%2F11cn9t9k_t!19sChIJdyYyPMUHAWAR20ogMVKUm5E?authuser=0&hl=es-419&rclk=1",
+      "desc": "Custom Pro Shop R's Cycle",
+      "lat": 35.0182127,
+      "lng": 135.7415736,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Arai%26SHOEI+NANKAI+KYOTO+TSUBOI/data=!4m7!3m6!1s0x60010649f6b3c141:0x531e3d06049f000c!8m2!3d34.9988888!4d135.7323165!16s%2Fg%2F1tr17ggl!19sChIJQcGz9kkGAWARDACfBAY9HlM?authuser=0&hl=es-419&rclk=1",
+      "desc": "Arai&SHOEI NANKAI KYOTO TSUBOI",
+      "lat": 34.9988888,
+      "lng": 135.7323165,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Fujinoi+Motorcycle+Store/data=!4m7!3m6!1s0x6001063f325cd937:0x2b760be1bcd98526!8m2!3d34.9912683!4d135.7348617!16s%2Fg%2F1tg5b_q6!19sChIJN9lcMj8GAWARJoXZvOELdis?authuser=0&hl=es-419&rclk=1",
+      "desc": "Fujinoi Motorcycle Store",
+      "lat": 34.9912683,
+      "lng": 135.7348617,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Sports+Cycle+Yamane/data=!4m7!3m6!1s0x6001087f6a2c4553:0x97765c8416574892!8m2!3d35.016291!4d135.753011!16s%2Fg%2F1v76zkc7!19sChIJU0Usan8IAWARkkhXFoRcdpc?authuser=0&hl=es-419&rclk=1",
+      "desc": "Sports Cycle Yamane",
+      "lat": 35.016291,
+      "lng": 135.753011,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%BE%BB%E6%A3%AE%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x6001089aaf6cf53d:0xfd44bbdef0ea9a17!8m2!3d35.0074606!4d135.7611479!16s%2Fg%2F1tdz99yd!19sChIJPfVsr5oIAWARF5rq8N67RP0?authuser=0&hl=es-419&rclk=1",
+      "desc": "辻森自転車商会",
+      "lat": 35.0074606,
+      "lng": 135.7611479,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E2%80%8B%E4%BA%AC%E9%83%BD%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%87%A6%E9%8A%80%E8%BC%AA/data=!4m7!3m6!1s0x600109a54747fa4b:0xd81d718041b4b8af!8m2!3d34.9820198!4d135.7590432!16s%2Fg%2F11jpy2bl70!19sChIJS_pHR6UJAWARr7i0QYBxHdg?authuser=0&hl=es-419&rclk=1",
+      "desc": "​京都自転車処銀輪",
+      "lat": 34.9820198,
+      "lng": 135.7590432,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Nishimura+Ringyo/data=!4m7!3m6!1s0x6001062777add2bb:0x385abcf80297c7c8!8m2!3d35.0011846!4d135.7513906!16s%2Fg%2F1tgpb54p!19sChIJu9KtdycGAWARyMeXAvi8Wjg?authuser=0&hl=es-419&rclk=1",
+      "desc": "Nishimura Ringyo",
+      "lat": 35.0011846,
+      "lng": 135.7513906,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/KON%27S+CYCLE+%E5%B8%B8%E7%9B%A4%E5%BA%97%28%E3%82%B3%E3%83%B3%E3%82%BA%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%29/data=!4m7!3m6!1s0x60010777aa117ee5:0x43619b27d50e09da!8m2!3d35.0189273!4d135.7118669!16s%2Fg%2F11b7s_wbql!19sChIJ5X4RqncHAWAR2gkO1SebYUM?authuser=0&hl=es-419&rclk=1",
+      "desc": "KON'S CYCLE 常盤店(コンズサイクル)",
+      "lat": 35.0189273,
+      "lng": 135.7118669,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Kyoto+Gojo+Cycle/data=!4m7!3m6!1s0x600108b9683eb73d:0x798ec2207e8f4dad!8m2!3d34.9961023!4d135.7669509!16s%2Fg%2F12hq0lqsw!19sChIJPbc-aLkIAWARrU2PfiDCjnk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kyoto Gojo Cycle",
+      "lat": 34.9961023,
+      "lng": 135.7669509,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Shimizu+Bicycle+-+Kinugasa/data=!4m7!3m6!1s0x6001079aad38c917:0xc21963351c9fe74!8m2!3d35.0260224!4d135.723164!16s%2Fg%2F11gh2q347m!19sChIJF8k4rZoHAWARdP7JUTOWIQw?authuser=0&hl=es-419&rclk=1",
+      "desc": "Shimizu Bicycle - Kinugasa",
+      "lat": 35.0260224,
+      "lng": 135.723164,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Eirin+Gojo+Higashinotoin/data=!4m7!3m6!1s0x60010957cbd681d1:0xecbb7718963f388d!8m2!3d34.9964264!4d135.7612517!16s%2Fg%2F11qp2mj6mf!19sChIJ0YHWy1cJAWARjTg_lhh3u-w?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Eirin Gojo Higashinotoin",
+      "lat": 34.9964264,
+      "lng": 135.7612517,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Shimizujitensha+Tokiwaten/data=!4m7!3m6!1s0x6001077ae246e96b:0xc5285e4217fa10a2!8m2!3d35.0205143!4d135.7063283!16s%2Fg%2F1x6q1nm5!19sChIJa-lG4noHAWARohD6F0JeKMU?authuser=0&hl=es-419&rclk=1",
+      "desc": "Shimizujitensha Tokiwaten",
+      "lat": 35.0205143,
+      "lng": 135.7063283,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cons+Cycle+Katsuragawakaido/data=!4m7!3m6!1s0x600107ddb1a92ebf:0x82610812a8de0f27!8m2!3d34.9802025!4d135.7096196!16s%2Fg%2F11rgsxjxq8!19sChIJvy6psd0HAWARJw_eqBIIYYI?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cons Cycle Katsuragawakaido",
+      "lat": 34.9802025,
+      "lng": 135.7096196,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Garden/data=!4m7!3m6!1s0x600108b8749db385:0xebf71a7ad4326c92!8m2!3d34.9955484!4d135.7706107!16s%2Fg%2F1wv_s396!19sChIJhbOddLgIAWARkmwy1Hoa9-s?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Garden",
+      "lat": 34.9955484,
+      "lng": 135.7706107,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Kon%E2%80%99s+Cycle/data=!4m7!3m6!1s0x6001089147a5e8f1:0xcb93ea7783d9907d!8m2!3d35.0060606!4d135.765234!16s%2Fg%2F11b75jtl1m!19sChIJ8eilR5EIAWARfZDZg3fqk8s?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kon’s Cycle",
+      "lat": 35.0060606,
+      "lng": 135.765234,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Nishimura+Sh%C5%8Dkai+Company/data=!4m7!3m6!1s0x6001060fd69aad81:0xfd81432cc793df4a!8m2!3d34.9805686!4d135.7405685!16s%2Fg%2F1tcvp4yt!19sChIJga2a1g8GAWARSt-TxyxDgf0?authuser=0&hl=es-419&rclk=1",
+      "desc": "Nishimura Shōkai Company",
+      "lat": 34.9805686,
+      "lng": 135.7405685,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/1-jyo+Ultimate+Factory+Kyoto+West/data=!4m7!3m6!1s0x6001071cf5815163:0xdabc536a1ac4a95a!8m2!3d34.9930778!4d135.7024078!16s%2Fg%2F11cs1f15k4!19sChIJY1GB9RwHAWARWqnEGmpTvNo?authuser=0&hl=es-419&rclk=1",
+      "desc": "1-jyo Ultimate Factory Kyoto West",
+      "lat": 34.9930778,
+      "lng": 135.7024078,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Aeon+Bike+Rakunan/data=!4m7!3m6!1s0x6001060c51f84119:0x4c44815101a8de2!8m2!3d34.976201!4d135.7360721!16s%2Fg%2F11gsn3kwv2!19sChIJGUH4UQwGAWAR4o0aEBVIxAQ?authuser=0&hl=es-419&rclk=1",
+      "desc": "Aeon Bike Rakunan",
+      "lat": 34.976201,
+      "lng": 135.7360721,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Katsuyama/data=!4m7!3m6!1s0x6001087c1d9ef087:0xee17a0af92022dde!8m2!3d35.018606!4d135.7569031!16s%2Fg%2F11cffbyv2!19sChIJh_CeHXwIAWAR3i0Ckq-gF-4?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Katsuyama",
+      "lat": 35.018606,
+      "lng": 135.7569031,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Kon%27s+Cycle+Oike/data=!4m7!3m6!1s0x6001088fb0e4817d:0xd859b5c3a5743d7a!8m2!3d35.0104722!4d135.7634881!16s%2Fg%2F11cnbqltjz!19sChIJfYHksI8IAWARej10pcO1Wdg?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kon's Cycle Oike",
+      "lat": 35.0104722,
+      "lng": 135.7634881,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%87%BA%E5%BC%B5%E4%BF%AE%E7%90%86%E5%B0%82%E9%96%80%E5%BA%97HITECH+CYCLES+%E3%83%8F%E3%82%A4%E3%83%86%E3%83%83%E3%82%AF%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%82%BA%E3%80%90%E8%A6%81%E4%BA%88%E7%B4%84%E3%80%91/data=!4m7!3m6!1s0x4fbfb259c23cb9e9:0xdc6bd72e9129c704!8m2!3d34.9802282!4d135.776414!16s%2Fg%2F11txpfnpgc!19sChIJ6bk8wlmyv08RBMcpkS7Xa9w?authuser=0&hl=es-419&rclk=1",
+      "desc": "自転車出張修理専門店HITECH CYCLES ハイテックサイクルズ【要予約】",
+      "lat": 34.9802282,
+      "lng": 135.776414,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Shibata+Motorcycle/data=!4m7!3m6!1s0x600106011a98840d:0xcae5760e72a2d9e5!8m2!3d34.9784732!4d135.7491!16s%2Fg%2F1vv2s43w!19sChIJDYSYGgEGAWAR5dmicg525co?authuser=0&hl=es-419&rclk=1",
+      "desc": "Shibata Motorcycle",
+      "lat": 34.9784732,
+      "lng": 135.7491,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/J-Cycle/data=!4m7!3m6!1s0x600108981a0a4acf:0x838ff450162e26a3!8m2!3d34.998782!4d135.7580353!16s%2Fg%2F1v41_c39!19sChIJz0oKGpgIAWARoyYuFlD0j4M?authuser=0&hl=es-419&rclk=1",
+      "desc": "J-Cycle",
+      "lat": 34.998782,
+      "lng": 135.7580353,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/bol.motor%26cycle/data=!4m7!3m6!1s0x600107bc42d05773:0xf86983a8dd78e55f!8m2!3d35.0074367!4d135.7582525!16s%2Fg%2F1tgxtflz!19sChIJc1fQQrwHAWARX-V43aiDafg?authuser=0&hl=es-419&rclk=1",
+      "desc": "bol.motor&cycle",
+      "lat": 35.0074367,
+      "lng": 135.7582525,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/tabi+to+COG+KYOTO/data=!4m7!3m6!1s0x6001099cf6ec8797:0xdb1dae32d853eba4!8m2!3d35.0074366!4d135.7611822!16s%2Fg%2F11jm_glbkk!19sChIJl4fs9pwJAWARpOtT2DKuHds?authuser=0&hl=es-419&rclk=1",
+      "desc": "tabi to COG KYOTO",
+      "lat": 35.0074366,
+      "lng": 135.7611822,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Saikurudorimufushimiten/data=!4m7!3m6!1s0x60010f65292eaaab:0x6bc96398a2655984!8m2!3d34.9542099!4d135.7594897!16s%2Fg%2F11byydjgk8!19sChIJq6ouKWUPAWARhFllophjyWs?authuser=0&hl=es-419&rclk=1",
+      "desc": "Saikurudorimufushimiten",
+      "lat": 34.9542099,
+      "lng": 135.7594897,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/la+bicyclette+Shimizu+%E6%B8%85%E6%B0%B4%E8%87%AA%E8%BB%A2%E8%BB%8A+%E8%8A%B1%E5%9C%92%E5%BA%97/data=!4m7!3m6!1s0x6001079969926fd5:0x9706f6f4f4c1a796!8m2!3d35.0196114!4d135.7199028!16s%2Fg%2F1tqt9ktl!19sChIJ1W-SaZkHAWARlqfB9PT2Bpc?authuser=0&hl=es-419&rclk=1",
+      "desc": "la bicyclette Shimizu 清水自転車 花園店",
+      "lat": 35.0196114,
+      "lng": 135.7199028,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E4%B9%85%E4%BF%9D%E6%9D%91%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E6%96%B0%E8%BB%8A%E9%A4%A8/data=!4m7!3m6!1s0x6001065252dc3231:0xfa250e4371a2ee82!8m2!3d34.9953689!4d135.7213193!16s%2Fg%2F1whdj7p0!19sChIJMTLcUlIGAWARgu6icUMOJfo?authuser=0&hl=es-419&rclk=1",
+      "desc": "久保村モーター新車館",
+      "lat": 34.9953689,
+      "lng": 135.7213193,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%EF%BC%AD%EF%BD%8F%EF%BD%8B%EF%BD%95%EF%BC%92%2B%EF%BC%94/data=!4m7!3m6!1s0x600107aab985e411:0xbe643ff46f51d4d6!8m2!3d34.9964002!4d135.7151247!16s%2Fg%2F11b6dr_gnw!19sChIJEeSFuaoHAWAR1tRRb_Q_ZL4?authuser=0&hl=es-419&rclk=1",
+      "desc": "Ｍｏｋｕ２+４",
+      "lat": 34.9964002,
+      "lng": 135.7151247,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E5%A1%A9%E7%94%B0%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%BA%97/data=!4m7!3m6!1s0x600107ceadb8d64d:0xb8cbb202822f4d65!8m2!3d35.011243!4d135.7381231!16s%2Fg%2F1tfc1xwk!19sChIJTda4rc4HAWARZU0vggKyy7g?authuser=0&hl=es-419&rclk=1",
+      "desc": "塩田自転車店",
+      "lat": 35.011243,
+      "lng": 135.7381231,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Bikeshop+Most/data=!4m7!3m6!1s0x6001065bbfe01529:0xc818d62da92898c5!8m2!3d34.9857189!4d135.7201885!16s%2Fg%2F113gh4w4n!19sChIJKRXgv1sGAWARxZgoqS3WGMg?authuser=0&hl=es-419&rclk=1",
+      "desc": "Bikeshop Most",
+      "lat": 34.9857189,
+      "lng": 135.7201885,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Tapio/data=!4m7!3m6!1s0x6001099cb9c360c9:0xf82111fb4942a282!8m2!3d35.0238384!4d135.7521755!16s%2Fg%2F11spjqgwqp!19sChIJyWDDuZwJAWARgqJCSfsRIfg?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Tapio",
+      "lat": 35.0238384,
+      "lng": 135.7521755,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Nishimura/data=!4m7!3m6!1s0x6001061178bb0d87:0x612af3a79046d224!8m2!3d34.9819188!4d135.7382317!16s%2Fg%2F11fm3p13zp!19sChIJhw27eBEGAWARJNJGkKfzKmE?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Nishimura",
+      "lat": 34.9819188,
+      "lng": 135.7382317,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E5%B1%B1%E7%94%B0%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x6001062d304471cb:0xc6030db0187bbfa1!8m2!3d35.0086461!4d135.7442789!16s%2Fg%2F1v3grt4t!19sChIJy3FEMC0GAWARob97GLANA8Y?authuser=0&hl=es-419&rclk=1",
+      "desc": "山田モーター商会",
+      "lat": 35.0086461,
+      "lng": 135.7442789,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Leo+Tanimoto+Honten/data=!4m7!3m6!1s0x600107b4379bb0b7:0xd34e472022dfc6e5!8m2!3d35.0060933!4d135.73026!16s%2Fg%2F1tl7nm9b!19sChIJt7CbN7QHAWAR5cbfIiBHTtM?authuser=0&hl=es-419&rclk=1",
+      "desc": "Leo Tanimoto Honten",
+      "lat": 35.0060933,
+      "lng": 135.73026,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Orange+Bike/data=!4m7!3m6!1s0x6001078d72d04371:0xa6963e4ab27be23b!8m2!3d35.0308283!4d135.7312806!16s%2Fg%2F11b76_0prx!19sChIJcUPQco0HAWARO-J7sko-lqY?authuser=0&hl=es-419&rclk=1",
+      "desc": "Orange Bike",
+      "lat": 35.0308283,
+      "lng": 135.7312806,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/TRIPBIKE/data=!4m7!3m6!1s0x60010859218e71d7:0x27bf2ab75554c9d7!8m2!3d35.025127!4d135.7768588!16s%2Fg%2F1ydxc3n7b!19sChIJ13GOIVkIAWAR18lUVbcqvyc?authuser=0&hl=es-419&rclk=1",
+      "desc": "TRIPBIKE",
+      "lat": 35.025127,
+      "lng": 135.7768588,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%EF%BC%B5%E3%83%BC%EF%BC%A2%EF%BD%89%EF%BD%8B%EF%BD%85+%EF%BC%AB%EF%BD%99%EF%BD%8F%EF%BD%94%EF%BD%8F+%EF%BC%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A6%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AF%E4%BA%AC%E9%83%BD%EF%BC%89/data=!4m7!3m6!1s0x6001075df8b3aa91:0x905d70bf79fe78e9!8m2!3d35.0183577!4d135.7434697!16s%2Fg%2F11gdvn6klb!19sChIJkaqz-F0HAWAR6Xj-eb9wXZA?authuser=0&hl=es-419&rclk=1",
+      "desc": "ＵーＢｉｋｅ Ｋｙｏｔｏ （株式会社ユーバイク京都）",
+      "lat": 35.0183577,
+      "lng": 135.7434697,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Kita/data=!4m7!3m6!1s0x600107e873a6ab9d:0x4922782cc48b5e30!8m2!3d35.02719!4d135.742234!16s%2Fg%2F1tj9t6zt!19sChIJnaumc-gHAWARMF6LxCx4Ikk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Kita",
+      "lat": 35.02719,
+      "lng": 135.742234,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%82%A8%E3%82%A4%E3%83%AA%E3%83%B3%E6%A1%82%E5%B7%A5%E5%A0%B4%E6%9C%AC%E5%BA%97/data=!4m7!3m6!1s0x600106fbc24b8365:0x1b38ed75e535a25!8m2!3d34.9870977!4d135.7087407!16s%2Fg%2F11c43pjbb1!19sChIJZYNLwvsGAWARJVpTXteOswE?authuser=0&hl=es-419&rclk=1",
+      "desc": "サイクルショップエイリン桂工場本店",
+      "lat": 34.9870977,
+      "lng": 135.7087407,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Eirin+Marutamachi/data=!4m7!3m6!1s0x6001088b098929c3:0x595081815493caa0!8m2!3d35.0172915!4d135.7687996!16s%2Fg%2F11b7kk4jdz!19sChIJwymJCYsIAWARoMqTVIGBUFk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Eirin Marutamachi",
+      "lat": 35.0172915,
+      "lng": 135.7687996,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Gift+Umezu/data=!4m7!3m6!1s0x600107147056571b:0x4b20e82418bb1244!8m2!3d35.0034419!4d135.6996825!16s%2Fg%2F11b76tttbm!19sChIJG1dWcBQHAWARRBK7GCToIEs?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Gift Umezu",
+      "lat": 35.0034419,
+      "lng": 135.6996825,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/FridgeBicycle/data=!4m7!3m6!1s0x6001088dd0e9da29:0x5f99ca1216aa461b!8m2!3d35.01208!4d135.7666809!16s%2Fg%2F11csqjn17_!19sChIJKdrp0I0IAWARG0aqFhLKmV8?authuser=0&hl=es-419&rclk=1",
+      "desc": "FridgeBicycle",
+      "lat": 35.01208,
+      "lng": 135.7666809,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/UP+CYCLES/data=!4m7!3m6!1s0x6001073b86512f67:0x2f18ac43b3ad3c76!8m2!3d35.0321345!4d135.7273329!16s%2Fg%2F11jntv82gc!19sChIJZy9RhjsHAWARdjyts0OsGC8?authuser=0&hl=es-419&rclk=1",
+      "desc": "UP CYCLES",
+      "lat": 35.0321345,
+      "lng": 135.7273329,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%EF%BC%86%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E8%BD%8D+-Assist+%26+Cycle+Wadachi-%EF%BC%88%E4%BA%AC%E9%83%BD%E3%83%BB%E5%8C%97%E5%8C%BA%E3%83%BB%E8%87%AA%E8%BB%A2%E8%BB%8A%E4%BF%AE%E7%90%86%E3%83%BB%E9%9B%BB%E5%8B%95%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%E8%87%AA%E8%BB%A2%E8%BB%8A%EF%BC%89/data=!4m7!3m6!1s0x600107b1e65aba1f:0xfd851188915ff67d!8m2!3d35.0451667!4d135.7513797!16s%2Fg%2F11fr409d10!19sChIJH7pa5rEHAWARffZfkYgRhf0?authuser=0&hl=es-419&rclk=1",
+      "desc": "アシスト＆サイクル轍 -Assist & Cycle Wadachi-（京都・北区・自転車修理・電動アシスト自転車）",
+      "lat": 35.0451667,
+      "lng": 135.7513797,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%9F%B3%E7%94%B0%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%BA%97/data=!4m7!3m6!1s0x6001077ac5547b61:0x50f7d707a8cfe916!8m2!3d35.0195656!4d135.7053346!16s%2Fg%2F1vxw84vk!19sChIJYXtUxXoHAWARFunPqAfX91A?authuser=0&hl=es-419&rclk=1",
+      "desc": "石田自転車店",
+      "lat": 35.0195656,
+      "lng": 135.7053346,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Uchibayashi+Motorcycle/data=!4m7!3m6!1s0x600106edd16803f5:0x39b18f83768cca39!8m2!3d34.9764251!4d135.7027216!16s%2Fg%2F1tjv3dnz!19sChIJ9QNo0e0GAWAROcqMdoOPsTk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Uchibayashi Motorcycle",
+      "lat": 34.9764251,
+      "lng": 135.7027216,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Takenaka+Umezu/data=!4m7!3m6!1s0x60010712265a33e5:0x26eb90b6754134a8!8m2!3d35.0037278!4d135.703107!16s%2Fg%2F1tgb_nzw!19sChIJ5TNaJhIHAWARqDRBdbaQ6yY?authuser=0&hl=es-419&rclk=1",
+      "desc": "Takenaka Umezu",
+      "lat": 35.0037278,
+      "lng": 135.703107,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%A6%8F%E4%BA%95%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x600107c6ccc6c9c1:0x5859273e3632b114!8m2!3d35.0187306!4d135.7363156!16s%2Fg%2F11g1knm8gr!19sChIJwcnGzMYHAWARFLEyNj4nWVg?authuser=0&hl=es-419&rclk=1",
+      "desc": "福井自転車商会",
+      "lat": 35.0187306,
+      "lng": 135.7363156,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Koseki+Cycling+Center/data=!4m7!3m6!1s0x600107ee927683b5:0x346d5d850d35689!8m2!3d35.0304812!4d135.7388668!16s%2Fg%2F1yg578193!19sChIJtYN2ku4HAWARiVbTUNjVRgM?authuser=0&hl=es-419&rclk=1",
+      "desc": "Koseki Cycling Center",
+      "lat": 35.0304812,
+      "lng": 135.7388668,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%EF%BC%86%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E8%BD%8D+-Assist+%26+Cycle+Wadachi-%EF%BC%88%E4%BA%AC%E9%83%BD%E3%83%BB%E5%8C%97%E5%8C%BA%E3%83%BB%E8%87%AA%E8%BB%A2%E8%BB%8A%E4%BF%AE%E7%90%86%E3%83%BB%E9%9B%BB%E5%8B%95%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%E8%87%AA%E8%BB%A2%E8%BB%8A%EF%BC%89/data=!4m7!3m6!1s0x600107b1e65aba1f:0xfd851188915ff67d!8m2!3d35.0451667!4d135.7513797!16s%2Fg%2F11fr409d10!19sChIJH7pa5rEHAWARffZfkYgRhf0?authuser=0&hl=es-419&rclk=1",
+      "desc": "アシスト＆サイクル轍 -Assist & Cycle Wadachi-（京都・北区・自転車修理・電動アシスト自転車）",
+      "lat": 35.0451667,
+      "lng": 135.7513797,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%9F%B3%E7%94%B0%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%BA%97/data=!4m7!3m6!1s0x6001077ac5547b61:0x50f7d707a8cfe916!8m2!3d35.0195656!4d135.7053346!16s%2Fg%2F1vxw84vk!19sChIJYXtUxXoHAWARFunPqAfX91A?authuser=0&hl=es-419&rclk=1",
+      "desc": "石田自転車店",
+      "lat": 35.0195656,
+      "lng": 135.7053346,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Uchibayashi+Motorcycle/data=!4m7!3m6!1s0x600106edd16803f5:0x39b18f83768cca39!8m2!3d34.9764251!4d135.7027216!16s%2Fg%2F1tjv3dnz!19sChIJ9QNo0e0GAWAROcqMdoOPsTk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Uchibayashi Motorcycle",
+      "lat": 34.9764251,
+      "lng": 135.7027216,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Takenaka+Umezu/data=!4m7!3m6!1s0x60010712265a33e5:0x26eb90b6754134a8!8m2!3d35.0037278!4d135.703107!16s%2Fg%2F1tgb_nzw!19sChIJ5TNaJhIHAWARqDRBdbaQ6yY?authuser=0&hl=es-419&rclk=1",
+      "desc": "Takenaka Umezu",
+      "lat": 35.0037278,
+      "lng": 135.703107,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%A6%8F%E4%BA%95%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x600107c6ccc6c9c1:0x5859273e3632b114!8m2!3d35.0187306!4d135.7363156!16s%2Fg%2F11g1knm8gr!19sChIJwcnGzMYHAWARFLEyNj4nWVg?authuser=0&hl=es-419&rclk=1",
+      "desc": "福井自転車商会",
+      "lat": 35.0187306,
+      "lng": 135.7363156,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Koseki+Cycling+Center/data=!4m7!3m6!1s0x600107ee927683b5:0x346d5d850d35689!8m2!3d35.0304812!4d135.7388668!16s%2Fg%2F1yg578193!19sChIJtYN2ku4HAWARiVbTUNjVRgM?authuser=0&hl=es-419&rclk=1",
+      "desc": "Koseki Cycling Center",
+      "lat": 35.0304812,
+      "lng": 135.7388668,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%EF%BC%88%E6%A0%AA%EF%BC%89%E6%9D%BE%E4%BA%95%E4%BF%9D%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x60010885790d6719:0xc6caa9c26bbdcc9b!8m2!3d35.0099541!4d135.7611505!16s%2Fg%2F1tfgp93z!19sChIJGWcNeYUIAWARm8y9a8KpysY?authuser=0&hl=es-419&rclk=1",
+      "desc": "（株）松井保商会",
+      "lat": 35.0099541,
+      "lng": 135.7611505,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Japan+Tire+Center+Kyoto/data=!4m7!3m6!1s0x600106486bb9b331:0x5c3582cedc9b9c70!8m2!3d34.9952815!4d135.7315975!16s%2Fg%2F1w112275!19sChIJMbO5a0gGAWARcJyb3M6CNVw?authuser=0&hl=es-419&rclk=1",
+      "desc": "Japan Tire Center Kyoto",
+      "lat": 34.9952815,
+      "lng": 135.7315975,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E4%B8%B8%E6%96%B0%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A%28Kaoru%27s+Factory%29/data=!4m7!3m6!1s0x6001087c2af8aa11:0xe6a4c525bca909fb!8m2!3d35.0172592!4d135.7569693!16s%2Fg%2F11bx1s6ygd!19sChIJEar4KnwIAWAR-wmpvCXFpOY?authuser=0&hl=es-419&rclk=1",
+      "desc": "丸新自転車商会(Kaoru's Factory)",
+      "lat": 35.0172592,
+      "lng": 135.7569693,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Daiwa+Cycle/data=!4m7!3m6!1s0x600107c5c864c45d:0x1afd89b78af002a2!8m2!3d35.0299183!4d135.7509485!16s%2Fg%2F11jj7rrt0c!19sChIJXcRkyMUHAWARogLwireJ_Ro?authuser=0&hl=es-419&rclk=1",
+      "desc": "Daiwa Cycle",
+      "lat": 35.0299183,
+      "lng": 135.7509485,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Iwai+Cycle+Center/data=!4m7!3m6!1s0x600105d378a9ab87:0xe70a4f0f4759c924!8m2!3d34.9560991!4d135.7165756!16s%2Fg%2F1tvrzmch!19sChIJh6upeNMFAWARJMlZRw9PCuc?authuser=0&hl=es-419&rclk=1",
+      "desc": "Iwai Cycle Center",
+      "lat": 34.9560991,
+      "lng": 135.7165756,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E7%AB%B9%E5%86%85%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%95%86%E4%BC%9A/data=!4m7!3m6!1s0x600108f3eba0f203:0xa7a9fe03e7651325!8m2!3d35.0176766!4d135.7747681!16s%2Fg%2F1tdq5xkr!19sChIJA_Kg6_MIAWARJRNl5wP-qac?authuser=0&hl=es-419&rclk=1",
+      "desc": "竹内自転車商会",
+      "lat": 35.0176766,
+      "lng": 135.7747681,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/GNARLY+BIKES%EF%BC%88%E3%83%8A%E3%83%BC%E3%83%AA%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AF%E3%82%B9%EF%BC%89/data=!4m7!3m6!1s0x600107e650c45dab:0x505e3530e4acf913!8m2!3d35.029712!4d135.744645!16s%2Fg%2F11c51swr5_!19sChIJq13EUOYHAWARE_ms5DA1XlA?authuser=0&hl=es-419&rclk=1",
+      "desc": "GNARLY BIKES（ナーリーバイクス）",
+      "lat": 35.029712,
+      "lng": 135.744645,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+Gift+Uzumasa/data=!4m7!3m6!1s0x6001076927d6c0c1:0x27e7054f079639af!8m2!3d35.0137017!4d135.7028109!16s%2Fg%2F11fmqnhmrg!19sChIJwcDWJ2kHAWARrzmWB08F5yc?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop Gift Uzumasa",
+      "lat": 35.0137017,
+      "lng": 135.7028109,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Rent-a-Bike+Kyoto+Miyabiya/data=!4m7!3m6!1s0x600108a4e64b9277:0x21bad50ff11b4f99!8m2!3d34.9924151!4d135.7601796!16s%2Fg%2F1tfzb28s!19sChIJd5JL5qQIAWARmU8b8Q_VuiE?authuser=0&hl=es-419&rclk=1",
+      "desc": "Rent-a-Bike Kyoto Miyabiya",
+      "lat": 34.9924151,
+      "lng": 135.7601796,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Parusu+Kyoto+Kujokawaramachiten+Seibikojo/data=!4m7!3m6!1s0x60010f4db5687665:0xe4539f9866f62436!8m2!3d34.9791262!4d135.7638691!16s%2Fg%2F1td2md0z!19sChIJZXZotU0PAWARNiT2ZpifU-Q?authuser=0&hl=es-419&rclk=1",
+      "desc": "Parusu Kyoto Kujokawaramachiten Seibikojo",
+      "lat": 34.9791262,
+      "lng": 135.7638691,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Shop+K-craft/data=!4m7!3m6!1s0x60010799a43d1ed3:0x78363f1ab81a61bd!8m2!3d35.0185395!4d135.7569051!16s%2Fg%2F11cfc4n0v!19sChIJ0x49pJkHAWARvWEauBo_Nng?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Shop K-craft",
+      "lat": 35.0185395,
+      "lng": 135.7569051,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%231-jyo+Ultimate+Factory+Kyoto/data=!4m7!3m6!1s0x600108ecef093c5d:0x86fc6acddf147de0!8m2!3d35.010324!4d135.7726629!16s%2Fg%2F1tfrm72g!19sChIJXTwJ7-wIAWAR4H0U381q_IY?authuser=0&hl=es-419&rclk=1",
+      "desc": "#1-jyo Ultimate Factory Kyoto",
+      "lat": 35.010324,
+      "lng": 135.7726629,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%EF%BC%88%E6%A0%AA%EF%BC%89%E4%B8%8A%E9%87%8E%E4%BA%80%E5%95%86%E5%BA%97/data=!4m7!3m6!1s0x600108b7085da423:0xe0213a9791eb2bc0!8m2!3d34.9919438!4d135.7685817!16s%2Fg%2F1tknkbk9!19sChIJI6RdCLcIAWARwCvrkZc6IeA?authuser=0&hl=es-419&rclk=1",
+      "desc": "（株）上野亀商店",
+      "lat": 34.9919438,
+      "lng": 135.7685817,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Bike+Way/data=!4m7!3m6!1s0x600105de964285f9:0x2260c4179ae7df31!8m2!3d34.9631836!4d135.7296659!16s%2Fg%2F1vl9rcxl!19sChIJ-YVClt4FAWARMd_nmhfEYCI?authuser=0&hl=es-419&rclk=1",
+      "desc": "Bike Way",
+      "lat": 34.9631836,
+      "lng": 135.7296659,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/T%C5%8Dji+Keisha+K%C5%8Dgy%C5%8D/data=!4m7!3m6!1s0x60010601a29a0029:0xf049dc96ee264068!8m2!3d34.9795035!4d135.7501724!16s%2Fg%2F1vmr18dp!19sChIJKQCaogEGAWARaEAm7pbcSfA?authuser=0&hl=es-419&rclk=1",
+      "desc": "Tōji Keisha Kōgyō",
+      "lat": 34.9795035,
+      "lng": 135.7501724,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%83%90%E3%82%A4%E3%82%AF%E5%B7%A5%E6%88%BF%E5%B2%A9%E5%9F%8E/data=!4m7!3m6!1s0x60010623fcbdbe8b:0xd66d2999157a258!8m2!3d35.0000079!4d135.7470019!16s%2Fg%2F1vcjm4c1!19sChIJi769_CMGAWARWKJXkZnSZg0?authuser=0&hl=es-419&rclk=1",
+      "desc": "バイク工房岩城",
+      "lat": 35.0000079,
+      "lng": 135.7470019,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%E3%82%B8%E3%83%A3%E3%83%A0%E3%82%B8%E3%83%A3%E3%83%A0/data=!4m7!3m6!1s0x600107e99e8cffff:0x2c2107b0ccc372c!8m2!3d35.0264263!4d135.7388384!16s%2Fg%2F11hbc2gc49!19sChIJ__-MnukHAWARLDfMDHsQwgI?authuser=0&hl=es-419&rclk=1",
+      "desc": "サイクルビレッジジャムジャム",
+      "lat": 35.0264263,
+      "lng": 135.7388384,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E5%B1%8BNOTTON%E2%80%99nal+%E3%83%8E%E3%83%83%E3%83%88%E3%83%B3%E3%83%8A%E3%83%AB/data=!4m7!3m6!1s0x6001084dde8fbf4b:0x8984890540936388!8m2!3d35.0380891!4d135.7855624!16s%2Fg%2F11cmrrm_qz!19sChIJS7-P3k0IAWARiGOTQAWJhIk?authuser=0&hl=es-419&rclk=1",
+      "desc": "自転車屋NOTTON’nal ノットンナル",
+      "lat": 35.0380891,
+      "lng": 135.7855624,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Cycle+Base+Asahi+Katsuragawa+Store/data=!4m7!3m6!1s0x6001068358f7ad35:0xd56ab2ec249a9987!8m2!3d34.962286!4d135.7059739!16s%2Fg%2F11byclv4st!19sChIJNa33WIMGAWARh5maJOyyatU?authuser=0&hl=es-419&rclk=1",
+      "desc": "Cycle Base Asahi Katsuragawa Store",
+      "lat": 34.962286,
+      "lng": 135.7059739,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/R%27s+GARAGE/data=!4m7!3m6!1s0x6001063c69f58fb9:0x989f8cdd9e0f7e3b!8m2!3d34.9924581!4d135.7393826!16s%2Fg%2F11f3xhfb6_!19sChIJuY_1aTwGAWARO34Pnt2Mn5g?authuser=0&hl=es-419&rclk=1",
+      "desc": "R's GARAGE",
+      "lat": 34.9924581,
+      "lng": 135.7393826,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Y%27s+Road+Kyoto/data=!4m7!3m6!1s0x60010894657d61e3:0x484469dc6fdd85a!8m2!3d35.0060567!4d135.7681102!16s%2Fg%2F11c1n1bj3w!19sChIJ42F9ZZQIAWARWtj9xp1GhAQ?authuser=0&hl=es-419&rclk=1",
+      "desc": "Y's Road Kyoto",
+      "lat": 35.0060567,
+      "lng": 135.7681102,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Bicycle+Kyubei+Shimogamo+shop/data=!4m7!3m6!1s0x6001083fdb76096f:0xee5c2fb716416993!8m2!3d35.0407719!4d135.7714896!16s%2Fg%2F1tx46yr7!19sChIJbwl22z8IAWARk2lBFrcvXO4?authuser=0&hl=es-419&rclk=1",
+      "desc": "Bicycle Kyubei Shimogamo shop",
+      "lat": 35.0407719,
+      "lng": 135.7714896,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Clover+Motorcycle+Uzumasa/data=!4m7!3m6!1s0x6001070dc6ac5fef:0xf8cbaad7bd45fa17!8m2!3d35.0058385!4d135.7062345!16s%2Fg%2F11b6hvd22y!19sChIJ71-sxg0HAWARF_pFvdeqy_g?authuser=0&hl=es-419&rclk=1",
+      "desc": "Clover Motorcycle Uzumasa",
+      "lat": 35.0058385,
+      "lng": 135.7062345,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/whoo+bicycles%EF%BC%88%E3%83%95%E3%83%BC%E3%83%BB%E3%83%90%E3%82%A4%E3%82%B7%E3%82%AF%E3%83%AB%EF%BC%89/data=!4m7!3m6!1s0x6001088ed1a40001:0x1a279f7c00d6f9bb!8m2!3d35.0136089!4d135.7644193!16s%2Fg%2F11bwy4hg16!19sChIJAQCk0Y4IAWARu_nWAHyfJxo?authuser=0&hl=es-419&rclk=1",
+      "desc": "whoo bicycles（フー・バイシクル）",
+      "lat": 35.0136089,
+      "lng": 135.7644193,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Peacock+Kashihara+Shop/data=!4m7!3m6!1s0x600106c2cebb622f:0xbb5730d7fa0d2074!8m2!3d34.9767354!4d135.6937741!16s%2Fg%2F1pv5vb8nn!19sChIJL2K7zsIGAWARdCAN-tcwV7s?authuser=0&hl=es-419&rclk=1",
+      "desc": "Peacock Kashihara Shop",
+      "lat": 34.9767354,
+      "lng": 135.6937741,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Kon%27s+Cycle+Kamishichiken/data=!4m7!3m6!1s0x600107eec6205f35:0x7ed54a70c4ad8c3e!8m2!3d35.0295818!4d135.7393443!16s%2Fg%2F1vyxj9kv!19sChIJNV8gxu4HAWARPoytxHBK1X4?authuser=0&hl=es-419&rclk=1",
+      "desc": "Kon's Cycle Kamishichiken",
+      "lat": 35.0295818,
+      "lng": 135.7393443,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E5%AE%89%E6%9C%AC%E3%83%90%E3%82%A4%E3%82%AF%E3%83%97%E3%83%BC%E3%83%AB+%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB/data=!4m7!3m6!1s0x600108ec93ec4c31:0x7f9ae6de434ce64d!8m2!3d35.0095955!4d135.7725282!16s%2Fg%2F1hc72b698!19sChIJMUzsk-wIAWARTeZMQ97mmn8?authuser=0&hl=es-419&rclk=1",
+      "desc": "安本バイクプール レンタサイクル",
+      "lat": 35.0095955,
+      "lng": 135.7725282,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Eirin/data=!4m7!3m6!1s0x60010873dc0a787d:0x6956bcd24ecae3b1!8m2!3d35.0291686!4d135.7574109!16s%2Fg%2F1td69s5w!19sChIJfXgK3HMIAWARsePKTtK8Vmk?authuser=0&hl=es-419&rclk=1",
+      "desc": "Eirin",
+      "lat": 35.0291686,
+      "lng": 135.7574109,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Arms/data=!4m7!3m6!1s0x6001065982557679:0x35d0441d5171c99f!8m2!3d34.98627!4d135.7185087!16s%2Fg%2F11bw1q00j8!19sChIJeXZVglkGAWARn8lxUR1E0DU?authuser=0&hl=es-419&rclk=1",
+      "desc": "Arms",
+      "lat": 34.98627,
+      "lng": 135.7185087,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Yamaguchi+Cycle/data=!4m7!3m6!1s0x6001070da5dc557f:0x1aea727e3baf12fc!8m2!3d35.0069942!4d135.7064294!16s%2Fg%2F11hbql5qt5!19sChIJf1XcpQ0HAWAR_BKvO35y6ho?authuser=0&hl=es-419&rclk=1",
+      "desc": "Yamaguchi Cycle",
+      "lat": 35.0069942,
+      "lng": 135.7064294,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/Aiba+Cycle/data=!4m7!3m6!1s0x60010843713cba35:0xc364dda82fd55fab!8m2!3d35.0339556!4d135.7749765!16s%2Fg%2F1tgc9dnv!19sChIJNbo8cUMIAWARq1_VL6jdZMM?authuser=0&hl=es-419&rclk=1",
+      "desc": "Aiba Cycle",
+      "lat": 35.0339556,
+      "lng": 135.7749765,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/LORO+Cycleworks+Kyoto/data=!4m7!3m6!1s0x60010623fbace2cb:0x5a9421b202788644!8m2!3d35.0531194!4d135.75466!16s%2Fg%2F11bwkbcwfs!19sChIJy-Ks-yMGAWARRIZ4ArIhlFo?authuser=0&hl=es-419&rclk=1",
+      "desc": "LORO Cycleworks Kyoto",
+      "lat": 35.0531194,
+      "lng": 135.75466,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E5%A4%A9%E5%92%8C%E5%95%86%E5%BA%97/data=!4m7!3m6!1s0x60010f68d22d60a7:0x22595ecfda4b8db7!8m2!3d34.9603107!4d135.7634932!16s%2Fg%2F11f3wtwfy3!19sChIJp2At0mgPAWARt41L2s9eWSI?authuser=0&hl=es-419&rclk=1",
+      "desc": "天和商店",
+      "lat": 34.9603107,
+      "lng": 135.7634932,
+      "imageSrc": "shuuri.jpg"
+    },
+    {
+      "link": "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%A8%E5%B1%B1%E9%81%93%E5%85%B7+DELTA/data=!4m7!3m6!1s0x6001077ee7a80ed7:0x2bd57ff4471d7f1f!8m2!3d35.037499!4d135.7462278!16s%2Fg%2F11w233z5tc!19sChIJ1w6o534HAWARH38dR_R_1Ss?authuser=0&hl=es-419&rclk=1",
+      "desc": "自転車と山道具 DELTA",
+      "lat": 35.037499,
+      "lng": 135.7462278,
+      "imageSrc": "shuuri.jpg"
+    }
+   ]
