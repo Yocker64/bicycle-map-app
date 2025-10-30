@@ -1,4 +1,4 @@
-import pointerImg from '../../pictures/map-point.svg';
+import pointerImg from '../../img/map-point.svg';
 
 export function addImagesOnMap(map, imageSrc, desc, link) {
   /* eslint-disable no-undef */
@@ -7,9 +7,13 @@ export function addImagesOnMap(map, imageSrc, desc, link) {
    */
   // Used to load and display tile layers on the map
   // Most tile servers require attribution, which you can set under `Layer`
-  L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
-    attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+  L.tileLayer(
+    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+    {
+      attribution:
+        '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    },
+  ).addTo(map);
 
   // new icon
   const funny = L.icon({

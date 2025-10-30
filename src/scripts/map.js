@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sets map bounds
   MAP.setMaxBounds([
     [34.878806783147816, 135.63638914020237],
-    [35.08720985235213, 135.85607464186808]
+    [35.08720985235213, 135.85607464186808],
   ]);
 
   /*= =============================================
@@ -45,8 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
     {
       maxZoom: 18,
-      attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }
+      attribution:
+        '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    },
   );
   // cyclingLayer.addTo(MAP);
   MAP.addLayer(cyclingLayer);
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ================================================ */
   const baseMaps = {
     // 'Default': defaultLayer,
-    'Cycling': cyclingLayer,
+    Cycling: cyclingLayer,
     // 'Google Street': googleLayer,
     'Google Satellite': satelliteLayer,
   };
@@ -85,9 +86,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addMarkers(MAP);
   addPolyline(MAP);
-<<<<<<< HEAD
+  initGPS(MAP); // resets location per one second
 });
-=======
-  initGPS(MAP);//resets location per one second
-});
->>>>>>> c1c6bb852347b8b054c4d25abdefb14c46658b2e

@@ -4,7 +4,7 @@
 // will draw marker and accuracy circle
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
-    console.log("Geolocation is not supported by this browser.");
+    console.log('Geolocation is not supported by this browser.');
     return;
   }
 
@@ -20,23 +20,20 @@ export function initGPS(MAP) {
     if (marker) {
       MAP.removeLayer(marker);
     }
-    // if there is old accuracy circle, it will remove it 
+    // if there is old accuracy circle, it will remove it
     if (accuracyCircle) {
       MAP.removeLayer(accuracyCircle);
     }
 
     // new marker
-    marker = L.marker([lat, lon]).addTo(MAP)
-      .bindPopup("You are here");
+    marker = L.marker([lat, lon]).addTo(MAP).bindPopup('You are here');
 
     // new accuracy circle (dependent on accuracy)
     accuracyCircle = L.circle([lat, lon], {
-      radius: acc,     // by meter
-      stroke: false,   // no border
-      fillOpacity: 0.2 // fancy color configuration
+      radius: acc, // by meter
+      stroke: false, // no border
+      fillOpacity: 0.2, // fancy color configuration
     }).addTo(MAP);
-
-    
 
     // If u wanna see debug:
     // console.log("Lat:", lat, "Lon:", lon, "Acc:", acc, "m");
@@ -46,19 +43,19 @@ export function initGPS(MAP) {
     navigator.geolocation.getCurrentPosition(
       updatePosition,
       (err) => {
-        console.log("Geolocation error:", err);
+        console.log('Geolocation error:', err);
       },
       {
         enableHighAccuracy: true, // best GPS
         maximumAge: 0,
-        timeout: 10000
-      }
+        timeout: 10000,
+      },
     );
   }
 
   // first read
   tick();
 
-  // constantly resets 
+  // constantly resets
   setInterval(tick, 1000);
 }
