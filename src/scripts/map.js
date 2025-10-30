@@ -4,6 +4,7 @@ import '../styles/styles.css';
 import '../styles/mapstyles.css';
 import { addPolyline } from './mapUtilities/polyline';
 import { addMarkers } from './mapUtilities/points';
+import { initGPS } from './gpsRealTime';
 
 document.addEventListener('DOMContentLoaded', () => {
   // config map
@@ -20,60 +21,62 @@ document.addEventListener('DOMContentLoaded', () => {
     zoom,
   );
 
+  // Sets map bounds
+  MAP.setMaxBounds([
+    [34.878806783147816, 135.63638914020237],
+    [35.08720985235213, 135.85607464186808]
+  ]);
+
   /*= =============================================
               TILE LAYER and WMS
   ================================================ */
-  // osm layer
-  const osm = L.tileLayer(
-    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    },
-  );
-  osm.addTo(MAP);
-  MAP.addLayer(osm);
+  // defaultLayer layer
+  // const defaultLayer = L.tileLayer(
+  //   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  //   {
+  //     attribution:
+  //       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  //   },
+  // );
+  // defaultLayer.addTo(MAP);
+  // MAP.addLayer(defaultLayer);
 
-  // dark map
-  const dark = L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  const cyclingLayer = L.tileLayer(
+    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
     {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
       maxZoom: 18,
-    },
+      attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }
   );
-  // dark.addTo(map)
+  // cyclingLayer.addTo(MAP);
+  MAP.addLayer(cyclingLayer);
 
   // google street
-  const googleStreets = L.tileLayer(
-    'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-    {
-      maxZoom: 18,
-      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-    },
-  );
-  // googleStreets.addTo(map);
+  // const googleLayer = L.tileLayer(
+  //   'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+  //   {
+  //     maxZoom: 18,
+  //     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+  //   },
+  // );
 
   // google satellite
-  const googleSat = L.tileLayer(
+  const satelliteLayer = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
     {
       maxZoom: 18,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  googleSat.addTo(MAP);
 
   /*= =============================================
                   LAYER CONTROL
   ================================================ */
   const baseMaps = {
-    OSM: osm,
-    Dark: dark,
-    'Google Street': googleStreets,
-    'Google Satellite': googleSat,
+    // 'Default': defaultLayer,
+    'Cycling': cyclingLayer,
+    // 'Google Street': googleLayer,
+    'Google Satellite': satelliteLayer,
   };
   const overlayMaps = {};
 
@@ -82,4 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addMarkers(MAP);
   addPolyline(MAP);
+<<<<<<< HEAD
 });
+=======
+  initGPS(MAP);//resets location per one second
+});
+>>>>>>> c1c6bb852347b8b054c4d25abdefb14c46658b2e
