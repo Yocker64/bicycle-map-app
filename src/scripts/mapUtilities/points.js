@@ -52,24 +52,24 @@ export function addMarkers(map) {
   });
 
   // centering a group of markers
-  map.on('layeradd layerremove', () => {
-    // Create new empty bounds
-    const bounds = new L.LatLngBounds();
-    // Iterate the map's layers
-    map.eachLayer((layer) => {
-      // Check if layer is a featuregroup
-      if (layer instanceof L.FeatureGroup) {
-        // Extend bounds with group's bounds
-        bounds.extend(layer.getBounds());
-      }
-    });
+  // map.on('layeradd layerremove', () => {
+  //   // Create new empty bounds
+  //   const bounds = new L.LatLngBounds();
+  //   // Iterate the map's layers
+  //   map.eachLayer((layer) => {
+  //     // Check if layer is a featuregroup
+  //     if (layer instanceof L.FeatureGroup) {
+  //       // Extend bounds with group's bounds
+  //       bounds.extend(layer.getBounds());
+  //     }
+  //   });
 
-    // Check if bounds are valid (could be empty)
-    if (bounds.isValid()) {
-      // Valid, fit bounds
-      map.flyToBounds(bounds, { padding: [20, 20] });
-    }
-  });
+  //   // Check if bounds are valid (could be empty)
+  //   if (bounds.isValid()) {
+  //     // Valid, fit bounds
+  //     map.flyToBounds(bounds, { padding: [20, 20] });
+  //   }
+  // });
 
   // Custom control with buttons
   L.Control.CustomButtons = L.Control.Layers.extend({
