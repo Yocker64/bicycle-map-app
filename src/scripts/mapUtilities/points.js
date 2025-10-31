@@ -1,21 +1,25 @@
 /* eslint-disable no-undef */
 import { imagesDescsLinks, DataAccess } from './pointsData';
 
+import konbiniIcon from '../../img/icons/shopping-bag.png';
+import repairIcon from '../../img/icons/wrench.png';
+
 export function addMarkers(map) {
   // Create custom colored icons
-  const createColoredIcon = (color) =>
+  const createIcon = (category) =>
     L.divIcon({
-      html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
+      // html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
+      html: `<img src="${category}" style="width: 25px; height: 25px;">`,
       className: 'custom-colored-marker',
       iconSize: [24, 24],
       iconAnchor: [10, 10],
     });
 
   // Define colors for each category
-  const categoryColors = {
+  const categoryImages = {
     stores: 'yellow',
-    konbinis: 'green',
-    repair: 'blue',
+    konbinis: konbiniIcon,
+    repair: repairIcon,
     saved: 'red',
     malls: 'purple', // fallback color for malls
   };
@@ -29,7 +33,7 @@ export function addMarkers(map) {
 
     imagesDescsLinks[category].forEach((item) => {
       const marker = L.marker([item.lat, item.lng], {
-        icon: createColoredIcon(categoryColors[category] || 'gray'),
+        icon: createIcon(categoryImages[category] || 'gray'),
       }).bindPopup(`
           <div>
             <h3>${category.toUpperCase()}</h3>
@@ -38,7 +42,7 @@ export function addMarkers(map) {
             ${item.link ? `<a href="${item.link}" target="_blank">More info</a>` : ''}
             <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
           </div>
-        `);
+        `).addTo(map);
 
       featureGroups[category].addLayer(marker);
     });
@@ -51,24 +55,24 @@ export function addMarkers(map) {
   });
 
   // centering a group of markers
-  map.on('layeradd layerremove', () => {
-    // Create new empty bounds
-    const bounds = new L.LatLngBounds();
-    // Iterate the map's layers
-    map.eachLayer((layer) => {
-      // Check if layer is a featuregroup
-      if (layer instanceof L.FeatureGroup) {
-        // Extend bounds with group's bounds
-        bounds.extend(layer.getBounds());
-      }
-    });
+  // map.on('layeradd layerremove', () => {
+  //   // Create new empty bounds
+  //   const bounds = new L.LatLngBounds();
+  //   // Iterate the map's layers
+  //   map.eachLayer((layer) => {
+  //     // Check if layer is a featuregroup
+  //     if (layer instanceof L.FeatureGroup) {
+  //       // Extend bounds with group's bounds
+  //       bounds.extend(layer.getBounds());
+  //     }
+  //   });
 
-    // Check if bounds are valid (could be empty)
-    if (bounds.isValid()) {
-      // Valid, fit bounds
-      map.flyToBounds(bounds, { padding: [20, 20] });
-    }
-  });
+  //   // Check if bounds are valid (could be empty)
+  //   if (bounds.isValid()) {
+  //     // Valid, fit bounds
+  //     map.flyToBounds(bounds, { padding: [20, 20] });
+  //   }
+  // });
 
   // Custom control with buttons
   L.Control.CustomButtons = L.Control.Layers.extend({
@@ -117,7 +121,7 @@ export function addMarkers(map) {
 
   // Add layer control with custom buttons
   new L.Control.CustomButtons(null, overlayMaps, {
-    collapsed: false,
+    collapsed: true,
   }).addTo(map);
 
   // Log category statistics

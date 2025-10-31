@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // config map
   const config = {
     minZoom: 12,
-    maxZoom: 18,
+    maxZoom: 19,
+    zoomControl: false,
   };
   // magnification with which the map will start
   const zoom = 15;
