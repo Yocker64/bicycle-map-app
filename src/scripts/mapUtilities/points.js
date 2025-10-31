@@ -3,19 +3,20 @@ import { imagesDescsLinks, DataAccess } from './pointsData';
 
 export function addMarkers(map) {
   // Create custom colored icons
-  const createColoredIcon = (color) =>
+  const createIcon = (category) =>
     L.divIcon({
-      html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
+      // html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
+      html: `<img src="${category}" style="width: 25px; height: 25px;">`,
       className: 'custom-colored-marker',
       iconSize: [24, 24],
       iconAnchor: [10, 10],
     });
 
   // Define colors for each category
-  const categoryColors = {
+  const categoryImages = {
     stores: 'yellow',
-    konbinis: 'green',
-    repair: 'blue',
+    konbinis: 'https://cdn-icons-png.flaticon.com/512/6769/6769639.png',
+    repair: 'https://cdn-icons-png.flaticon.com/512/9459/9459152.png',
     saved: 'red',
     malls: 'purple', // fallback color for malls
   };
@@ -29,7 +30,7 @@ export function addMarkers(map) {
 
     imagesDescsLinks[category].forEach((item) => {
       const marker = L.marker([item.lat, item.lng], {
-        icon: createColoredIcon(categoryColors[category] || 'gray'),
+        icon: createIcon(categoryImages[category] || 'gray'),
       }).bindPopup(`
           <div>
             <h3>${category.toUpperCase()}</h3>
