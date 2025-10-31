@@ -121,7 +121,7 @@ export function addMarkers(map) {
 
   // Add layer control with custom buttons
   new L.Control.CustomButtons(null, overlayMaps, {
-    collapsed: false,
+    collapsed: true,
   }).addTo(map);
 
   // Log category statistics

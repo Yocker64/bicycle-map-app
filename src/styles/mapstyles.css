@@ -43,16 +43,14 @@ img {
     
 }
 
-.leaflet-control-layers-list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
+    padding: 0;
+    border-radius: 10px;
 }
 
 .leaflet-control-layers-base {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
 }
 
 .leaflet-control-layers-base input {
@@ -62,6 +60,19 @@ img {
 .layer-control-image {
     max-width: 50px;
     cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.leaflet-control-attribution.leaflet-control {
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+}
+
+.leaflet-control-attribution a{
+    text-decoration: none;
+    color: white;
 }
 
 img.leaflet-tile.leaflet-tile-loaded {

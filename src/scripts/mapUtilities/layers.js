@@ -28,6 +28,6 @@ export function addLayers(MAP) {
 
     L.control.layers(baseMaps, overlayMaps, {
         collapsed: false,
-        position: 'topright',
+        position: 'bottomright',
     }).addTo(MAP);
 };
