@@ -42,7 +42,7 @@ export function addMarkers(map) {
             ${item.link ? `<a href="${item.link}" target="_blank">More info</a>` : ''}
             <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
           </div>
-        `);
+        `).addTo(map);
 
       featureGroups[category].addLayer(marker);
     });

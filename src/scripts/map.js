@@ -10,7 +10,7 @@ import { initGPS } from './gpsRealTime';
 document.addEventListener('DOMContentLoaded', () => {
   // config map
   const config = {
-    minZoom: 13,
+    minZoom: 12,
     maxZoom: 19,
     zoomControl: false,
   };

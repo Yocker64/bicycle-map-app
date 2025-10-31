@@ -4,10 +4,6 @@ img {
     height: auto;
 }   
 
-/* .leaflet-popup-content-wrapper{
-    width: 200px;
-} */
-
 .btn-markers {
     margin: 5px;
     padding: 8px 12px;
@@ -43,6 +39,7 @@ img {
     
 }
 
+/* Layer control */
 .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
     padding: 0;
     border-radius: 10px;
@@ -64,6 +61,7 @@ img {
     border-radius: 10px;
 }
 
+/* Attribution */
 .leaflet-control-attribution.leaflet-control {
     background-color: black;
     color: white;
@@ -75,6 +73,7 @@ img {
     color: white;
 }
 
+/* To show borders for each map tile */
 img.leaflet-tile.leaflet-tile-loaded {
     /* border:1px solid #000000; */
 }
