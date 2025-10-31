@@ -1,6 +1,9 @@
 /* eslint-disable no-undef */
 import { imagesDescsLinks, DataAccess } from './pointsData';
 
+import konbiniIcon from '../../img/icons/shopping-bag.png';
+import repairIcon from '../../img/icons/wrench.png';
+
 export function addMarkers(map) {
   // Create custom colored icons
   const createIcon = (category) =>
@@ -15,8 +18,8 @@ export function addMarkers(map) {
   // Define colors for each category
   const categoryImages = {
     stores: 'yellow',
-    konbinis: 'https://cdn-icons-png.flaticon.com/512/6769/6769639.png',
-    repair: 'https://cdn-icons-png.flaticon.com/512/9459/9459152.png',
+    konbinis: konbiniIcon,
+    repair: repairIcon,
     saved: 'red',
     malls: 'purple', // fallback color for malls
   };
