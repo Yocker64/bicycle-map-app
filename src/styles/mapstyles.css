@@ -39,11 +39,6 @@ img {
     background: #c82333;
 }
 
-.leaflet-control-zoom {
-    position: fixed;
-    top: 89dvh;
-}
-
 .leaflet-control-layers {
     
 }
@@ -56,6 +51,17 @@ img {
 
 .leaflet-control-layers-base {
     display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.leaflet-control-layers-base input {
+    display: none;
+}
+
+.layer-control-image {
+    max-width: 50px;
+    cursor: pointer;
 }
 
 img.leaflet-tile.leaflet-tile-loaded {
