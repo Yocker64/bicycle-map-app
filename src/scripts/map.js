@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // This adds all of the lines we are gonna use for the routes and cycle lanes
   addLayers(MAP);
+  initGPS(MAP);
   addPolyline(MAP);
   addMarkers(MAP);
-  initGPS(MAP);//resets location per one second
 });

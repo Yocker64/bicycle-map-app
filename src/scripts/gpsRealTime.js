@@ -10,6 +10,10 @@ export function initGPS(MAP) {
   let accuracyCircle = null;
   let bestAcc = Infinity;           // одоогийн хамгийн сайн (бага) accuracy
 
+  var gpsIcon = L.divIcon({
+    html: `<img src="https://cdn-icons-png.flaticon.com/512/14025/14025195.png" class="gps-icon" style="width: 40px; height: 40px; transform: translate(-15px, -15px);">`,
+  })
+
   // муу fix-үүд дээр map-г үсчүүлэхгүйн тулд босго (метр)
   const RECENTER_THRESHOLD = 60;    // 60м-с муу бол төв рүү бүү зөь
 
@@ -22,7 +26,10 @@ export function initGPS(MAP) {
     if (marker) MAP.removeLayer(marker);
     if (accuracyCircle) MAP.removeLayer(accuracyCircle);
 
-    marker = L.marker([lat, lon]).addTo(MAP).bindPopup("You are here");
+    marker = L.marker(
+      [lat, lon],
+      {icon: gpsIcon}
+    ).addTo(MAP);
     accuracyCircle = L.circle([lat, lon], {
       radius: acc,      // accuracy их → том тойрог
       stroke: false,
