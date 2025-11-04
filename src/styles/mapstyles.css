@@ -4,10 +4,6 @@ img {
     height: auto;
 }   
 
-/* .leaflet-popup-content-wrapper{
-    width: 200px;
-} */
-
 .btn-markers {
     margin: 5px;
     padding: 8px 12px;
@@ -39,25 +35,45 @@ img {
     background: #c82333;
 }
 
-.leaflet-control-zoom {
-    position: fixed;
-    top: 89dvh;
-}
-
 .leaflet-control-layers {
     
 }
 
-.leaflet-control-layers-list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+/* Layer control */
+.leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
+    padding: 0;
+    border-radius: 10px;
 }
 
 .leaflet-control-layers-base {
     display: flex;
+    justify-content: space-between;
 }
 
+.leaflet-control-layers-base input {
+    display: none;
+}
+
+.layer-control-image {
+    max-width: 50px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* Attribution */
+.leaflet-control-attribution.leaflet-control {
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+}
+
+.leaflet-control-attribution a{
+    text-decoration: none;
+    color: white;
+}
+
+/* To show borders for each map tile */
 img.leaflet-tile.leaflet-tile-loaded {
-    border:1px solid #000000;
+    /* border:1px solid #000000; */
 }

@@ -5,22 +5,23 @@ let polylineLayer = null;
 
 export function addPolyline(map) {
   const lines = [
-    [getLine('keinawa')],
-    [getLine('nanajo1')],
-    [getLine('gojo1')],
+    [getLine('mapLimit')],
+    // [getLine('keinawa')],
+    // [getLine('nanajo1')],
+    // [getLine('gojo1')],
   ];
 
   // Create polyline layer
   polylineLayer = L.polyline(lines, {
     color: 'red',
-    opacity: 0.7,
-    weight: 5,
+    opacity: 1,
+    weight: 10,
     lineCap: 'round',
     lineJoin: 'round',
   }).bindPopup('Route Path');
 
   // Add polyline to map by default
-  // polylineLayer.addTo(map);
+  polylineLayer.addTo(map);
 
   // Create and add control buttons
 }
