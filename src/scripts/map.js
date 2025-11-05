@@ -2,6 +2,8 @@ import '../styles/fontsAndReset.css';
 import '../styles/styles.css';
 import '../styles/mapstyles.css';
 
+import { northLimit, southLimit, eastLimit, westLimit } from './mapUtilities/mapData';
+
 import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
@@ -25,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Sets map bounds
   MAP.setMaxBounds([
-    [34.878806783147816, 135.63638914020237],
-    [35.08720985235213, 135.85607464186808],
+    [northLimit, eastLimit],
+    [southLimit, westLimit],
   ]);
 
   // This adds all of the lines we are gonna use for the routes and cycle lanes

@@ -1,10 +1,12 @@
+import { northLimit, southLimit, eastLimit, westLimit } from './mapData';
+
 const lines = {
   mapLimit: [
-    [34.878806783147816, 135.63638914020237],
-    [34.878806783147816, 135.85607464186808],
-    [35.08720985235213, 135.85607464186808],
-    [35.08720985235213, 135.63638914020237],
-    [34.878806783147816, 135.63638914020237],
+    [northLimit, westLimit],
+    [northLimit, eastLimit],
+    [southLimit, eastLimit],
+    [southLimit, westLimit],
+    [northLimit, westLimit]
   ],
   keinawa: [
     [35.011886285, 135.680273345],
