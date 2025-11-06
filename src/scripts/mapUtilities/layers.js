@@ -35,4 +35,5 @@ export function addLayers(MAP) {
       position: 'bottomright',
     })
     .addTo(MAP);
+
 }
