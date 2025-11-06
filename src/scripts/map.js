@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     minZoom: 12,
     maxZoom: 19,
     zoomControl: false,
+    zoomSnap: 0.5,
   };
 
   // calling map

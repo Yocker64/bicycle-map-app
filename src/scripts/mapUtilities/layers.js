@@ -10,7 +10,7 @@ export function addLayers(MAP) {
   // );
   var OpenStreetMap_CAT = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
     maxZoom: 25,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     detectRetina: true,
   });
 

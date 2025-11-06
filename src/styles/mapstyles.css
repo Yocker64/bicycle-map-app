@@ -35,6 +35,15 @@ img {
     background: #c82333;
 }
 
+/* Layers */
+.bike-lanes-layer img {
+    /* filter: saturate(8); */
+}
+
+/* img.leaflet-tile.leaflet-tile-loaded {
+    border:1px solid #000000;
+} */
+
 /* Layer control */
 .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
     padding: 0;
@@ -57,7 +66,7 @@ img {
     border-radius: 10px;
 }
 
-/* Points in the map */
+/* Points on the map */
 .gps-icon {
     z-index: 100000000 !important;
 }
@@ -92,8 +101,3 @@ img {
     text-decoration: none;
     color: white;
 }
-
-/* To show borders for each map tile */
-/* img.leaflet-tile.leaflet-tile-loaded {
-    border:1px solid #000000;
-} */
