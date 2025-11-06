@@ -1,3 +1,5 @@
+import gpsImg from '../img/icons/gps.png';
+
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
     console.log("Geolocation is not supported by this browser.");
@@ -12,7 +14,8 @@ export function initGPS(MAP) {
   let lon;
 
   var gpsIcon = L.divIcon({
-    html: `<img src="https://cdn-icons-png.flaticon.com/512/14025/14025195.png" class="gps-icon" style="width: 40px; height: 40px; transform: translate(-15px, -15px);">`,
+    html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white; transform: translate(-15px, -15px);">`,
+    className: 'gps-icon',
   })
 
   const RECENTER_THRESHOLD = 60;

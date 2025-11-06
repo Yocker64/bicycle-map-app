@@ -58,11 +58,11 @@ img {
 }
 
 /* Points in the map */
-.leaflet-marker-icon:has(.gps-icon) {
+.gps-icon {
     z-index: 100000000 !important;
 }
 
-.gps-icon {
+.gps-icon img {
     border-radius: 100%;
     animation: border-pulse 2s infinite;
 }
