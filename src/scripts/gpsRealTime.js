@@ -8,6 +8,9 @@ export function initGPS(MAP) {
   let accuracyCircle = null;
   let bestAcc = Infinity;
 
+  let lat;
+  let lon;
+
   var gpsIcon = L.divIcon({
     html: `<img src="https://cdn-icons-png.flaticon.com/512/14025/14025195.png" class="gps-icon" style="width: 40px; height: 40px; transform: translate(-15px, -15px);">`,
   })
@@ -15,8 +18,8 @@ export function initGPS(MAP) {
   const RECENTER_THRESHOLD = 60;
 
   function update(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
     const acc = position.coords.accuracy || 9999;
 
     if (marker) MAP.removeLayer(marker);
@@ -54,16 +57,16 @@ export function initGPS(MAP) {
 
     onAdd: function (MAP) {
       const btn = L.DomUtil.create("button");
-      btn.title = "GPS";
-      btn.textContent = "GPS";
-      btn.className = "gps";
+      btn.title = "gps-button";
+      btn.textContent = "";
+      btn.className = "gps-button";
       btn.setAttribute(
         "style",
-        "background-color: transparent; width: 30px; height: 30px; border: none; display: flex; cursor: pointer; justify-content: center; font-size: 2rem;"
+        "background-color: white; width: 50px; height: 50px; border: none; display: flex; cursor: pointer; justify-content: center; font-size: 2rem;"
       );
 
       btn.onclick = function () {
-        
+        MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
       };
       return btn;
     },
