@@ -35,10 +35,6 @@ img {
     background: #c82333;
 }
 
-.leaflet-control-layers {
-    
-}
-
 /* Layer control */
 .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
     padding: 0;
@@ -61,6 +57,11 @@ img {
     border-radius: 10px;
 }
 
+/* Points in the map */
+.leaflet-marker-icon:has(.gps-icon) {
+    z-index: 100000000 !important;
+}
+
 /* Attribution */
 .leaflet-control-attribution.leaflet-control {
     background-color: black;
@@ -74,6 +75,6 @@ img {
 }
 
 /* To show borders for each map tile */
-img.leaflet-tile.leaflet-tile-loaded {
-    /* border:1px solid #000000; */
-}
+/* img.leaflet-tile.leaflet-tile-loaded {
+    border:1px solid #000000;
+} */
