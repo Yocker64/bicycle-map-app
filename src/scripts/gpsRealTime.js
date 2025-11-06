@@ -18,6 +18,25 @@ export function initGPS(MAP) {
     className: 'gps-icon',
   })
 
+  const gpsControl = L.Control.extend({
+    options: {
+      position: "bottomright",
+    },
+    onAdd: function (MAP) {
+      const btn = L.DomUtil.create("div");
+      btn.title = "gps-button";
+      btn.className = "gps-button";
+
+      btn.onclick = function () {
+        MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+      };
+      return btn;
+    },
+  });
+
+  MAP.addControl(new gpsControl());
+
+  // gps shit i dont understand
   const RECENTER_THRESHOLD = 60;
 
   function update(position) {
@@ -52,28 +71,4 @@ export function initGPS(MAP) {
       timeout: 20000
     }
   );
-
-  const customControl = L.Control.extend({
-    options: {
-      position: "bottomleft",
-    },
-
-    onAdd: function (MAP) {
-      const btn = L.DomUtil.create("button");
-      btn.title = "gps-button";
-      btn.textContent = "";
-      btn.className = "gps-button";
-      btn.setAttribute(
-        "style",
-        "background-color: white; width: 50px; height: 50px; border: none; display: flex; cursor: pointer; justify-content: center; font-size: 2rem;"
-      );
-
-      btn.onclick = function () {
-        MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
-      };
-      return btn;
-    },
-  });
-
-  MAP.addControl(new customControl());
 }

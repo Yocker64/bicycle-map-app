@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --light-blue: #0083c0;
   --lighter-blue: #2ba4dc;
+  --light-purple: #540ca1;
   --dark-blue: #4f46e5;
   --dark-purple: #300262;
   --red: #EA5B6F;
@@ -130,7 +131,6 @@ main {
   position: absolute;
   height: 90%;
   width: 100%;
-  /* mask-image: linear-gradient(0.25turn, rgba(255, 255, 255, 0), var(--yellow) 20%, var(--yellow) 80%, rgba(255, 255, 255, 0)); */
 }
 
 .background-media video {
@@ -142,8 +142,6 @@ main {
 }
 
 .get-started-container {
-  /* background-color: var(--yellow); */
-  /* opacity: 0.5; */
   z-index: 1;
   border-radius: 30px;
   padding: 60px 60px;
@@ -154,7 +152,6 @@ main {
   font-size: 3rem;
   font-weight: bolder;
   margin-bottom: 1rem;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .get-started-container h1 em {
@@ -169,14 +166,12 @@ main {
   font-size: 1.1rem;
   line-height: 1.6;
   color: white;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 .get-started-container button {
   color: white;
   font-weight: bolder;
   background-color: var(--red);
-  /* border: 1px solid black; */
   border: 0;
   border-radius: 100px;
   padding: 10px 30px;
