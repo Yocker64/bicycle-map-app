@@ -13,9 +13,13 @@ export function initGPS(MAP) {
   let lat;
   let lon;
 
+  let gpsLoadedOnce = false;
+
   var gpsIcon = L.divIcon({
-    html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white; transform: translate(-15px, -15px);">`,
+    html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white;">`,
     className: 'gps-icon',
+    iconSize: [24, 24],
+    iconAnchor: [10, 10],
   })
 
   const gpsControl = L.Control.extend({
@@ -59,6 +63,12 @@ export function initGPS(MAP) {
 
     if (acc <= RECENTER_THRESHOLD || acc < bestAcc) {
       bestAcc = Math.min(bestAcc, acc);
+    }
+
+    // Sets map view to current location if the gps loads for the first time
+    if (gpsLoadedOnce === false && lat != null) {
+      MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+      gpsLoadedOnce = true;
     }
   }
 

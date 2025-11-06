@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   font-family: var(--system-ui);
+  background-color: black;
   color: white;
 }
 
@@ -75,7 +76,7 @@ html,
 header {
   padding: 20px 0 0;
   height: 7svh;
-  background-color: var(--dark-purple);
+  background-color: black;
 }
 
 .header-container {
@@ -111,7 +112,7 @@ header {
 /* Main container */
 
 main {
-  background: linear-gradient(to bottom, var(--dark-purple) 0%, black 30%);
+  background: linear-gradient(to bottom, black 0%, black 30%);
   display: flex;
   flex-direction: column;
   justify-content: center;
