@@ -60,6 +60,12 @@ img {
     background-image: url(https://cdn-icons-png.flaticon.com/512/10093/10093533.png);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.3s ease;
+}
+
+.gps-button.leaflet-control:hover {
+    filter: brightness(1.2);
+    transition: 0.3s ease;
 }
 
 /* Map layer change controls */
@@ -93,6 +99,11 @@ img {
 .layer-control-image {
     max-width: 60px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.layer-control-image:hover {
+    transition: 0.3s ease;
+    opacity: 0.5;
 }
 
 /* Hiding stuff from the map layer change controls */

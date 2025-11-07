@@ -71,12 +71,18 @@ html,
     height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Header */
 
 header {
-  padding: 20px 0 0;
-  height: 7svh;
+  height: 60px;
   background-color: black;
+  display: flex;
+  align-items: flex-end;
 }
 
 .header-container {
@@ -96,7 +102,7 @@ header {
 
 .header-container nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header-container nav a {
@@ -116,16 +122,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: calc(100svh - 60px);
 }
 
 .main-container {
   position: relative;
-  min-height: 93svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; 
+  flex: 1;
 }
 
 .background-media {
