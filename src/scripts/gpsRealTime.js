@@ -14,6 +14,7 @@ export function initGPS(MAP) {
   let lon;
 
   let gpsLoadedOnce = false;
+  let followGps = false;
 
   var gpsIcon = L.divIcon({
     html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white;">`,
@@ -32,7 +33,15 @@ export function initGPS(MAP) {
       btn.className = "gps-button";
 
       btn.onclick = function () {
-        MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+        if (followGps === true) {
+          followGps = false;
+          btn.className = "gps-button leaflet-control inactive";
+        } else {
+          followGps = true;
+          MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+          btn.className = "gps-button leaflet-control active";
+        }
+        console.log(followGps);
       };
       return btn;
     },
@@ -66,7 +75,7 @@ export function initGPS(MAP) {
     }
 
     // Sets map view to current location if the gps loads for the first time
-    if (gpsLoadedOnce === false && lat != null) {
+    if ((gpsLoadedOnce === false && lat != null) || followGps === true) {
       MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
       gpsLoadedOnce = true;
     }

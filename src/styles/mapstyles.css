@@ -52,8 +52,8 @@ img {
     margin: 0;
     width: 55px;
     height: 55px;
-    box-shadow: inset 0 0 0 3px white;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
     align-self: center;
     border-radius: 50%;
     cursor: pointer;
@@ -63,7 +63,13 @@ img {
     transition: 0.3s ease;
 }
 
-.gps-button.leaflet-control:hover {
+.gps-button.leaflet-control.active {
+    filter: brightness(1.2);
+    transition: 0.3s ease;
+    animation: border-pulse 2s infinite;
+}
+
+.gps-button.leaflet-control.inactive:hover {
     filter: brightness(1.2);
     transition: 0.3s ease;
 }
