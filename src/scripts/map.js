@@ -8,12 +8,14 @@ import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
 import { initGPS } from './gpsRealTime';
+// import { createElement } from 'react';
 
 document.addEventListener('DOMContentLoaded', () => {
   const config = {
-    minZoom: 12,
+    minZoom: 13,
     maxZoom: 19,
     zoomControl: false,
+    zoomSnap: 0.5,
   };
 
   // calling map

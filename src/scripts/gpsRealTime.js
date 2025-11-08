@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+import gpsImg from '../img/icons/gps.png';
 
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
@@ -8,21 +8,55 @@ export function initGPS(MAP) {
 
   let marker = null;
   let accuracyCircle = null;
-  let bestAcc = Infinity;           // одоогийн хамгийн сайн (бага) accuracy
+  let bestAcc = Infinity;
+
+  let lat;
+  let lon;
+
+  let gpsLoadedOnce = false;
+  let followGps = false;
 
   var gpsIcon = L.divIcon({
-    html: `<img src="https://cdn-icons-png.flaticon.com/512/14025/14025195.png" class="gps-icon" style="width: 40px; height: 40px; transform: translate(-15px, -15px);">`,
+    html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white;">`,
+    className: 'gps-icon',
+    iconSize: [24, 24],
+    iconAnchor: [10, 10],
   })
 
-  // муу fix-үүд дээр map-г үсчүүлэхгүйн тулд босго (метр)
-  const RECENTER_THRESHOLD = 60;    // 60м-с муу бол төв рүү бүү зөь
+  const gpsControl = L.Control.extend({
+    options: {
+      position: "bottomright",
+    },
+    onAdd: function (MAP) {
+      const btn = L.DomUtil.create("div");
+      btn.title = "gps-button";
+      btn.className = "gps-button";
+
+      btn.onclick = function () {
+        if (followGps === true) {
+          followGps = false;
+          btn.className = "gps-button leaflet-control inactive";
+        } else {
+          followGps = true;
+          MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+          btn.className = "gps-button leaflet-control active";
+        }
+        console.log(followGps);
+      };
+      return btn;
+    },
+  });
+
+  MAP.addControl(new gpsControl());
+
+  // gps shit i dont understand
+  const RECENTER_THRESHOLD = 60;
 
   function update(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
     const acc = position.coords.accuracy || 9999;
 
-    // marker/circle шинэчлэх
     if (marker) MAP.removeLayer(marker);
     if (accuracyCircle) MAP.removeLayer(accuracyCircle);
 
@@ -31,23 +65,22 @@ export function initGPS(MAP) {
       {icon: gpsIcon}
     ).addTo(MAP);
     accuracyCircle = L.circle([lat, lon], {
-      radius: acc,      // accuracy их → том тойрог
+      radius: acc,
       stroke: false,
       fillOpacity: 0.2
     }).addTo(MAP);
 
-    // зөвхөн харьцангуй сайн үед л төвлөрүүлье
-    // 1) acc босгоос сайн байвал
-    // 2) эсвэл өмнөх bestAcc-аа сайжруулсан бол
     if (acc <= RECENTER_THRESHOLD || acc < bestAcc) {
-      MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
       bestAcc = Math.min(bestAcc, acc);
     }
 
-    // console.log(`lat:${lat} lon:${lon} acc:${acc}m`);
+    // Sets map view to current location if the gps loads for the first time
+    if ((gpsLoadedOnce === false && lat != null) || followGps === true) {
+      MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+      gpsLoadedOnce = true;
+    }
   }
 
-  // watchPosition: илүү тогтвортой, хурдан шинэчлэлт
   const watchId = navigator.geolocation.watchPosition(
     update,
     (err) => console.log("Geolocation error:", err),
@@ -57,7 +90,4 @@ export function initGPS(MAP) {
       timeout: 20000
     }
   );
-
-  // (заавал биш) хэрэв дараа нь зогсоох хэрэг гарвал:
-  // return () => navigator.geolocation.clearWatch(watchId);
 }

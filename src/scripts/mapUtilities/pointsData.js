@@ -93,13 +93,6 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/Seven+Bank+ATM/data=!4m7!3m6!1s0x6001079a07804ce1:0xc2e3d3e12dd5c7d3!8m2!3d34.998386!4d135.731746!16s%2Fg%2F11jlhlwrzj!19sChIJ4UyAB5oHAWAR08fVLeHT48I?authuser=0&hl=es-419&rclk=1',
-      desc: 'Seven Bank ATM',
-      lat: 34.998386,
-      lng: 135.731746,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Ministop/data=!4m7!3m6!1s0x6001063c0cb8b611:0xe9ad3cd961ffa6e6!8m2!3d34.9930073!4d135.7390381!16s%2Fg%2F1x6q1nlh!19sChIJEba4DDwGAWAR5qb_Ydk8rek?authuser=0&hl=es-419&rclk=1',
       desc: 'Ministop',
       lat: 34.9930073,
@@ -177,20 +170,6 @@ export const imagesDescsLinks = {
       imageSrc: lawson,
     },
     {
-      link: 'https://www.google.com/maps/place/Kyoto+Chuo+Shinkin+Bank/data=!4m7!3m6!1s0x6001064840229a0d:0x5ae6b865649cf721!8m2!3d34.9956684!4d135.7318621!16s%2Fg%2F1td0yc8c!19sChIJDZoiQEgGAWARIfecZGW45lo?authuser=0&hl=es-419&rclk=1',
-      desc: 'Kyoto Chuo Shinkin Bank',
-      lat: 34.9956684,
-      lng: 135.7318621,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/E-net+ATM/data=!4m7!3m6!1s0x600107393809a04b:0x6e8861f1d1aae7fd!8m2!3d34.9973214!4d135.7351021!16s%2Fg%2F11b5pm1cwq!19sChIJS6AJODkHAWAR_eeq0fFhiG4?authuser=0&hl=es-419&rclk=1',
-      desc: 'E-net ATM',
-      lat: 34.9973214,
-      lng: 135.7351021,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/7-Eleven/data=!4m7!3m6!1s0x600106538ec74719:0xd51732f484e7c065!8m2!3d34.9946527!4d135.71942!16s%2Fg%2F11c1p4fy91!19sChIJGUfHjlMGAWARZcDnhPQyF9U?authuser=0&hl=es-419&rclk=1',
       desc: '7-Eleven',
       lat: 34.9946527,
@@ -226,20 +205,6 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/%E9%8A%80%E8%A1%8CATM+%7C+%E3%82%A4%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88+%E3%83%A9%E3%82%A4%E3%83%95%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2%E8%A5%BF%E5%A4%A7%E8%B7%AF%E8%8A%B1%E5%B1%8B%E7%94%BA+%E5%85%B1%E5%90%8C%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x600107077fada861:0x7209843f01224725!8m2!3d34.992835!4d135.732595!16s%2Fg%2F11j6fl3kf4!19sChIJYaitfwcHAWARJUciAT-ECXI?authuser=0&hl=es-419&rclk=1',
-      desc: '銀行ATM | イーネット ライフセントラルスクエア西大路花屋町 共同出張所',
-      lat: 34.992835,
-      lng: 135.732595,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E9%8A%80%E8%A1%8CATM+%E4%BA%AC%E9%83%BD%E6%9D%B1%E4%B8%AD%E6%B0%B4%E9%83%B5%E4%BE%BF%E5%B1%80/data=!4m7!3m6!1s0x6001064813264ac7:0x2909fbaa03625ab8!8m2!3d34.9952849!4d135.7320065!16s%2Fg%2F11ld8dgbxx!19sChIJx0omE0gGAWARuFpiA6r7CSk?authuser=0&hl=es-419&rclk=1',
-      desc: 'ゆうちょ銀行ATM 京都東中水郵便局',
-      lat: 34.9952849,
-      lng: 135.7320065,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Store+100+Shichijo-Shichihonmatsu/data=!4m7!3m6!1s0x6001063dfd042073:0x10994f789ddea361!8m2!3d34.9890073!4d135.7380269!16s%2Fg%2F1tgjl5g4!19sChIJcyAE_T0GAWARYaPenXhPmRA?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Store 100 Shichijo-Shichihonmatsu',
       lat: 34.9890073,
@@ -268,32 +233,11 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/E-net+ATM/data=!4m7!3m6!1s0x600107d0d3175fa9:0x1be5e03ac339ce5b!8m2!3d34.992482!4d135.731416!16s%2Fg%2F11j6fkrwjt!19sChIJqV8X09AHAWARW845wzrg5Rs?authuser=0&hl=es-419&rclk=1',
-      desc: 'E-net ATM',
-      lat: 34.992482,
-      lng: 135.731416,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E4%BF%A1%E7%94%A8%E9%87%91%E5%BA%ABATM/data=!4m7!3m6!1s0x6001072729131b6f:0xb00a2db86e7137f9!8m2!3d34.9998109!4d135.7344234!16s%2Fg%2F11txdvcb9g!19sChIJbxsTKScHAWAR-TdxbrgtCrA?authuser=0&hl=es-419&rclk=1',
-      desc: '京都中央信用金庫ATM',
-      lat: 34.9998109,
-      lng: 135.7344234,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/FamilyMart/data=!4m7!3m6!1s0x600106514fa9bb4d:0x9b7776ca732efa46!8m2!3d34.9925608!4d135.7194384!16s%2Fg%2F1hc3g1hrk!19sChIJTbupT1EGAWARRvouc8p2d5s?authuser=0&hl=es-419&rclk=1',
       desc: 'FamilyMart',
       lat: 34.9925608,
       lng: 135.7194384,
       imageSrc: family,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Ky%C5%8Dto+Higashinakamizu+Post+Office/data=!4m7!3m6!1s0x6001064814acbd73:0xf6ba204b7ccac9b7!8m2!3d34.9953141!4d135.7320055!16s%2Fg%2F1tg35375!19sChIJc72sFEgGAWARt8nKfEsguvY?authuser=0&hl=es-419&rclk=1',
-      desc: 'Kyōto Higashinakamizu Post Office',
-      lat: 34.9953141,
-      lng: 135.7320055,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B/data=!4m7!3m6!1s0x600107007eb1da5d:0x76cffdaa300b69be!8m2!3d34.9979943!4d135.7425101!16s%2Fg%2F11yj4xg5pl!19sChIJXdqxfgAHAWARvmkLMKr9z3Y?authuser=0&hl=es-419&rclk=1',
@@ -324,13 +268,6 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/E-net+ATM/data=!4m7!3m6!1s0x6001074ef6662871:0x7a72f4072f0f8498!8m2!3d35.002368!4d135.732212!16s%2Fg%2F11jgv_xyl1!19sChIJcShm9k4HAWARmIQPLwf0cno?authuser=0&hl=es-419&rclk=1',
-      desc: 'E-net ATM',
-      lat: 35.002368,
-      lng: 135.732212,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+-+Shij%C5%8D+%C5%8Cmiya/data=!4m7!3m6!1s0x6001062edd133ced:0x42570c83842e576b!8m2!3d35.0037935!4d135.7462559!16s%2Fg%2F1tf4dycl!19sChIJ7TwT3S4GAWARa1cuhIMMV0I?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson - Shijō Ōmiya',
       lat: 35.0037935,
@@ -352,13 +289,6 @@ export const imagesDescsLinks = {
       imageSrc: lawson,
     },
     {
-      link: 'https://www.google.com/maps/place/Seven+Bank+ATM/data=!4m7!3m6!1s0x600107ba5e02194b:0xa249054b05d03be0!8m2!3d34.9949427!4d135.7389541!16s%2Fg%2F11jjlrwxtl!19sChIJSxkCXroHAWAR4DvQBUsFSaI?authuser=0&hl=es-419&rclk=1',
-      desc: 'Seven Bank ATM',
-      lat: 34.9949427,
-      lng: 135.7389541,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/FamilyMart+Goj%C5%8D-%C5%8Cmiya/data=!4m7!3m6!1s0x6001062100cce599:0x64b4fcea1873c591!8m2!3d34.9959875!4d135.7494214!16s%2Fg%2F1v9lbn_l!19sChIJmeXMACEGAWARkcVzGOr8tGQ?authuser=0&hl=es-419&rclk=1',
       desc: 'FamilyMart Gojō-Ōmiya',
       lat: 34.9959875,
@@ -378,20 +308,6 @@ export const imagesDescsLinks = {
       lat: 34.9780279,
       lng: 135.7373462,
       imageSrc: eleven,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Seven+Bank+ATM/data=!4m7!3m6!1s0x6001072fe0c0d3e7:0xa03252c78896f6e6!8m2!3d35.002746!4d135.731355!16s%2Fg%2F11jlhmkwf1!19sChIJ59PA4C8HAWAR5vaWiMdSMqA?authuser=0&hl=es-419&rclk=1',
-      desc: 'Seven Bank ATM',
-      lat: 35.002746,
-      lng: 135.731355,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Lawson+Bank+Saiin+Kasugadori+Conjunction+Branch/data=!4m7!3m6!1s0x60010749def54b35:0xa3f1b792747bd45b!8m2!3d35.0014008!4d135.7297595!16s%2Fg%2F11h_6wvkhq!19sChIJNUv13kkHAWARW9R7dJK38aM?authuser=0&hl=es-419&rclk=1',
-      desc: 'Lawson Bank Saiin Kasugadori Conjunction Branch',
-      lat: 35.0014008,
-      lng: 135.7297595,
-      imageSrc: lawson,
     },
     {
       link: 'https://www.google.com/maps/place/Lawson+Store+100/data=!4m7!3m6!1s0x600107aecb510b27:0x7ac5af3fa2d6d901!8m2!3d35.0034633!4d135.7189619!16s%2Fg%2F1tnbl0ln!19sChIJJwtRy64HAWARAdnWoj-vxXo?authuser=0&hl=es-419&rclk=1',
@@ -422,13 +338,6 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/eNet+ATM+FamilyMart+Nishi-shichijo+Nagura/data=!4m7!3m6!1s0x60010757328b1faf:0x38f00c9cca25cff3!8m2!3d34.99081!4d135.729713!16s%2Fg%2F11j6fkwphx!19sChIJrx-LMlcHAWAR888lypwM8Dg?authuser=0&hl=es-419&rclk=1',
-      desc: 'eNet ATM FamilyMart Nishi-shichijo Nagura',
-      lat: 34.99081,
-      lng: 135.729713,
-      imageSrc: family,
-    },
-    {
       link: 'https://www.google.com/maps/place/FamilyMart+Karahashi-Rajomoncho/data=!4m7!3m6!1s0x6001060faa7d378f:0xc1a94a084d35d1c3!8m2!3d34.9784911!4d135.7404384!16s%2Fg%2F1tk6301_!19sChIJjzd9qg8GAWARw9E1TQhKqcE?authuser=0&hl=es-419&rclk=1',
       desc: 'FamilyMart Karahashi-Rajomoncho',
       lat: 34.9784911,
@@ -457,25 +366,11 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/%E3%82%BB%E3%83%96%E3%83%B3%E9%8A%80%E8%A1%8CATM/data=!4m7!3m6!1s0x600107dd747f9de9:0x66348bd1b46a7707!8m2!3d34.9947996!4d135.7247438!16s%2Fg%2F11gwmkkp4_!19sChIJ6Z1_dN0HAWARB3dqtNGLNGY?authuser=0&hl=es-419&rclk=1',
-      desc: 'セブン銀行ATM',
-      lat: 34.9947996,
-      lng: 135.7247438,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Tenjingawa+Hachijo/data=!4m7!3m6!1s0x6001065bfc213bc1:0x6c63549f63470a53!8m2!3d34.9845509!4d135.7191224!16s%2Fg%2F1tgnrkgl!19sChIJwTsh_FsGAWARUwpHY59UY2w?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Tenjingawa Hachijo',
       lat: 34.9845509,
       lng: 135.7191224,
       imageSrc: lawson,
-    },
-    {
-      link: 'https://www.google.com/maps/place/E-net+ATM/data=!4m7!3m6!1s0x600107dd6268f4dd:0x37a6466e22c5a34b!8m2!3d34.989506!4d135.733973!16s%2Fg%2F11fvj044nq!19sChIJ3fRoYt0HAWARS6PFIm5Gpjc?authuser=0&hl=es-419&rclk=1',
-      desc: 'E-net ATM',
-      lat: 34.989506,
-      lng: 135.733973,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/FamilyMart+Shij%C5%8D-%C5%8Cmiya/data=!4m7!3m6!1s0x60010628d28c9d71:0xc6a55c4f61c2acd5!8m2!3d35.0034233!4d135.7474874!16s%2Fg%2F1hm4xrmzw!19sChIJcZ2M0igGAWAR1azCYU9cpcY?authuser=0&hl=es-419&rclk=1',
@@ -506,13 +401,6 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E9%8A%80%E8%A1%8CATM+%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A0%82%E5%AF%BA%E9%83%B5%E4%BE%BF%E5%B1%80/data=!4m7!3m6!1s0x60010630c9c8fa01:0x9e7bfbe32ee2b8d0!8m2!3d34.9984549!4d135.7382096!16s%2Fg%2F11ld8hvqcc!19sChIJAfrIyTAGAWAR0LjiLuP7e54?authuser=0&hl=es-419&rclk=1',
-      desc: 'ゆうちょ銀行ATM 京都中堂寺郵便局',
-      lat: 34.9984549,
-      lng: 135.7382096,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+-+Horikawa+Takatsuji/data=!4m7!3m6!1s0x600106276705158f:0xfc43761b7e9449b2!8m2!3d35.000339!4d135.751706!16s%2Fg%2F1tj3kzpt!19sChIJjxUFZycGAWARskmUfht2Q_w?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson - Horikawa Takatsuji',
       lat: 35.000339,
@@ -527,13 +415,6 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/E-net+ATM/data=!4m7!3m6!1s0x600107bc76c30949:0xbb4c985a4f4f044b!8m2!3d35.003435!4d135.735927!16s%2Fg%2F11jgw0xnlj!19sChIJSQnDdrwHAWARSwRPT1qYTLs?authuser=0&hl=es-419&rclk=1',
-      desc: 'E-net ATM',
-      lat: 35.003435,
-      lng: 135.735927,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/7-Eleven+Kyoto-Shichijo-Omiya/data=!4m7!3m6!1s0x6001061e90ea1ccf:0x364c05fc220a1a4b!8m2!3d34.989635!4d135.748917!16s%2Fg%2F1xtf1g9_!19sChIJzxzqkB4GAWARSxoKIvwFTDY?authuser=0&hl=es-419&rclk=1',
       desc: '7-Eleven Kyoto-Shichijo-Omiya',
       lat: 34.989635,
@@ -541,39 +422,11 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/Ky%C5%8Dto+Ch%C5%AB%C5%8D+Shinkin+Bank/data=!4m7!3m6!1s0x6001064c35f30b89:0xda69e76e1221ffc6!8m2!3d34.9975016!4d135.7263054!16s%2Fg%2F11b6c9fydw!19sChIJiQvzNUwGAWARxv8hEm7nado?authuser=0&hl=es-419&rclk=1',
-      desc: 'Kyōto Chūō Shinkin Bank',
-      lat: 34.9975016,
-      lng: 135.7263054,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Lawson+Bank+Conjunction+Branch/data=!4m7!3m6!1s0x60010710f617a61f:0xfbbc36dd7c4e4bf!8m2!3d34.9940819!4d135.725928!16s%2Fg%2F11fn6yk3dd!19sChIJH6YX9hAHAWARv-TE123Duw8?authuser=0&hl=es-419&rclk=1',
-      desc: 'Lawson Bank Conjunction Branch',
-      lat: 34.9940819,
-      lng: 135.725928,
-      imageSrc: lawson,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Katsura-Asahich%C5%8D/data=!4m7!3m6!1s0x600106f6a9bd83c3:0xdd6f934cb1f3fdfc!8m2!3d34.9800601!4d135.7098012!16s%2Fg%2F11bwf7_vc_!19sChIJw4O9qfYGAWAR_P3zsUyTb90?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Katsura-Asahichō',
       lat: 34.9800601,
       lng: 135.7098012,
       imageSrc: lawson,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E9%8A%80%E8%A1%8C+%E5%A4%A7%E9%98%AA%E6%94%AF%E5%BA%97+%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%E9%98%AA%E6%80%A5%E8%A5%BF%E9%99%A2%E9%A7%85%E5%89%8D%E5%BA%97%E5%86%85%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x600107d5bd24c98b:0x3c1adbf2991b879b!8m2!3d35.0033321!4d135.7314794!16s%2Fg%2F11fnr1pf3q!19sChIJi8kkvdUHAWARm4cbmfLbGjw?authuser=0&hl=es-419&rclk=1',
-      desc: 'ゆうちょ銀行 大阪支店 ファミリーマート阪急西院駅前店内出張所',
-      lat: 35.0033321,
-      lng: 135.7314794,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E3%82%A4%E3%82%AA%E3%83%B3%E9%8A%80%E8%A1%8C+%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E4%BA%AC%E9%83%BD%E4%BA%94%E6%9D%A1%E5%BA%97%E7%AC%AC%E4%BA%8C%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x6001064c189ee0b7:0x60443d713edb90a1!8m2!3d34.9972007!4d135.7272434!16s%2Fg%2F11b62x27xq!19sChIJt-CeGEwGAWARoZDbPnE9RGA?authuser=0&hl=es-419&rclk=1',
-      desc: 'イオン銀行 イオンモール京都五条店第二出張所',
-      lat: 34.9972007,
-      lng: 135.7272434,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/FamilyMart/data=!4m7!3m6!1s0x600107ad01125b2d:0x6663b1a1443846e8!8m2!3d35.0038858!4d135.7185239!16s%2Fg%2F1tk6vtjd!19sChIJLVsSAa0HAWAR6EY4RKGxY2Y?authuser=0&hl=es-419&rclk=1',
@@ -604,20 +457,6 @@ export const imagesDescsLinks = {
       imageSrc: eleven,
     },
     {
-      link: 'https://www.google.com/maps/place/%E4%BA%AC%E9%83%BD%E9%8A%80%E8%A1%8C+%E8%A5%BF%E9%99%A2%E6%94%AF%E5%BA%97+%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E4%BA%AC%E9%83%BD%E4%BA%94%E6%9D%A1ATM%E3%82%B3%E3%83%BC%E3%83%8A%E3%83%BC/data=!4m7!3m6!1s0x6001064c36074c9d:0xdab2cadcff259c1c!8m2!3d34.9975259!4d135.7263504!16s%2Fg%2F11bw3dstsk!19sChIJnUwHNkwGAWARHJwl_9zKsto?authuser=0&hl=es-419&rclk=1',
-      desc: '京都銀行 西院支店 イオンモール京都五条ATMコーナー',
-      lat: 34.9975259,
-      lng: 135.7263504,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E4%B8%89%E8%8F%B1UFJ%E9%8A%80%E8%A1%8CATM%EF%BC%88%E8%A5%BF%E9%99%A2%E6%94%AF%E5%BA%97%EF%BC%89/data=!4m7!3m6!1s0x60010700257332fb:0x67f60750a0ef9348!8m2!3d35.0032478!4d135.7321326!16s%2Fg%2F11x_qln_sk!19sChIJ-zJzJQAHAWARSJPvoFAH9mc?authuser=0&hl=es-419&rclk=1',
-      desc: '三菱UFJ銀行ATM（西院支店）',
-      lat: 35.0032478,
-      lng: 135.7321326,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/7-Eleven+Ky%C5%8Dto-Umezu/data=!4m7!3m6!1s0x60010711e2b6865b:0x3d6847c1619e3314!8m2!3d35.0038955!4d135.7044426!16s%2Fg%2F1hc1m9yf1!19sChIJW4a24hEHAWARFDOeYcFHaD0?authuser=0&hl=es-419&rclk=1',
       desc: '7-Eleven Kyōto-Umezu',
       lat: 35.0038955,
@@ -630,13 +469,6 @@ export const imagesDescsLinks = {
       lat: 35.0024154,
       lng: 135.7524329,
       imageSrc: family,
-    },
-    {
-      link: 'https://www.google.com/maps/place/MUFG+Bank,+Nishishichijo+Branch/data=!4m7!3m6!1s0x6001064ab1555871:0x9c9ce0b584e73c72!8m2!3d35.003369!4d135.73233!16s%2Fg%2F1vlqq2r5!19sChIJcVhVsUoGAWARcjznhLXgnJw?authuser=0&hl=es-419&rclk=1',
-      desc: 'MUFG Bank, Nishishichijo Branch',
-      lat: 35.003369,
-      lng: 135.73233,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/Lawson+Kisshoin+Sannomiyacho/data=!4m7!3m6!1s0x6001066e0a1b0a3f:0x8b70d3f9a7749576!8m2!3d34.9760099!4d135.7283616!16s%2Fg%2F1tlwfjxl!19sChIJPwobCm4GAWARdpV0p_nTcIs?authuser=0&hl=es-419&rclk=1',
@@ -660,13 +492,6 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/Lawson+Bank+Saiin+West+Conjunction+Branch/data=!4m7!3m6!1s0x6001072aa6763bc9:0x34032917361d0960!8m2!3d35.0038576!4d135.7305836!16s%2Fg%2F11scnqghnr!19sChIJyTt2pioHAWARYAkdNhcpAzQ?authuser=0&hl=es-419&rclk=1',
-      desc: 'Lawson Bank Saiin West Conjunction Branch',
-      lat: 35.0038576,
-      lng: 135.7305836,
-      imageSrc: lawson,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Katsura-Tokudaiji/data=!4m7!3m6!1s0x600106fcd5b30933:0xd0bba6c8fb8fa31f!8m2!3d34.9887226!4d135.7049413!16s%2Fg%2F11bwf83j3b!19sChIJMwmz1fwGAWARH6OP-8imu9A?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Katsura-Tokudaiji',
       lat: 34.9887226,
@@ -679,13 +504,6 @@ export const imagesDescsLinks = {
       lat: 35.0011908,
       lng: 135.752449,
       imageSrc: eleven,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Lawson+Bank+Shijosai+In+Conjunction+Branch/data=!4m7!3m6!1s0x600107c2010407a5:0xbf0b4fba03db1c45!8m2!3d35.0033401!4d135.7321797!16s%2Fg%2F11fn55zp1z!19sChIJpQcEAcIHAWARRRzbA7pPC78?authuser=0&hl=es-419&rclk=1',
-      desc: 'Lawson Bank Shijosai In Conjunction Branch',
-      lat: 35.0033401,
-      lng: 135.7321797,
-      imageSrc: lawson,
     },
     {
       link: 'https://www.google.com/maps/place/FamilyMart+Oike-Yamanouchi+Store/data=!4m7!3m6!1s0x600107b1004d9c7f:0x2b16a9d85e6f7b9e!8m2!3d35.0106271!4d135.723384!16s%2Fg%2F11fxb5d5nd!19sChIJf5xNALEHAWARnntvXtipFis?authuser=0&hl=es-419&rclk=1',
@@ -702,13 +520,6 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/Seven+Bank+ATM/data=!4m7!3m6!1s0x600107758cfcbaa3:0x9b9979421da0350!8m2!3d35.003732!4d135.733261!16s%2Fg%2F11jlhls575!19sChIJo7r8jHUHAWARUAPaIZSXuQk?authuser=0&hl=es-419&rclk=1',
-      desc: 'Seven Bank ATM',
-      lat: 35.003732,
-      lng: 135.733261,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Umezu-Gotocho/data=!4m7!3m6!1s0x60010713d6bf09cd:0xa89799aadb564e48!8m2!3d35.0032568!4d135.7020575!16s%2Fg%2F1q6bldws8!19sChIJzQm_1hMHAWARSE5W26qZl6g?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Umezu-Gotocho',
       lat: 35.0032568,
@@ -723,13 +534,6 @@ export const imagesDescsLinks = {
       imageSrc: lawson,
     },
     {
-      link: 'https://www.google.com/maps/place/MUFG+Bank,+Saiin+Branch/data=!4m7!3m6!1s0x6001064ab3e31561:0xd9994e8ba2948bd7!8m2!3d35.003369!4d135.73233!16s%2Fg%2F1td6y01n!19sChIJYRXjs0oGAWAR14uUootOmdk?authuser=0&hl=es-419&rclk=1',
-      desc: 'MUFG Bank, Saiin Branch',
-      lat: 35.003369,
-      lng: 135.73233,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+-+BiVi+Kyoto+Nijo/data=!4m7!3m6!1s0x600107cda3f0a00b:0xa2f936bf0d4d946f!8m2!3d35.0106227!4d135.7409466!16s%2Fg%2F1tgcrsjc!19sChIJC6Dwo80HAWARb5RNDb82-aI?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson - BiVi Kyoto Nijo',
       lat: 35.0106227,
@@ -737,25 +541,11 @@ export const imagesDescsLinks = {
       imageSrc: lawson,
     },
     {
-      link: 'https://www.google.com/maps/place/%E9%8A%80%E8%A1%8CATM+%7C+%E3%82%A4%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88+%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%E3%83%A4%E3%82%B9%E3%82%A4%E3%82%AB%E3%83%89%E3%83%8E%E4%BA%94%E6%9D%A1+%E5%85%B1%E5%90%8C%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x600107cd7c9e6b6d:0xf8d519aad43a5678!8m2!3d34.994658!4d135.719979!16s%2Fg%2F11j6fkwwqc!19sChIJbWuefM0HAWAReFY61KoZ1fg?authuser=0&hl=es-419&rclk=1',
-      desc: '銀行ATM | イーネット ファミリーマートヤスイカドノ五条 共同出張所',
-      lat: 34.994658,
-      lng: 135.719979,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/7-Eleven/data=!4m7!3m6!1s0x600106f54ab6aaab:0x8bf02ed2b60fc246!8m2!3d34.9770462!4d135.7131087!16s%2Fg%2F11fylc0y9z!19sChIJq6q2SvUGAWARRsIPttIu8Is?authuser=0&hl=es-419&rclk=1',
       desc: '7-Eleven',
       lat: 34.9770462,
       lng: 135.7131087,
       imageSrc: eleven,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Kyoto+Shinkin+Bank/data=!4m7!3m6!1s0x6001064c35fc01a3:0xc5ff1936a1ec0399!8m2!3d34.99751!4d135.7263229!16s%2Fg%2F11b6brf362!19sChIJowH8NUwGAWARmQPsoTYZ_8U?authuser=0&hl=es-419&rclk=1',
-      desc: 'Kyoto Shinkin Bank',
-      lat: 34.99751,
-      lng: 135.7263229,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/7-Eleven+Tenjingawa+Sanjo+store/data=!4m7!3m6!1s0x600107a726dfd5bf:0xe852e21a5d26d3aa!8m2!3d35.0088938!4d135.71643!16s%2Fg%2F113g0vj2_!19sChIJv9XfJqcHAWARqtMmXRriUug?authuser=0&hl=es-419&rclk=1',
@@ -786,32 +576,11 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/Seven+Bank+ATM/data=!4m7!3m6!1s0x600107cc819bb789:0x7a1d3fe219386509!8m2!3d34.989438!4d135.7294671!16s%2Fg%2F11jjlsjc38!19sChIJibebgcwHAWARCWU4GeI_HXo?authuser=0&hl=es-419&rclk=1',
-      desc: 'Seven Bank ATM',
-      lat: 34.989438,
-      lng: 135.7294671,
-      imageSrc: konbini,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E9%8A%80%E8%A1%8CATM+%7C+%E3%82%A4%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88+%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%E8%A5%BF%E9%99%A2%E6%B8%85%E6%B0%B4%E7%94%BA+%E5%85%B1%E5%90%8C%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x600107e8002bef6d:0x2cb74884a16d9f73!8m2!3d34.999644!4d135.722921!16s%2Fg%2F11hfnrcz3g!19sChIJbe8rAOgHAWARc59toYRItyw?authuser=0&hl=es-419&rclk=1',
-      desc: '銀行ATM | イーネット ファミリーマート西院清水町 共同出張所',
-      lat: 34.999644,
-      lng: 135.722921,
-      imageSrc: konbini,
-    },
-    {
       link: 'https://www.google.com/maps/place/7-Eleven/data=!4m7!3m6!1s0x600108a6256421c9:0x2e44ca69cc5a2da3!8m2!3d34.9878252!4d135.7550971!16s%2Fg%2F1tf1bng_!19sChIJySFkJaYIAWARoy1azGnKRC4?authuser=0&hl=es-419&rclk=1',
       desc: '7-Eleven',
       lat: 34.9878252,
       lng: 135.7550971,
       imageSrc: eleven,
-    },
-    {
-      link: 'https://www.google.com/maps/place/Japan+Post+Bank+Osaka+Branch+Office+AEON-Mall-Kyoto-Gojo+ATM/data=!4m7!3m6!1s0x6001064c358d190d:0x43eabed109aadc90!8m2!3d34.9974779!4d135.7262591!16s%2Fg%2F11f3_9hp80!19sChIJDRmNNUwGAWARkNyqCdG-6kM?authuser=0&hl=es-419&rclk=1',
-      desc: 'Japan Post Bank Osaka Branch Office AEON-Mall-Kyoto-Gojo ATM',
-      lat: 34.9974779,
-      lng: 135.7262591,
-      imageSrc: konbini,
     },
     {
       link: 'https://www.google.com/maps/place/Ministop/data=!4m7!3m6!1s0x600106016d283be5:0x52ecc97d4b216cc8!8m2!3d34.9791559!4d135.7491098!16s%2Fg%2F11f4qlvthk!19sChIJ5TsobQEGAWARyGwhS33J7FI?authuser=0&hl=es-419&rclk=1',
@@ -828,27 +597,13 @@ export const imagesDescsLinks = {
       imageSrc: family,
     },
     {
-      link: 'https://www.google.com/maps/place/Lawson+Bank+Shijo+Nakashindo+Conjunction+Branch/data=!4m7!3m6!1s0x600107ce540c7f17:0xbf7d100137ad3555!8m2!3d35.0037857!4d135.7391006!16s%2Fg%2F11hdy6tcn0!19sChIJF38MVM4HAWARVTWtNwEQfb8?authuser=0&hl=es-419&rclk=1',
-      desc: 'Lawson Bank Shijo Nakashindo Conjunction Branch',
-      lat: 35.0037857,
-      lng: 135.7391006,
-      imageSrc: lawson,
-    },
-    {
       link: 'https://www.google.com/maps/place/Lawson+Kadono%C5%8Dji-Oike/data=!4m7!3m6!1s0x600107a40a6b452d:0x7a4c6e1ede1299da!8m2!3d35.0112124!4d135.7199238!16s%2Fg%2F11bxdw49my!19sChIJLUVrCqQHAWAR2pkS3h5uTHo?authuser=0&hl=es-419&rclk=1',
       desc: 'Lawson Kadonoōji-Oike',
       lat: 35.0112124,
       lng: 135.7199238,
       imageSrc: lawson,
-    },
-    {
-      link: 'https://www.google.com/maps/place/%E3%82%A4%E3%82%AA%E3%83%B3%E9%8A%80%E8%A1%8C+%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E4%BA%AC%E9%83%BD%E4%BA%94%E6%9D%A1%E5%BA%97%E7%AC%AC%E4%B8%89%E5%87%BA%E5%BC%B5%E6%89%80/data=!4m7!3m6!1s0x6001064c3c22815f:0xfa1322bccf71bda1!8m2!3d34.997571!4d135.727056!16s%2Fg%2F11bw3dqrjs!19sChIJX4EiPEwGAWARob1xz7wiE_o?authuser=0&hl=es-419&rclk=1',
-      desc: 'イオン銀行 イオンモール京都五条店第三出張所',
-      lat: 34.997571,
-      lng: 135.727056,
-      imageSrc: konbini,
-    },
-  ],
+    }
+],
   repair: [
     {
       link: 'https://www.google.com/maps/place/Kon%27s+Cycle/data=!4m7!3m6!1s0x6001064a1063da59:0x9a2ca1a6749196a8!8m2!3d34.9998431!4d135.7324021!16s%2Fg%2F1w0h_hww!19sChIJWdpjEEoGAWARqJaRdKahLJo?authuser=0&hl=es-419&rclk=1',
