@@ -2,20 +2,19 @@ import '../styles/signup.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Getting all the inputs
-  const submitButton = document.getElementById('signUpButton');
-  const cancelButton = document.getElementById('cancelButton');
-  const name = document.getElementById('name');
-  const email = document.getElementById('email');
-  const password = document.getElementById('password');
-  const confirmPassword = document.getElementById('confirmPassword');
+  const loginBtn = document.getElementById('loginBtn');
+  const signupBtn = document.getElementById('signupBtn');
+  const logemail = document.getElementById('logemail');
+  const logpass = document.getElementById('logpass');
+  const signname = document.getElementById('signname');
+  const signemail = document.getElementById('signemail');
+  const signpass = document.getElementById('signpass');
 
   // Getting all the feedback fields (divs)
-  const nameFeedback = document.getElementById('nameFeedback');
-  const emailFeedback = document.getElementById('emailFeedback');
-  const passwordFeedback = document.getElementById('passwordFeedback');
-  const confirmPasswordFeedback = document.getElementById(
-    'confirmPasswordFeedback',
-  );
+  const logemailFeedback = document.getElementById('logemailFeedback');
+  const logpassFeedback = document.getElementById('logpassFeedback');
+  const signemailFeedback = document.getElementById('signemailFeedback');
+  const signpassFeedback = document.getElementById('signpassFeedback');
 
   // RegEx for validations
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,64 +34,53 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Event listeners to the inputs
-  name.addEventListener('input', () => {
+
+  logemail.addEventListener('input', () => {
     changeValidityClasses(
-      name,
-      name.value !== '',
-      nameFeedback,
-      'Let us know your name',
-    );
-  });
-  email.addEventListener('input', () => {
-    changeValidityClasses(
-      email,
-      emailRegex.test(email.value),
-      emailFeedback,
+      logemail,
+      emailRegex.test(logemail.value),
+      logemailFeedback,
       'Make sure to write an email address',
     );
   });
 
-  password.addEventListener('input', () => {
+  logpass.addEventListener('input', () => {
     changeValidityClasses(
-      password,
-      password.value.length > 8 && passwordRegex.test(password.value),
-      passwordFeedback,
+      logpass,
+      logpass.value.length > 8 && passwordRegex.test(logpass.value),
+      logpassFeedback,
       'The password must be longer than 8 characters, have a capital letter, a number and a symbol.',
     );
   });
 
-  confirmPassword.addEventListener('input', () => {
+  signemail.addEventListener('input', () => {
     changeValidityClasses(
-      confirmPassword,
-      confirmPassword.value.length > 8 &&
-        passwordRegex.test(confirmPassword.value) &&
-        confirmPassword.value === password.value,
-      confirmPasswordFeedback,
-      'The passwords must match',
+      signemail,
+      emailRegex.test(signemail.value),
+      signemailFeedback,
+      'Make sure to write an email address',
     );
   });
 
-  submitButton.addEventListener('click', (event) => {
+  signpass.addEventListener('input', () => {
+    changeValidityClasses(
+      signpass,
+      signpass.value.length > 8 && passwordRegex.test(signpass.value),
+      signpassFeedback,
+      'The password must be longer than 8 characters, have a capital letter, a number and a symbol.',
+    );
+  });
+
+  // Event listeners for the buttons
+  loginBtn.addEventListener('click', (event) => {
     event.preventDefault();
     checkInput();
   });
-
-  cancelButton.addEventListener('click', (event) => {
+  signupBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    name.value = '';
-    email.value = '';
-    password.value = '';
-    confirmPassword.value = '';
-    clearValidityClass(name);
-    clearValidityClass(email);
-    clearValidityClass(password);
-    clearValidityClass(confirmPassword);
+    checkInput();
   });
 });
-
-function clearValidityClass(elem) {
-  elem.classList.remove('valid', 'invalid');
-}
 
 function checkInput() {
   console.log('hola');
