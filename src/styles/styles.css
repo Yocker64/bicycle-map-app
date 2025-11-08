@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --light-blue: #0083c0;
   --lighter-blue: #2ba4dc;
+  --light-purple: #540ca1;
   --dark-blue: #4f46e5;
   --dark-purple: #300262;
   --red: #EA5B6F;
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   font-family: var(--system-ui);
-  background-color: var(--light-blue);
+  background-color: black;
   color: white;
 }
 
@@ -70,12 +71,18 @@ html,
     height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Header */
 
 header {
-  padding: 20px 0 0;
-  height: 7svh;
-  background-color: var(--dark-purple);
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
 }
 
 .header-container {
@@ -95,7 +102,7 @@ header {
 
 .header-container nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header-container nav a {
@@ -111,27 +118,27 @@ header {
 /* Main container */
 
 main {
-  background: linear-gradient(to bottom, var(--dark-purple) 0%, black 30%);
+  background: linear-gradient(to bottom, black 0%, black 30%);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: calc(100svh - 60px);
 }
 
 .main-container {
   position: relative;
-  min-height: 93svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; 
+  flex: 1;
 }
 
 .background-media {
   position: absolute;
   height: 90%;
   width: 100%;
-  mask-image: linear-gradient(0.25turn, rgba(255, 255, 255, 0), var(--yellow) 20%, var(--yellow) 80%, rgba(255, 255, 255, 0));
 }
 
 .background-media video {
@@ -139,10 +146,10 @@ main {
   height: 100%;
   object-fit: cover;
   mask-image: linear-gradient(rgba(255, 255, 255, 0), var(--yellow) 20%, var(--yellow) 80%, rgba(255, 255, 255, 0));
+  opacity: 0.7;
 }
 
 .get-started-container {
-  background-color: var(--yellow);
   z-index: 1;
   border-radius: 30px;
   padding: 60px 60px;
@@ -150,14 +157,13 @@ main {
 }
 
 .get-started-container h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bolder;
   margin-bottom: 1rem;
-  color: black;
 }
 
 .get-started-container h1 em {
-  color: var(--lighter-blue);
+  color: var(--yellow);
   text-transform: none;
   font-style: normal;
 }
@@ -167,7 +173,7 @@ main {
   margin: 0 auto 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: black;
+  color: white;
 }
 
 .get-started-container button {

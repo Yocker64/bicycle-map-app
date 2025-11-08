@@ -1,16 +1,29 @@
 export function addLayers(MAP) {
-  const cyclingLayer = L.tileLayer(
-    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+  // var cyclOSM = L.tileLayer(
+  //   'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+  //   {
+  //     maxZoom: 25,
+  //     attribution:
+  //       '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  //     detectRetina: true,
+  //   },
+  // );
+  var OpenStreetMap_CAT = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
+    maxZoom: 25,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    detectRetina: true,
+  });
+
+  var bikeLanesLayer = L.tileLayer(
+    'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm-lite/{z}/{x}/{y}.png',
     {
       maxZoom: 25,
-      attribution:
-        '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       detectRetina: true,
+      className: "bike-lanes-layer",
     },
   );
-  MAP.addLayer(cyclingLayer);
 
-  const satelliteLayer = L.tileLayer(
+  var satelliteLayer = L.tileLayer(
     'http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
     {
       maxZoom: 25,
@@ -19,15 +32,19 @@ export function addLayers(MAP) {
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
+  MAP.addLayer(OpenStreetMap_CAT);
+  MAP.addLayer(bikeLanesLayer);
 
-  // Adds the layers
+  // Layer control
   const baseMaps = {
     '<img class="layer-control-image" src="https://c.tile-cyclosm.openstreetmap.fr/cyclosm/16/57480/25961.png" width="200px">':
-      cyclingLayer,
+      OpenStreetMap_CAT,
     '<img class="layer-control-image" src="http://mt1.google.com/vt/lyrs=s&x=57480&y=25961&z=16" width="200px">':
       satelliteLayer,
   };
-  const overlayMaps = {};
+  const overlayMaps = {
+    "lanes": bikeLanesLayer
+  };
 
   L.control
     .layers(baseMaps, overlayMaps, {
@@ -35,4 +52,5 @@ export function addLayers(MAP) {
       position: 'bottomright',
     })
     .addTo(MAP);
+
 }
