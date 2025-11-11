@@ -1,13 +1,4 @@
 export function addLayers(MAP) {
-  // var cyclOSM = L.tileLayer(
-  //   'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
-  //   {
-  //     maxZoom: 25,
-  //     attribution:
-  //       '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  //     detectRetina: true,
-  //   },
-  // );
   var OpenStreetMap_CAT = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
     maxZoom: 25,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',

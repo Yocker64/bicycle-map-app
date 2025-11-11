@@ -55,13 +55,15 @@ h1, h2, h3, h4, h5, h6 {
   --red: #EA5B6F;
   --orange: #FF894F;
   --yellow: #FFCB61;
+  --border-radius-windows: 50px;
+  --border-radius-buttons: 100px;
 }
 
 /* PAGE STYLING */
 
 :root {
   font-family: var(--system-ui);
-  font-size: 1rem;
+  font-size: 1rem   ;
   background-color: black;
   color: white;
 }
