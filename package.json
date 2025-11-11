@@ -2,16 +2,16 @@
   "name": "bicycle-map-app",
   "version": "1.0.0",
   "description": "Custom template for all the future web development projects I will be coding!",
-  "homepage": "https://github.com/haimamire/bicycle-map-app#readme",
+  "homepage": "https://github.com/batireedui0327/bicycle-map-app#readme",
   "bugs": {
-    "url": "https://github.com/haimamire/bicycle-map-app/issues"
+    "url": "https://github.com/batireedui0327/bicycle-map-app/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haimamire/bicycle-map-app.git"
+    "url": "git+https://github.com/batireedui0327/bicycle-map-app.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Bat-Ireedui",
   "type": "commonjs",
   "main": "template.html",
   "scripts": {
@@ -45,19 +45,5 @@
     "extends": [
       "wesbos"
     ]
-  },
-  "name": "bicycle-map-app",
-  "description": "Custom template for all the future web development projects I will be coding!",
-  "version": "1.0.0",
-  "main": "template.html",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/batireedui0327/bicycle-map-app.git"
-  },
-  "author": "Bat-Ireedui",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/batireedui0327/bicycle-map-app/issues"
-  },
-  "homepage": "https://github.com/batireedui0327/bicycle-map-app#readme"
+  }
 }
