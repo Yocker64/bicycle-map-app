@@ -31,9 +31,9 @@ export function addLayers(MAP) {
 
   // Layer control
   const baseMaps = {
-    [`<img class="layer-control-image" src="${defaultViewImg}" width="200px">`]:
+    [`<img class="layer-control-image" src="${defaultViewImg}" width="200px" draggable="false">`]:
       OpenStreetMap_CAT,
-    [`<img class="layer-control-image" src="${satelliteViewImg}" width="200px">`]:
+    [`<img class="layer-control-image" src="${satelliteViewImg}" width="200px" draggable="false">`]:
       satelliteLayer,
   };
   const overlayMaps = {

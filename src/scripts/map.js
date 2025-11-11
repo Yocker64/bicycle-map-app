@@ -33,4 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
   addPolyline(MAP);
   addMarkers(MAP);
   initGPS(MAP);
+
+  // Loop through all images on the page adding necessary styles and 
+  // event listener to prevent images from opening the context menu.
+  document.querySelectorAll('img').forEach(img => {
+    img.style.webkitUserSelect = 'none';
+    img.style.webkitTouchCallout = 'none';
+    img.addEventListener('contextmenu', evt => {
+      evt.preventDefault();
+      return false;
+    });
+  });
 });

@@ -47,6 +47,7 @@ img {
     flex-direction: column;
     gap: 5px;
     user-select: none;
+    pointer-events: none;
 }
 
 .leaflet-bottom.leaflet-right .gps-button.leaflet-control {
@@ -58,7 +59,6 @@ img {
     align-self: center;
     border-radius: 50%;
     cursor: pointer;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/10093/10093533.png);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.3s ease;
