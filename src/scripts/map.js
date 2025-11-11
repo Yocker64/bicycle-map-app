@@ -8,7 +8,6 @@ import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
 import { initGPS } from './gpsRealTime';
-// import { createElement } from 'react';
 
 document.addEventListener('DOMContentLoaded', () => {
   const config = {

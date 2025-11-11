@@ -1,3 +1,6 @@
+import defaultViewImg from '../../img/map-ui/default-view.png';
+import satelliteViewImg from '../../img/map-ui/satellite-view.jpeg';
+
 export function addLayers(MAP) {
   var OpenStreetMap_CAT = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
     maxZoom: 25,
@@ -28,9 +31,9 @@ export function addLayers(MAP) {
 
   // Layer control
   const baseMaps = {
-    '<img class="layer-control-image" src="https://c.tile-cyclosm.openstreetmap.fr/cyclosm/16/57480/25961.png" width="200px">':
+    [`<img class="layer-control-image" src="${defaultViewImg}" width="200px">`]:
       OpenStreetMap_CAT,
-    '<img class="layer-control-image" src="http://mt1.google.com/vt/lyrs=s&x=57480&y=25961&z=16" width="200px">':
+    [`<img class="layer-control-image" src="${satelliteViewImg}" width="200px">`]:
       satelliteLayer,
   };
   const overlayMaps = {
@@ -43,5 +46,4 @@ export function addLayers(MAP) {
       position: 'bottomright',
     })
     .addTo(MAP);
-
 }
