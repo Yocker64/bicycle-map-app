@@ -1,5 +1,5 @@
-import '../styles/fontsAndReset.css';
 import '../styles/styles.css';
+import '../styles/map.css';
 import '../styles/mapstyles.css';
 
 import { northLimit, southLimit, eastLimit, westLimit } from './mapUtilities/mapData';

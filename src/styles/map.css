@@ -1,0 +1,26 @@
+.top-bar {
+    position: fixed;
+    z-index: 100000000;
+    height: 60px;
+    width: 94dvw;
+    background-color: white;
+    color: black;
+    margin: 10px 3vw;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .top-bar {
+        width: 600px;
+        margin: 10px calc(calc(100dvw - 600px) / 2);
+    }
+}
+
+.top-bar .icon {
+    height: 40px;
+}
