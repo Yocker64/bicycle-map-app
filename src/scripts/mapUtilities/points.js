@@ -6,7 +6,12 @@ import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-  let markerCluster = L.markerClusterGroup();
+  let markerCluster = L.markerClusterGroup({
+    maxClusterRadius: 100,
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: false,
+    disableClusteringAtZoom: 15,
+  });
   
   const createIcon = (category) =>
     L.divIcon({
@@ -40,7 +45,7 @@ export function addMarkers(map) {
             <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
           </div>
         `);
-        
+
       markerCluster.addLayer(marker);
 
       featureGroups[category].addLayer(marker);
