@@ -6,35 +6,23 @@ import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-  // Create custom colored icons
+  let markerCluster = L.markerClusterGroup();
+  
   const createIcon = (category) =>
     L.divIcon({
-      // html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
       html: `<img src="${category}" style="width: 25px; height: 25px;">`,
       className: 'custom-colored-marker',
       iconSize: [24, 24],
       iconAnchor: [10, 10],
     });
 
-  // Define colors for each category
   const categoryImages = {
-    stores: 'yellow',
     konbinis: konbiniIcon,
     repair: repairIcon,
-    saved: 'red',
-    malls: 'purple', // fallback color for malls
   };
 
   // Create feature groups for each category
   const featureGroups = {};
-
-  const cluster = window.L.markerClusterGroup({
-    iconCreateFunction: function (cluster) {
-      return L.divIcon({
-        html: '<div style="background-color: white;">aa</div>',
-      });
-    }
-  });
 
   // Initialize feature groups and add markers
   Object.keys(imagesDescsLinks).forEach((category) => {
@@ -52,13 +40,14 @@ export function addMarkers(map) {
             <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
           </div>
         `);
-      cluster.addLayer(marker);
+        
+      markerCluster.addLayer(marker);
 
       featureGroups[category].addLayer(marker);
     });
   });
 
-  map.addLayer(cluster);
+  map.addLayer(markerCluster);
 
   // Create overlay maps object for layer control
   const overlayMaps = {};

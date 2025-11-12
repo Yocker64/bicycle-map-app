@@ -1,7 +1,8 @@
 import '../styles/styles.css';
 import '../styles/map.css';
 import '../styles/mapstyles.css';
-import 'leaflet.markercluster';
+import '../styles/map_elements/MarkerCluster.css';
+import '../styles/map_elements/MarkerCluster.Default.css';
 
 import { northLimit, southLimit, eastLimit, westLimit } from './mapUtilities/mapData';
 
@@ -35,31 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   addMarkers(map);
   initGPS(map);
 
-  // const customIcon = L.icon({
-  //   iconUrl: "   https://cdn-icons-png.flaticon.com/512/135/135620.png ",
-  //   iconSize: [38, 38],
-  // });
-
-  // var marker1 = L.marker([51, 0], {icon: customIcon});
-  // var marker2 = L.marker([51.01, 0.01], {icon: customIcon});
-  // var marker3 = L.marker([51, 0.02], {icon: customIcon});
-
-  // const cluster = window.L.markerClusterGroup({
-  //   iconCreateFunction: function (cluster) {
-  //     return L.divIcon({
-  //       html: '<div style="background-color: white;">aa</div>',
-  //     });
-  //   }
-  // });
-
-  // cluster.addLayer(marker1);
-  // cluster.addLayer(marker2);
-  // cluster.addLayer(marker3);
-
-  // map.addLayer(cluster);
-
-  // Loop through all images on the page adding necessary styles and 
-  // event listener to prevent images from opening the context menu.
+  // This removes the context menu for all the images
   document.querySelectorAll('img').forEach(img => {
     img.style.webkitUserSelect = 'none';
     img.style.webkitTouchCallout = 'none';
