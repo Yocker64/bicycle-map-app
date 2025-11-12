@@ -26,25 +26,32 @@ export function addMarkers(map) {
     repair: repairIcon,
   };
 
+                                              
+
   // Create feature groups for each category
   const featureGroups = {};
 
   // Initialize feature groups and add markers
   Object.keys(imagesDescsLinks).forEach((category) => {
-    featureGroups[category] = new L.FeatureGroup();
+    featureGroups[category] = new L.FeatureGroup(); 
 
     imagesDescsLinks[category].forEach((item) => {
+      var markerPopup = L.popup({
+        content: `
+            ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
+            <p>${item.desc}</p>
+            ${item.link ? `<a href="${item.link}" target="_blank">Google Maps</a>` : ''}
+        `,
+        minWidth: 150,
+        maxWidth: 150,
+        closeButton: false,
+        autoPanPaddingTopLeft: [10, 80],
+        autoPanPaddingBottomRight: [10, 10,]
+      });
+
       const marker = L.marker([item.lat, item.lng],
         { icon: createIcon(categoryImages[category] || 'gray')}
-      ).bindPopup(`
-          <div>
-            <h3>${category.toUpperCase()}</h3>
-            ${item.imageSrc ? `<img src="${item.imageSrc}" style="max-width: 200px; max-height: 150px;" alt="Location image">` : ''}
-            <p>${item.desc}</p>
-            ${item.link ? `<a href="${item.link}" target="_blank">More info</a>` : ''}
-            <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
-          </div>
-        `);
+      ).bindPopup(markerPopup);
 
       markerCluster.addLayer(marker);
 

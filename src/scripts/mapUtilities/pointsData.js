@@ -1,10 +1,10 @@
 import shuuri from '../../img/shuuri.png';
+import konbini from '../../img/konb.png';
 import eleven from '../../img/7eleven.png';
 import family from '../../img/familymart.png';
-import yamazaki from '../../img/dailyyamazaki.png';
-import ministop from '../../img/ministop.JPG';
+import yamazaki from '../../img/yamazaki.jpg';
+import ministop from '../../img/ministop.png';
 import lawson from '../../img/lawson.png';
-import konbini from '../../img/konb.jpg';
 
 export const imagesDescsLinks = {
   konbinis: [
