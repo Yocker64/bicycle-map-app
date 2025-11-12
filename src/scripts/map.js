@@ -8,6 +8,7 @@ import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
 import { initGPS } from './gpsRealTime';
+import {initRoute} from './mapUtilities/osrmRoutingMachine';
 // import { createElement } from 'react';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,4 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
   addPolyline(MAP);
   addMarkers(MAP);
   initGPS(MAP);
+  initRoute(MAP);
 });

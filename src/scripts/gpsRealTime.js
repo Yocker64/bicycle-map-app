@@ -1,5 +1,7 @@
 import gpsImg from '../img/icons/gps.png';
 
+export let lat, lon;
+
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
     console.log("Geolocation is not supported by this browser.");
