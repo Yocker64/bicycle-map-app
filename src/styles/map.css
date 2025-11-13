@@ -1,5 +1,6 @@
 :root {
     --ui-side-margins: 3vw;
+    touch-action: none;
 }
 
 .top-bar {
@@ -19,6 +20,9 @@
 
     transition: 500ms;
     opacity: 0.8;
+
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 @media (min-width: 600px) {
@@ -36,5 +40,10 @@
 }
 
 .top-bar .icon {
+    touch-action: manipulation;
     height: 40px;
+}
+
+.marker-control {
+    touch-action: manipulation;
 }

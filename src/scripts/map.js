@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // This removes the context menu for all the images
   document.querySelectorAll('img').forEach(img => {
-    img.style.webkitUserSelect = 'none';
+    img.style.userSelect = 'none';
     img.style.webkitTouchCallout = 'none';
     img.addEventListener('contextmenu', evt => {
       evt.preventDefault();
