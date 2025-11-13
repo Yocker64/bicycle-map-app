@@ -43,7 +43,7 @@ export function addMarkers(map) {
         maxWidth: 150,
         closeButton: false,
         autoPanPaddingTopLeft: [10, 80],
-        autoPanPaddingBottomRight: [10, 10,]
+        autoPanPaddingBottomRight: [10, 10],
       });
 
       const marker = L.marker(
@@ -67,16 +67,18 @@ export function addMarkers(map) {
   // Bottom left marker control declarations
   const markerControl = L.Control.extend({
     options: {
-      position: "bottomleft",
+      position: "topright",
     },
     onAdd: function () {
       const div = L.DomUtil.create("div");
       let konbBtn = this.createButton("コンビニ", konbMarkerCluster);
       let repairBtn = this.createButton("修理店", repairMarkerCluster);
+      let parkingBtn = this.createButton("駐輪場", repairMarkerCluster);
 
       div.className = "marker-control";
       div.appendChild(konbBtn);
       div.appendChild(repairBtn);
+      div.appendChild(parkingBtn);
 
       return div;
     },
@@ -112,7 +114,6 @@ export function addMarkers(map) {
     },
   });
   map.addControl(new markerControl());
-
   // Log category statistics
   console.log('Category Statistics:', DataAccess.getCategoryStats());
 }

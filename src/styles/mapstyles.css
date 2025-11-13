@@ -8,7 +8,7 @@ img {
     height: auto;
 }
 
-/* BOTTOM MAP CONTROLS */
+/* MAP CONTROLS */
 .leaflet-bottom.leaflet-right,
 .leaflet-bottom.leaflet-left {
     margin: 10px;
@@ -19,12 +19,66 @@ img {
     pointer-events: none;
 }
 
+.leaflet-top.leaflet-right,
+.leaflet-top.leaflet-left {
+    margin: 80px var(--ui-side-margins);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (min-width: 600px) {
+    .leaflet-top.leaflet-right {
+        margin: 80px calc(calc(100dvw - 600px) / 2);
+    }
+}
+
 /* Marker controls */
 .marker-control {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: 10px;
+    margin: 0 !important;
+    padding: 15px;
     background-color: white;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    user-select: none;
+    font-size: 1.1em;
+}
+
+.marker-control button {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    transition: 300ms;
+}
+
+.marker-control button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+@media (max-width: 599px) {
+    .marker-control button:hover {
+        opacity: 1;
+        transform: none;
+    }
+    .marker-control button:active {
+        opacity: 0.9;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 300ms;
+    }
+}
+
+.marker-control button.checked {
+    background-color: var(--yellow);
 }
 
 /* Gps button controls */
