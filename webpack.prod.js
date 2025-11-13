@@ -6,9 +6,9 @@ const { register } = require('module');
 module.exports = {
   mode: 'production',
   entry: {
-    main: "./src/index.js",
-    map: "./src/scripts/map.js",
-    register: "./src/scripts/register.js",
+    main: './src/index.js',
+    map: './src/scripts/map.js',
+    register: './src/scripts/register.js',
     about: './src/scripts/infoPages/about.js',
   },
   output: {
