@@ -8,8 +8,9 @@ img {
     height: auto;
 }
 
-/* BOTTOM RIGHT MAP CONTROLS */
-.leaflet-bottom.leaflet-right {
+/* BOTTOM MAP CONTROLS */
+.leaflet-bottom.leaflet-right,
+.leaflet-bottom.leaflet-left {
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -18,7 +19,16 @@ img {
     pointer-events: none;
 }
 
-.leaflet-bottom.leaflet-right .gps-button.leaflet-control {
+/* Marker controls */
+.marker-control {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Gps button controls */
+.gps-button.leaflet-control {
     margin: 0;
     width: 55px;
     height: 55px;
@@ -97,8 +107,8 @@ img {
 .leaflet-control-layers-base input {
     display: none;
 }
-.leaflet-control-layers-list .leaflet-control-layers-separator,
-.leaflet-control-layers-list .leaflet-control-layers-overlays {
+.leaflet-bottom.leaflet-right .leaflet-control-layers-list .leaflet-control-layers-separator,
+.leaflet-bottom.leaflet-right .leaflet-control-layers-list .leaflet-control-layers-overlays {
     display: none;
 }
 

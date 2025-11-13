@@ -6,13 +6,18 @@ import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-  let markerCluster = L.markerClusterGroup({
+  // Marker clusters declarations
+  let markerClusterOptions = {
     maxClusterRadius: 100,
     showCoverageOnHover: false,
     spiderfyOnMaxZoom: false,
     disableClusteringAtZoom: 15,
-  });
+  };
+  let konbMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+  let repairMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+  let masterMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   
+  // Marker icons
   const createIcon = (category) =>
     L.divIcon({
       html: `<img src="${category}" style="width: 25px; height: 25px;">`,
@@ -20,21 +25,13 @@ export function addMarkers(map) {
       iconSize: [24, 24],
       iconAnchor: [10, 10],
     });
-
   const categoryImages = {
     konbinis: konbiniIcon,
     repair: repairIcon,
   };
 
-                                              
-
-  // Create feature groups for each category
-  const featureGroups = {};
-
-  // Initialize feature groups and add markers
+  // Create icons and popups for each marker, and add it to its respective cluster
   Object.keys(imagesDescsLinks).forEach((category) => {
-    featureGroups[category] = new L.FeatureGroup(); 
-
     imagesDescsLinks[category].forEach((item) => {
       var markerPopup = L.popup({
         content: `
@@ -49,93 +46,72 @@ export function addMarkers(map) {
         autoPanPaddingBottomRight: [10, 10,]
       });
 
-      const marker = L.marker([item.lat, item.lng],
-        { icon: createIcon(categoryImages[category] || 'gray')}
+      const marker = L.marker(
+        [item.lat, item.lng],
+        {icon: createIcon(categoryImages[category] || 'gray')}
       ).bindPopup(markerPopup);
 
-      markerCluster.addLayer(marker);
-
-      featureGroups[category].addLayer(marker);
+      switch (category) {
+        case 'konbinis':
+          konbMarkerCluster.addLayer(marker);
+          break;
+        case 'repair':
+          repairMarkerCluster.addLayer(marker);
+          break;
+        default:
+          break;
+      };
     });
   });
 
-  map.addLayer(markerCluster);
-
-  // Create overlay maps object for layer control
-  const overlayMaps = {};
-  Object.keys(featureGroups).forEach((category) => {
-    overlayMaps[category] = featureGroups[category];
-  });
-
-  // centering a group of markers
-  // map.on('layeradd layerremove', () => {
-  //   // Create new empty bounds
-  //   const bounds = new L.LatLngBounds();
-  //   // Iterate the map's layers
-  //   map.eachLayer((layer) => {
-  //     // Check if layer is a featuregroup
-  //     if (layer instanceof L.FeatureGroup) {
-  //       // Extend bounds with group's bounds
-  //       bounds.extend(layer.getBounds());
-  //     }
-  //   });
-
-  //   // Check if bounds are valid (could be empty)
-  //   if (bounds.isValid()) {
-  //     // Valid, fit bounds
-  //     map.flyToBounds(bounds, { padding: [20, 20] });
-  //   }
-  // });
-
-  // Custom control with buttons
-  L.Control.CustomButtons = L.Control.Layers.extend({
-    onAdd() {
-      this._initLayout();
-      this._addMarker();
-      this._removeMarker();
-      this._update();
-      return this._container;
+  // Bottom left marker control declarations
+  const markerControl = L.Control.extend({
+    options: {
+      position: "bottomleft",
     },
-    _addMarker() {
-      this.createButton('Show All', 'add-button');
+    onAdd: function () {
+      const div = L.DomUtil.create("div");
+      let konbBtn = this.createButton("コンビニ", konbMarkerCluster);
+      let repairBtn = this.createButton("修理店", repairMarkerCluster);
+
+      div.className = "marker-control";
+      div.appendChild(konbBtn);
+      div.appendChild(repairBtn);
+
+      return div;
     },
-    _removeMarker() {
-      this.createButton('Hide All', 'remove-button');
+    createButton: function (label, cluster) {
+      const btn = L.DomUtil.create("button");
+      
+      this.addClusterLayer(cluster);
+      btn.textContent = label;
+      btn.classList.add("checked");
+
+      btn.onclick = () => {
+        if (btn.classList.contains("unchecked")) {
+          this.addClusterLayer(cluster);
+
+          btn.classList.remove("unchecked");
+          btn.classList.add("checked");
+        } else {
+          this.removeClusterLayer(cluster);
+
+          btn.classList.remove("checked");
+          btn.classList.add("unchecked");
+        }
+      };
+      return btn;
     },
-    createButton(text, className) {
-      const elements = this._container.getElementsByClassName(
-        'leaflet-control-layers-list',
-      );
-      const button = L.DomUtil.create(
-        'button',
-        `btn-markers ${className}`,
-        elements[0],
-      );
-      button.textContent = text;
-
-      L.DomEvent.on(button, 'click', (e) => {
-        const checkboxes = document.querySelectorAll(
-          '.leaflet-control-layers-overlays input[type=checkbox]',
-        );
-
-        // Remove/add all layers from map when click on button
-        [].slice.call(checkboxes).forEach((checkbox) => {
-          const isChecked = checkbox.checked;
-          const shouldCheck = text === 'Show All';
-
-          if (isChecked !== shouldCheck) {
-            checkbox.checked = shouldCheck;
-            checkbox.dispatchEvent(new Event('change'));
-          }
-        });
-      });
+    addClusterLayer: function (cluster) {
+      masterMarkerCluster.addLayer(cluster);
+      map.addLayer(masterMarkerCluster);
+    },
+    removeClusterLayer: function (cluster) {
+      masterMarkerCluster.removeLayer(cluster);
+      map.addLayer(masterMarkerCluster);
     },
   });
-
-  // Add layer control with custom buttons
-  // new L.Control.CustomButtons(null, overlayMaps, {
-  //   collapsed: true,
-  // }).addTo(map);
+  map.addControl(new markerControl());
 
   // Log category statistics
   console.log('Category Statistics:', DataAccess.getCategoryStats());
