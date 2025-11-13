@@ -1,3 +1,4 @@
+import '../styles/styles.css';
 import '../styles/signup.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       logemail,
       emailRegex.test(logemail.value),
       logemailFeedback,
-      'Make sure to write an email address',
+      '正しいメールアドレスを入力してください。',
     );
   });
 
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       logpass,
       logpass.value.length > 8 && passwordRegex.test(logpass.value),
       logpassFeedback,
-      'The password must be longer than 8 characters, have a capital letter, a number and a symbol.',
+      'パスワードは8文字以上で、大文字・数字・記号を含めてください。',
     );
   });
 
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       signemail,
       emailRegex.test(signemail.value),
       signemailFeedback,
-      'Make sure to write an email address',
+      '正しいメールアドレスを入力してください。',
     );
   });
 
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       signpass,
       signpass.value.length > 8 && passwordRegex.test(signpass.value),
       signpassFeedback,
-      'The password must be longer than 8 characters, have a capital letter, a number and a symbol.',
+      'パスワードは8文字以上で、大文字・数字・記号を含めてください。',
     );
   });
 
@@ -83,5 +84,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function checkInput() {
-  console.log('hola');
+  console.log('こんにちは');
 }

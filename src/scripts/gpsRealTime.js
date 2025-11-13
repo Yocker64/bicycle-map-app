@@ -1,4 +1,5 @@
 import gpsImg from '../img/icons/gps.png';
+import gpsControlImg from '../img/map-ui/gps-control-icon.png';
 
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
@@ -28,9 +29,10 @@ export function initGPS(MAP) {
       position: "bottomright",
     },
     onAdd: function (MAP) {
-      const btn = L.DomUtil.create("div");
-      btn.title = "gps-button";
+      const btn = L.DomUtil.create("img");
+      btn.src = gpsControlImg;
       btn.className = "gps-button";
+      btn.draggable = false;
 
       btn.onclick = function () {
         if (followGps === true) {

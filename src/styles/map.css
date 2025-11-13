@@ -1,0 +1,36 @@
+.top-bar {
+    position: fixed;
+    z-index: 100000000;
+    height: 60px;
+    width: 92dvw;
+    background-color: white;
+    color: black;
+    margin: 10px 4vw;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 500ms;
+    opacity: 0.8;
+}
+
+@media (min-width: 600px) {
+    .top-bar {
+        width: 600px;
+        margin: 10px calc(calc(100dvw - 600px) / 2);
+    }
+}
+
+.top-bar:hover {
+    transition: 500ms;
+    opacity: 1;
+    filter: none;
+    transform: scale(1.05);
+}
+
+.top-bar .icon {
+    height: 40px;
+}
