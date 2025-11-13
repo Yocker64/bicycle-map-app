@@ -8,19 +8,19 @@
     z-index: 100000000;
     height: 60px;
     width: 90vw;
-    background-color: white;
+    background-color: var(--translucid-white);
     color: black;
     margin: 10px calc(var(--ui-side-margins) + 2vw);
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--translucid-black);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     transition: 500ms;
-    opacity: 0.8;
 
+    -webkit-user-drag: none;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -32,18 +32,18 @@
     }
 }
 
-.top-bar:hover {
+/* .top-bar:hover {
     transition: 500ms;
     opacity: 1;
     filter: none;
     transform: scale(calc(calc(100vw - calc(var(--ui-side-margins) * 2)) / 90vw));
-}
+} */
 
 .top-bar .icon {
     touch-action: manipulation;
     height: 40px;
 }
 
-.marker-control {
-    touch-action: manipulation;
+.marker-control-toggle {
+    cursor: pointer;
 }

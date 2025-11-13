@@ -64,7 +64,13 @@ export function addMarkers(map) {
     });
   });
 
-  // Bottom left marker control declarations
+  // Marker control declarations
+  const markerControlIcon = document.querySelector('.marker-control-toggle');
+  markerControlIcon.addEventListener('click', () => {
+    const controlDiv = document.querySelector('.marker-control');
+    controlDiv.classList.contains("hidden") ? controlDiv.classList.remove("hidden") : controlDiv.classList.add("hidden");
+  });
+
   const markerControl = L.Control.extend({
     options: {
       position: "topright",
@@ -75,7 +81,7 @@ export function addMarkers(map) {
       let repairBtn = this.createButton("修理店", repairMarkerCluster);
       let parkingBtn = this.createButton("駐輪場", repairMarkerCluster);
 
-      div.className = "marker-control";
+      div.className = "marker-control hidden";
       div.appendChild(konbBtn);
       div.appendChild(repairBtn);
       div.appendChild(parkingBtn);
@@ -114,6 +120,8 @@ export function addMarkers(map) {
     },
   });
   map.addControl(new markerControl());
+
+
   // Log category statistics
   console.log('Category Statistics:', DataAccess.getCategoryStats());
 }

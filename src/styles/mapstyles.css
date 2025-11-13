@@ -6,6 +6,7 @@ img {
     display: block;
     width: 100%;
     height: auto;
+    -webkit-user-drag: none;
 }
 
 /* MAP CONTROLS */
@@ -44,11 +45,17 @@ img {
     gap: 10px;
     margin: 0 !important;
     padding: 15px;
-    background-color: white;
+    background-color: var(--translucid-white);
     border-radius: 25px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--translucid-black);
     user-select: none;
     font-size: 1.1em;
+    transition: 500ms;
+}
+
+.marker-control.hidden {
+    transition: 500ms ease-in;
+    transform: translateY(-500px);
 }
 
 .marker-control button {
@@ -88,8 +95,8 @@ img {
     margin: 0;
     width: 55px;
     height: 55px;
-    border: 3px solid white;
-    outline: 2px solid rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--translucid-white);
+    outline: 2px solid var(--translucid-black);
     align-self: center;
     border-radius: 50%;
     cursor: pointer;
@@ -112,7 +119,7 @@ img {
 
 /* Map layer change controls */
 .leaflet-control-layers.leaflet-control-layers-expanded.leaflet-control {
-    background-color: white;
+    background-color: var(--translucid-white);
     margin: 0;
     padding: 3px;
     display: flex;
@@ -120,7 +127,7 @@ img {
     justify-content: space-between;
     gap: 10px;
     border-radius: 25px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--translucid-black);
     user-select: none;
 }
 
@@ -202,7 +209,7 @@ img {
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip-container > .leaflet-popup-tip {
     border-radius: var(--border-radius-windows);
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--translucid-black);
     box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
 }
 
