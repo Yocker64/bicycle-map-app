@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Leaflet Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
 </head>
 
-<body style="user-select: none;">
+<body>
     <div class="top-bar">
         <a href="index.html">
             <img src="./img/icons/home.svg" alt="Home" class="icon" height="40px" width="40px">
         </a>
+        <div class="marker-control-toggle">
+            <img src="./img/icons/layers.svg" alt="Home" class="icon" height="40px" width="40px">
+        </div>
     </div>
-    <div id="map" style="touch-action: none;"></div>
+    <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- <script src="./scripts//data/point.js"></script>
-    <script src="./scripts/data/line.js"></script>
-    <script src="./scripts/data/polygon.js"></script> -->
 </body>
 
 </html>
