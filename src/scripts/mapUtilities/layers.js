@@ -1,13 +1,7 @@
+import defaultViewImg from '../../img/map-ui/default-view.png';
+import satelliteViewImg from '../../img/map-ui/satellite-view.jpeg';
+
 export function addLayers(MAP) {
-  // var cyclOSM = L.tileLayer(
-  //   'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
-  //   {
-  //     maxZoom: 25,
-  //     attribution:
-  //       '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  //     detectRetina: true,
-  //   },
-  // );
   var OpenStreetMap_CAT = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
     maxZoom: 25,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -37,9 +31,9 @@ export function addLayers(MAP) {
 
   // Layer control
   const baseMaps = {
-    '<img class="layer-control-image" src="https://c.tile-cyclosm.openstreetmap.fr/cyclosm/16/57480/25961.png" width="200px">':
+    [`<img class="layer-control-image" src="${defaultViewImg}" width="200px" draggable="false">`]:
       OpenStreetMap_CAT,
-    '<img class="layer-control-image" src="http://mt1.google.com/vt/lyrs=s&x=57480&y=25961&z=16" width="200px">':
+    [`<img class="layer-control-image" src="${satelliteViewImg}" width="200px" draggable="false">`]:
       satelliteLayer,
   };
   const overlayMaps = {
@@ -52,5 +46,4 @@ export function addLayers(MAP) {
       position: 'bottomright',
     })
     .addTo(MAP);
-
 }

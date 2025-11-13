@@ -8,6 +8,7 @@ module.exports = {
     main: './src/index.js',
     map: './src/scripts/map.js',
     register: './src/scripts/register.js',
+    about: './src/scripts/infoPages/about.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -37,6 +38,11 @@ module.exports = {
       template: './src/register.html',
       filename: 'register.html',
       chunks: ['register'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html',
+      chunks: ['about'],
     }),
   ],
   module: {

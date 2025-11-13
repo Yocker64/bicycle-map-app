@@ -10,8 +10,13 @@
     
 </head>
 
-<body>
-    <div id="map"></div>
+<body style="user-select: none;">
+    <div class="top-bar">
+        <a href="index.html">
+            <img src="./img/icons/home.svg" alt="Home" class="icon" height="40px" width="40px">
+        </a>
+    </div>
+    <div id="map" style="touch-action: none;"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <!-- <script src="./scripts//data/point.js"></script>

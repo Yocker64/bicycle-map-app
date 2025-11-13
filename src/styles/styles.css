@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --dark-gray: #353535;
   --light-blue: #0083c0;
   --lighter-blue: #2ba4dc;
   --light-purple: #540ca1;
@@ -54,12 +55,15 @@ h1, h2, h3, h4, h5, h6 {
   --red: #EA5B6F;
   --orange: #FF894F;
   --yellow: #FFCB61;
+  --border-radius-windows: 50px;
+  --border-radius-buttons: 100px;
 }
 
 /* PAGE STYLING */
 
 :root {
   font-family: var(--system-ui);
+  font-size: 1rem   ;
   background-color: black;
   color: white;
 }
@@ -87,8 +91,7 @@ header {
 
 .header-container {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 20vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

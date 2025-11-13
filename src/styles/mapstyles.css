@@ -1,54 +1,24 @@
+#map {
+    font-family: var(--system-ui);
+}
+
 img {
     display: block;
     width: 100%;
     height: auto;
-}   
-
-.btn-markers {
-    margin: 5px;
-    padding: 8px 12px;
-    background: #0078A8;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
 }
 
-.btn-markers:hover {
-    background: #005580;
-}
-
-.add-button {
-    background: #28a745;
-}
-
-.add-button:hover {
-    background: #218838;
-}
-
-.remove-button {
-    background: #dc3545;
-}
-
-.remove-button:hover {
-    background: #c82333;
-}
-
-/* Layers */
-.bike-lanes-layer img {
-
-}
-
-/* Bottom right map controls */
+/* BOTTOM RIGHT MAP CONTROLS */
 .leaflet-bottom.leaflet-right {
     margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    user-select: none;
+    pointer-events: none;
 }
 
-.gps-button.leaflet-control {
+.leaflet-bottom.leaflet-right .gps-button.leaflet-control {
     margin: 0;
     width: 55px;
     height: 55px;
@@ -57,19 +27,19 @@ img {
     align-self: center;
     border-radius: 50%;
     cursor: pointer;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/10093/10093533.png);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.3s ease;
+    user-select: none;
 }
 
 .gps-button.leaflet-control.active {
-    filter: brightness(1.2);
+    filter: brightness(1.3);
     transition: 0.3s ease;
     animation: border-pulse 2s infinite;
 }
 
-.gps-button.leaflet-control.inactive:hover {
+.gps-button.leaflet-control:hover {
     filter: brightness(1.2);
     transition: 0.3s ease;
 }
@@ -85,6 +55,7 @@ img {
     gap: 10px;
     border-radius: 25px;
     border: 2px solid rgba(0, 0, 0, 0.2);
+    user-select: none;
 }
 
 .leaflet-control-layers-base {
@@ -107,9 +78,19 @@ img {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .layer-control-image:hover {
     transition: 0.3s ease;
     opacity: 0.5;
+}
+
+@media (max-width: 599px) {
+    .layer-control-image:hover {
+        opacity: 1;
+    }
+    .gps-button.leaflet-control:hover {
+        filter: none;
+    }
 }
 
 /* Hiding stuff from the map layer change controls */
@@ -121,7 +102,7 @@ img {
     display: none;
 }
 
-/* Points on the map */
+/* MARKERS */
 .gps-icon {
     z-index: 100000000 !important;
 }
@@ -145,7 +126,31 @@ img {
   }
 }
 
-/* Attribution */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip-container > .leaflet-popup-tip {
+    border-radius: var(--border-radius-windows);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+}
+
+.leaflet-popup-content {
+    padding: 20px;
+    margin: auto;
+}
+
+.leaflet-popup-content .image-wrapper {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.leaflet-popup-content p {
+    font-weight: bold;
+    line-break: auto;
+    user-select: text;
+}
+
+/* ATTRIBUTION */
 .leaflet-control-attribution.leaflet-control {
     position: fixed;
     bottom: 0;
