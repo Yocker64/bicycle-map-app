@@ -5,7 +5,7 @@ let polylineLayer = null;
 
 export function addPolyline(map) {
   const lines = [
-    [getLine('mapLimit')],
+    // [getLine('mapLimit')],
     // [getLine('keinawa')],
     // [getLine('nanajo1')],
     // [getLine('gojo1')],

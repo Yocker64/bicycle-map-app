@@ -1,13 +1,15 @@
 const path = require('path');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { register } = require('module');
 
 module.exports = {
   mode: 'production',
   entry: {
-    main: './src/index.js',
-    map: './src/scripts/map.js',
-    register: './src/scripts/register.js',
+    main: "./src/index.js",
+    map: "./src/scripts/map.js",
+    register: "./src/scripts/register.js",
+    about: './src/scripts/infoPages/about.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -47,6 +49,11 @@ module.exports = {
         collapseWhitespace: true,
         removeRedundantAttributes: true,
       },
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html',
+      chunks: ['about'],
     }),
   ],
   optimization: {

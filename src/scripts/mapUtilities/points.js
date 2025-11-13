@@ -1,52 +1,65 @@
-/* eslint-disable no-undef */
+import 'leaflet.markercluster';
+
 import { imagesDescsLinks, DataAccess } from './pointsData';
 
 import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-  // Create custom colored icons
+  let markerCluster = L.markerClusterGroup({
+    maxClusterRadius: 100,
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: false,
+    disableClusteringAtZoom: 15,
+  });
+  
   const createIcon = (category) =>
     L.divIcon({
-      // html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);"></div>`,
       html: `<img src="${category}" style="width: 25px; height: 25px;">`,
       className: 'custom-colored-marker',
       iconSize: [24, 24],
       iconAnchor: [10, 10],
     });
 
-  // Define colors for each category
   const categoryImages = {
-    stores: 'yellow',
     konbinis: konbiniIcon,
     repair: repairIcon,
-    saved: 'red',
-    malls: 'purple', // fallback color for malls
   };
+
+                                              
 
   // Create feature groups for each category
   const featureGroups = {};
 
   // Initialize feature groups and add markers
   Object.keys(imagesDescsLinks).forEach((category) => {
-    featureGroups[category] = new L.FeatureGroup();
+    featureGroups[category] = new L.FeatureGroup(); 
 
     imagesDescsLinks[category].forEach((item) => {
-      const marker = L.marker([item.lat, item.lng], {
-        icon: createIcon(categoryImages[category] || 'gray'),
-      }).bindPopup(`
-          <div>
-            <h3>${category.toUpperCase()}</h3>
-            ${item.imageSrc ? `<img src="${item.imageSrc}" style="max-width: 200px; max-height: 150px;" alt="Location image">` : ''}
+      var markerPopup = L.popup({
+        content: `
+            ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
             <p>${item.desc}</p>
-            ${item.link ? `<a href="${item.link}" target="_blank">More info</a>` : ''}
-            <p><small>Lat: ${item.lat.toFixed(6)}, Lng: ${item.lng.toFixed(6)}</small></p>
-          </div>
-        `).addTo(map);
+            ${item.link ? `<a href="${item.link}" target="_blank">Google Maps</a>` : ''}
+        `,
+        minWidth: 150,
+        maxWidth: 150,
+        closeButton: false,
+        autoPanPaddingTopLeft: [10, 80],
+        autoPanPaddingBottomRight: [10, 10,]
+      });
+
+      const marker = L.marker([item.lat, item.lng],
+        { icon: createIcon(categoryImages[category] || 'gray')}
+      ).bindPopup(markerPopup);
+
+      markerCluster.addLayer(marker);
 
       featureGroups[category].addLayer(marker);
     });
   });
+
+  map.addLayer(markerCluster);
 
   // Create overlay maps object for layer control
   const overlayMaps = {};
