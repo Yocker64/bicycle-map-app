@@ -25,6 +25,8 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
     "leaflet.markercluster": "^1.5.3",
     "modern-normalize": "^3.0.1"
   },

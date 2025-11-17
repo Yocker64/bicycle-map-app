@@ -75,14 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event listeners for the buttons
   loginBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    checkInput();
   });
   signupBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    checkInput();
+    console.log(signemail.value);
+    console.log(signpass.value);
+    console.log(signname.value);
   });
 });
-
-function checkInput() {
-  console.log('こんにちは');
-}

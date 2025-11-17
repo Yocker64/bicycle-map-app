@@ -6,13 +6,13 @@ import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-  let markerCluster = L.markerClusterGroup({
+  const markerCluster = L.markerClusterGroup({
     maxClusterRadius: 100,
     showCoverageOnHover: false,
     spiderfyOnMaxZoom: false,
     disableClusteringAtZoom: 15,
   });
-  
+
   const createIcon = (category) =>
     L.divIcon({
       html: `<img src="${category}" style="width: 25px; height: 25px;">`,
@@ -26,17 +26,15 @@ export function addMarkers(map) {
     repair: repairIcon,
   };
 
-                                              
-
   // Create feature groups for each category
   const featureGroups = {};
 
   // Initialize feature groups and add markers
   Object.keys(imagesDescsLinks).forEach((category) => {
-    featureGroups[category] = new L.FeatureGroup(); 
+    featureGroups[category] = new L.FeatureGroup();
 
     imagesDescsLinks[category].forEach((item) => {
-      var markerPopup = L.popup({
+      const markerPopup = L.popup({
         content: `
             ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
             <p>${item.desc}</p>
@@ -46,12 +44,12 @@ export function addMarkers(map) {
         maxWidth: 150,
         closeButton: false,
         autoPanPaddingTopLeft: [10, 80],
-        autoPanPaddingBottomRight: [10, 10,]
+        autoPanPaddingBottomRight: [10, 10],
       });
 
-      const marker = L.marker([item.lat, item.lng],
-        { icon: createIcon(categoryImages[category] || 'gray')}
-      ).bindPopup(markerPopup);
+      const marker = L.marker([item.lat, item.lng], {
+        icon: createIcon(categoryImages[category] || 'gray'),
+      }).bindPopup(markerPopup);
 
       markerCluster.addLayer(marker);
 
