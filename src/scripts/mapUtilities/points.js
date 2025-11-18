@@ -37,7 +37,7 @@ export function addMarkers(map) {
         content: `
             ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
             <p>${item.desc}</p>
-            ${item.link ? `<a href="${item.link}" target="_blank">Google Maps</a>` : ''}
+            ${item.link ? `<a href="${item.link}" target="_blank">Google Mapsで開く</a>` : ''}
         `,
         minWidth: 150,
         maxWidth: 150,

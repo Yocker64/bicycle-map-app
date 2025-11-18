@@ -13,31 +13,32 @@ export function addUserMarker(map) {
         const lngStr = JSON.stringify(e.latlng.lng);
 
         const userMarkerPopup = document.createElement('div');
-
         const userMarkerLink = document.createElement('a');
+        const closeBtn = document.createElement('button');
+
+        closeBtn.textContent = 'X';
         userMarkerLink.href = `https://www.google.com/maps/place/${latStr},${lngStr}`;
         userMarkerLink.target = "_blank";
         userMarkerLink.textContent = "Google Mapsで開く";
-
         userMarkerPopup.appendChild(userMarkerLink);
+        userMarkerPopup.appendChild(closeBtn);
         userMarkerPopup.className = 'user-marker-popup';
 
         const marker = new L.marker(e.latlng, {
             keyboard: false,
             icon: markerIcon,
-        })
-        .addTo(map);
+        }).addTo(map);
         document.querySelector('body').appendChild(userMarkerPopup);
 
-
+        // Removes marker if there are more than 1, or if close button is pressed
         const markers = document.querySelectorAll('.user-marker');
-        const popup = document.querySelectorAll('.user-marker-popup');
-        if (markers.length > 1) {
-            document.querySelector('.user-marker').remove();
-        }
-        if (popup.length > 1) {
-            document.querySelector('.user-marker-popup').remove();
-        }
+        if (markers.length > 1) removeMarker();
+        closeBtn.addEventListener('click', e => {removeMarker()});
+    }
+
+    function removeMarker() {
+        document.querySelector('.user-marker').remove();
+        document.querySelector('.user-marker-popup').remove();
     }
 
     map.on("contextmenu", addMarker);
