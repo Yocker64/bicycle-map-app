@@ -6,27 +6,18 @@ import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
-<<<<<<< HEAD
-  const markerCluster = L.markerClusterGroup({
-=======
   // Marker clusters declarations
   let markerClusterOptions = {
->>>>>>> refs/remotes/origin/main
     maxClusterRadius: 100,
     showCoverageOnHover: false,
     spiderfyOnMaxZoom: false,
     disableClusteringAtZoom: 15,
-<<<<<<< HEAD
-  });
-
-=======
   };
   let konbMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   let repairMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   let masterMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   
   // Marker icons
->>>>>>> refs/remotes/origin/main
   const createIcon = (category) =>
     L.divIcon({
       html: `<img src="${category}" style="width: 25px; height: 25px;">`,
@@ -39,18 +30,8 @@ export function addMarkers(map) {
     repair: repairIcon,
   };
 
-<<<<<<< HEAD
-  // Create feature groups for each category
-  const featureGroups = {};
-
-  // Initialize feature groups and add markers
-  Object.keys(imagesDescsLinks).forEach((category) => {
-    featureGroups[category] = new L.FeatureGroup();
-
-=======
   // Create icons and popups for each marker, and add it to its respective cluster
   Object.keys(imagesDescsLinks).forEach((category) => {
->>>>>>> refs/remotes/origin/main
     imagesDescsLinks[category].forEach((item) => {
       const markerPopup = L.popup({
         content: `
@@ -65,16 +46,10 @@ export function addMarkers(map) {
         autoPanPaddingBottomRight: [10, 10],
       });
 
-<<<<<<< HEAD
-      const marker = L.marker([item.lat, item.lng], {
-        icon: createIcon(categoryImages[category] || 'gray'),
-      }).bindPopup(markerPopup);
-=======
       const marker = L.marker(
         [item.lat, item.lng],
         {icon: createIcon(categoryImages[category] || 'gray')}
       ).bindPopup(markerPopup);
->>>>>>> refs/remotes/origin/main
 
       switch (category) {
         case 'konbinis':

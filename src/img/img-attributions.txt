@@ -3,3 +3,4 @@
 <a href="https://www.flaticon.com/free-icons/nav" title="nav icons">Nav icons created by Alfredo Creates - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/car-repair" title="car repair icons">Car repair icons created by Aranagraphics - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/shop" title="shop icons">Shop icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/google-maps" title="google-maps icons">Google-maps icons created by Smashicons - Flaticon</a>
