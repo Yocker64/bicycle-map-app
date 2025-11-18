@@ -12,7 +12,7 @@ img {
 /* MAP CONTROLS */
 .leaflet-bottom.leaflet-right,
 .leaflet-bottom.leaflet-left {
-    margin: 10px;
+    margin: calc(var(--ui-side-margins) * 1) var(--ui-side-margins);
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -228,6 +228,19 @@ img {
     font-weight: bold;
     line-break: auto;
     user-select: text;
+}
+
+a.leaflet-popup-close-button {
+    transform: translate(15px, -5px);
+}
+
+.leaflet-popup-close-button span {
+    border-radius: 50%;
+    display: block;
+    background-color: var(--yellow);
+    color: black;
+    font-weight: bolder;
+    outline: 2px solid var(--translucid-black);
 }
 
 /* ATTRIBUTION */

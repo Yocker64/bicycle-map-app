@@ -22,28 +22,13 @@ export function addUserMarker(map) {
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.className = 'user-marker-popup';
 
-        // const markerPopup = L.popup({
-        //     content: `
-        //         <a href="https://www.google.com/maps/place/${latStr},${lngStr}" target="_blank">Google Mapsで開く</a>
-        //     `,
-        //     className: 'user-marker-popup',
-        //     minWidth: 150,
-        //     autoClose: false,
-        //     closeOnClick: false,
-        //     closeButton: true,
-        //     autoPanPaddingTopLeft: [10, 80],
-        //     autoPanPaddingBottomRight: [10, 10],
-        // });
-
         const marker = new L.marker(e.latlng, {
             keyboard: false,
             icon: markerIcon,
         })
-        // .bindPopup(markerPopup)
         .addTo(map);
         document.querySelector('body').appendChild(userMarkerPopup);
 
-        // marker.openPopup();
 
         const markers = document.querySelectorAll('.user-marker');
         const popup = document.querySelectorAll('.user-marker-popup');

@@ -41,7 +41,8 @@ export function addMarkers(map) {
         `,
         minWidth: 150,
         maxWidth: 150,
-        closeButton: false,
+        closeButton: true,
+        closeOnClick: true,
         autoPanPaddingTopLeft: [10, 80],
         autoPanPaddingBottomRight: [10, 10],
       });

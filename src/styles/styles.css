@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --translucid-white: rgba(255, 255, 255, 0.7);
+  --less-translucid-white: rgba(255, 255, 255, 0.9);
   --translucid-black: rgba(0, 0, 0, 0.3);
   --dark-gray: #353535;
   --light-blue: #0078A8;
