@@ -1,6 +1,7 @@
 :root {
     --ui-side-margins: 3vw;
     touch-action: none;
+    overflow: hidden;
 }
 
 .top-bar {
@@ -46,4 +47,34 @@
 
 .marker-control-toggle {
     cursor: pointer;
+}
+
+
+.user-marker-popup {
+    position: sticky;
+    bottom: var(--ui-side-margins);
+    z-index: 100000000;
+    height: 60px;
+    width: 20vw;
+    margin: auto;
+    padding: 10px;
+
+    background-color: var(--translucid-white);
+    color: black;
+
+    border-radius: 20px;
+    border: 2px solid var(--translucid-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 500ms;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.user-marker-popup a {
+    color: var(--light-blue);
 }
