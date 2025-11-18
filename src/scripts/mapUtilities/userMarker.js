@@ -2,10 +2,10 @@ import icon from '../../img/map-ui/user-marker.png';
 
 export function addUserMarker(map) {
     const markerIcon = L.divIcon({
-        html: `<img src="${icon}" style="width: 34px; height: 34px;">`,
+        html: `<img src="${icon}" style="width: 40px; height: 40px;">`,
         className: 'user-marker',
-        iconSize: [34, 34],
-        iconAnchor: [17, 34],
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
     });
 
     function addMarker(e) {
