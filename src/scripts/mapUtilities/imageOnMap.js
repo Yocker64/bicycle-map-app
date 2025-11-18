@@ -1,4 +1,4 @@
-import pointerImg from '../../img/map-point.svg';
+import pointerImg from '../../img/map-ui/map-point.svg';
 
 export function addImagesOnMap(map, imageSrc, desc, link) {
   /* eslint-disable no-undef */
