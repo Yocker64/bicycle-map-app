@@ -44,7 +44,7 @@ export function addMarkers(map) {
         closeButton: true,
         closeOnClick: true,
         autoPanPaddingTopLeft: [10, 80],
-        autoPanPaddingBottomRight: [10, 10],
+        autoPanPaddingBottomRight: [25, 10],
       });
 
       const marker = L.marker(

@@ -40,5 +40,5 @@ export function addUserMarker(map) {
         }
     }
 
-    map.on("click", addMarker);
+    map.on("contextmenu", addMarker);
 }

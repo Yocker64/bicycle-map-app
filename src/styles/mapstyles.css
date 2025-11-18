@@ -1,5 +1,6 @@
 #map {
     font-family: var(--system-ui);
+    -webkit-user-select: none;
 }
 
 img {
@@ -183,6 +184,12 @@ img {
 }
 
 /* MARKERS */
+.user-marker {
+    user-select: none;
+    touch-action: none;
+    -webkit-touch-callout: none;
+}
+
 .gps-icon {
     z-index: 100000000 !important;
 }
