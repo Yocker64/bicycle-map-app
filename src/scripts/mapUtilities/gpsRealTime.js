@@ -1,9 +1,9 @@
-import gpsImg from '../img/icons/gps.png';
-import gpsControlImg from '../img/map-ui/gps-control-icon.png';
+import gpsImg from '../../img/icons/gps.png';
+import gpsControlImg from '../../img/map-ui/gps-control-icon.png';
 
 export function initGPS(MAP) {
   if (!navigator.geolocation) {
-    console.log("Geolocation is not supported by this browser.");
+    console.log('Geolocation is not supported by this browser.');
     return;
   }
 
@@ -17,31 +17,31 @@ export function initGPS(MAP) {
   let gpsLoadedOnce = false;
   let followGps = false;
 
-  var gpsIcon = L.divIcon({
+  const gpsIcon = L.divIcon({
     html: `<img src="${gpsImg}" style="width: 25px; height: 25px; border: 3px solid white;">`,
     className: 'gps-icon',
     iconSize: [24, 24],
     iconAnchor: [10, 10],
-  })
+  });
 
   const gpsControl = L.Control.extend({
     options: {
-      position: "bottomright",
+      position: 'bottomright',
     },
-    onAdd: function (MAP) {
-      const btn = L.DomUtil.create("img");
+    onAdd(MAP) {
+      const btn = L.DomUtil.create('img');
       btn.src = gpsControlImg;
-      btn.className = "gps-button";
+      btn.className = 'gps-button';
       btn.draggable = false;
 
       btn.onclick = function () {
         if (followGps === true) {
           followGps = false;
-          btn.className = "gps-button leaflet-control inactive";
+          btn.className = 'gps-button leaflet-control inactive';
         } else {
           followGps = true;
           MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
-          btn.className = "gps-button leaflet-control active";
+          btn.className = 'gps-button leaflet-control active';
         }
         console.log(followGps);
       };
@@ -62,14 +62,11 @@ export function initGPS(MAP) {
     if (marker) MAP.removeLayer(marker);
     if (accuracyCircle) MAP.removeLayer(accuracyCircle);
 
-    marker = L.marker(
-      [lat, lon],
-      {icon: gpsIcon}
-    ).addTo(MAP);
+    marker = L.marker([lat, lon], { icon: gpsIcon }).addTo(MAP);
     accuracyCircle = L.circle([lat, lon], {
       radius: acc,
       stroke: false,
-      fillOpacity: 0.2
+      fillOpacity: 0.2,
     }).addTo(MAP);
 
     if (acc <= RECENTER_THRESHOLD || acc < bestAcc) {
@@ -85,11 +82,11 @@ export function initGPS(MAP) {
 
   const watchId = navigator.geolocation.watchPosition(
     update,
-    (err) => console.log("Geolocation error:", err),
+    (err) => console.log('Geolocation error:', err),
     {
       enableHighAccuracy: true,
       maximumAge: 0,
-      timeout: 20000
-    }
+      timeout: 20000,
+    },
   );
 }

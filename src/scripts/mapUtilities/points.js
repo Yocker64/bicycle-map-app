@@ -7,16 +7,16 @@ import repairIcon from '../../img/icons/wrench.png';
 
 export function addMarkers(map) {
   // Marker clusters declarations
-  let markerClusterOptions = {
+  const markerClusterOptions = {
     maxClusterRadius: 100,
     showCoverageOnHover: false,
     spiderfyOnMaxZoom: false,
     disableClusteringAtZoom: 15,
   };
-  let konbMarkerCluster = L.markerClusterGroup(markerClusterOptions);
-  let repairMarkerCluster = L.markerClusterGroup(markerClusterOptions);
-  let masterMarkerCluster = L.markerClusterGroup(markerClusterOptions);
-  
+  const konbMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+  const repairMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+  const masterMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+
   // Marker icons
   const createIcon = (category) =>
     L.divIcon({
@@ -47,10 +47,9 @@ export function addMarkers(map) {
         autoPanPaddingBottomRight: [25, 10],
       });
 
-      const marker = L.marker(
-        [item.lat, item.lng],
-        {icon: createIcon(categoryImages[category] || 'gray')}
-      ).bindPopup(markerPopup);
+      const marker = L.marker([item.lat, item.lng], {
+        icon: createIcon(categoryImages[category] || 'gray'),
+      }).bindPopup(markerPopup);
 
       switch (category) {
         case 'konbinis':
@@ -61,7 +60,7 @@ export function addMarkers(map) {
           break;
         default:
           break;
-      };
+      }
     });
   });
 
@@ -69,59 +68,60 @@ export function addMarkers(map) {
   const markerControlIcon = document.querySelector('.marker-control-toggle');
   markerControlIcon.addEventListener('click', () => {
     const controlDiv = document.querySelector('.marker-control');
-    controlDiv.classList.contains("hidden") ? controlDiv.classList.remove("hidden") : controlDiv.classList.add("hidden");
+    controlDiv.classList.contains('hidden')
+      ? controlDiv.classList.remove('hidden')
+      : controlDiv.classList.add('hidden');
   });
 
   const markerControl = L.Control.extend({
     options: {
-      position: "topright",
+      position: 'topright',
     },
-    onAdd: function () {
-      const div = L.DomUtil.create("div");
-      let konbBtn = this.createButton("コンビニ", konbMarkerCluster);
-      let repairBtn = this.createButton("修理店", repairMarkerCluster);
-      let parkingBtn = this.createButton("駐輪場", repairMarkerCluster);
+    onAdd() {
+      const div = L.DomUtil.create('div');
+      const konbBtn = this.createButton('コンビニ', konbMarkerCluster);
+      const repairBtn = this.createButton('修理店', repairMarkerCluster);
+      const parkingBtn = this.createButton('駐輪場', repairMarkerCluster);
 
-      div.className = "marker-control hidden";
+      div.className = 'marker-control hidden';
       div.appendChild(konbBtn);
       div.appendChild(repairBtn);
       div.appendChild(parkingBtn);
 
       return div;
     },
-    createButton: function (label, cluster) {
-      const btn = L.DomUtil.create("button");
-      
+    createButton(label, cluster) {
+      const btn = L.DomUtil.create('button');
+
       this.addClusterLayer(cluster);
       btn.textContent = label;
-      btn.classList.add("checked");
+      btn.classList.add('checked');
 
       btn.onclick = () => {
-        if (btn.classList.contains("unchecked")) {
+        if (btn.classList.contains('unchecked')) {
           this.addClusterLayer(cluster);
 
-          btn.classList.remove("unchecked");
-          btn.classList.add("checked");
+          btn.classList.remove('unchecked');
+          btn.classList.add('checked');
         } else {
           this.removeClusterLayer(cluster);
 
-          btn.classList.remove("checked");
-          btn.classList.add("unchecked");
+          btn.classList.remove('checked');
+          btn.classList.add('unchecked');
         }
       };
       return btn;
     },
-    addClusterLayer: function (cluster) {
+    addClusterLayer(cluster) {
       masterMarkerCluster.addLayer(cluster);
       map.addLayer(masterMarkerCluster);
     },
-    removeClusterLayer: function (cluster) {
+    removeClusterLayer(cluster) {
       masterMarkerCluster.removeLayer(cluster);
       map.addLayer(masterMarkerCluster);
     },
   });
   map.addControl(new markerControl());
-
 
   // Log category statistics
   console.log('Category Statistics:', DataAccess.getCategoryStats());

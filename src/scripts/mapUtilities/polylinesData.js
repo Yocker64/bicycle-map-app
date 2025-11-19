@@ -6,7 +6,7 @@ const lines = {
     [northLimit, eastLimit],
     [southLimit, eastLimit],
     [southLimit, westLimit],
-    [northLimit, westLimit]
+    [northLimit, westLimit],
   ],
   keinawa: [
     [35.011886285, 135.680273345],
