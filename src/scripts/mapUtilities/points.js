@@ -4,6 +4,7 @@ import { imagesDescsLinks, DataAccess } from './pointsData';
 
 import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
+import parkIcon from '../../img/icons/park.png';
 
 export function addMarkers(map) {
   // Marker clusters declarations
@@ -15,19 +16,21 @@ export function addMarkers(map) {
   };
   const konbMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   const repairMarkerCluster = L.markerClusterGroup(markerClusterOptions);
+  const parkMarkerCluster = L.markerClusterGroup(markerClusterOptions);
   const masterMarkerCluster = L.markerClusterGroup(markerClusterOptions);
 
   // Marker icons
   const createIcon = (category) =>
     L.divIcon({
-      html: `<img src="${category}" style="width: 25px; height: 25px;">`,
+      html: `<img src="${category}" style="width: 20px; height: 20px;">`,
       className: 'custom-colored-marker',
-      iconSize: [24, 24],
-      iconAnchor: [10, 10],
+      iconSize: [20, 20],
+      iconAnchor: [10, 5],
     });
   const categoryImages = {
     konbinis: konbiniIcon,
     repair: repairIcon,
+    parking: parkIcon,
   };
 
   // Create icons and popups for each marker, and add it to its respective cluster
@@ -37,13 +40,14 @@ export function addMarkers(map) {
         content: `
             ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
             <p>${item.desc}</p>
-            ${item.link ? `<a href="${item.link}" target="_blank">Google Maps</a>` : ''}
+            ${item.link ? `<a href="${item.link}" target="_blank">Google Mapsで開く</a>` : ''}
         `,
         minWidth: 150,
         maxWidth: 150,
-        closeButton: false,
+        closeButton: true,
+        closeOnClick: true,
         autoPanPaddingTopLeft: [10, 80],
-        autoPanPaddingBottomRight: [10, 10],
+        autoPanPaddingBottomRight: [25, 10],
       });
 
       const marker = L.marker([item.lat, item.lng], {
@@ -56,6 +60,9 @@ export function addMarkers(map) {
           break;
         case 'repair':
           repairMarkerCluster.addLayer(marker);
+          break;
+        case 'parking':
+          parkMarkerCluster.addLayer(marker);
           break;
         default:
           break;
@@ -80,7 +87,7 @@ export function addMarkers(map) {
       const div = L.DomUtil.create('div');
       const konbBtn = this.createButton('コンビニ', konbMarkerCluster);
       const repairBtn = this.createButton('修理店', repairMarkerCluster);
-      const parkingBtn = this.createButton('駐輪場', repairMarkerCluster);
+      const parkingBtn = this.createButton('駐輪場', parkMarkerCluster);
 
       div.className = 'marker-control hidden';
       div.appendChild(konbBtn);

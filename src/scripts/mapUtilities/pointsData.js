@@ -1,3 +1,4 @@
+import park from '../../img/park.png';
 import shuuri from '../../img/shuuri.png';
 import konbini from '../../img/konb.png';
 import eleven from '../../img/7eleven.png';
@@ -7,6 +8,848 @@ import ministop from '../../img/ministop.png';
 import lawson from '../../img/lawson.png';
 
 export const imagesDescsLinks = {
+  parking: [
+    {
+      link: "https://www.google.com/maps/place/Omuronura+Bicycle/data=!4m7!3m6!1s0x600108a7d8ab8b29:0x9e4380a6165b79df!8m2!3d34.9867024!4d135.7535931!16s%2Fg%2F11bw3c47wd!19sChIJKYur2KcIAWAR33lbFqaAQ54?authuser=0&hl=en&rclk=1",
+      desc: "Omuronura Bicycle",
+      lat: 34.9867024,
+      lng: 135.7535931,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+City+Kyoto+Station+Hachijo+Exit+West+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010951d740b9a1:0xb8f500e2033de00f!8m2!3d34.9844499!4d135.7541716!16s%2Fg%2F11t3hpl8n5!19sChIJoblA11EJAWARD-A9A-IA9bg?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto City Kyoto Station Hachijo Exit West Bicycle Parking Lot",
+      lat: 34.9844499,
+      lng: 135.7541716,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Shimogy%C5%8D+Ward+Office+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x600108a620fcd123:0x828f269e0820cdda!8m2!3d34.9876512!4d135.7553081!16s%2Fg%2F11bwfljgdm!19sChIJI9H8IKYIAWAR2s0gCJ4mj4I?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Shimogyō Ward Office Bicycle Parking Lot",
+      lat: 34.9876512,
+      lng: 135.7553081,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Kyoto+Station+Hachijo+Exit+Machikado+Bicycle+Parking+Lot+%28Monthly+Subscription+Area%29/data=!4m7!3m6!1s0x60010947c468903f:0xf0d744e550e4adae!8m2!3d34.9843642!4d135.7547941!16s%2Fg%2F11rxwgyb01!19sChIJP5BoxEcJAWARrq3kUOVE1_A?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Kyoto Station Hachijo Exit Machikado Bicycle Parking Lot (Monthly Subscription Area)",
+      lat: 34.9843642,
+      lng: 135.7547941,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+Station+Building+West+Parking+Lot+for+Motorcycles/data=!4m7!3m6!1s0x60010970c859e541:0xd37fe30bc67c3e3f!8m2!3d34.9862189!4d135.7566129!16s%2Fg%2F11ph2s21s0!19sChIJQeVZyHAJAWARPz58xgvjf9M?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto Station Building West Parking Lot for Motorcycles",
+      lat: 34.9862189,
+      lng: 135.7566129,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bicycle+Parking+Lot,+Campus+Plaza+Kyoto/data=!4m7!3m6!1s0x60010950cbe34e2f:0x74274d483709d1b2!8m2!3d34.9862131!4d135.7555368!16s%2Fg%2F11p5g8mhzk!19sChIJL07jy1AJAWARstEJN0hNJ3Q?authuser=0&hl=en&rclk=1",
+      desc: "Bicycle Parking Lot, Campus Plaza Kyoto",
+      lat: 34.9862131,
+      lng: 135.7555368,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Umekoji+Park+Omiya+South+Gate+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001061ce9cef3cb:0xcf1bc3099186a5a0!8m2!3d34.985811!4d135.7489291!16s%2Fg%2F11c5435pvn!19sChIJy_PO6RwGAWARoKWGkQnDG88?authuser=0&hl=en&rclk=1",
+      desc: "Umekoji Park Omiya South Gate Bicycle Parking Lot",
+      lat: 34.985811,
+      lng: 135.7489291,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ion+Mall+KYOTO+Bicycle/data=!4m7!3m6!1s0x600108abc646f84b:0xf18838e38c7e6b77!8m2!3d34.982747!4d135.7545979!16s%2Fg%2F11c3svc8sm!19sChIJS_hGxqsIAWARd2t-jOM4iPE?authuser=0&hl=en&rclk=1",
+      desc: "Ion Mall KYOTO Bicycle",
+      lat: 34.982747,
+      lng: 135.7545979,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Kyoto+Station+Hachijo+Exit+Machikado+Bicycle+Parking+Lot+2/data=!4m7!3m6!1s0x600108aeb2179a0f:0xefdfbb440763405c!8m2!3d34.9844601!4d135.757093!16s%2Fg%2F11bztjyckz!19sChIJD5oXsq4IAWARXEBjB0S73-8?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Kyoto Station Hachijo Exit Machikado Bicycle Parking Lot 2",
+      lat: 34.9844601,
+      lng: 135.757093,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Kyoto+Aquarium+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x600107bc782e4959:0x72d1b0ca8fa2cfec!8m2!3d34.9877225!4d135.7487303!16s%2Fg%2F11g_zwl7w3!19sChIJWUkueLwHAWAR7M-ij8qw0XI?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Kyoto Aquarium Bicycle Parking Lot",
+      lat: 34.9877225,
+      lng: 135.7487303,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/JKK+Bicycle/data=!4m7!3m6!1s0x600109d1f3fb246b:0x8946d4895c7128cb!8m2!3d34.9844845!4d135.7552081!16s%2Fg%2F11rxwh8n37!19sChIJayT789EJAWARyyhxXInURok?authuser=0&hl=en&rclk=1",
+      desc: "JKK Bicycle",
+      lat: 34.9844845,
+      lng: 135.7552081,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Yodobashi+Jitenshaba+Bicycle/data=!4m7!3m6!1s0x600108af999b42ef:0x37b22b3744a9a70f!8m2!3d34.988554!4d135.7587607!16s%2Fg%2F11f50x20_3!19sChIJ70Kbma8IAWARD6epRDcrsjc?authuser=0&hl=en&rclk=1",
+      desc: "Yodobashi Jitenshaba Bicycle",
+      lat: 34.988554,
+      lng: 135.7587607,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E8%87%AA%E8%BB%A2%E8%BB%8A%E7%BD%AE%E5%A0%B4/data=!4m7!3m6!1s0x60010900518873b7:0x3474ea0f5353e26!8m2!3d34.9829544!4d135.7539612!16s%2Fg%2F11yf_s9f4_!19sChIJt3OIUQAJAWARJj419aBORwM?authuser=0&hl=en&rclk=1",
+      desc: "自転車置場",
+      lat: 34.9829544,
+      lng: 135.7539612,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E6%A2%85%E5%B0%8F%E8%B7%AF%E5%85%AC%E5%9C%92%E4%B8%83%E6%9D%A1%E5%85%A5%E5%8F%A3%E5%BA%83%E5%A0%B4+%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%BB%E3%83%90%E3%82%A4%E3%82%AF%E9%A7%90%E8%BB%8A%E5%A0%B4/data=!4m7!3m6!1s0x600106184ad5a767:0xea3a1ef014f3e75b!8m2!3d34.9889491!4d135.7438984!16s%2Fg%2F11c54mv4j0!19sChIJZ6fVShgGAWARW-fzFPAeOuo?authuser=0&hl=en&rclk=1",
+      desc: "梅小路公園七条入口広場 自転車・バイク駐車場",
+      lat: 34.9889491,
+      lng: 135.7438984,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/D-Parking+-+Kyoto+Station+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001094b7b280883:0x3205c398b6f0d189!8m2!3d34.9858554!4d135.7613287!16s%2Fg%2F11f8jr1r1f!19sChIJgwgoe0sJAWARidHwtpjDBTI?authuser=0&hl=en&rclk=1",
+      desc: "D-Parking - Kyoto Station Bicycle Parking Lot",
+      lat: 34.9858554,
+      lng: 135.7613287,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Kyoto+Station+Hachijo+Exit+Machikado+Motorcycle+Parking+Lot/data=!4m7!3m6!1s0x600108adc1ce4097:0x66ccab6f3f8743b0!8m2!3d34.9843815!4d135.7603496!16s%2Fg%2F11gdswss45!19sChIJl0DOwa0IAWARsEOHP2-rzGY?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Kyoto Station Hachijo Exit Machikado Motorcycle Parking Lot",
+      lat: 34.9843815,
+      lng: 135.7603496,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E4%B8%83%E6%9D%A1%E8%A5%BF%E6%B4%9E%E9%99%A2%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x600109d1b9cd8e2d:0xad5ceb4c0d735ce!8m2!3d34.9893691!4d135.754998!16s%2Fg%2F11j003c0x9!19sChIJLY7NudEJAWARzjXXwLTO1Qo?authuser=0&hl=en&rclk=1",
+      desc: "七条西洞院駐輪場",
+      lat: 34.9893691,
+      lng: 135.754998,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%AF%BA%E9%A7%85%E8%87%AA%E8%BB%A2%E8%BB%8A%E7%AD%89%E9%A7%90%E8%BB%8A%E5%A0%B4/data=!4m7!3m6!1s0x600108aa9aefffff:0xe55790c7c0621df8!8m2!3d34.9789562!4d135.7525168!16s%2Fg%2F11c6y_61h3!19sChIJ___vmqoIAWAR-B1iwMeQV-U?authuser=0&hl=en&rclk=1",
+      desc: "京都市東寺駅自転車等駐車場",
+      lat: 34.9789562,
+      lng: 135.7525168,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Higashi-Shiokoji-cho+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x600109f242c60ca3:0x8ba6135af54a0cd1!8m2!3d34.9887197!4d135.7591526!16s%2Fg%2F11r4mzmrkw!19sChIJowzGQvIJAWAR0QxK9VoTpos?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Higashi-Shiokoji-cho Bicycle Parking Lot",
+      lat: 34.9887197,
+      lng: 135.7591526,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+Station+Building+East+Parking+Lot+for+Bicycles+and+Motorcycles/data=!4m7!3m6!1s0x6001098aa61bdc99:0xa8d3913ce8e94a9f!8m2!3d34.9857465!4d135.7614467!16s%2Fg%2F11pgwbbd1s!19sChIJmdwbpooJAWARn0rp6DyR06g?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto Station Building East Parking Lot for Bicycles and Motorcycles",
+      lat: 34.9857465,
+      lng: 135.7614467,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Abanti+Bldg.+Bike+Locker/data=!4m7!3m6!1s0x600108ada52640cd:0x3f6f88cd5e0613dd!8m2!3d34.983411!4d135.7604842!16s%2Fg%2F11cs0ch0x5!19sChIJzUAmpa0IAWAR3RMGXs2Ibz8?authuser=0&hl=en&rclk=1",
+      desc: "Abanti Bldg. Bike Locker",
+      lat: 34.983411,
+      lng: 135.7604842,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%83%8A%E3%83%93%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E6%A2%85%E5%B0%8F%E8%B7%AF%E4%BA%AC%E9%83%BD%E8%A5%BF%E9%A7%85%E5%89%8D/data=!4m7!3m6!1s0x600107aa3520442d:0x37c44e14267bd6e7!8m2!3d34.9892987!4d135.7427881!16s%2Fg%2F11rklx8vl5!19sChIJLUQgNaoHAWAR59Z7JhROxDc?authuser=0&hl=en&rclk=1",
+      desc: "ナビサイクル梅小路京都西駅前",
+      lat: 34.9892987,
+      lng: 135.7427881,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+City+Kyoto+Station+Hachijo+Exit+East+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001099b0c8d3f9f:0xd5fe3adb74e32a40!8m2!3d34.9840329!4d135.7609497!16s%2Fg%2F11t31vn63_!19sChIJnz-NDJsJAWARQCrjdNs6_tU?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto City Kyoto Station Hachijo Exit East Bicycle Parking Lot",
+      lat: 34.9840329,
+      lng: 135.7609497,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/T-park%E5%A4%A7%E5%A0%80%E7%94%BA/data=!4m7!3m6!1s0x600108a2c0769829:0xbab4a43c3ad0c0f8!8m2!3d34.9976058!4d135.7604863!16s%2Fg%2F11dxnrr0xt!19sChIJKZh2wKIIAWAR-MDQOjyktLo?authuser=0&hl=en&rclk=1",
+      desc: "T-park大堀町",
+      lat: 34.9976058,
+      lng: 135.7604863,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/T-park+%E4%B9%9D%E6%9D%A1%E8%BB%8A%E5%BA%AB%E5%89%8D%EF%BC%88%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%89%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%AE%9D%E5%B7%A5%E6%A5%AD/data=!4m7!3m6!1s0x600108ab4e8b8c85:0xdbfd631078df24cc!8m2!3d34.9793003!4d135.7564054!16s%2Fg%2F11f54s52ss!19sChIJhYyLTqsIAWARzCTfeBBj_ds?authuser=0&hl=en&rclk=1",
+      desc: "T-park 九条車庫前（駐輪場）株式会社宝工業",
+      lat: 34.9793003,
+      lng: 135.7564054,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Fruit-bike/data=!4m7!3m6!1s0x600108afe87cad45:0x3a46313a9e73260d!8m2!3d34.9890593!4d135.7609672!16s%2Fg%2F11df81f47t!19sChIJRa186K8IAWARDSZznjoxRjo?authuser=0&hl=en&rclk=1",
+      desc: "Fruit-bike",
+      lat: 34.9890593,
+      lng: 135.7609672,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kurutto+Park+24H+Umekoji+Park+Nanajo+Entrance+Square+Motorcycle+Parking+Lot/data=!4m7!3m6!1s0x600107ffe7334943:0x975038fe45988d5a!8m2!3d34.9889513!4d135.7439627!16s%2Fg%2F11ry37pykl!19sChIJQ0kz5_8HAWARWo2YRf44UJc?authuser=0&hl=en&rclk=1",
+      desc: "Kurutto Park 24H Umekoji Park Nanajo Entrance Square Motorcycle Parking Lot",
+      lat: 34.9889513,
+      lng: 135.7439627,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Shirakawa+Bldg.+Bicycle/data=!4m7!3m6!1s0x600109cd55816295:0x2065fa438bbab886!8m2!3d34.9829091!4d135.7609544!16s%2Fg%2F11nwb70hmy!19sChIJlWKBVc0JAWARhri6i0P6ZSA?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Shirakawa Bldg. Bicycle",
+      lat: 34.9829091,
+      lng: 135.7609544,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Mitsuino+Repark+Kyoto+Ekimae+Bike+Locker/data=!4m7!3m6!1s0x60010989239f4a69:0xb7c75ddb9def2140!8m2!3d34.9872133!4d135.7591689!16s%2Fg%2F11l5dgs8f2!19sChIJaUqfI4kJAWARQCHvndtdx7c?authuser=0&hl=en&rclk=1",
+      desc: "Mitsuino Repark Kyoto Ekimae Bike Locker",
+      lat: 34.9872133,
+      lng: 135.7591689,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E5%9C%B0%E4%B8%8B%E6%A9%9F%E6%A2%B0%E5%BC%8F%E9%A7%90%E8%BC%AA%E5%A0%B4+%E4%BA%AC%E9%83%BD%E3%82%A2%E3%83%90%E3%83%B3%E3%83%86%E3%82%A3%E5%89%8D/data=!4m7!3m6!1s0x600109f6ec8789a3:0x7fb76bfef74c72d5!8m2!3d34.9841101!4d135.760941!16s%2Fg%2F11mv_vp7hx!19sChIJo4mH7PYJAWAR1XJM9_5rt38?authuser=0&hl=en&rclk=1",
+      desc: "地下機械式駐輪場 京都アバンティ前",
+      lat: 34.9841101,
+      lng: 135.760941,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Time+Space+Kujo+Ekimae+Bicycle+Parking/data=!4m7!3m6!1s0x60010f29beb0934d:0x1289b8c32ca244ef!8m2!3d34.9789525!4d135.7595766!16s%2Fg%2F11ppyh2gs_!19sChIJTZOwvikPAWAR70SiLMO4iRI?authuser=0&hl=en&rclk=1",
+      desc: "Time Space Kujo Ekimae Bicycle Parking",
+      lat: 34.9789525,
+      lng: 135.7595766,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bike+Jitensha+Bicycle/data=!4m7!3m6!1s0x6001090019917027:0x8ea66035b9cd9343!8m2!3d34.988854!4d135.759441!16s%2Fg%2F11vwn28rtr!19sChIJJ3CRGQAJAWARQ5PNuTVgpo4?authuser=0&hl=en&rclk=1",
+      desc: "Bike Jitensha Bicycle",
+      lat: 34.988854,
+      lng: 135.759441,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%91%E3%83%BC%E3%82%AF%E4%BA%AC%E9%98%AA%E6%B8%85%E6%B0%B4%E4%BA%94%E6%9D%A1%E9%A7%85/data=!4m7!3m6!1s0x600108b8f95e3599:0x548d8ffd1f9786dc!8m2!3d34.9962527!4d135.768879!16s%2Fg%2F11g9nlkbp1!19sChIJmTVe-bgIAWAR3IaXH_2PjVQ?authuser=0&hl=en&rclk=1",
+      desc: "フルーツ自転車パーク京阪清水五条駅",
+      lat: 34.9962527,
+      lng: 135.768879,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Shichijo+West+Bicycle+Parking/data=!4m7!3m6!1s0x600108b424ad966f:0xa509a68e7cf23206!8m2!3d34.988209!4d135.7678299!16s%2Fg%2F11f_h_vmyl!19sChIJb5atJLQIAWARBjLyfI6mCaU?authuser=0&hl=en&rclk=1",
+      desc: "Shichijo West Bicycle Parking",
+      lat: 34.988209,
+      lng: 135.7678299,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kurutto+Park+Kyotoekihachijoguchimae+Bike+Locker/data=!4m7!3m6!1s0x6001096ed55cfef3:0x8f7c1a6e15974148!8m2!3d34.9837768!4d135.7588254!16s%2Fg%2F11yd7lmzgw!19sChIJ8_5c1W4JAWARSEGXFW4afI8?authuser=0&hl=en&rclk=1",
+      desc: "Kurutto Park Kyotoekihachijoguchimae Bike Locker",
+      lat: 34.9837768,
+      lng: 135.7588254,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E4%BA%AC%E9%98%AA%E4%B8%83%E6%9D%A1%E9%A7%85%E5%89%8D24%E6%99%82%E9%96%93%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6001092e163e936b:0xad694558abf319fc!8m2!3d34.9893936!4d135.7690098!16s%2Fg%2F11rtdn648w!19sChIJa5M-Fi4JAWAR_Bnzq1hFaa0?authuser=0&hl=en&rclk=1",
+      desc: "京阪七条駅前24時間駐輪場",
+      lat: 34.9893936,
+      lng: 135.7690098,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Umekoji+Kyotonishi+50+cc+Ika+Bike+Bicycle/data=!4m7!3m6!1s0x6001074585062801:0x48e958d8257a1f2b!8m2!3d34.9900342!4d135.7430778!16s%2Fg%2F11rn7kbn7w!19sChIJASgGhUUHAWARKx96JdhY6Ug?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Umekoji Kyotonishi 50 cc Ika Bike Bicycle",
+      lat: 34.9900342,
+      lng: 135.7430778,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Repark+Charipa+Ky%C5%8Dto+Ekimae+Bicycle/data=!4m7!3m6!1s0x60010900581fbe63:0xb1cb3867647bcdbe!8m2!3d34.9840109!4d135.7621356!16s%2Fg%2F11vs6jj5yh!19sChIJY74fWAAJAWARvs17ZGc4y7E?authuser=0&hl=en&rclk=1",
+      desc: "Repark Charipa Kyōto Ekimae Bicycle",
+      lat: 34.9840109,
+      lng: 135.7621356,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Scooter+Bicycle/data=!4m7!3m6!1s0x6001090020efeff5:0xd66f7f117642de7e!8m2!3d34.9844774!4d135.7607345!16s%2Fg%2F11lck4hcs2!19sChIJ9e_vIAAJAWARft5CdhF_b9Y?authuser=0&hl=en&rclk=1",
+      desc: "Scooter Bicycle",
+      lat: 34.9844774,
+      lng: 135.7607345,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyo+Link+Keihan+Nanajo+Bicycle/data=!4m7!3m6!1s0x60010915ad28594b:0xccb20366cf6fdaa6!8m2!3d34.9891471!4d135.7683087!16s%2Fg%2F11t8gqrqcm!19sChIJS1korRUJAWARptpvz2YDssw?authuser=0&hl=en&rclk=1",
+      desc: "Kyo Link Keihan Nanajo Bicycle",
+      lat: 34.9891471,
+      lng: 135.7683087,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Tambaguchi+Station+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x600107210c57f4c7:0xe6cdb34949f00d3b!8m2!3d34.9963364!4d135.7422967!16s%2Fg%2F11nmd59q4_!19sChIJx_RXDCEHAWAROw3wSUmzzeY?authuser=0&hl=en&rclk=1",
+      desc: "Tambaguchi Station Bicycle Parking Lot",
+      lat: 34.9963364,
+      lng: 135.7422967,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Fresco+Okyakusama+Bicycle/data=!4m7!3m6!1s0x60010601ca2188f1:0x7e6e19ddc853157e!8m2!3d34.9790898!4d135.7509945!16s%2Fg%2F11gjjf86mm!19sChIJ8YghygEGAWARfhVTyN0Zbn4?authuser=0&hl=en&rclk=1",
+      desc: "Fresco Okyakusama Bicycle",
+      lat: 34.9790898,
+      lng: 135.7509945,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Nishihonganji+Sanpaisha+Bicycle/data=!4m7!3m6!1s0x600107001222f7b9:0x29b479129fe78f65!8m2!3d34.9929957!4d135.7511526!16s%2Fg%2F11w493bhvm!19sChIJufciEgAHAWARZY_nnxJ5tCk?authuser=0&hl=en&rclk=1",
+      desc: "Nishihonganji Sanpaisha Bicycle",
+      lat: 34.9929957,
+      lng: 135.7511526,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%82%A8%E3%82%B3%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B321+%E4%B8%83%E6%9D%A1%E6%9D%B1%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x60010933de274e91:0x13731f2683eb71c5!8m2!3d34.9878967!4d135.7682113!16s%2Fg%2F11sr0b_v71!19sChIJkU4n3jMJAWARxXHrgyYfcxM?authuser=0&hl=en&rclk=1",
+      desc: "エコステーション21 七条東駐輪場",
+      lat: 34.9878967,
+      lng: 135.7682113,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Keihantobakaido+Ekimae+Churinjo/data=!4m7!3m6!1s0x60010f0c62367ee5:0x23e71f27dc2dc7a6!8m2!3d34.9759342!4d135.7667547!16s%2Fg%2F11t42gklfn!19sChIJ5X42YgwPAWARpsct3Ccf5yM?authuser=0&hl=en&rclk=1",
+      desc: "Keihantobakaido Ekimae Churinjo",
+      lat: 34.9759342,
+      lng: 135.7667547,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x60010f34bfdd868f:0x944528f69ddcaf6d!8m2!3d34.9863035!4d135.7746573!16s%2Fg%2F11gr61kp5t!19sChIJj4bdvzQPAWARba_cnfYoRZQ?authuser=0&hl=en&rclk=1",
+      desc: "駐輪場",
+      lat: 34.9863035,
+      lng: 135.7746573,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Tofukuji+Bicycle/data=!4m7!3m6!1s0x60010f547ed32995:0xec3b5e879c3d6857!8m2!3d34.9806603!4d135.7703738!16s%2Fg%2F11nyqh_8z2!19sChIJlSnTflQPAWARV2g9nIdeO-w?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Tofukuji Bicycle",
+      lat: 34.9806603,
+      lng: 135.7703738,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/T-park+%E5%8C%82%E5%A4%A9%E7%A5%9E%E7%94%BA/data=!4m7!3m6!1s0x60010964a35c465d:0x1cb5cd1dc866395f!8m2!3d35.0005167!4d135.7602192!16s%2Fg%2F11gwg61p9p!19sChIJXUZco2QJAWARXzlmyB3NtRw?authuser=0&hl=en&rclk=1",
+      desc: "T-park 匂天神町",
+      lat: 35.0005167,
+      lng: 135.7602192,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ryukokudaigakuomiya+Campus+Gakusei+Bicycle/data=!4m7!3m6!1s0x600107c72c2d2ce9:0xc5398d1e1a53d44b!8m2!3d34.9895497!4d135.7509092!16s%2Fg%2F11pzhd1nqg!19sChIJ6SwtLMcHAWARS9RTGh6NOcU?authuser=0&hl=en&rclk=1",
+      desc: "Ryukokudaigakuomiya Campus Gakusei Bicycle",
+      lat: 34.9895497,
+      lng: 135.7509092,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyotoshi+Shimizuzakakankochushajo+Jitensha+Bicycle/data=!4m7!3m6!1s0x600109924a9b8925:0x5b0e12319e7c52c2!8m2!3d34.9961095!4d135.7792887!16s%2Fg%2F11k43bgs07!19sChIJJYmbSpIJAWARwlJ8njESDls?authuser=0&hl=en&rclk=1",
+      desc: "Kyotoshi Shimizuzakakankochushajo Jitensha Bicycle",
+      lat: 34.9961095,
+      lng: 135.7792887,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Yanaginouchi+Koen+Bicycle/data=!4m7!3m6!1s0x600105005f041091:0x8962d24adb560ea9!8m2!3d34.974499!4d135.7507681!16s%2Fg%2F11xksgq2wb!19sChIJkRAEXwAFAWARqQ5W20rSYok?authuser=0&hl=en&rclk=1",
+      desc: "Yanaginouchi Koen Bicycle",
+      lat: 34.974499,
+      lng: 135.7507681,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kurutto+Park+Karasuma+Nanajo+Bike+Locker/data=!4m7!3m6!1s0x600109528a87d683:0xa4494e140e1cb594!8m2!3d34.9895985!4d135.7600266!16s%2Fg%2F11y5nbv64d!19sChIJg9aHilIJAWARlLUcDhROSaQ?authuser=0&hl=en&rclk=1",
+      desc: "Kurutto Park Karasuma Nanajo Bike Locker",
+      lat: 34.9895985,
+      lng: 135.7600266,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Koshoji+Sanpaishasenyo+Bicycle/data=!4m7!3m6!1s0x600109a44eedabad:0xf16cbe3cc2329429!8m2!3d34.989403!4d135.752134!16s%2Fg%2F11h00l015f!19sChIJravtTqQJAWARKZQywjy-bPE?authuser=0&hl=en&rclk=1",
+      desc: "Koshoji Sanpaishasenyo Bicycle",
+      lat: 34.989403,
+      lng: 135.752134,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bicycle+Parking/data=!4m7!3m6!1s0x60010944d241e039:0xb732d482af0cb109!8m2!3d34.9893249!4d135.7728343!16s%2Fg%2F11vlbg_77l!19sChIJOeBB0kQJAWARCbEMr4LUMrc?authuser=0&hl=en&rclk=1",
+      desc: "Bicycle Parking",
+      lat: 34.9893249,
+      lng: 135.7728343,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Nishi%C5%8Dji+Station+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001066ceaaa3619:0xc5e64d896a2854fb!8m2!3d34.980159!4d135.731991!16s%2Fg%2F1xn_n8jf!19sChIJGTaq6mwGAWAR-1QoaolN5sU?authuser=0&hl=en&rclk=1",
+      desc: "Nishiōji Station Bicycle Parking Lot",
+      lat: 34.980159,
+      lng: 135.731991,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+Daiichi+Sekijujibyoin+Bicycle/data=!4m7!3m6!1s0x60010fed4daa79c5:0xb3c68bf4a00540c7!8m2!3d34.9804739!4d135.7719944!16s%2Fg%2F11t3h4q8kv!19sChIJxXmqTe0PAWARx0AFoPSLxrM?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto Daiichi Sekijujibyoin Bicycle",
+      lat: 34.9804739,
+      lng: 135.7719944,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E8%A5%BF%E5%A4%A7%E8%B7%AF%E9%A7%85%E9%AB%98%E6%9E%B6%E4%B8%8B%E9%A7%90%E8%BC%AA%E5%A0%B4+ICO%27P/data=!4m7!3m6!1s0x6001075e4c131425:0x730b9d7db69c717!8m2!3d34.9816065!4d135.7333133!16s%2Fg%2F11rxr_k2h9!19sChIJJRQTTF4HAWARF8dp29e5MAc?authuser=0&hl=en&rclk=1",
+      desc: "西大路駅高架下駐輪場 ICO'P",
+      lat: 34.9816065,
+      lng: 135.7333133,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E8%8A%A6%E5%88%88%E3%83%90%E3%82%A4%E3%82%AF%E9%A7%90%E8%BC%AA/data=!4m7!3m6!1s0x6001089daa921a09:0x8a30b99f3133bd3!8m2!3d35.002575!4d135.7543733!16s%2Fg%2F1tg6kg1g!19sChIJCRqSqp0IAWAR0zsT85kLowg?authuser=0&hl=en&rclk=1",
+      desc: "芦刈バイク駐輪",
+      lat: 35.002575,
+      lng: 135.7543733,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kiyomizudera+Keidai+Bicycle+Rack/data=!4m7!3m6!1s0x600109a18f82a7e3:0xd570b9d1a807240c!8m2!3d34.9946363!4d135.7827416!16s%2Fg%2F11ry7d52mc!19sChIJ46eCj6EJAWARDCQHqNG5cNU?authuser=0&hl=en&rclk=1",
+      desc: "Kiyomizudera Keidai Bicycle Rack",
+      lat: 34.9946363,
+      lng: 135.7827416,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E7%83%8F%E4%B8%B8%E5%9B%9B%E6%9D%A1+%E2%97%8FHotel+Mystays/data=!4m7!3m6!1s0x60010899e94eb60f:0x2dfbab17ba84d377!8m2!3d35.0024364!4d135.7607419!16s%2Fg%2F11c53s1yz6!19sChIJD7ZO6ZkIAWARd9OEuher-y0?authuser=0&hl=en&rclk=1",
+      desc: "烏丸四条 ●Hotel Mystays",
+      lat: 35.0024364,
+      lng: 135.7607419,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Ayanokoji+Gokomachi+Bicycle+Parking+Lot+%28Bicycles+%E2%80%93+50+cc+Motorcycles%29/data=!4m7!3m6!1s0x6001089671e10001:0x849d6241d3d48166!8m2!3d35.0025923!4d135.7659487!16s%2Fg%2F11cn0pby5m!19sChIJAQDhcZYIAWARZoHU00FinYQ?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Ayanokoji Gokomachi Bicycle Parking Lot (Bicycles – 50 cc Motorcycles)",
+      lat: 35.0025923,
+      lng: 135.7659487,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyotojoshidaigakusenyo+Bicycle/data=!4m7!3m6!1s0x600108cc51e8bd3b:0x7232f601834e8770!8m2!3d34.9916128!4d135.7778108!16s%2Fg%2F11d_d21c42!19sChIJO73oUcwIAWARcIdOgwH2MnI?authuser=0&hl=en&rclk=1",
+      desc: "Kyotojoshidaigakusenyo Bicycle",
+      lat: 34.9916128,
+      lng: 135.7778108,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%BA%E4%BA%AC%E9%83%BD%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%88%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AE%E3%81%BF%EF%BC%89/data=!4m7!3m6!1s0x60010965ba2c3ce1:0x1e3972e39339871!8m2!3d35.0016456!4d135.7737972!16s%2Fg%2F11rnbwtj2f!19sChIJ4TwsumUJAWARcZgzOS6X4wE?authuser=0&hl=en&rclk=1",
+      desc: "ウインズ京都駐輪場（自転車のみ）",
+      lat: 35.0016456,
+      lng: 135.7737972,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Fruit+bicycle+Park+Shijo+Fuya+cho/data=!4m7!3m6!1s0x60010896643cf1a5:0x2369b311a7d2a6f!8m2!3d35.0029161!4d135.7654106!16s%2Fg%2F11b76f1z_q!19sChIJpfE8ZJYIAWARbyp9GjGbNgI?authuser=0&hl=en&rclk=1",
+      desc: "Fruit bicycle Park Shijo Fuya cho",
+      lat: 35.0029161,
+      lng: 135.7654106,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%91%E3%83%BC%E3%82%AF%E9%98%AA%E6%80%A5%E7%83%8F%E4%B8%B8%E9%A7%85%E7%AC%AC%EF%BC%92/data=!4m7!3m6!1s0x60010897a79ef737:0x6c12cce48f0d3577!8m2!3d35.0021425!4d135.7632158!16s%2Fg%2F11fy2jvx7f!19sChIJN_eep5cIAWARdzUNj-TMEmw?authuser=0&hl=en&rclk=1",
+      desc: "フルーツ自転車パーク阪急烏丸駅第２",
+      lat: 35.0021425,
+      lng: 135.7632158,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Takakura+Underground+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010890b5ecf9ff:0x1a0ffe366f914fd1!8m2!3d35.0042733!4d135.7627394!16s%2Fg%2F11bzthz8kh!19sChIJ__nstZAIAWAR0U-Rbzb-Dxo?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Takakura Underground Bicycle Parking Lot",
+      lat: 35.0042733,
+      lng: 135.7627394,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Takekiyoshoten+Wakaba+Bicycle/data=!4m7!3m6!1s0x6001066cb4a74b9b:0x541b8bd7873962ca!8m2!3d34.980863!4d135.732999!16s%2Fg%2F11btrrp_w6!19sChIJm0untGwGAWARymI5h9eLG1Q?authuser=0&hl=en&rclk=1",
+      desc: "Takekiyoshoten Wakaba Bicycle",
+      lat: 34.980863,
+      lng: 135.732999,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%91%E3%83%BC%E3%82%AF%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E9%A7%85%E5%89%8D/data=!4m7!3m6!1s0x60010f41b22bc1ad:0x3da67ba0007ec5e8!8m2!3d34.968326!4d135.768403!16s%2Fg%2F11cmrwwcgx!19sChIJrcErskEPAWAR6MV-AKB7pj0?authuser=0&hl=en&rclk=1",
+      desc: "サイクルパーク伏見稲荷駅前",
+      lat: 34.968326,
+      lng: 135.768403,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/RENO+PARKING+AYAKOUJITAKAKURA/data=!4m7!3m6!1s0x60010982752dbb97:0x4137ee186c145edf!8m2!3d35.0024663!4d135.7622098!16s%2Fg%2F11s5tttb7x!19sChIJl7stdYIJAWAR314UbBjuN0E?authuser=0&hl=en&rclk=1",
+      desc: "RENO PARKING AYAKOUJITAKAKURA",
+      lat: 35.0024663,
+      lng: 135.7622098,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kurutto+Park+Nishiojiekikita+Bike+Locker/data=!4m7!3m6!1s0x600107ac1abd5f4f:0x58cbf006755f82c0!8m2!3d34.9821544!4d135.7330676!16s%2Fg%2F11q3dcth5k!19sChIJT1-9GqwHAWARwIJfdQbwy1g?authuser=0&hl=en&rclk=1",
+      desc: "Kurutto Park Nishiojiekikita Bike Locker",
+      lat: 34.9821544,
+      lng: 135.7330676,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Cycle+Park+-+Shijo+Suminoza-cho/data=!4m7!3m6!1s0x600109b1b3a3592d:0x7cacb7e3d7804a38!8m2!3d35.004504!4d135.755877!16s%2Fg%2F11j8_fdv1j!19sChIJLVmjs7EJAWAROEqA1-O3rHw?authuser=0&hl=en&rclk=1",
+      desc: "Cycle Park - Shijo Suminoza-cho",
+      lat: 35.004504,
+      lng: 135.755877,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Nishiojiekikitaguchi+Bicycle/data=!4m7!3m6!1s0x600107000fef9373:0x7409a3aef82afabf!8m2!3d34.9826281!4d135.7334004!16s%2Fg%2F11lmj6qhbg!19sChIJc5PvDwAHAWARv_oq-K6jCXQ?authuser=0&hl=en&rclk=1",
+      desc: "Nishiojiekikitaguchi Bicycle",
+      lat: 34.9826281,
+      lng: 135.7334004,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E4%BA%AC%E9%98%AA%E5%9B%9B%E6%9D%A1%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%88%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AE%E3%81%BF%EF%BC%89/data=!4m7!3m6!1s0x600108c026af0e2f:0x46e7c8dfff40440b!8m2!3d35.0040025!4d135.7725681!16s%2Fg%2F11cn9dj6k9!19sChIJLw6vJsAIAWARC0RA_9_I50Y?authuser=0&hl=en&rclk=1",
+      desc: "京阪四条駐輪場（自転車のみ）",
+      lat: 35.0040025,
+      lng: 135.7725681,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Misayama+bicycle+parking/data=!4m7!3m6!1s0x6001089a996bf6dd:0x1491e92fd530f121!8m2!3d35.0065868!4d135.7612495!16s%2Fg%2F1tptqj0p!19sChIJ3fZrmZoIAWARIfEw1S_pkRQ?authuser=0&hl=en&rclk=1",
+      desc: "Misayama bicycle parking",
+      lat: 35.0065868,
+      lng: 135.7612495,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Pontocho+Bike+Locker/data=!4m7!3m6!1s0x60010894c39a28af:0x48f03bcf2d61933e!8m2!3d35.0053172!4d135.7701048!16s%2Fg%2F1trtv6h9!19sChIJryiaw5QIAWARPpNhLc878Eg?authuser=0&hl=en&rclk=1",
+      desc: "Pontocho Bike Locker",
+      lat: 35.0053172,
+      lng: 135.7701048,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/GOOD+NATURE+STATION+Bicycle/data=!4m7!3m6!1s0x6001093fa893c46b:0xbf54d083e106ee01!8m2!3d35.002391!4d135.7689095!16s%2Fg%2F11l71z4028!19sChIJa8STqD8JAWARAe4G4YPQVL8?authuser=0&hl=en&rclk=1",
+      desc: "GOOD NATURE STATION Bicycle",
+      lat: 35.002391,
+      lng: 135.7689095,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Takashimaya+Bicycle/data=!4m7!3m6!1s0x6001096f3d27ef7d:0x29e2f60fb267709e!8m2!3d35.0026618!4d135.7683607!16s%2Fg%2F11tb5rc890!19sChIJfe8nPW8JAWARnnBnsg_24ik?authuser=0&hl=en&rclk=1",
+      desc: "Takashimaya Bicycle",
+      lat: 35.0026618,
+      lng: 135.7683607,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/GS+Park+Tawarayacho+Jitensha+Gentsuki+Bike+Senyo+Bicycle/data=!4m7!3m6!1s0x600109fd09985265:0x9b7f09d37b6ae15f!8m2!3d35.0023633!4d135.7656706!16s%2Fg%2F11gjnypsb2!19sChIJZVKYCf0JAWARX-Fqe9MJf5s?authuser=0&hl=en&rclk=1",
+      desc: "GS Park Tawarayacho Jitensha Gentsuki Bike Senyo Bicycle",
+      lat: 35.0023633,
+      lng: 135.7656706,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Shij%C5%8D+%C5%8Cmiya+Machikado+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010628945cd903:0x20303bfdf7cfa42e!8m2!3d35.0031912!4d135.7487571!16s%2Fg%2F11ggvskt58!19sChIJA9lclCgGAWARLqTP9_07MCA?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Shijō Ōmiya Machikado Bicycle Parking Lot",
+      lat: 35.0031912,
+      lng: 135.7487571,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%81%8F%E3%82%8B%E3%81%A3%E3%81%A8%E3%83%91%E3%83%BC%E3%82%AF+%E4%BA%AC%E9%83%BD%E7%B5%8C%E6%B8%88%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%88%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AE%E3%81%BF%EF%BC%89/data=!4m7!3m6!1s0x6001098055448805:0x707b87c44c38ce9a!8m2!3d35.0026066!4d135.7586273!16s%2Fg%2F11ss8jj3z0!19sChIJBYhEVYAJAWARms44TMSHe3A?authuser=0&hl=en&rclk=1",
+      desc: "くるっとパーク 京都経済センター駐輪場（自転車のみ）",
+      lat: 35.0026066,
+      lng: 135.7586273,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x600109006e3fa6e7:0x148e6f21af4ece58!8m2!3d35.0025338!4d135.7606906!16s%2Fg%2F11lyl0t819!19sChIJ56Y_bgAJAWARWM5OryFvjhQ?authuser=0&hl=en&rclk=1",
+      desc: "駐輪場",
+      lat: 35.0025338,
+      lng: 135.7606906,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%81%8F%E3%82%8B%E3%81%A3%E3%81%A8%E3%83%91%E3%83%BC%E3%82%AF+%E8%A5%BF%E6%9C%A8%E5%B1%8B%E7%94%BA%E9%A7%90%E8%BC%AA%E5%A0%B4+%28%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%BB%E3%83%90%E3%82%A4%E3%82%AF%29/data=!4m7!3m6!1s0x600109b70d586f35:0x9aa4ba5496ccbb87!8m2!3d35.002477!4d135.7701394!16s%2Fg%2F11sqjw2r_1!19sChIJNW9YDbcJAWARh7vMllS6pJo?authuser=0&hl=en&rclk=1",
+      desc: "くるっとパーク 西木屋町駐輪場 (自転車・バイク)",
+      lat: 35.002477,
+      lng: 135.7701394,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Tominokoji+Rokkaku+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010891a81837f7:0xae1fb1e9890ac775!8m2!3d35.0072802!4d135.7650205!16s%2Fg%2F1tks66h8!19sChIJ9zcYqJEIAWARdccKiemxH64?authuser=0&hl=en&rclk=1",
+      desc: "Tominokoji Rokkaku Bicycle Parking Lot",
+      lat: 35.0072802,
+      lng: 135.7650205,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/T-Park+Shib%C5%8D-%C5%8Cmiya-ch%C5%8D/data=!4m7!3m6!1s0x6001062914d841b3:0x3a097f13114d0c78!8m2!3d35.005441!4d135.748855!16s%2Fg%2F11c5238ryc!19sChIJs0HYFCkGAWAReAxNERN_CTo?authuser=0&hl=en&rclk=1",
+      desc: "T-Park Shibō-Ōmiya-chō",
+      lat: 35.005441,
+      lng: 135.748855,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Saiin+Bike+Locker/data=!4m7!3m6!1s0x600107b55380a265:0x4f2d8df798a46b71!8m2!3d35.0040455!4d135.732856!16s%2Fg%2F1ttq1_r6!19sChIJZaKAU7UHAWARcWukmPeNLU8?authuser=0&hl=en&rclk=1",
+      desc: "Saiin Bike Locker",
+      lat: 35.0040455,
+      lng: 135.732856,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Chi+Park+Kyotokeizai+Center+Bike+Locker/data=!4m7!3m6!1s0x60010978f5accf79:0xd72199fc771795e5!8m2!3d35.0026066!4d135.7586273!16s%2Fg%2F11h643p3tn!19sChIJec-s9XgJAWAR5ZUXd_yZIdc?authuser=0&hl=en&rclk=1",
+      desc: "Chi Park Kyotokeizai Center Bike Locker",
+      lat: 35.0026066,
+      lng: 135.7586273,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Shijo+Omiya+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010628f9de3617:0xd9d9be4b29e01128!8m2!3d35.0042183!4d135.7491722!16s%2Fg%2F1tp2_8fx!19sChIJFzbe-SgGAWARKBHgKUu-2dk?authuser=0&hl=en&rclk=1",
+      desc: "Shijo Omiya Bicycle Parking Lot",
+      lat: 35.0042183,
+      lng: 135.7491722,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%91%E3%83%BC%E3%82%AF%E9%98%AA%E6%80%A5%E7%83%8F%E4%B8%B8%E9%A7%85/data=!4m7!3m6!1s0x6001089a923e468f:0x6d2269f619c19ec9!8m2!3d35.0060908!4d135.7606259!16s%2Fg%2F11fy2m0pyy!19sChIJj0Y-kpoIAWARyZ7BGfZpIm0?authuser=0&hl=en&rclk=1",
+      desc: "フルーツ自転車パーク阪急烏丸駅",
+      lat: 35.0060908,
+      lng: 135.7606259,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%81%8F%E3%82%8B%E3%81%A3%E3%81%A8%E3%83%91%E3%83%BC%E3%82%AF%E4%BA%AC%E9%83%BD%E7%B5%8C%E6%B8%88%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%EF%BC%88%E9%A7%90%E8%BB%8A%E5%A0%B4%2F%E5%9B%9B%E6%9D%A1%E7%83%8F%E4%B8%B8%EF%BC%89/data=!4m7!3m6!1s0x6001096b64cdb77b:0xc1b2c4dbbcb22840!8m2!3d35.0026027!4d135.7585176!16s%2Fg%2F11rfcycnmm!19sChIJe7fNZGsJAWARQCiyvNvEssE?authuser=0&hl=en&rclk=1",
+      desc: "くるっとパーク京都経済センター（駐車場/四条烏丸）",
+      lat: 35.0026027,
+      lng: 135.7585176,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E9%98%AA%E6%80%A5%E8%A5%BF%E9%99%A2%E9%A7%90%E8%BC%AA%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/data=!4m7!3m6!1s0x600107f239de0d9b:0x643d5aba7a787c01!8m2!3d35.0033065!4d135.7310627!16s%2Fg%2F11qnjpb1_r!19sChIJmw3eOfIHAWARAXx4erpaPWQ?authuser=0&hl=en&rclk=1",
+      desc: "阪急西院駐輪センター",
+      lat: 35.0033065,
+      lng: 135.7310627,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Shij%C5%8D+%C5%8Cmiya+Machikado+Bicycle+Parking+Lot+2/data=!4m7!3m6!1s0x600107b2ca0203a1:0x39cbd0771bd9529f!8m2!3d35.0038094!4d135.7495906!16s%2Fg%2F11g0gd8ww9!19sChIJoQMCyrIHAWARn1LZG3fQyzk?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Shijō Ōmiya Machikado Bicycle Parking Lot 2",
+      lat: 35.0038094,
+      lng: 135.7495906,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E4%B8%83%E4%B9%8B%E8%88%9F%E5%85%A5%E8%87%AA%E8%BB%A2%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4/data=!4m7!3m6!1s0x60010894c675989d:0xb61090c6669508ee!8m2!3d35.006309!4d135.770371!16s%2Fg%2F11cmf4fbv1!19sChIJnZh1xpQIAWAR7giVZsaQELY?authuser=0&hl=en&rclk=1",
+      desc: "七之舟入自転車駐車場",
+      lat: 35.006309,
+      lng: 135.770371,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/RENO+PARKING+SHIJOKAWARAMACHI/data=!4m7!3m6!1s0x600109d4f2827447:0x9b219d17c03947f6!8m2!3d35.0047583!4d135.7683372!16s%2Fg%2F11t7hz16r_!19sChIJR3SC8tQJAWAR9kc5wBedIZs?authuser=0&hl=en&rclk=1",
+      desc: "RENO PARKING SHIJOKAWARAMACHI",
+      lat: 35.0047583,
+      lng: 135.7683372,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Pontocho+bike+parking/data=!4m7!3m6!1s0x60010894c917ca41:0x12a6f6467ca4bbc9!8m2!3d35.0064326!4d135.7706306!16s%2Fg%2F1tcw8223!19sChIJQcoXyZQIAWARybukfEb2phI?authuser=0&hl=en&rclk=1",
+      desc: "Pontocho bike parking",
+      lat: 35.0064326,
+      lng: 135.7706306,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Hankyusaiin+Ekimae+Bicycle/data=!4m7!3m6!1s0x600107033ce87971:0xfafcea9c8e60ce91!8m2!3d35.0033838!4d135.7314538!16s%2Fg%2F11s5fhvfgn!19sChIJcXnoPAMHAWARkc5gjpzq_Po?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Hankyusaiin Ekimae Bicycle",
+      lat: 35.0033838,
+      lng: 135.7314538,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+-+Round+1+Kyoto+Kawaramachi/data=!4m7!3m6!1s0x6001089386914c5d:0x36f85f9a1594fec5!8m2!3d35.0069761!4d135.7682963!16s%2Fg%2F11ggjwn20n!19sChIJXUyRhpMIAWARxf6UFZpf-DY?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 - Round 1 Kyoto Kawaramachi",
+      lat: 35.0069761,
+      lng: 135.7682963,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Mitsui%E2%80%99s+Repark+-+Hankyu+%C5%8Cmiya+Station+North+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x600107f9840f5f83:0x6a0a7c1146b14e8a!8m2!3d35.0048245!4d135.7495628!16s%2Fg%2F11jnfsq5yb!19sChIJg18PhPkHAWARik6xRhF8Cmo?authuser=0&hl=en&rclk=1",
+      desc: "Mitsui’s Repark - Hankyu Ōmiya Station North Bicycle Parking Lot",
+      lat: 35.0048245,
+      lng: 135.7495628,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Saiinsuzakumachikado+Bicycle/data=!4m7!3m6!1s0x600107001c4d6bf5:0xd97282bc9594d04f!8m2!3d35.0031002!4d135.7353252!16s%2Fg%2F11w9py7v69!19sChIJ9WtNHAAHAWART9CUlbyCctk?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Saiinsuzakumachikado Bicycle",
+      lat: 35.0031002,
+      lng: 135.7353252,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Nishikikoji+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x60010923ab6f923b:0x83f90e52c6733ecd!8m2!3d35.0049458!4d135.761744!16s%2Fg%2F11fjrsdj3n!19sChIJO5JvqyMJAWARzT5zxlIO-YM?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Nishikikoji Bicycle Parking Lot",
+      lat: 35.0049458,
+      lng: 135.761744,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Apple+Park+Afuresaiin+Bike+Locker/data=!4m7!3m6!1s0x6001077269c9858b:0xfe91552b05a156dd!8m2!3d35.0036699!4d135.7314998!16s%2Fg%2F11sg2lhj6w!19sChIJi4XJaXIHAWAR3VahBStVkf4?authuser=0&hl=en&rclk=1",
+      desc: "Apple Park Afuresaiin Bike Locker",
+      lat: 35.0036699,
+      lng: 135.7314998,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%81%8F%E3%82%8B%E3%81%A3%E3%81%A8%E3%83%91%E3%83%BC%E3%82%AF%E5%9B%9B%E6%9D%A1%E6%9F%B3%E9%A6%AC%E5%A0%B4%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%88%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%AE%E3%81%BF%EF%BC%89/data=!4m7!3m6!1s0x600108972836728b:0x2261882d0f0c6b1f!8m2!3d35.004294!4d135.7638441!16s%2Fg%2F11c53rlh0f!19sChIJi3I2KJcIAWARH2sMDy2IYSI?authuser=0&hl=en&rclk=1",
+      desc: "くるっとパーク四条柳馬場駐輪場（自転車のみ）",
+      lat: 35.004294,
+      lng: 135.7638441,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Daimaru+Bicycle/data=!4m7!3m6!1s0x600109a41f76f911:0x1c3f54cc541daf72!8m2!3d35.0049085!4d135.7609672!16s%2Fg%2F11rg8j_kxh!19sChIJEfl2H6QJAWARcq8dVMxUPxw?authuser=0&hl=en&rclk=1",
+      desc: "Daimaru Bicycle",
+      lat: 35.0049085,
+      lng: 135.7609672,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bicycle+parking/data=!4m7!3m6!1s0x60010f003656ca11:0xd51773e84939d09!8m2!3d34.9669909!4d135.7718244!16s%2Fg%2F11xp34b8mb!19sChIJEcpWNgAPAWARCZ2ThD53UQ0?authuser=0&hl=en&rclk=1",
+      desc: "Bicycle parking",
+      lat: 34.9669909,
+      lng: 135.7718244,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+mina+Kyoto/data=!4m7!3m6!1s0x600108939f7c013f:0xc07fa766cce131d0!8m2!3d35.0079494!4d135.7684445!16s%2Fg%2F11bwmsy5ct!19sChIJPwF8n5MIAWAR0DHhzGanf8A?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - mina Kyoto",
+      lat: 35.0079494,
+      lng: 135.7684445,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Ecostation+21+-+Mibu-bojo-cho+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001079339896a85:0x6893c629a781477f!8m2!3d35.0046538!4d135.7480516!16s%2Fg%2F11f5_67n_y!19sChIJhWqJOZMHAWARf0eBpynGk2g?authuser=0&hl=en&rclk=1",
+      desc: "Ecostation 21 - Mibu-bojo-cho Bicycle Parking Lot",
+      lat: 35.0046538,
+      lng: 135.7480516,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E5%B8%82%E4%B9%8B%E7%94%BA%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6001090071a41af3:0x74dfe840dcb97149!8m2!3d35.0020661!4d135.7697447!16s%2Fg%2F11vxyzjfns!19sChIJ8xqkcQAJAWARSXG53EDo33Q?authuser=0&hl=en&rclk=1",
+      desc: "市之町駐輪場",
+      lat: 35.0020661,
+      lng: 135.7697447,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/3+Shibauradaisan+Bicycle/data=!4m7!3m6!1s0x600107b51b047759:0x309771264dd2f2ce!8m2!3d35.003275!4d135.7328341!16s%2Fg%2F1tqpz4c1!19sChIJWXcEG7UHAWARzvLSTSZxlzA?authuser=0&hl=en&rclk=1",
+      desc: "3 Shibauradaisan Bicycle",
+      lat: 35.003275,
+      lng: 135.7328341,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/2+Shibauradaini+Bicycle/data=!4m7!3m6!1s0x600107b51b047759:0xe19954ab550b36dc!8m2!3d35.002384!4d135.730988!16s%2Fg%2F1hc3d3kd0!19sChIJWXcEG7UHAWAR3DYLVatUmeE?authuser=0&hl=en&rclk=1",
+      desc: "2 Shibauradaini Bicycle",
+      lat: 35.002384,
+      lng: 135.730988,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Kyoto+City+Hall+Square+Bicycle+Parking+Lot/data=!4m7!3m6!1s0x6001088d901ee959:0x5960599d6e0186f2!8m2!3d35.011281!4d135.767526!16s%2Fg%2F11cs4j9vr2!19sChIJWekekI0IAWAR8oYBbp1ZYFk?authuser=0&hl=en&rclk=1",
+      desc: "Kyoto City Hall Square Bicycle Parking Lot",
+      lat: 35.011281,
+      lng: 135.767526,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Easy+Bicycle+Park+Kawaramachi/data=!4m7!3m6!1s0x6001089387838b21:0xb435513869223d6b!8m2!3d35.0068001!4d135.768189!16s%2Fg%2F11bw5ttkpd!19sChIJIYuDh5MIAWARaz0iaThRNbQ?authuser=0&hl=en&rclk=1",
+      desc: "Easy Bicycle Park Kawaramachi",
+      lat: 35.0068001,
+      lng: 135.768189,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%83%91%E3%83%BC%E3%82%AF+%E5%9C%B0%E4%B8%8B%E9%89%84%E5%9B%9B%E6%9D%A1%E9%A7%85%E7%AC%AC%EF%BC%92/data=!4m7!3m6!1s0x6001098ed9048879:0x9ec0394081494a4d!8m2!3d35.0075948!4d135.757963!16s%2Fg%2F11st5_9s__!19sChIJeYgE2Y4JAWARTUpJgUA5wJ4?authuser=0&hl=en&rclk=1",
+      desc: "フルーツ自転車パーク 地下鉄四条駅第２",
+      lat: 35.0075948,
+      lng: 135.757963,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/T+-+park+Sakuranocho+Bike+Bike+Locker/data=!4m7!3m6!1s0x60010893a48feb5d:0xdca8aa8ce80116c5!8m2!3d35.00813!4d135.76819!16s%2Fg%2F11b6xc226j!19sChIJXeuPpJMIAWARxRYB6IyqqNw?authuser=0&hl=en&rclk=1",
+      desc: "T - park Sakuranocho Bike Bike Locker",
+      lat: 35.00813,
+      lng: 135.76819,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Round+One+Bicycle/data=!4m7!3m6!1s0x6001099f227383a5:0xeaabd3d99dcb4047!8m2!3d35.006911!4d135.768203!16s%2Fg%2F11pklqlvms!19sChIJpYNzIp8JAWARR0DLndnTq-o?authuser=0&hl=en&rclk=1",
+      desc: "Round One Bicycle",
+      lat: 35.006911,
+      lng: 135.768203,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Eco+Station+21+Sanjohigashi+Jitensha+Bicycle/data=!4m7!3m6!1s0x600108eb9b9a82e9:0xa59b54ecfa5ca840!8m2!3d35.0085208!4d135.7737667!16s%2Fg%2F11ggkhb2rt!19sChIJ6YKam-sIAWARQKhc-uxUm6U?authuser=0&hl=en&rclk=1",
+      desc: "Eco Station 21 Sanjohigashi Jitensha Bicycle",
+      lat: 35.0085208,
+      lng: 135.7737667,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x600109f434e2a51b:0x17c069d8d29a4c03!8m2!3d35.0073628!4d135.7673414!16s%2Fg%2F11mvrp45rd!19sChIJG6XiNPQJAWARA0ya0thpwBc?authuser=0&hl=en&rclk=1",
+      desc: "駐輪場",
+      lat: 35.0073628,
+      lng: 135.7673414,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bike+Jitensha+Bicycle/data=!4m7!3m6!1s0x6001090037e18a73:0xed817d66a713d28d!8m2!3d35.0060932!4d135.7623522!16s%2Fg%2F11mlbx3696!19sChIJc4rhNwAJAWARjdITp2Z9ge0?authuser=0&hl=en&rclk=1",
+      desc: "Bike Jitensha Bicycle",
+      lat: 35.0060932,
+      lng: 135.7623522,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bubu+Park+Saiindai+5+Bicycle/data=!4m7!3m6!1s0x600107b53e6e84af:0x892ef6ee9158300e!8m2!3d35.0043581!4d135.7317194!16s%2Fg%2F11csrpbkn7!19sChIJr4RuPrUHAWARDjBYke72Lok?authuser=0&hl=en&rclk=1",
+      desc: "Bubu Park Saiindai 5 Bicycle",
+      lat: 35.0043581,
+      lng: 135.7317194,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/Bicycle+Parking+Lot,+ShinPuhKan/data=!4m7!3m6!1s0x600109830f56350f:0x13c179ba7e14e79e!8m2!3d35.0092247!4d135.7608951!16s%2Fg%2F11q83_681w!19sChIJDzVWD4MJAWARnucUfrp5wRM?authuser=0&hl=en&rclk=1",
+      desc: "Bicycle Parking Lot, ShinPuhKan",
+      lat: 35.0092247,
+      lng: 135.7608951,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/bicycle+and+motorbike+parking/data=!4m7!3m6!1s0x60010f27a34073d7:0xa44f37cf6550de63!8m2!3d34.9646489!4d135.7657965!16s%2Fg%2F11s5s6cm7_!19sChIJ13NAoycPAWARY95QZc83T6Q?authuser=0&hl=en&rclk=1",
+      desc: "bicycle and motorbike parking",
+      lat: 34.9646489,
+      lng: 135.7657965,
+      imageSrc: park
+    },
+    {
+      link: "https://www.google.com/maps/place/%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6001095379197b1d:0x98831e14691dd530!8m2!3d35.007427!4d135.7673361!16s%2Fg%2F11nyqk9psr!19sChIJHXsZeVMJAWARMNUdaRQeg5g?authuser=0&hl=en&rclk=1",
+      desc: "駐輪場",
+      lat: 35.007427,
+      lng: 135.7673361,
+      imageSrc: park
+    }
+  ],
   konbinis: [
     {
       link: 'https://www.google.com/maps/place/7-Eleven/data=!4m7!3m6!1s0x600106498d926e95:0xf018d3ec10271307!8m2!3d34.998392!4d135.731755!16s%2Fg%2F1tfw2y7r!19sChIJlW6SjUkGAWARBxMnEOzTGPA?authuser=0&hl=es-419&rclk=1',

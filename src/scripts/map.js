@@ -14,6 +14,7 @@ import {
 import { addLayers } from './mapUtilities/layers';
 import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
+import { addUserMarker } from './mapUtilities/userMarker';
 import { initGPS } from './mapUtilities/gpsRealTime';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,10 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // calling map
+  const lat = 34.98493616431302;
+  const lng = 135.75248977767515;
+
   const initialZoom = 15;
   // eslint-disable-next-line no-undef
   const map = L.map('map', config).setView(
-    [34.98493616431302, 135.75248977767515],
+    [lat, lng],
     initialZoom,
   );
   // map.setMaxBounds([
@@ -41,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   addLayers(map);
   addPolyline(map);
   addMarkers(map);
+  addUserMarker(map);
   initGPS(map);
 
   // This removes the context menu for all the images
