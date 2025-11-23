@@ -1,6 +1,6 @@
 import { useState } from 'react';
-// import Login from '../components/Login';
-// import SignUp from '../components/SignUp';
+import Login from '../components/Login';
+import SignUp from '../components/SignUp';
 import '../styles/UnauthenticatedPage.css';
 
 const UnauthenticatedPage = () => {
@@ -16,7 +16,7 @@ const UnauthenticatedPage = () => {
         {/* Welcome Section */}
         <div className="welcome-section">
           <h2 className="welcome-title">
-            Welcome to <span className="accent-text">Flex</span>or
+            Welcome to <span className="accent-text">Link</span>
           </h2>
         </div>
 
