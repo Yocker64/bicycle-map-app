@@ -59,6 +59,9 @@ export function initGPS(MAP) {
     lon = position.coords.longitude;
     const acc = position.coords.accuracy || 9999;
 
+    window.currentLat = lat;
+    window.currentLng = lon;
+
     if (marker) MAP.removeLayer(marker);
     if (accuracyCircle) MAP.removeLayer(accuracyCircle);
 
