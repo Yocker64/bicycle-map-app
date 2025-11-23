@@ -1,53 +1,27 @@
 {
   "name": "bicycle-map-app",
-  "version": "1.0.0",
-  "description": "Custom template for all the future web development projects I will be coding!",
-  "homepage": "https://github.com/batireedui0327/bicycle-map-app#readme",
-  "bugs": {
-    "url": "https://github.com/batireedui0327/bicycle-map-app/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/batireedui0327/bicycle-map-app.git"
-  },
-  "license": "ISC",
-  "author": "Bat-Ireedui",
-  "type": "commonjs",
-  "main": "template.html",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "clean": "rm -rf dist/",
-    "start-all": "npm-run-all clean build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "express": "^5.1.0",
-    "express-validator": "^7.3.1",
-    "leaflet.markercluster": "^1.5.3",
-    "modern-normalize": "^3.0.1"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@webpack-cli/serve": "^3.0.1",
-    "css-loader": "^7.1.2",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-config-wesbos": "^4.3.2",
-    "eslint-plugin-prettier": "^5.4.0",
-    "html-loader": "^5.1.0",
-    "html-webpack-plugin": "^5.6.3",
-    "prettier": "^3.5.3",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.99.6",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "wesbos"
-    ]
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.2.4"
   }
 }
