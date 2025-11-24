@@ -27,6 +27,7 @@
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
+    "leaflet-routing-machine": "^3.2.12",
     "leaflet.markercluster": "^1.5.3",
     "modern-normalize": "^3.0.1"
   },
@@ -42,7 +43,7 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.99.6",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.2"
   },
   "eslintConfig": {
     "extends": [

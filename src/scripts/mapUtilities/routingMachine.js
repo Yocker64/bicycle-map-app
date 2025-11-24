@@ -1,0 +1,37 @@
+export function drawRoute(map){
+    //need current GPS
+    if(window.currentLat == null || window.currentLng == null){
+        alert("Current location is not ready yet.");
+        return;
+    }
+
+    //nedd destination from map click(set in map.js)
+    if(window.destinationLat == null || window.destinationLng == null){
+        alert("Please click on the map to select a destination.");
+        return;
+    }
+
+    const osrmBikeRouter = L.Routing.osrmv1({
+        serviceUrl: 'http://localhost:5000/route/v1',
+        profile: 'bike'//profile letsgoo
+    })
+
+    //remove old route if exists
+    if(window.routingControl){
+        map.removeControl(window.routingControl);
+    }
+
+    //create new route from GPS to clicked point
+    window.routingControl = L.Routing.control({
+        router: osrmBikeRouter,
+        addWayPoints: false,
+        draggableWaypoints: false,
+        routeWhileDragging: false,
+        waypoints: [
+            L.latLng(window.currentLat, window.currentLng),
+            L.latLng(window.destinationLat, window.destinationLng),
+        ],
+
+    }).addTo(map);
+    
+}

@@ -16,6 +16,7 @@ import { addPolyline } from './mapUtilities/polylines';
 import { addMarkers } from './mapUtilities/points';
 import { addUserMarker } from './mapUtilities/userMarker';
 import { initGPS } from './mapUtilities/gpsRealTime';
+import {drawRoute} from './mapUtilities/routingMachine';
 
 document.addEventListener('DOMContentLoaded', () => {
   const config = {
@@ -57,4 +58,26 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     });
   });
+  
+  //Saving clicked coordinates for routing
+  window.destinationLat = null;
+  window.destinationLng = null; // this is being saved in browser when it refreshes it disappear, it might be good idea who knows?
+
+  //This will make popups in where it clicked on
+  var popup =L.popup();
+  function onMapClick(e){
+    window.destinationLat = e.latlng.lat;
+    window.destinationLng = e.latlng.lng;
+    popup
+      .setLatLng(e.latlng)
+      .setContent('<button id="go-button">Go</button>')
+      .openOn(map);
+    //console.log(e.latlng);
+    setTimeout(()=>{
+      document.getElementById('go-button').onclick = () => {
+        drawRoute(map);
+      }
+    }, 0)
+  }
+  map.on('click', onMapClick);
 });
