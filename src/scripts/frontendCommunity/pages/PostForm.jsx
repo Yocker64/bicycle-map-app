@@ -212,13 +212,13 @@ const PostForm = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen p-6">
+    <div className="black-800 min-h-screen p-6">
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <PuffLoader color="#5C6BC0" size={60} />
         </div>
       ) : (
-      <div className="max-w-4xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+      <div className="max-w-4xl mx-auto black-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-white mb-6">{isEditing ? (formData.published ? 'Edit Post' : 'Edit Draft') : 'Create Post'}</h2>
         <div className='border-t border-gray-700 my-6'></div>
         <form onSubmit={(e) => handleSubmit(e, false)}>
@@ -315,7 +315,7 @@ const PostForm = () => {
               value={formData.title || ''}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 black-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
             />
           </div>
           <div>
@@ -335,7 +335,7 @@ const PostForm = () => {
                     <button
                       type="button"
                       onClick={() => handleImageDelete(image)}
-                      className="absolute top-0 right-0 w-6 h-6 flex items-center justify-center bg-gray-800 opacity-80 text-white rounded-full p-1 text-sm focus:outline-none"
+                      className="absolute top-0 right-0 w-6 h-6 flex items-center justify-center black-800 opacity-80 text-white rounded-full p-1 text-sm focus:outline-none"
                     >
                       x
                     </button>
@@ -354,14 +354,14 @@ const PostForm = () => {
               onChange={handleInputChange}
               rows="5"
               required
-              className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 black-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
             />
             <div className='flex items-center space-x-4 text-sm'>
               {/* Image Upload Button */}
               <div className='my-4'>
                 <label
                   htmlFor="images"
-                  className="flex items-center space-x-2 px-3 py-2 h-full text-xs sm:text-sm text-gray-100 bg-gray-700 border border-gray-600 rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
+                  className="flex items-center space-x-2 px-3 py-2 h-full text-xs sm:text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                 > 
                   <FontAwesomeIcon icon={faImages} className="mr-1" />
                   <span>Upload images</span>
@@ -380,7 +380,7 @@ const PostForm = () => {
                 <button
                   type="button"
                   onClick={() => setGifModalOpen(true)}
-                  className="flex items-center space-x-2 px-3 py-2 text-xs sm:text-sm text-gray-100 bg-gray-700 border border-gray-600 rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
+                  className="flex items-center space-x-2 px-3 py-2 text-xs sm:text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                 >
                   <FontAwesomeIcon icon={faSmile} className="mr-1"/>
                   <span>Search for a GIF</span>
@@ -403,7 +403,7 @@ const PostForm = () => {
             <button
               type="button"
               onClick={(e) => handleSubmit(e, false)}
-              className="w-1/3 py-2 px-4 bg-gray-600 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+              className="w-1/3 py-2 px-4 black-600 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
               <FontAwesomeIcon icon={faFloppyDisk} />
               <span>Save as Draft</span>
@@ -435,7 +435,7 @@ const PostForm = () => {
             <button
               type="button"
               onClick={handleCancel}
-              className="w-1/3 py-2 px-4 bg-gray-500 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+              className="w-1/3 py-2 px-4 black-500 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
               <FontAwesomeIcon icon={faXmark} />
               <span>Cancel</span>

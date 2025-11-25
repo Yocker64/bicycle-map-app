@@ -31,7 +31,7 @@ const App = () => {
   }, []);
 
   if (isAuthenticated === null) {
-    return <div className='h-screen w-screen bg-gray-900'>
+    return <div className='h-screen w-screen black-800'>
       <div className="flex flex-col justify-center items-center h-full">
         <PuffLoader color="#5C6BC0" size={60} />
         <p className='mt-3 font-semibold text-sm text-black-500'>Please be patient as the server wakes up!</p>

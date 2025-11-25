@@ -93,7 +93,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
     return (
         <div
             key={realmId}
-            className="bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-6 cursor-pointer transition-colors"
+            className="black-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-6 cursor-pointer transition-colors"
             onClick={(e) => redirectToRealm(e, realmId)}
         >
             {loading 
@@ -125,7 +125,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                         <FontAwesomeIcon icon={faEllipsis} className="hover:text-gray-300"/>
                                     </MenuButton>
                                     <MenuItems 
-                                        className="absolute right-0 mt-2 bg-gray-700 text-gray-200 border border-gray-600 rounded-md w-40"
+                                        className="absolute right-0 mt-2 black-700 text-gray-200 border border-gray-600 rounded-md w-40"
                                         onClick={(e) => e.stopPropagation()}
                                     >
                                         {isCreator && 
@@ -133,7 +133,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                             <MenuItem>
                                                     <button
                                                         onClick={(e) => handleEditRealm(e, realmId)}
-                                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                     >
                                                         <FontAwesomeIcon icon={faPenToSquare} />
                                                         <span>Edit</span>
@@ -142,7 +142,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                             <MenuItem>
                                                     <button
                                                         onClick={(e) => handleDeleteRealm(e, realmId)}
-                                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                     >
                                                         <FontAwesomeIcon icon={faTrashCan} />
                                                         <span>Delete</span>
@@ -153,7 +153,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                         <MenuItem>
                                             <button
                                                 onClick={() => navigate(`/realms/${realmId}/joined`)}
-                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faUsers} />
                                                 <span>Joined Users</span>
@@ -186,7 +186,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                         <button
                             onClick={(e) => handleJoinRealm(e)}
                             className={`text-xs sm:text-sm px-3 py-2 rounded-lg text-white transition-colors ${
-                                joined ? 'bg-gray-600 hover:bg-gray-500' : 'bg-black-600 hover:bg-black-700'
+                                joined ? 'black-600 hover:black-500' : 'bg-black-600 hover:bg-black-700'
                             }`}
                         >
                             {joined ? 

@@ -93,7 +93,7 @@ const SearchBar = () => {
         return (
             <div 
                 key={result.id} 
-                className="flex items-center p-2 hover:bg-gray-700 cursor-pointer"
+                className="flex items-center p-2 hover:black-700 cursor-pointer"
                 onClick={handleNavigate(result.username ? `/profile/${result.id}` : result.name ? `/realms/${result.id}` : `/posts/${result.id}`)}
             >
                 {!result.images || result.images?.[0] != null ?
@@ -120,7 +120,7 @@ const SearchBar = () => {
 
     return (
         <div className='w-full relative' ref={dropdownRef}>
-            <div className={`flex items-center bg-gray-800 rounded-lg transition-all duration-300 p-3 overflow-hidden`}>
+            <div className={`flex items-center black-800 rounded-lg transition-all duration-300 p-3 overflow-hidden`}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="text-gray-400"/>
                 <input
                     type="text"
@@ -144,7 +144,7 @@ const SearchBar = () => {
                 
             </div>
             {query.length > 1 && (
-                <div className={`absolute left-0 right-0 mt-2 bg-gray-800 border-gray-800 rounded-lg shadow-lg max-h-80 overflow-y-auto z-[99999] ${dropdownDisplay ? '' : 'hidden'}`}>
+                <div className={`absolute left-0 right-0 mt-2 black-800 border-gray-800 rounded-lg shadow-lg max-h-80 overflow-y-auto z-[99999] ${dropdownDisplay ? '' : 'hidden'}`}>
                     {loading && 
                         <div className="flex justify-center items-center h-full">
                             <PuffLoader color="#5C6BC0" size={60} />
@@ -160,7 +160,7 @@ const SearchBar = () => {
                                     {hasMore && (
                                         <button
                                             onClick={handleLoadMore}
-                                            className="block p-2 text-center text-sm text-gray-200 w-full hover:bg-gray-700"
+                                            className="block p-2 text-center text-sm text-gray-200 w-full hover:black-700"
                                         >
                                             Load More
                                         </button>

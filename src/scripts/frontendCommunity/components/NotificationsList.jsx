@@ -109,11 +109,11 @@ const NotificationsList = () => {
   };
 
   return (
-    <div className="flex flex-col space-y-4 bg-gray-900 min-h-screen text-white">
+    <div className="flex flex-col space-y-4 black-800 min-h-screen text-white">
       <div className='flex items-center justify-center'>
           <button
             onClick={handleRefresh}
-            className='flex items-center p-2 border border-gray-600 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition'
+            className='flex items-center p-2 border border-gray-600 rounded-lg black-700 text-gray-300 hover:black-600 transition'
           >  
             <FontAwesomeIcon icon={faArrowsRotate} />
           </button>
@@ -127,7 +127,7 @@ const NotificationsList = () => {
           return (
             <div
               key={notification.id}
-              className="flex items-center p-4 bg-gray-800 rounded-lg transition-shadow duration-200 cursor-pointer"
+              className="flex items-center p-4 black-800 rounded-lg transition-shadow duration-200 cursor-pointer"
               onClick={() => handleNotificationClick(link)}
             >
               {/* Profile Section */}
@@ -148,7 +148,7 @@ const NotificationsList = () => {
               <div className="flex-1 flex-col justify-center space-y-2">
                 <p className="text-base">
                   <span
-                    className="font-medium cursor-pointer text-blue-400 hover:text-blue-500 hover:underline"
+                    className="font-medium cursor-pointer text-black-400 hover:text-black-500 hover:underline"
                     onClick={(e) => handleProfileNavigate(e, notification)}
                   >
                     @{notification.actor.username}

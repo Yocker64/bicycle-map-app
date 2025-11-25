@@ -105,7 +105,7 @@ const ProfilePage = () => {
               <>
                 <button
                   onClick={handleModalOpen}
-                  className="min-w-[120px] mx-2 py-2 px-4 space-x-2 rounded bg-gray-800 hover:bg-gray-700 text-white transition-colors"
+                  className="min-w-[120px] mx-2 py-2 px-4 space-x-2 rounded black-800 hover:black-700 text-white transition-colors"
                 >
                   <FontAwesomeIcon icon={faUserPen} />
                   <span>Edit</span>
@@ -122,7 +122,7 @@ const ProfilePage = () => {
               <button
                 onClick={handleFollowToggle}
                 className={`py-2 px-4 rounded font-semibold focus:outline-none transition-colors ${
-                  followed ? 'bg-gray-500 text-white' : 'bg-black-600 text-white'
+                  followed ? 'black-500 text-white' : 'bg-black-600 text-white'
                 }`}
               >
                 {followed ? (
@@ -176,26 +176,26 @@ const ProfilePage = () => {
             </h1>
             <div className="text-sm sm:text-base flex flex-wrap sm:flex-nowrap mt-4 sm:mt-0 space-x-4">
               <button
-                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_posts' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_posts' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                 onClick={() => setSelectedTab('user_posts')}
               >
                 Posts
               </button>
               <button
-                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_liked' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_liked' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                 onClick={() => setSelectedTab('user_liked')}
               >
                 Liked
               </button>
               <button
-                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_commented' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_commented' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                 onClick={() => setSelectedTab('user_commented')}
               >
                 Commented
               </button>
               {userId === loggedInUserId && (
                 <button
-                  className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_drafts' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                  className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'user_drafts' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                   onClick={() => setSelectedTab('user_drafts')}
                 >
                   Drafts

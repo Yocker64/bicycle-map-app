@@ -51,7 +51,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
     return (
         <div 
             key={post?.id} 
-            className="relative mb-6 bg-gray-800 text-white px-6 pb-6 rounded-lg shadow-md transition-shadow duration-300 cursor-pointer group"
+            className="relative mb-6 black-800 text-white px-6 pb-6 rounded-lg shadow-md transition-shadow duration-300 cursor-pointer group"
             onClick={handleEditClick}
         >
             {/* Draft Badge */}
@@ -74,7 +74,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
                     />
                     <div>
                         <h3 
-                            className="text-sm sm:text-lg font-semibold text-blue-400 cursor-pointer hover:underline"
+                            className="text-sm sm:text-lg font-semibold text-black-400 cursor-pointer hover:underline"
                             onClick={(e) => { 
                                 e.stopPropagation(); 
                                 navigate(`/profile/${post?.authorId}`); 
@@ -117,11 +117,11 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
                             <MenuButton onClick={(e) => e.stopPropagation()}>
                                 <FontAwesomeIcon icon={faEllipsis} className="hover:text-gray-300"/>
                             </MenuButton>
-                            <MenuItems className="absolute right-0 mt-2 bg-gray-700 text-gray-200 border border-gray-600 rounded-md w-40">
+                            <MenuItems className="absolute right-0 mt-2 black-700 text-gray-200 border border-gray-600 rounded-md w-40">
                                 <MenuItem>
                                     <button
                                         onClick={handleEditClick}
-                                        className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:bg-gray-600'
+                                        className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faPenToSquare} />
                                         <span>Edit</span>
@@ -130,7 +130,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
                                 <MenuItem>
                                     <button
                                         onClick={handleDeleteClick}
-                                        className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:bg-gray-600'
+                                        className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faTrashCan} />
                                         <span>Delete</span>

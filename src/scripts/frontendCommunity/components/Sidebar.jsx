@@ -43,7 +43,7 @@ const Sidebar = () => {
   };
 
   return (
-    <nav className='hidden lg:flex bg-gray-900 text-white flex-col h-full py-6 px-4 border-l border-gray-700'>
+    <nav className='hidden lg:flex black-800 text-white flex-col h-full py-6 px-4 border-l border-gray-700'>
       {loading || suggestedLoading ? (
         <div className="flex justify-center items-center h-full w-[230px]">
           <PuffLoader color="#5C6BC0" size={60} />
@@ -82,7 +82,7 @@ const Sidebar = () => {
                 suggestedUsers.map((user) => (
                   <div 
                     key={user.id} 
-                    className="flex items-center justify-between p-2 mb-2 rounded-lg hover:bg-gray-800 hover:shadow-md transition-all cursor-pointer group"
+                    className="flex items-center justify-between p-2 mb-2 rounded-lg hover:black-800 hover:shadow-md transition-all cursor-pointer group"
                     onClick={(e) => handleUserNavigate(e, user.id)}
                   >
                     <div className="flex items-center gap-4">
@@ -116,7 +116,7 @@ const Sidebar = () => {
                 suggestedRealms.map((realm) => (
                   <div 
                     key={realm.id} 
-                    className="flex items-center justify-between p-2 mb-2 rounded-lg hover:bg-gray-800 hover:shadow-md transition-all cursor-pointer group"
+                    className="flex items-center justify-between p-2 mb-2 rounded-lg hover:black-800 hover:shadow-md transition-all cursor-pointer group"
                     onClick={(e) => handleRealmNavigate(e, realm.id)}
                   >
                     <div className="flex items-center gap-4">

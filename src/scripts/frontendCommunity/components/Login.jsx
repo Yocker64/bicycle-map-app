@@ -80,7 +80,7 @@ const Login = () => {
             type="text"
             value={formData.username}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="w-full p-3 black-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             placeholder="Enter your username"
             required
           />
@@ -94,7 +94,7 @@ const Login = () => {
             type="password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="w-full p-3 black-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             placeholder="Enter your password"
             required
           />

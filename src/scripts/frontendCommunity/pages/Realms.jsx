@@ -9,7 +9,7 @@ const Realms = () => {
     const [selectedTab, setSelectedTab] = useState('all');
 
     return (
-        <div className="bg-gray-900 text-white p-6">
+        <div className="black-800 text-white p-6">
             {/* Page Title and Tabs */}
             <div className="container mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0 mb-6">
@@ -18,25 +18,25 @@ const Realms = () => {
                     <div className="flex space-x-4 text-xs sm:text-base">
                         <button
                             onClick={() => setSelectedTab('all')}
-                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'all' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'all' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
                             All
                         </button>
                         <button
                             onClick={() => setSelectedTab('joined')}
-                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'joined' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'joined' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
                             Joined
                         </button>
                         <button
                             onClick={() => setSelectedTab('created')}
-                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'created' ? 'bg-black-600 text-white' : 'bg-gray-800 text-gray-400'} hover:bg-black-700`}
+                            className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'created' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
                             Created
                         </button>
                         <div className="border-l border-gray-700 mx-4 my-2"></div>
                         <button onClick={() => navigate('/submit-realm')}
-                            className={`px-4 py-2 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500`}
+                            className={`px-4 py-2 rounded-lg bg-black-500`}
                         >
                             <FontAwesomeIcon icon={faPlus} className="mr-2"/>
                             New Realm

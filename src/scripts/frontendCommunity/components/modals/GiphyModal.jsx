@@ -77,10 +77,10 @@ const GiphyModal = ({ isOpen, onClose, onGifSelect }) => {
 
   return (
     isOpen && (
-      <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-80">
+      <div className="fixed inset-0 flex items-center justify-center black-800 bg-opacity-80">
         <div
           ref={modalRef}
-          className="bg-gray-800 text-gray-200 p-6 rounded-lg max-w-lg w-full max-h-[90vh] overflow-hidden shadow-lg relative"
+          className="black-800 text-gray-200 p-6 rounded-lg max-w-lg w-full max-h-[90vh] overflow-hidden shadow-lg relative"
         >
           <h3 className="text-lg font-bold mb-2">Search Giphy</h3>
           <div className='text-sm mb-4 font-gray-200'>
@@ -91,7 +91,7 @@ const GiphyModal = ({ isOpen, onClose, onGifSelect }) => {
             value={gifSearchTerm}
             onChange={handleGifSearchChange}
             placeholder="Search for a GIF"
-            className="w-full p-2 border border-gray-700 rounded-lg mb-4 bg-gray-900 text-gray-200"
+            className="w-full p-2 border border-gray-700 rounded-lg mb-4 black-800 text-gray-200"
           />
           {isLoadingGifs ? (
               <div className="flex justify-center items-center h-full w-full">

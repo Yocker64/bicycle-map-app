@@ -146,8 +146,8 @@ const RealmForm = () => {
     };
 
     return (
-        <div className="bg-gray-900 min-h-screen p-6">
-            <div className="max-w-4xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="black-800 min-h-screen p-6">
+            <div className="max-w-4xl mx-auto black-800 p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold text-white mb-6">
                     {realmId ? 'Edit Realm' : 'Create a New Realm'}
                 </h2>
@@ -170,7 +170,7 @@ const RealmForm = () => {
                             />
                             <label
                                 htmlFor="profilePicture"
-                                className="space-x-2 my-4 p-2 text-sm text-gray-100 bg-gray-700 border border-gray-600 rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
+                                className="space-x-2 my-4 p-2 text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faImages} className="ml-2" />
                                 <span>Realm Picture <span className='text-sm text-gray-500'>(Optional)</span></span>
@@ -197,7 +197,7 @@ const RealmForm = () => {
                                 type="text"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
+                                className="mt-1 block w-full px-3 py-2 black-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
                                 required
                             />
                             {nameError && <p className="text-red-500 text-sm mt-2">{nameError}</p>}
@@ -213,7 +213,7 @@ const RealmForm = () => {
                                 value={formData.description}
                                 onChange={handleChange}
                                 rows="5"
-                                className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
+                                className="mt-1 block w-full px-3 py-2 black-700 border border-gray-600 rounded-md shadow-sm text-gray-100 focus:outline-none focus:ring-black-500 focus:border-black-500 sm:text-sm"
                                 required
                             />
                         </div>
@@ -241,7 +241,7 @@ const RealmForm = () => {
                             <button
                                 type="button"
                                 onClick={handleCancel}
-                                className="w-1/2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+                                className="w-1/2 py-2 px-4 black-500 text-white font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
                             >
                                 <FontAwesomeIcon icon={faXmark} />
                                 <span>Cancel</span>

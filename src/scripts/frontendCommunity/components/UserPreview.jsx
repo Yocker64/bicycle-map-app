@@ -78,7 +78,7 @@ const UserPreview = ({ user, userId, setUsers }) => {
       :
       <>
         <div 
-          className="user-preview flex items-center justify-between space-x-4 p-4 bg-gray-800 rounded-lg"
+          className="user-preview flex items-center justify-between space-x-4 p-4 black-800 rounded-lg"
         >
           <div 
             className="user-info flex items-center gap-3"
@@ -98,7 +98,7 @@ const UserPreview = ({ user, userId, setUsers }) => {
                   e.stopPropagation(); // Prevent navigating to the profile page when clicking follow/unfollow
                   handleFollowToggle();
               }} 
-              className={`py-2 px-4 rounded-md font-semibold flex items-center ${followed ? 'bg-gray-700 text-white' : 'bg-black-600 text-white'}`}
+              className={`py-2 px-4 rounded-md font-semibold flex items-center ${followed ? 'black-700 text-white' : 'bg-black-600 text-white'}`}
               >
               <FontAwesomeIcon 
                 icon={followed ? faCheck : faUserPlus} 
@@ -111,7 +111,7 @@ const UserPreview = ({ user, userId, setUsers }) => {
 
         {/* Hover Card with Additional User Details */}
         {hovered && (
-          <div className="absolute z-10 p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-lg mt-2 w-64">
+          <div className="absolute z-10 p-4 black-800 border border-gray-700 rounded-lg shadow-lg mt-2 w-64">
             <div className="flex items-center space-x-4">
               <img 
                 src={user?.profilePictureUrl} 

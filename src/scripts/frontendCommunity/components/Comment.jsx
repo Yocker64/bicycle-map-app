@@ -275,7 +275,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                             alt="Profile"
                         />
                         <div>
-                            <div className="text-base font-semibold text-blue-400 hover:underline">@{comment.user?.username}</div>
+                            <div className="text-base font-semibold text-black-400 hover:underline">@{comment.user?.username}</div>
                             <div className="text-sm text-gray-400 flex-1">
                                 {comment?.createdAt && formatTime(comment?.createdAt)}
                             </div>
@@ -302,11 +302,11 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 <MenuButton>
                                     <FontAwesomeIcon icon={faEllipsis} className="hover:text-gray-300"/>
                                 </MenuButton>
-                                <MenuItems className="absolute right-0 mt-2 bg-gray-700 text-gray-200 border border-gray-600 rounded-md w-40">
+                                <MenuItems className="absolute right-0 mt-2 black-700 text-gray-200 border border-gray-600 rounded-md w-40">
                                     <MenuItem>
                                         <button
                                             onClick={() => navigate(`/comments/${comment?.id}/liked`)}
-                                            className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                            className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                         >
                                             <FontAwesomeIcon icon={faHeartFilled} />
                                             <span>Liked Users</span>
@@ -315,7 +315,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                     <MenuItem>
                                         <button
                                             onClick={handleReplyClick}
-                                            className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                            className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                         >
                                             <FontAwesomeIcon icon={faReply} />
                                             <span>Reply</span>
@@ -326,7 +326,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                         <MenuItem>
                                                 <button
                                                     onClick={handleEditClick}
-                                                    className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                    className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                 >
                                                     <FontAwesomeIcon icon={faPenToSquare} />
                                                     <span>Edit</span>
@@ -335,7 +335,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                         <MenuItem>
                                                 <button
                                                     onClick={handleDeleteClick}
-                                                    className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                    className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                 >
                                                     <FontAwesomeIcon icon={faTrashCan} />
                                                     <span>Delete</span>
@@ -353,21 +353,21 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                         <textarea
                             value={editedComment}
                             onChange={handleEditChange}
-                            className="w-full p-2 bg-gray-700 text-gray-300 border border-gray-600 rounded-md"
+                            className="w-full p-2 black-700 text-gray-300 border border-gray-600 rounded-md"
                             placeholder="Edit your comment..."
                             required
                         />
                         <div className="flex mt-2 space-x-2">
                             <button
                                 type="submit"
-                                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                                className="px-4 py-2 bg-black-600 text-white rounded-md hover:bg-black-700"
                             >
                                 Save
                             </button>
                             <button
                                 type="button"
                                 onClick={() => setEditMode(false)}
-                                className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700"
+                                className="px-4 py-2 black-600 text-white rounded-md hover:black-700"
                             >
                                 Cancel
                             </button>
@@ -382,7 +382,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                     <div className="flex items-center justify-between">
                         <button
                             onClick={handleReplyClick}
-                            className="text-blue-400 text-sm mt-2 space-x-2 hover:underline"
+                            className="text-black-400 text-sm mt-2 space-x-2 hover:underline"
                         >
                             <FontAwesomeIcon icon={faReply} className="text-xs"/>
                             <span>Reply</span>
@@ -391,7 +391,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                         {comment._count?.nestedComments > 0 && (
                             <button
                                 onClick={handleShowRepliesClick}
-                                className="text-blue-400 text-sm mt-2 hover:underline"
+                                className="text-black-400 text-sm mt-2 hover:underline"
                             >
                                 {showNestedComments
                                     ? `Hide replies`
@@ -406,14 +406,14 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 value={reply}
                                 onChange={handleReplyChange}
                                 onKeyDown={handleKeyDown}
-                                className="flex-1 bg-gray-700 text-gray-300 p-2 border border-gray-600 rounded-lg"
+                                className="flex-1 black-700 text-gray-300 p-2 border border-gray-600 rounded-lg"
                                 placeholder={`Reply to @${comment.user?.username}`}
                                 required
                                 rows="1"
                             />
                             <button
                                 type="submit"
-                                className="ml-4 flex items-center p-3 border border-gray-600 rounded-lg bg-gray-700 text-gray-300 hover:bg-blue-600 transition"
+                                className="ml-4 flex items-center p-3 border border-gray-600 rounded-lg black-700 text-gray-300 hover:bg-black-600 transition"
                             >
                                 <FontAwesomeIcon icon={faPaperPlane} />
                             </button>
@@ -447,7 +447,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                         {hasMore && !nestedLoading && (
                             <button
                                 onClick={handleLoadMoreNestedComments}
-                                className="text-blue-400 text-sm mt-4 hover:underline"
+                                className="text-black-400 text-sm mt-4 hover:underline"
                             >
                                 Load more replies
                             </button>

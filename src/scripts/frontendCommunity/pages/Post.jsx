@@ -124,7 +124,7 @@ const PostPage = () => {
     )}
 
     return (
-        <div className="container mx-auto p-6 bg-gray-900 text-gray-100 min-h-screen">
+        <div className="container mx-auto p-6 black-800 text-gray-100 min-h-screen">
             {post && (
                 <div className="post-item rounded-lg mb-6 relative">
                     {/* Author Section */}
@@ -138,7 +138,7 @@ const PostPage = () => {
                             />
                             <div>
                                 <h3 
-                                    className="text-lg font-semibold text-blue-400 cursor-pointer hover:underline"
+                                    className="text-lg font-semibold text-amber-600 cursor-pointer hover:underline"
                                     onClick={(e) => redirectToProfile(e, post?.authorId)}
                                 >
                                     @{post?.author?.username}
@@ -169,13 +169,13 @@ const PostPage = () => {
                                 <MenuButton onClick={(e) => e.stopPropagation()}>
                                     <FontAwesomeIcon icon={faEllipsis} className="hover:text-gray-300"/>
                                 </MenuButton>
-                                <MenuItems className="absolute right-0 mt-2 bg-gray-700 text-gray-200 border border-gray-600 rounded-md w-40">
+                                <MenuItems className="absolute right-0 mt-2 black-700 text-gray-200 border border-gray-600 rounded-md w-40">
                                 {userId === post?.authorId && 
                                     <>
                                     <MenuItem>
                                             <button
                                                 onClick={handleEditClick}
-                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faPenToSquare} />
                                                 <span>Edit</span>
@@ -184,7 +184,7 @@ const PostPage = () => {
                                     <MenuItem>
                                             <button
                                                 onClick={handleDeleteClick}
-                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                                className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faTrashCan} />
                                                 <span>Delete</span>
@@ -195,7 +195,7 @@ const PostPage = () => {
                                     <MenuItem>
                                     <button
                                         onClick={() => navigate(`/posts/${postId}/liked`)}
-                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:bg-gray-600'
+                                        className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faHeartFilled} />
                                         <span>Liked Users</span>
