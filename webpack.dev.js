@@ -45,6 +45,11 @@ module.exports = {
       filename: 'about.html',
       chunks: ['about'],
     }),
+    require("@import-meta-env/unplugin").webpack({
+        example: ".env.example",
+        env: ".env",
+        transformMode: "compile-time",
+       }),
   ],
   module: {
     rules: [

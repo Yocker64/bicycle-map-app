@@ -20,9 +20,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const API_BASE_URL =  "http://localhost:5000/";
       const response = await api({
         method: 'post',
-        url: `${import.meta.env.VITE_API_BASE_URL}/auth/login`,
+        url: `${API_BASE_URL}/auth/login`,
         headers: {
           'Content-Type': 'application/json', // Set the content type header
         },
@@ -44,9 +45,10 @@ const Login = () => {
 
   const handleDemoLogin = async () => {
     try {
+      const API_BASE_URL =  "http://localhost:5000";
       const response = await api({
         method: 'post',
-        url: `${import.meta.env.VITE_API_BASE_URL}/auth/login/demo`,
+        url: `${API_BASE_URL}/auth/login/demo`,
         headers: {
           'Content-Type': 'application/json',
         },
@@ -78,7 +80,7 @@ const Login = () => {
             type="text"
             value={formData.username}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:black-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             placeholder="Enter your username"
             required
           />
@@ -92,7 +94,7 @@ const Login = () => {
             type="password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-black-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             placeholder="Enter your password"
             required
           />
@@ -100,7 +102,7 @@ const Login = () => {
         {error && <div className="text-red-500 text-sm mb-4">{error}</div>} {/* Display error message if exists */}
         <button
           type="submit"
-          className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+          className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 transition-colors duration-300"
         >
           Login
         </button>
@@ -108,7 +110,7 @@ const Login = () => {
         <button
           type="button"
           onClick={handleDemoLogin}
-          className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 duration-300 mt-4"
+          className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 transition-colors duration-300 mt-4"
         >
           Try Demo
         </button>

@@ -24,7 +24,7 @@ const SignUp = () => {
     try {
       const response = await axios({
         method: 'post',
-        url: `${import.meta.env.VITE_API_BASE_URL}/auth/signup`,
+        url: `${"http://localhost:5000"}/auth/signup`,
         headers: {
           'Content-Type': 'application/json', // Set the content type header
         },
@@ -45,7 +45,7 @@ const SignUp = () => {
     try {
       const response = await axios({
         method: 'post',
-        url: `${import.meta.env.VITE_API_BASE_URL}/auth/login`,
+        url: `${"http://localhost:5000"}/auth/login`,
         headers: {
           'Content-Type': 'application/json', // Set the content type header
         },
@@ -83,7 +83,7 @@ const SignUp = () => {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-black-500"
             placeholder="Enter your email"
             required
           />
@@ -97,7 +97,7 @@ const SignUp = () => {
             type="text"
             value={formData.username}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-black-500"
             placeholder="Enter your username"
             required
           />
@@ -111,7 +111,7 @@ const SignUp = () => {
             type="password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-black-500"
             placeholder="Enter your password"
             required
           />
@@ -125,7 +125,7 @@ const SignUp = () => {
             type="password"
             value={formData.confirmPassword}
             onChange={handleChange}
-            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-black-500"
             placeholder="Confirm your password"
             required
           />
@@ -133,7 +133,7 @@ const SignUp = () => {
         {error && <div className="text-red-500 text-sm mb-4">{error}</div>} {/* Display error message if exists */}
         <button
           type="submit"
-          className="w-full p-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+          className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 transition-colors duration-300"
         >
           Sign Up
         </button>
