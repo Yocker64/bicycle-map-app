@@ -85,6 +85,7 @@ export function addMarkers(map) {
     },
     onAdd() {
       const div = L.DomUtil.create('div');
+      L.DomEvent.disableClickPropagation(div);
       const konbBtn = this.createButton('コンビニ', konbMarkerCluster);
       const repairBtn = this.createButton('修理店', repairMarkerCluster);
       const parkingBtn = this.createButton('駐輪場', parkMarkerCluster);
