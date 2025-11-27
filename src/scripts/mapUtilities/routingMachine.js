@@ -12,7 +12,7 @@ export function drawRoute(map){
     }
 
     const osrmBikeRouter = L.Routing.osrmv1({
-        serviceUrl: 'http://10.40.130.5:5000/route/v1',
+        serviceUrl: 'http://localhost:5000/route/v1',
         profile: 'bike'//profile letsgoo
     })
 

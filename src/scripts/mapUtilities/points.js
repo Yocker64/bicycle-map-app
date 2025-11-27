@@ -86,9 +86,10 @@ export function addMarkers(map) {
     onAdd() {
       const div = L.DomUtil.create('div');
       L.DomEvent.disableClickPropagation(div);
-      const konbBtn = this.createButton('コンビニ', konbMarkerCluster);
-      const repairBtn = this.createButton('修理店', repairMarkerCluster);
-      const parkingBtn = this.createButton('駐輪場', parkMarkerCluster);
+      
+      const konbBtn = this.createButton('コンビニ', konbMarkerCluster, 'konbini');
+      const repairBtn = this.createButton('修理店', repairMarkerCluster, 'repair');
+      const parkingBtn = this.createButton('駐輪場', parkMarkerCluster, 'park');
 
       div.className = 'marker-control hidden';
       div.appendChild(konbBtn);
@@ -97,35 +98,43 @@ export function addMarkers(map) {
 
       return div;
     },
-    createButton(label, cluster) {
+    createButton(label, cluster, id) {
       const btn = L.DomUtil.create('button');
-
-      this.addClusterLayer(cluster);
+      btn.dataset.id = id;
       btn.textContent = label;
-      btn.classList.add('checked');
+
+      if (localStorage.getItem(id) == false) {
+        this.removeClusterLayer(cluster, btn, id);
+      } else {
+        this.addClusterLayer(cluster, btn, id);
+      }
 
       btn.onclick = () => {
         if (btn.classList.contains('unchecked')) {
-          this.addClusterLayer(cluster);
-
-          btn.classList.remove('unchecked');
-          btn.classList.add('checked');
+          this.addClusterLayer(cluster, btn, id);
         } else {
-          this.removeClusterLayer(cluster);
-
-          btn.classList.remove('checked');
-          btn.classList.add('unchecked');
+          this.removeClusterLayer(cluster, btn, id);
         }
       };
       return btn;
     },
-    addClusterLayer(cluster) {
+    addClusterLayer(cluster, btn, id) {
       masterMarkerCluster.addLayer(cluster);
       map.addLayer(masterMarkerCluster);
+
+      btn.classList.remove('unchecked');
+      btn.classList.add('checked');
+
+      localStorage.setItem(id, 1);
     },
-    removeClusterLayer(cluster) {
+    removeClusterLayer(cluster, btn, id) {
       masterMarkerCluster.removeLayer(cluster);
       map.addLayer(masterMarkerCluster);
+
+      btn.classList.remove('checked');
+      btn.classList.add('unchecked');
+
+      localStorage.setItem(id, 0);
     },
   });
   map.addControl(new markerControl());
