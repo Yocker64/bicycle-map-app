@@ -1,7 +1,7 @@
 import gpsImg from '../../img/icons/gps.png';
 import gpsControlImg from '../../img/map-ui/gps-control-icon.png';
 
-export function initGPS(MAP) {
+export function initGPS(map) {
   if (!navigator.geolocation) {
     console.log('Geolocation is not supported by this browser.');
     return;
@@ -28,8 +28,9 @@ export function initGPS(MAP) {
     options: {
       position: 'bottomright',
     },
-    onAdd(MAP) {
+    onAdd(map) {
       const btn = L.DomUtil.create('img');
+      L.DomEvent.disableClickPropagation(btn);
       btn.src = gpsControlImg;
       btn.className = 'gps-button';
       btn.draggable = false;
@@ -40,7 +41,7 @@ export function initGPS(MAP) {
           btn.className = 'gps-button leaflet-control inactive';
         } else {
           followGps = true;
-          MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+          map.setView([lat, lon], map.getZoom(), { animate: true });
           btn.className = 'gps-button leaflet-control active';
         }
         console.log(followGps);
@@ -49,8 +50,8 @@ export function initGPS(MAP) {
     },
   });
 
-  MAP.addControl(new gpsControl());
-
+  map.addControl(new gpsControl());
+  
   // gps shit i dont understand
   const RECENTER_THRESHOLD = 60;
 
@@ -62,15 +63,15 @@ export function initGPS(MAP) {
     window.currentLat = lat;
     window.currentLng = lon;
 
-    if (marker) MAP.removeLayer(marker);
-    if (accuracyCircle) MAP.removeLayer(accuracyCircle);
+    if (marker) map.removeLayer(marker);
+    if (accuracyCircle) map.removeLayer(accuracyCircle);
 
-    marker = L.marker([lat, lon], { icon: gpsIcon }).addTo(MAP);
+    marker = L.marker([lat, lon], { icon: gpsIcon }).addTo(map);
     accuracyCircle = L.circle([lat, lon], {
       radius: acc,
       stroke: false,
       fillOpacity: 0.2,
-    }).addTo(MAP);
+    }).addTo(map);
 
     if (acc <= RECENTER_THRESHOLD || acc < bestAcc) {
       bestAcc = Math.min(bestAcc, acc);
@@ -78,7 +79,7 @@ export function initGPS(MAP) {
 
     // Sets map view to current location if the gps loads for the first time
     if ((gpsLoadedOnce === false && lat != null) || followGps === true) {
-      MAP.setView([lat, lon], MAP.getZoom(), { animate: true });
+      map.setView([lat, lon], map.getZoom(), { animate: true });
       gpsLoadedOnce = true;
     }
   }
