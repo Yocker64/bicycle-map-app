@@ -1,6 +1,12 @@
 import icon from '../../img/map-ui/user-marker.png';
 
 export function drawRoute(map, e){
+    //need current GPS
+    if(window.currentLat == null || window.currentLng == null){
+        alert("Current location is not ready yet.");
+        return;
+    }
+
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px; filter: sepia(100%) saturate(300%) hue-rotate(0deg) brightness(150%) ">`,
         className: 'destination-marker',
@@ -14,12 +20,6 @@ export function drawRoute(map, e){
     const root = document.querySelector(':root');
     root.style.setProperty('--map-height', '70vh');
     
-    //need current GPS
-    // if(window.currentLat == null || window.currentLng == null){
-    //     alert("Current location is not ready yet.");
-    //     return;
-    // }
-
     const marker = new L.marker(e.latlng, {
         keyboard: false,
         icon: markerIcon,
@@ -39,16 +39,16 @@ export function drawRoute(map, e){
     //create new route from GPS to clicked point
     window.routingControl = L.Routing.control({
         router: osrmBikeRouter,
-        fitSelectedRoutes: true,
         addWayPoints: false,
         draggableWaypoints: false,
         routeWhileDragging: false,
+        collapsible: true,
         lineOptions: {
             styles: [{ color: "red", opacity: 0.7, weight: 8 }],
         },
         waypoints: [
-            // L.latLng(window.currentLat, window.currentLng),
-            L.latLng(34.98493616431302, 135.75248977767515),
+            L.latLng(window.currentLat, window.currentLng),
+            // L.latLng(34.98493616431302, 135.75248977767515),
             L.latLng(destinationLat, destinationLng),
         ],
         createMarker: function() { return null; },
@@ -63,5 +63,13 @@ export function drawRoute(map, e){
             root.style.setProperty('--map-height', '100vh');
         }
     );
-    
+
+    map.fitBounds([
+        [destinationLat, destinationLng],
+        [window.currentLat, window.currentLng]
+    ],
+    {
+        paddingTopLeft: [50, 100],
+        paddingBottomRight: [100, 250],
+    });
 }
