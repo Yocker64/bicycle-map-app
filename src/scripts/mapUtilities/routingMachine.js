@@ -8,7 +8,7 @@ export function drawRoute(map, e){
     }
 
     const markerIcon = L.divIcon({
-        html: `<img src="${icon}" style="width: 40px; height: 40px; filter: sepia(100%) saturate(300%) hue-rotate(0deg) brightness(150%) ">`,
+        html: `<img src="${icon}" style="width: 40px; height: 40px; filter: hue-rotate(130deg)">`,
         className: 'destination-marker',
         iconSize: [40, 40],
         iconAnchor: [20, 40],
@@ -44,7 +44,7 @@ export function drawRoute(map, e){
         routeWhileDragging: false,
         collapsible: true,
         lineOptions: {
-            styles: [{ color: "red", opacity: 0.7, weight: 8 }],
+            styles: [{ color: "var(--yellow)", opacity: 1, weight: 8 }],
         },
         waypoints: [
             L.latLng(window.currentLat, window.currentLng),
