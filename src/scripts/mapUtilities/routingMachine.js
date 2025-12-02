@@ -27,11 +27,15 @@ export function drawRoute(map, destinationLat, destinationLng){
         addWayPoints: false,
         draggableWaypoints: false,
         routeWhileDragging: false,
+        lineOptions: {
+            styles: [{ color: "red", opacity: 0.7, weight: 8 }],
+        },
         waypoints: [
             // L.latLng(window.currentLat, window.currentLng),
             L.latLng(34.98493616431302, 135.75248977767515),
             L.latLng(destinationLat, destinationLng),
         ],
+        createMarker: function() { return null; },
 
     }).addTo(map);
     

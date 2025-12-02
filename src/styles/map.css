@@ -3,7 +3,6 @@
     touch-action: none;
     overflow: hidden;
 }
-
 .top-bar {
     position: fixed;
     z-index: 100000000;
@@ -51,12 +50,14 @@
 
 
 .user-marker-popup {
-    position: sticky;
-    bottom: calc(var(--ui-side-margins) * 4.5);
+    position: fixed;
+    /* bottom: calc(var(--ui-side-margins) * 4.5); */
+    left: 50%;
+    right: 50%;
+    bottom: 300px;
     z-index: 100000000;
     height: 60px;
     width: 200px;
-    margin: auto;
     padding: 10px;
 
     background-color: var(--translucid-white);

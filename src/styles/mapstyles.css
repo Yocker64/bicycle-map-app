@@ -3,6 +3,7 @@
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+    max-height: 70vh;
 }
 
 img {
@@ -15,10 +16,15 @@ img {
 /* MAP CONTROLS */
 .leaflet-bottom.leaflet-right,
 .leaflet-bottom.leaflet-left {
+    position: absolute;
+    left: 0;
     margin: calc(var(--ui-side-margins) * 1) var(--ui-side-margins);
+
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 5px;
+
     -webkit-user-select: none;
     user-select: none;
     pointer-events: none;
@@ -96,11 +102,12 @@ img {
 /* Gps button controls */
 .gps-button.leaflet-control {
     margin: 0;
-    width: 55px;
-    height: 55px;
+    margin-right: 8px;
+    width: 54px;
+    height: 54px;
     border: 3px solid var(--translucid-white);
     outline: 2px solid var(--translucid-black);
-    align-self: center;
+    /* align-self: center; */
     border-radius: 50%;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -185,6 +192,7 @@ img {
 }
 
 /* MARKERS */
+
 .user-marker {
     user-select: none;
     touch-action: none;
@@ -258,13 +266,47 @@ a.leaflet-popup-close-button {
     outline: 2px solid var(--translucid-black);
 }
 
+
+/* ROUTING */
 .leaflet-routing-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-height: 30vh;
+    border: 0 !important;  
+    border-radius: 0;
+
+    font-size: 2rem;
     color: black;
+}
+
+.leaflet-routing-container table {
+    margin-bottom: 120px;
+}
+
+.leaflet-routing-container tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.leaflet-routing-container .leaflet-routing-instruction-distance,
+.leaflet-routing-container h2,
+.leaflet-routing-container h3,
+.leaflet-routing-container td:has(span) {
+    display: none;
+}
+
+
+.leaflet-routing-container td:last-child {
+    white-space: nowrap;
 }
 
 /* ATTRIBUTION */
 .leaflet-control-attribution.leaflet-control {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;

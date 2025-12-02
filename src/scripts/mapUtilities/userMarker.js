@@ -52,5 +52,6 @@ export function addUserMarker(map) {
         document.querySelector('.user-marker-popup').remove();
     }
 
-    map.on("contextmenu", addMarker);
+    // map.on("contextmenu", addMarker);
+    map.on("click", addMarker);
 }
