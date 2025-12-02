@@ -96,7 +96,7 @@ export const NotificationsProvider = ({ children }) => {
       case 'comment_reply':
         return `replied to your comment`;
       case 'realm_join':
-        return `joined your realm`;
+        return `joined your group`;
       default:
         return 'You have a new notification';
     }

@@ -6,7 +6,6 @@ import {
   faLayerGroup,
   faUser,
   faBell,
-  faSquarePlus,
   faRightFromBracket,
 } from '@fortawesome/free-solid-svg-icons';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
@@ -37,7 +36,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-700 my-4"></div>
 
       {/* Navigation Items */}
@@ -53,33 +51,13 @@ const Navbar = () => {
             <span className="hidden md:inline">Groups</span>
           </Link>
 
-          {/* Dropdown Menu for Creating Content */}
-          <Menu as="div" className="relative">
-            <MenuButton className="h-8 flex items-center space-x-4 hover:text-gray-400 text-stone-200 transition">
-              <FontAwesomeIcon icon={faSquarePlus} />
-              <span className="hidden md:inline">Create</span>
-            </MenuButton>
-            <MenuItems className="absolute left-0 mt-2 w-40 black-800 rounded shadow-lg py-2 border border-gray-700 z-50">
-              <MenuItem>
-                <Link
-                  to="/submit-post"
-                  className="block px-4 py-2 text-sm text-gray-300 hover:black-700 space-x-2"
+          {/* New Post */}
+          <Link to="/submit-post"
+                  className="h-8 flex items-center space-x-4 hover:text-gray-400 text-stone-200 transition"
                 >
                   <FontAwesomeIcon icon={faMicroblog} />
-                  <span>New Post</span>
+                  <span className="hidden md:inline">New Post</span>
                 </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link
-                  to="/submit-realm"
-                  className="block px-4 py-2 text-sm text-gray-300 hover:black-700 space-x-2"
-                >
-                  <FontAwesomeIcon icon={faLayerGroup} />
-                  <span>New Group</span>
-                </Link>
-              </MenuItem>
-            </MenuItems>
-          </Menu>
 
           {/* Notifications */}
           <div className="relative flex items-center">
@@ -104,7 +82,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-700 my-4"></div>
 
       {/* Logout Button */}

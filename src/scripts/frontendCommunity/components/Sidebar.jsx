@@ -109,9 +109,9 @@ const Sidebar = () => {
               )}
             </div>
 
-            {/* Suggested Realms */}
+            {/* Suggested Groups */}
             <div className='mb-2'>
-              <h3 className='text-sm text-gray-300 font-semibold mb-2'>Realms</h3>
+              <h3 className='text-sm text-gray-300 font-semibold mb-2'>Groups</h3>
               {suggestedRealms.length > 0 ? (
                 suggestedRealms.map((realm) => (
                   <div 
@@ -140,7 +140,7 @@ const Sidebar = () => {
                 ))
               ) : (
                 <div>
-                    <p className="text-gray-400 text-sm">You joined all our realms!</p>
+                    <p className="text-gray-400 text-sm">You joined all our groups!</p>
                     <p className="text-black-500 text-sm cursor-pointer hover:underline" onClick={() => navigate('/submit-realm')}>Create a new one here</p>
                 </div>
               )}
@@ -151,8 +151,8 @@ const Sidebar = () => {
           <div className="border-t border-gray-700 my-4"></div>
 
           {/* Footer */}
-          <div className="text-xs text-gray-500 flex flex-col items-center space-y-2">
-            <a href="https://github.com/Yocker64/bicycle-map-app" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-white transition-colors">
+          <div className="text-xs flex flex-col items-center space-y-2">
+            <a href="https://github.com/Yocker64/bicycle-map-app" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-white text-black">
               <FontAwesomeIcon icon={faGithub} className="text-lg mr-1" />
               Developed by &nbsp;<span>@yocker64, @haimamire @batireedui</span>
             </a>

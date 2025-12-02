@@ -28,7 +28,7 @@ const AuthenticatedLayout = () => {
         </div>
       </div>
 
-      <Sidebar/>
+      {/* <Sidebar/> */}
     </div>
   );
 };

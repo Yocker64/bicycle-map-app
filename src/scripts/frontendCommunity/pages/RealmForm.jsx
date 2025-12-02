@@ -173,7 +173,7 @@ const RealmForm = () => {
                                 className="space-x-2 my-4 p-2 text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faImages} className="ml-2" />
-                                <span>Realm Picture <span className='text-sm text-gray-500'>(Optional)</span></span>
+                                <span>Group Picture <span className='text-sm text-gray-500'>(Optional)</span></span>
                             </label>
                             {imagePreview && (
                                 <div className="mt-4 flex justify-center">
@@ -190,7 +190,7 @@ const RealmForm = () => {
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                                 <span className='text-red-600 text-lg mr-1'>*</span>
-                                Realm Name:
+                                Group Name:
                             </label>
                             <input
                                 id="name"
@@ -234,7 +234,7 @@ const RealmForm = () => {
                                     :
                                     <>
                                         <FontAwesomeIcon icon={faLayerGroup} />
-                                        <span>Create Realm</span>
+                                        <span>Create Group</span>
                                     </>
                                 }
                             </button>

@@ -107,7 +107,7 @@ const Realm = () => {
                                 <div className="mb-2 flex justify-between items-start">
                                     <div className="flex flex-col justify-center">
                                         <div className="text-gray-400 text-base flex items-center space-x-2">
-                                            <span className="text-sm text-gray-200">Realm created by</span>
+                                            <span className="text-sm text-gray-200">Group created by</span>
                                             <div className="flex space-x-2 items-center">
                                                 <img 
                                                     src={realm.creator?.profilePictureUrl} 

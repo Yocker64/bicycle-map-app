@@ -13,7 +13,7 @@ const Realms = () => {
             {/* Page Title and Tabs */}
             <div className="container mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0 mb-6">
-                    <h1 className="text-2xl sm:text-3xl font-bold">Realms</h1>
+                    <h1 className="text-2xl sm:text-3xl font-bold">Groups</h1>
                     {/* Tabs for All, Joined, and Created */}
                     <div className="flex space-x-4 text-xs sm:text-base">
                         <button
@@ -39,7 +39,7 @@ const Realms = () => {
                             className={`px-4 py-2 rounded-lg bg-black-500`}
                         >
                             <FontAwesomeIcon icon={faPlus} className="mr-2"/>
-                            New Realm
+                            New Group
                         </button>
                     </div>
                 </div>

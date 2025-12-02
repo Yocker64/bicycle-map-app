@@ -5,7 +5,6 @@ import Select from 'react-select';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudArrowUp, faFloppyDisk, faImages, faXmark, faSmile } from '@fortawesome/free-solid-svg-icons';
-import GiphyModal from '../components/modals/GiphyModal';
 import { PuffLoader } from 'react-spinners';
 
 const PostForm = () => {
@@ -178,14 +177,7 @@ const PostForm = () => {
           })
       );
 
-      // Upload new gif images if any
-      await Promise.all(
-        postImages
-          .filter((image) => image.isGif)
-          .map( async (gif) => {
-            await api.post('/images/existing', {id: gif.id, url: gif.url});
-         })
-      );
+
 
       const formDataToSend = {
         ...formData,
@@ -225,8 +217,7 @@ const PostForm = () => {
           <div className="mb-4">
             <label htmlFor="realm" className="block text-sm font-medium text-gray-300">
               <span className='text-red-600 text-lg mr-1'>*</span>
-              <span>Choose a realm to post under:</span>
-              <span className='ml-2 text-xs text-black-500'>You must join realms to post within them!</span>
+              <span>Choose a group:</span>
             </label>
             <Select
               value={selectedRealm}
@@ -375,26 +366,11 @@ const PostForm = () => {
                 />
               </div>
               
-              {/* Giphy Upload Button */}
-              <div className="my-4">
-                <button
-                  type="button"
-                  onClick={() => setGifModalOpen(true)}
-                  className="flex items-center space-x-2 px-3 py-2 text-xs sm:text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
-                >
-                  <FontAwesomeIcon icon={faSmile} className="mr-1"/>
-                  <span>Search for a GIF</span>
-                </button>
-              </div>
+             
             </div>
 
 
-            {/* Giphy Search Modal */}
-            <GiphyModal
-              isOpen={isGifModalOpen}
-              onClose={() => setGifModalOpen(false)}
-              onGifSelect={handleGifSelect}
-            />
+            
           </div>
 
           <div className='border-t border-gray-700 my-6'></div>
