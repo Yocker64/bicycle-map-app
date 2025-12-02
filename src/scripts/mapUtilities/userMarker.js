@@ -1,4 +1,5 @@
 import icon from '../../img/map-ui/user-marker.png';
+import { drawRoute } from './routingMachine';
 
 export function addUserMarker(map) {
     const markerIcon = L.divIcon({
@@ -15,13 +16,18 @@ export function addUserMarker(map) {
         const userMarkerPopup = document.createElement('div');
         const userMarkerLink = document.createElement('a');
         const closeBtn = document.createElement('button');
+        const routingBtn = document.createElement('button');
 
-        closeBtn.textContent = 'X';
         userMarkerLink.href = `https://www.google.com/maps/place/${latStr},${lngStr}`;
         userMarkerLink.target = "_blank";
         userMarkerLink.textContent = "Google Mapsで開く";
+        
+        closeBtn.textContent = 'X';
+        routingBtn.textContent = 'Go';
+
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.appendChild(closeBtn);
+        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.className = 'user-marker-popup';
 
         const marker = new L.marker(e.latlng, {
@@ -29,6 +35,11 @@ export function addUserMarker(map) {
             icon: markerIcon,
         }).addTo(map);
         document.querySelector('body').appendChild(userMarkerPopup);
+
+        // Routing related
+        routingBtn.addEventListener('click', () => {
+            drawRoute(map, e.latlng.lat, e.latlng.lng)
+        });
 
         // Removes marker if there are more than 1, or if close button is pressed
         const markers = document.querySelectorAll('.user-marker');

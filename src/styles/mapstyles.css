@@ -258,6 +258,10 @@ a.leaflet-popup-close-button {
     outline: 2px solid var(--translucid-black);
 }
 
+.leaflet-routing-container {
+    color: black;
+}
+
 /* ATTRIBUTION */
 .leaflet-control-attribution.leaflet-control {
     position: fixed;
