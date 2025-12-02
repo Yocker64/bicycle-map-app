@@ -1,7 +1,6 @@
 import icon from '../../img/map-ui/user-marker.png';
 
 export function drawRoute(map, e){
-
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px; filter: sepia(100%) saturate(300%) hue-rotate(0deg) brightness(150%) ">`,
         className: 'destination-marker',
@@ -40,7 +39,7 @@ export function drawRoute(map, e){
     //create new route from GPS to clicked point
     window.routingControl = L.Routing.control({
         router: osrmBikeRouter,
-        fitSelectedRoutes: false,
+        fitSelectedRoutes: true,
         addWayPoints: false,
         draggableWaypoints: false,
         routeWhileDragging: false,

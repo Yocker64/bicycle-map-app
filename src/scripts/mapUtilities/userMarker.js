@@ -24,11 +24,13 @@ export function addUserMarker(map) {
         userMarkerLink.textContent = "Google Mapsで開く";
         
         closeBtn.textContent = 'X';
-        routingBtn.textContent = 'Go';
+        closeBtn.className = 'close-btn';
+        routingBtn.textContent = '経路';
+        routingBtn.className = 'directions-btn';
 
+        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.appendChild(closeBtn);
-        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.className = 'user-marker-popup';
 
         const marker = new L.marker(e.latlng, {
