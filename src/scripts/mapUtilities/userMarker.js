@@ -31,6 +31,7 @@ export function addUserMarker(map) {
         userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.appendChild(closeBtn);
+        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.className = 'user-marker-popup';
 
         const marker = new L.marker(e.latlng, {

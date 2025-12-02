@@ -2,10 +2,10 @@ import icon from '../../img/map-ui/user-marker.png';
 
 export function drawRoute(map, e){
     //need current GPS
-    if(window.currentLat == null || window.currentLng == null){
-        alert("Current location is not ready yet.");
-        return;
-    }
+    // if(window.currentLat == null || window.currentLng == null){
+    //     alert("Current location is not ready yet.");
+    //     return;
+    // }
 
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px; filter: hue-rotate(130deg)">`,
