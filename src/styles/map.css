@@ -51,10 +51,9 @@
 
 .user-marker-popup {
     position: fixed;
-    /* bottom: calc(var(--ui-side-margins) * 4.5); */
     left: 50%;
-    right: 50%;
-    bottom: 300px;
+    transform: translate(-50%);
+    bottom: calc(107vh - var(--map-height));
     z-index: 100000000;
     height: 60px;
     width: 200px;

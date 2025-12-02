@@ -30,7 +30,8 @@ export function addLayers(MAP) {
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  MAP.addLayer(OpenStreetMap_CAT);
+  MAP.addLayer(satelliteLayer);
+  // MAP.addLayer(OpenStreetMap_CAT);
   MAP.addLayer(bikeLanesLayer);
 
   // Layer control
