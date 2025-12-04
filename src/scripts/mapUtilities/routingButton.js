@@ -12,7 +12,7 @@ export function addRoutingBtn(map, lat, lng) {
         }
         map.closePopup();
 
-        drawRoute(map, lat, lng);
+        drawRoute(map, lat, lng, true);
     });
 
     return routingBtn;

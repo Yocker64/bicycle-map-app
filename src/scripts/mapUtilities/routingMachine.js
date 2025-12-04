@@ -1,11 +1,19 @@
 import icon from '../../img/map-ui/user-marker.png';
 
-export function drawRoute(map, destinationLat, destinationLng){
-    //need current GPS
-    // if(window.currentLat == null || window.currentLng == null){
-    //     alert("Current location is not ready yet.");
-    //     return;
-    // }
+let routeInterval = null;
+let lastLat = null;
+let lastLng = null;
+
+export function drawRoute(map, destinationLat, destinationLng, fitToWindow){
+    // Must have GPS ready
+    if(window.currentLat == null || window.currentLng == null){
+        alert("GPS not ready yet.");
+        return;
+    }
+
+    if (window.routingControl?.router?._abortRequests) {
+        window.routingControl.router._abortRequests();
+    }
 
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px; filter: hue-rotate(130deg)">`,
@@ -14,35 +22,58 @@ export function drawRoute(map, destinationLat, destinationLng){
         iconAnchor: [20, 40],
     });
 
-    // const destinationLat = e.latlng.lat;
-    // const destinationLng = e.latlng.lng;
-
     const root = document.querySelector(':root');
     root.style.setProperty('--map-height', '70vh');
+
+    const collapseBtn = document.createElement('span');
+    collapseBtn.className = 'leaflet-routing-collapse-btn';
+    root.appendChild(collapseBtn);
+
+    collapseBtn.addEventListener(
+        'click', (e) => {
+            // stop auto updates
+            if (routeInterval) {
+                clearInterval(routeInterval);
+                routeInterval = null;
+            }
+
+            map.removeControl(window.routingControl);
+            document.querySelector('.destination-marker')?.remove();
+
+            root.style.setProperty('--map-height', '100vh');
+
+            e.target.remove();
+        }
+    );
     
-    const marker = new L.marker([destinationLat, destinationLng], {
+    new L.marker([destinationLat, destinationLng], {
         keyboard: false,
         icon: markerIcon,
     }).addTo(map);
 
     const osrmBikeRouter = L.Routing.osrmv1({
         serviceUrl: 'http://localhost:5000/route/v1',
-        profile: 'bike',//profile letsgoo
+        profile: 'bike',
     })
 
-    //remove old route if exists
+    // remove old route / duplicate UI elements
     if(window.routingControl) {
-        if (document.querySelectorAll('.destination-marker').length > 1) document.querySelector('.destination-marker').remove();
+        if (document.querySelectorAll('.destination-marker').length > 1)
+            document.querySelector('.destination-marker').remove();
+
+        if (document.querySelectorAll('.leaflet-routing-collapse-btn').length > 1)
+            document.querySelector('.leaflet-routing-collapse-btn').remove();
+
         map.removeControl(window.routingControl);
     };
 
-    //create new route from GPS to clicked point
+    //create new route
     window.routingControl = L.Routing.control({
         router: osrmBikeRouter,
         addWayPoints: false,
         draggableWaypoints: false,
         routeWhileDragging: false,
-        collapsible: true,
+        collapsible: false,
         lineOptions: {
             styles: [{ color: "var(--yellow)", opacity: 1, weight: 8 }],
         },
@@ -51,25 +82,28 @@ export function drawRoute(map, destinationLat, destinationLng){
             // L.latLng(34.98493616431302, 135.75248977767515),
             L.latLng(destinationLat, destinationLng),
         ],
-        createMarker: function() { return null; },
-
+        createMarker: () => null,
     }).addTo(map);
 
-    document.querySelector('.leaflet-routing-collapse-btn').addEventListener(
-        'click', () => {
-            map.removeControl(window.routingControl);
-            document.querySelector('.destination-marker').remove();
+    if (fitToWindow) {
+        map.fitBounds(
+            [
+                [destinationLat, destinationLng],
+                [window.currentLat, window.currentLng]
+            ],
+            {
+                paddingTopLeft: [50, 100],
+                paddingBottomRight: [100, 250],
+            }
+        );
+    }
 
-            root.style.setProperty('--map-height', '100vh');
-        }
-    );
+    if(routeInterval) clearInterval(routeInterval);
+    routeInterval = setInterval(() => {
+        if (window.currentLat === lastLat && window.currentLng === lastLng) return;
+        lastLat = window.currentLat;
+        lastLng = window.currentLng;
 
-    map.fitBounds([
-        [destinationLat, destinationLng],
-        [window.currentLat, window.currentLng]
-    ],
-    {
-        paddingTopLeft: [50, 100],
-        paddingBottomRight: [100, 250],
-    });
+        drawRoute(map, destinationLat, destinationLng, false);
+    }, 5000);
 }
