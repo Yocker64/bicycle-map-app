@@ -1,6 +1,7 @@
 import 'leaflet.markercluster';
 
 import { imagesDescsLinks, DataAccess } from './pointsData';
+import { addRoutingBtn } from './routingButton';
 
 import konbiniIcon from '../../img/icons/shopping-bag.png';
 import repairIcon from '../../img/icons/wrench.png';
@@ -36,19 +37,39 @@ export function addMarkers(map) {
   // Create icons and popups for each marker, and add it to its respective cluster
   Object.keys(imagesDescsLinks).forEach((category) => {
     imagesDescsLinks[category].forEach((item) => {
+      const popupContent = (function() {
+        const content = document.createElement('div');
+        const imageWrapper = document.createElement('div');
+        const image = document.createElement('img');
+        const title = document.createElement('p');
+        const url = document.createElement('a');
+        const routingBtn = addRoutingBtn(map, item.lat, item.lng);
+
+        title.textContent = item.desc;
+        url.textContent = 'Google Mapsで開く';
+        url.setAttribute('href', item.link);
+        url.setAttribute('target', '_blank');
+
+        imageWrapper.className = 'image-wrapper';
+        image.setAttribute('src', item.imageSrc);
+        imageWrapper.appendChild(image);
+
+        content.appendChild(imageWrapper);
+        content.appendChild(title);
+        content.appendChild(url);
+        content.appendChild(routingBtn);
+
+        return content;
+      })();
+
       const markerPopup = L.popup({
-        content: `
-            ${item.imageSrc ? `<div class="image-wrapper"><img src="${item.imageSrc}" alt="Location image"></div>` : ''}
-            <p>${item.desc}</p>
-            ${item.link ? `<a href="${item.link}" target="_blank">Google Mapsで開く</a>` : ''}
-        `,
-        minWidth: 150,
-        maxWidth: 150,
+        minWidth: 160,
+        maxWidth: 160,
         closeButton: true,
         closeOnClick: true,
         autoPanPaddingTopLeft: [10, 80],
         autoPanPaddingBottomRight: [25, 10],
-      });
+      }).setContent(popupContent);
 
       const marker = L.marker([item.lat, item.lng], {
         icon: createIcon(categoryImages[category] || 'gray'),

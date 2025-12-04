@@ -245,6 +245,11 @@ img {
     margin: auto;
 }
 
+.leaflet-popup-content > div {
+    display: flex;
+    flex-direction: column;
+}
+
 .leaflet-popup-content .image-wrapper {
     height: 100px;
     width: 100px;
@@ -252,9 +257,13 @@ img {
 }
 
 .leaflet-popup-content p {
+    margin: 10px 0;
     font-weight: bold;
     line-break: auto;
     user-select: text;
+}
+.leaflet-popup-content a {
+    margin-bottom: 10px;
 }
 
 a.leaflet-popup-close-button {

@@ -1,6 +1,6 @@
 import icon from '../../img/map-ui/user-marker.png';
 
-export function drawRoute(map, e){
+export function drawRoute(map, destinationLat, destinationLng){
     //need current GPS
     // if(window.currentLat == null || window.currentLng == null){
     //     alert("Current location is not ready yet.");
@@ -14,13 +14,13 @@ export function drawRoute(map, e){
         iconAnchor: [20, 40],
     });
 
-    const destinationLat = e.latlng.lat;
-    const destinationLng = e.latlng.lng;
+    // const destinationLat = e.latlng.lat;
+    // const destinationLng = e.latlng.lng;
 
     const root = document.querySelector(':root');
     root.style.setProperty('--map-height', '70vh');
     
-    const marker = new L.marker(e.latlng, {
+    const marker = new L.marker([destinationLat, destinationLng], {
         keyboard: false,
         icon: markerIcon,
     }).addTo(map);
