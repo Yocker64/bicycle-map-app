@@ -6,8 +6,11 @@ export function addRoutingBtn(map, lat, lng) {
     routingBtn.className = 'directions-btn';
 
     routingBtn.addEventListener('click', () => {
-        // document.querySelector('.user-marker').remove();
-        // document.querySelector('.user-marker-popup').remove();
+        if (document.querySelector('.user-marker')) {
+            document.querySelector('.user-marker').remove();
+            document.querySelector('.user-marker-popup').remove();
+        }
+        map.closePopup();
 
         drawRoute(map, lat, lng);
     });

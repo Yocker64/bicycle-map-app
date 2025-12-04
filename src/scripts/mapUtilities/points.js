@@ -37,6 +37,7 @@ export function addMarkers(map) {
   // Create icons and popups for each marker, and add it to its respective cluster
   Object.keys(imagesDescsLinks).forEach((category) => {
     imagesDescsLinks[category].forEach((item) => {
+
       const popupContent = (function() {
         const content = document.createElement('div');
         const imageWrapper = document.createElement('div');
