@@ -77,16 +77,15 @@
     -webkit-user-select: none;
 }
 
-.user-marker-popup button {
-    border: 0;
-}
-
-.user-marker-popup .directions-btn {
+.directions-btn {
+    align-self: center;
     background-color: var(--light-blue);
     color: white;
+    border: 0;
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .user-marker-popup .close-btn {
@@ -101,6 +100,7 @@
     background-color: var(--yellow);
     color: black;
     outline: 2px solid var(--translucid-black);
+    border: 0;
 
     font-size: 12px;
 }

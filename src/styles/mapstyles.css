@@ -245,6 +245,11 @@ img {
     margin: auto;
 }
 
+.leaflet-popup-content > div {
+    display: flex;
+    flex-direction: column;
+}
+
 .leaflet-popup-content .image-wrapper {
     height: 100px;
     width: 100px;
@@ -252,9 +257,13 @@ img {
 }
 
 .leaflet-popup-content p {
+    margin: 10px 0;
     font-weight: bold;
     line-break: auto;
     user-select: text;
+}
+.leaflet-popup-content a {
+    margin-bottom: 10px;
 }
 
 a.leaflet-popup-close-button {
@@ -322,11 +331,15 @@ a.leaflet-popup-close-button {
 }
 
 .leaflet-routing-collapse-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     width: 40px;
     height: 40px;
     top: calc(var(--map-height) - 8vh);;
     left: var(--ui-side-margins);
+    z-index: 100000;
 
     border-radius: 50%;
     background-color: var(--red);
@@ -338,6 +351,7 @@ a.leaflet-popup-close-button {
 
 .leaflet-routing-collapse-btn::after {
     content: "x";
+    height: 30px;
 }
 
 

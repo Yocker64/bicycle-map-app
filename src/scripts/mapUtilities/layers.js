@@ -12,6 +12,12 @@ export function addLayers(MAP) {
     },
   );
 
+  const CartoDB_VoyagerNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: 'abcd',
+    maxZoom: 20
+  });
+
   const bikeLanesLayer = L.tileLayer(
     'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm-lite/{z}/{x}/{y}.png',
     {
@@ -30,13 +36,15 @@ export function addLayers(MAP) {
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
     },
   );
-  MAP.addLayer(OpenStreetMap_CAT);
+  MAP.addLayer(CartoDB_VoyagerNoLabels);
+  // MAP.addLayer(OpenStreetMap_CAT);
   MAP.addLayer(bikeLanesLayer);
 
   // Layer control
   const baseMaps = {
     [`<img class="layer-control-image" src="${defaultViewImg}" width="200px" draggable="false">`]:
-      OpenStreetMap_CAT,
+      // OpenStreetMap_CAT,
+      CartoDB_VoyagerNoLabels,
     [`<img class="layer-control-image" src="${satelliteViewImg}" width="200px" draggable="false">`]:
       satelliteLayer,
   };

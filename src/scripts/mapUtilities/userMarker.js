@@ -1,14 +1,16 @@
 import icon from '../../img/map-ui/user-marker.png';
-import { drawRoute } from './routingMachine';
+import { addRoutingBtn } from './routingButton';
 
 export function addUserMarker(map) {
-
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px;">`,
         className: 'user-marker',
         iconSize: [40, 40],
         iconAnchor: [20, 40],
     });
+
+    // map.on("contextmenu", addMarker);
+    map.on("click", addMarker);
 
     function addMarker(e) {
         const latStr = JSON.stringify(e.latlng.lat);
@@ -17,7 +19,6 @@ export function addUserMarker(map) {
         const userMarkerPopup = document.createElement('div');
         const userMarkerLink = document.createElement('a');
         const closeBtn = document.createElement('button');
-        const routingBtn = document.createElement('button');
 
         userMarkerLink.href = `https://www.google.com/maps/place/${latStr},${lngStr}`;
         userMarkerLink.target = "_blank";
@@ -25,13 +26,10 @@ export function addUserMarker(map) {
         
         closeBtn.textContent = 'X';
         closeBtn.className = 'close-btn';
-        routingBtn.textContent = '経路';
-        routingBtn.className = 'directions-btn';
 
-        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.appendChild(closeBtn);
-        userMarkerPopup.appendChild(routingBtn);
+        userMarkerPopup.appendChild(addRoutingBtn(map, e.latlng.lat, e.latlng.lng));
         userMarkerPopup.className = 'user-marker-popup';
 
         const marker = new L.marker(e.latlng, {
@@ -41,10 +39,6 @@ export function addUserMarker(map) {
         document.querySelector('body').appendChild(userMarkerPopup);
 
         // Routing related
-        routingBtn.addEventListener('click', () => {
-            removeMarker();
-            drawRoute(map, e)
-        });
 
         // Removes marker if there are more than 1, or if close button is pressed
         const markers = document.querySelectorAll('.user-marker');
@@ -56,7 +50,4 @@ export function addUserMarker(map) {
         document.querySelector('.user-marker').remove();
         document.querySelector('.user-marker-popup').remove();
     }
-
-    // map.on("contextmenu", addMarker);
-    map.on("click", addMarker);
 }
