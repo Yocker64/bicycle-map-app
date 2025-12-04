@@ -2,6 +2,7 @@ import icon from '../../img/map-ui/user-marker.png';
 import { drawRoute } from './routingMachine';
 
 export function addUserMarker(map) {
+
     const markerIcon = L.divIcon({
         html: `<img src="${icon}" style="width: 40px; height: 40px;">`,
         className: 'user-marker',
@@ -23,8 +24,11 @@ export function addUserMarker(map) {
         userMarkerLink.textContent = "Google Mapsで開く";
         
         closeBtn.textContent = 'X';
-        routingBtn.textContent = 'Go';
+        closeBtn.className = 'close-btn';
+        routingBtn.textContent = '経路';
+        routingBtn.className = 'directions-btn';
 
+        userMarkerPopup.appendChild(routingBtn);
         userMarkerPopup.appendChild(userMarkerLink);
         userMarkerPopup.appendChild(closeBtn);
         userMarkerPopup.appendChild(routingBtn);
@@ -38,13 +42,14 @@ export function addUserMarker(map) {
 
         // Routing related
         routingBtn.addEventListener('click', () => {
-            drawRoute(map, e.latlng.lat, e.latlng.lng)
+            removeMarker();
+            drawRoute(map, e)
         });
 
         // Removes marker if there are more than 1, or if close button is pressed
         const markers = document.querySelectorAll('.user-marker');
         if (markers.length > 1) removeMarker();
-        closeBtn.addEventListener('click', e => {removeMarker()});
+        closeBtn.addEventListener('click', () => {removeMarker()});
     }
 
     function removeMarker() {

@@ -1,9 +1,13 @@
+:root {
+    --map-height: 100vh;
+}
+
 #map {
     font-family: var(--system-ui);
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
-    max-height: 70vh;
+    max-height: var(--map-height);
 }
 
 img {
@@ -116,7 +120,7 @@ img {
 }
 
 .gps-button.leaflet-control.active {
-    filter: brightness(1.3);
+    filter: brightness(1.3) !important;
     transition: 0.3s ease;
     animation: border-pulse 2s infinite;
 }
@@ -274,12 +278,18 @@ a.leaflet-popup-close-button {
     left: 0;
     right: 0;
     width: 100vw;
-    max-height: 30vh;
+    max-height: calc(100vh - var(--map-height));
     border: 0 !important;  
     border-radius: 0;
+    outline: 2px solid black;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
+    background-color: var(--yellow);
+}
+
+.leaflet-routing-alt {
+    padding: 0;
 }
 
 .leaflet-routing-container table {
@@ -290,19 +300,56 @@ a.leaflet-popup-close-button {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding: 10px 20px;
+    background-color: white;
 }
 
-.leaflet-routing-container .leaflet-routing-instruction-distance,
-.leaflet-routing-container h2,
-.leaflet-routing-container h3,
-.leaflet-routing-container td:has(span) {
-    display: none;
+.leaflet-routing-container tr:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: var(--yellow);
+
+}
+
+.leaflet-routing-container td:last-child {
+    font-size: 1.2rem;
+    align-self: center;
 }
 
 
 .leaflet-routing-container td:last-child {
     white-space: nowrap;
 }
+
+.leaflet-routing-collapse-btn {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: calc(var(--map-height) - 8vh);;
+    left: var(--ui-side-margins);
+
+    border-radius: 50%;
+    background-color: var(--red);
+    color: black;
+    outline: 2px solid black;
+    text-align: center;
+    font-weight: 500;
+}
+
+.leaflet-routing-collapse-btn::after {
+    content: "x";
+}
+
+
+.leaflet-routing-container .leaflet-routing-instruction-distance,
+.leaflet-routing-container h2,
+.leaflet-routing-container h3,
+.leaflet-routing-container td:has(span),
+.leaflet-routing-container tr:first-child {
+    display: none;
+}
+
+
 
 /* ATTRIBUTION */
 .leaflet-control-attribution.leaflet-control {
