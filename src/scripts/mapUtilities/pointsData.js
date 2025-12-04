@@ -1568,7 +1568,7 @@ export const imagesDescsLinks = {
       desc: "Yamazakiseipankyotokojo Bicycle",
       lat: 34.9132912,
       lng: 135.7807541,
-      imageSrc: "yamazaki"
+      imageSrc: yamazaki
     },
     {
       link: "https://www.google.com/maps/place/%E5%AD%A6%E9%83%A8%E3%83%BB%E9%99%A2%E7%94%9F%E3%83%BB%E9%96%A2%E4%BF%82%E8%81%B7%E5%93%A1%E7%94%A8%E9%A7%90%E8%BC%AA%E5%A0%B4%EF%BC%88%E3%83%90%E3%82%A4%E3%82%AF%EF%BC%89/data=!4m7!3m6!1s0x60010fc64a60e929:0xa93133c69f54ec61!8m2!3d34.9629366!4d135.7657512!16s%2Fg%2F11t9h15y81!19sChIJKelgSsYPAWARYexUn8YzMak?authuser=0&hl=en&rclk=1",

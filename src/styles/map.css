@@ -100,6 +100,7 @@
     background-color: var(--yellow);
     color: black;
     outline: 2px solid var(--translucid-black);
+    border: 0;
 
     font-size: 12px;
 }
