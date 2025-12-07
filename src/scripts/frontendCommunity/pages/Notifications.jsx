@@ -5,7 +5,7 @@ const Notifications = () => {
   return (
     <>
       <div>
-          <h1>Notifications</h1>
+          <h1>通知</h1>
         <section>
           <NotificationsList />
         </section>

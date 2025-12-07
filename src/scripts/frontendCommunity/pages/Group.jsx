@@ -107,7 +107,7 @@ const Realm = () => {
                                 <div className="mb-2 flex justify-between items-start">
                                     <div className="flex flex-col justify-center">
                                         <div className="text-gray-400 text-base flex items-center space-x-2">
-                                            <span className="text-sm text-gray-200">Group created by</span>
+                                            <span className="text-sm text-gray-200">作成者</span>
                                             <div className="flex space-x-2 items-center">
                                                 <img 
                                                     src={realm.creator?.profilePictureUrl} 
@@ -148,7 +148,7 @@ const Realm = () => {
                                                             className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-700'
                                                         >
                                                             <FontAwesomeIcon icon={faPenToSquare} />
-                                                            <span>Edit</span>
+                                                            <span>編集</span>
                                                         </button>
                                                     </MenuItem>
                                                     <MenuItem>
@@ -157,7 +157,7 @@ const Realm = () => {
                                                             className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-700'
                                                         >
                                                             <FontAwesomeIcon icon={faTrashCan} />
-                                                            <span>Delete</span>
+                                                            <span>削除</span>
                                                         </button>
                                                     </MenuItem>
                                                     </>
@@ -168,7 +168,7 @@ const Realm = () => {
                                                         className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                     >
                                                         <FontAwesomeIcon icon={faUsers} />
-                                                        <span>Joined Users</span>
+                                                        <span>参加ユーザー</span>
                                                     </button>
                                                 </MenuItem>
                                                 </MenuItems>
@@ -185,11 +185,11 @@ const Realm = () => {
                                 <div className="flex space-x-4 text-xs md:text-sm text-gray-200">
                                     <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center" onClick={() => navigate(`/realms/${realm.id}/joined`)}>
                                         <FontAwesomeIcon icon={faUsers} />
-                                        <div>{realmMembers} Members</div>
+                                        <div>{realmMembers} メンバー</div>
                                     </div>
                                     <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center">
                                         <FontAwesomeIcon icon={faMicroblog} />
-                                        <div>{realm._count?.posts} Posts</div>
+                                        <div>{realm._count?.posts} 投稿</div>
                                     </div>
                                     <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center">
                                         <FontAwesomeIcon icon={faCakeCandles} />
@@ -206,12 +206,12 @@ const Realm = () => {
                                     {joined ? 
                                     <div className="space-x-2 text-sm">
                                         <FontAwesomeIcon icon={faCheck} />
-                                        <span>Joined</span>
+                                        <span>参加済み</span>
                                     </div>
                                     : 
                                     <div className="space-x-2 text-sm">
                                         <FontAwesomeIcon icon={faArrowRightToBracket}/>
-                                        <span>Join</span>
+                                        <span>参加</span>
                                     </div>
                                     }
                                 </button>

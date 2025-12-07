@@ -156,7 +156,7 @@ const NotificationsList = () => {
                   &nbsp;{message}
                   {details?.source && (
                     <span className="italic text-gray-400 overflow-hidden text-ellipsis overflow-wrap-break-word break-all line-clamp-1">
-                      &nbsp;&#x2018;{details.source}&#x2019;
+                      &nbsp;『{details.source}』
                     </span>
                   )}
                 </p>
@@ -177,7 +177,7 @@ const NotificationsList = () => {
           );
         })
       ) : (
-        !loading && <p className="text-center text-gray-500">No notifications yet</p>
+        !loading && <p className="text-center text-gray-500">まだ通知はありません</p>
       )}
       {loading && (
         <div className="flex justify-center items-center h-full">

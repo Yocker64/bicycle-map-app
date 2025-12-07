@@ -1,17 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { checkAuth } from './services/checkAuth'; // A utility function to check if user is logged in
+import { checkAuth } from './services/checkAuth'; // Function to check if user is logged in
 
 import UnauthenticatedPage from './pages/UnauthenticatedPage';
 import ProfilePage from './pages/ProfilePage';
 import NotFoundPage from './pages/NotFoundPage';
-import Realms from './pages/Realms';
+import Groups from './pages/Groups';
 import Post from './pages/Post';
-import Realm from './pages/Realm';
+import Group from './pages/Group';
+import Market from './pages/Market';
 import Feed from './pages/Feed';
 import Users from './pages/Users';
 import PostForm from './pages/PostForm';
-import RealmForm from './pages/RealmForm';
+import GroupForm from './pages/GroupForm';
 import Notifications from './pages/Notifications';
 import { NotificationsProvider } from './contexts/NotificationsContext';
 import { ToastContainer } from 'react-toastify';
@@ -34,8 +35,7 @@ const App = () => {
     return <div className='h-screen w-screen black-800'>
       <div className="flex flex-col justify-center items-center h-full">
         <PuffLoader color="#5C6BC0" size={60} />
-        <p className='mt-3 font-semibold text-sm text-black-500'>Please be patient as the server wakes up!</p>
-        <p className='mt-1 font-light text-sm text-black-500'>Shhh I&#39;m on the free plan...</p>
+        <p className='mt-3 font-semibold text-sm text-black-500'>サーバー起動までしばらくお待ちください！</p>
       </div>
     </div>;
   }
@@ -58,13 +58,14 @@ const App = () => {
             }
           >
               <Route path="/profile/:userId" element={<ProfilePage />} />
-              <Route path="/submit-realm/:realmId?" element={<RealmForm />} />
+              <Route path="/submit-realm/:realmId?" element={<GroupForm />} />
               <Route path="/submit-post/:postId?" element={<PostForm />} />
-              <Route path="/realms" element={<Realms />} />
-              <Route path="/realms/:realmId" element={<Realm />} />
+              <Route path="/groups" element={<Groups />} />
+              <Route path="/realms/:realmId" element={<Group />} />
               <Route path="/posts/:postId" element={<Post />} />
               <Route path="/feed" element={<Feed />} />
               <Route path="/notifications" element={<Notifications />} />
+              <Route path="/market" element={<Market />} />
 
               {/* User list routes */}
               <Route path="/posts/:id/liked" element={<Users scenario="likedPost" />} />

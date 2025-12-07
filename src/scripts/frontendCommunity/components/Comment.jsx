@@ -68,7 +68,6 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
         resetNestedComments();
     }, [resetNestedComments]);
 
-    // Fetch nested comments with pagination
     useEffect(() => {
         async function fetchNestedComments() {
             try {
@@ -284,7 +283,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                     
                     {comment?.updatedAt && comment?.createdAt !== comment?.updatedAt && (
                         <span className="text-xs text-gray-400 mr-2">
-                            &#40;Edited&#41;	
+                            （編集済み）    
                         </span>
                     )}
                     <span className="flex items-center space-x-2">
@@ -309,7 +308,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                             className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                         >
                                             <FontAwesomeIcon icon={faHeartFilled} />
-                                            <span>Liked Users</span>
+                                            <span>いいねしたユーザー</span>
                                         </button>
                                     </MenuItem>
                                     <MenuItem>
@@ -318,7 +317,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                             className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                         >
                                             <FontAwesomeIcon icon={faReply} />
-                                            <span>Reply</span>
+                                            <span>返信</span>
                                         </button>
                                     </MenuItem>
                                     {isCreator &&
@@ -329,7 +328,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                                     className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                 >
                                                     <FontAwesomeIcon icon={faPenToSquare} />
-                                                    <span>Edit</span>
+                                                    <span>編集</span>
                                                 </button>
                                         </MenuItem>
                                         <MenuItem>
@@ -338,7 +337,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                                     className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                 >
                                                     <FontAwesomeIcon icon={faTrashCan} />
-                                                    <span>Delete</span>
+                                                    <span>削除</span>
                                                 </button>
                                         </MenuItem>
                                         </>
@@ -354,7 +353,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                             value={editedComment}
                             onChange={handleEditChange}
                             className="w-full p-2 black-700 text-gray-300 border border-gray-600 rounded-md"
-                            placeholder="Edit your comment..."
+                            placeholder="コメントを編集..."
                             required
                         />
                         <div className="flex mt-2 space-x-2">
@@ -362,14 +361,14 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 type="submit"
                                 className="px-4 py-2 bg-black-600 text-white rounded-md hover:bg-black-700"
                             >
-                                Save
+                                保存
                             </button>
                             <button
                                 type="button"
                                 onClick={() => setEditMode(false)}
                                 className="px-4 py-2 black-600 text-white rounded-md hover:black-700"
                             >
-                                Cancel
+                                キャンセル
                             </button>
                         </div>
                     </form>
@@ -385,7 +384,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                             className="text-black-400 text-sm mt-2 space-x-2 hover:underline"
                         >
                             <FontAwesomeIcon icon={faReply} className="text-xs"/>
-                            <span>Reply</span>
+                            <span>返信</span>
                         </button>
                         {/* Show Replies Button */}
                         {comment._count?.nestedComments > 0 && (
@@ -394,8 +393,8 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 className="text-black-400 text-sm mt-2 hover:underline"
                             >
                                 {showNestedComments
-                                    ? `Hide replies`
-                                    : `Show ${comment._count?.nestedComments} replies`}
+                                    ? `返信を非表示`
+                                    : `返信${comment._count?.nestedComments}件を表示`}
                             </button>
                         )}
                     </div>
@@ -407,7 +406,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 onChange={handleReplyChange}
                                 onKeyDown={handleKeyDown}
                                 className="flex-1 black-700 text-gray-300 p-2 border border-gray-600 rounded-lg"
-                                placeholder={`Reply to @${comment.user?.username}`}
+                                placeholder={`@${comment.user?.username}に返信`}
                                 required
                                 rows="1"
                             />
@@ -449,7 +448,7 @@ const Comment = ({ comment, commentId, setTotalCommentsCount, siblings, setSibli
                                 onClick={handleLoadMoreNestedComments}
                                 className="text-black-400 text-sm mt-4 hover:underline"
                             >
-                                Load more replies
+                                さらに返信を読み込む
                             </button>
                         )}
         

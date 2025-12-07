@@ -57,7 +57,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
             {/* Draft Badge */}
             <div className="pt-6 mb-2 text-gray-400 font-bold text-xs sm:text-sm space-x-1">
                 <FontAwesomeIcon icon={faBoxArchive} />
-                <span>Draft</span>
+                <span>下書き</span>
             </div>
 
             {/* Author and Metadata Section */}
@@ -124,7 +124,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
                                         className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faPenToSquare} />
-                                        <span>Edit</span>
+                                        <span>編集</span>
                                     </button>
                                 </MenuItem>
                                 <MenuItem>
@@ -133,7 +133,7 @@ const DraftPreview = ({ post, postId, posts, setPosts }) => {
                                         className='pl-6 text-left space-x-3 w-full py-2 text-xs sm:text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faTrashCan} />
-                                        <span>Delete</span>
+                                        <span>削除</span>
                                     </button>
                                 </MenuItem>
                             </MenuItems>

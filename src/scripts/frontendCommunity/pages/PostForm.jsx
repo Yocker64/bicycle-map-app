@@ -4,7 +4,7 @@ import api from '../services/api';
 import Select from 'react-select';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudArrowUp, faFloppyDisk, faImages, faXmark, faSmile } from '@fortawesome/free-solid-svg-icons';
+import { faCloudArrowUp, faFloppyDisk, faImages, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { PuffLoader } from 'react-spinners';
 
 const PostForm = () => {
@@ -21,7 +21,6 @@ const PostForm = () => {
   const [postImages, setPostImages] = useState([]);
   const [publishError, setPublishError] = useState(null);
   const [realmError, setRealmError] = useState(null);
-  const [isGifModalOpen, setGifModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
 
@@ -61,11 +60,11 @@ const PostForm = () => {
         const realms = await api.get(`/users/${userId}/joined`);
         setUserRealms(realms.data.realms);
         if (realms.data.realms.length === 0) {
-          setRealmError('Join a realm to post');
+          setRealmError('投稿するにはグループに参加してください');
         }
       } catch (error) {
-        console.error("Error fetching user's joined realms:", error);
-        setRealmError('Failed to load realms');
+        console.error("Error fetching user's joined groups:", error);
+        setRealmError('グループの読み込みに失敗しました');
       }
       finally {
         setLoading(false);
@@ -116,16 +115,6 @@ const PostForm = () => {
     reader.readAsDataURL(file);
   };
 
-  const handleGifSelect = (gif) => {
-    const gifData = {
-      id: uuidv4(),
-      url: gif.images.original.url,
-      isGif: true,
-    };
-    setPostImages([...postImages, gifData]);
-    setGifModalOpen(false);
-  };
-
   const handleImageDelete = async (image) => {
     try {
       setPostImages(postImages.filter((i) => i.id !== image.id));
@@ -154,7 +143,7 @@ const PostForm = () => {
     e.preventDefault();
 
     if (published && (!formData.title || !formData.realmId)) {
-      setPublishError('Title and Realm are required to publish the post.');
+      setPublishError('タイトルとグループは必須です');
       return;
     }
 
@@ -204,20 +193,20 @@ const PostForm = () => {
   };
 
   return (
-    <div className="black-800 min-h-screen p-6">
+    <div className="black-800 min-h-screen">
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <PuffLoader color="#5C6BC0" size={60} />
         </div>
       ) : (
       <div className="max-w-4xl mx-auto black-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-white mb-6">{isEditing ? (formData.published ? 'Edit Post' : 'Edit Draft') : 'Create Post'}</h2>
+        <h2 className="text-2xl font-bold text-white mb-6">{isEditing ? (formData.published ? '投稿を編集' : '下書きを編集') : '投稿を作成'}</h2>
         <div className='border-t border-gray-700 my-6'></div>
         <form onSubmit={(e) => handleSubmit(e, false)}>
           <div className="mb-4">
             <label htmlFor="realm" className="block text-sm font-medium text-gray-300">
               <span className='text-red-600 text-lg mr-1'>*</span>
-              <span>Choose a group:</span>
+              <span>グループを選択:</span>
             </label>
             <Select
               value={selectedRealm}
@@ -297,7 +286,7 @@ const PostForm = () => {
           <div className="mb-4">
             <label htmlFor="title" className="block text-sm font-medium text-gray-300">
               <span className='text-red-600 text-lg mr-1'>*</span>
-              Title:
+              タイトル:
             </label>
             <input
               type="text"
@@ -312,7 +301,7 @@ const PostForm = () => {
           <div>
             {postImages.length > 0 &&
                 <div className="block text-sm font-medium text-gray-300">
-                  Images:
+                  画像:
                 </div>}
             <div className="mt-2 flex flex-wrap">
               {postImages.length > 0 && 
@@ -320,7 +309,7 @@ const PostForm = () => {
                   <div key={image.id} className="relative w-24 h-24 mr-4 mb-4">
                     <img
                       src={image.url}
-                      alt={`Uploaded ${image.id}`}
+                      alt={`アップロードされた画像 ${image.id}`}
                       className="object-cover w-full h-full rounded-lg"
                     />
                     <button
@@ -336,7 +325,7 @@ const PostForm = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="text" className="block text-sm font-medium text-gray-300">
-              Content:
+              内容:
             </label>
             <textarea
               id="text"
@@ -355,7 +344,7 @@ const PostForm = () => {
                   className="flex items-center space-x-2 px-3 py-2 h-full text-xs sm:text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                 > 
                   <FontAwesomeIcon icon={faImages} className="mr-1" />
-                  <span>Upload images</span>
+                  <span>画像をアップロード</span>
                 </label>
                 <input
                   type="file"
@@ -382,7 +371,7 @@ const PostForm = () => {
               className="w-1/3 py-2 px-4 black-600 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
               <FontAwesomeIcon icon={faFloppyDisk} />
-              <span>Save as Draft</span>
+              <span>下書きとして保存</span>
             </button>
             <button
               type="button"
@@ -393,18 +382,18 @@ const PostForm = () => {
                 ? 
                   <>
                     <FontAwesomeIcon icon={faCloudArrowUp} />
-                    <span>Save Changes</span>
+                    <span>変更を保存</span>
                   </>
                 : 
                   <>
                     <FontAwesomeIcon icon={faCloudArrowUp} />
-                    <span>Publish Draft</span>
+                    <span>下書きを公開</span>
                   </>
                 ) 
                 : 
                   <>
                     <FontAwesomeIcon icon={faCloudArrowUp} />
-                    <span>Publish</span>
+                    <span>公開</span>
                   </>
                 }
             </button>
@@ -414,7 +403,7 @@ const PostForm = () => {
               className="w-1/3 py-2 px-4 black-500 text-gray-200 font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
               <FontAwesomeIcon icon={faXmark} />
-              <span>Cancel</span>
+              <span>キャンセル</span>
             </button>
           </div>
           {publishError && <p className="text-red-500 text-sm mt-2">{publishError}</p>}

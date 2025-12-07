@@ -91,11 +91,13 @@ const SearchBar = () => {
 
     const renderResult = (result) => {
         return (
+            
             <div 
                 key={result.id} 
                 className="flex items-center p-2 hover:black-700 cursor-pointer"
                 onClick={handleNavigate(result.username ? `/profile/${result.id}` : result.name ? `/realms/${result.id}` : `/posts/${result.id}`)}
             >
+                
                 {!result.images || result.images?.[0] != null ?
                     <img 
                         src={result.profilePictureUrl || result.realmPictureUrl || result.images?.[0]?.url} 
@@ -108,10 +110,10 @@ const SearchBar = () => {
                     </div>  
                 }
                 
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 ">
                     <div className="font-semibold text-sm truncate">{result.username || result.name || result.title}</div>
                     <div className="text-xs text-gray-500 truncate">
-                        {result.username ? 'User' : result.name ? 'Realm' : 'Post'}
+                        {result.username ? 'ユーザー' : result.name ? 'グループ' : '投稿'}
                     </div>
                 </div>
             </div>
@@ -119,26 +121,29 @@ const SearchBar = () => {
     };
 
     return (
-        <div className='w-full relative' ref={dropdownRef}>
-            <div className={`flex items-center black-800 rounded-lg transition-all duration-300 p-3 overflow-hidden`}>
+        <div className='relative' ref={dropdownRef}>
+            <div className={`flex items-center black-800 rounded-lg transition-all duration-300 overflow-hidden`}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="text-gray-400"/>
                 <input
                     type="text"
                     value={query}
                     onChange={handleSearchChange}
-                    placeholder="Search for users, realms, posts..."
-                    className="bg-transparent flex-1 outline-none px-2 text-sm"
+                    placeholder="検索..."
+                    className="bg-transparent max-w-[150px] outline-none px-2 text-sm"
                 />
                 <div className='text-sm'>
-                    <select
-                        value={searchType}
-                        onChange={handleSearchTypeChange}
-                        className="bg-transparent text-sm pl-2 border-l border-gray-500"
-                    >
-                        <option value="all">All</option>
-                        <option value="users">Users</option>
-                        <option value="realms">Realms</option>
-                        <option value="posts">Posts</option>
+                <select
+    value={searchType}
+    onChange={handleSearchTypeChange}
+    className="bg-[#242424] text-white text-sm pl-2  py-1  border-[#404040] rounded
+               focus:outline-none focus:ring-2 focus:ring-[#555555]
+               hover:bg-[#2d2d2d] transition-colors duration-150 cursor-pointer
+               appearance-none"
+>
+                        <option value="all">すべて</option>
+                        <option value="users">ユーザー</option>
+                        <option value="realms">グループ</option>
+                        <option value="posts">投稿</option>
                     </select>
                 </div>
                 
@@ -162,12 +167,12 @@ const SearchBar = () => {
                                             onClick={handleLoadMore}
                                             className="block p-2 text-center text-sm text-gray-200 w-full hover:black-700"
                                         >
-                                            Load More
+                                            さらに読み込む
                                         </button>
                                     )}
                                 </>
                             ) : (
-                                <div className="p-4 text-center text-gray-200">No results found</div>
+                                <div className="p-4 text-center text-gray-200">結果が見つかりませんでした</div>
                             )}
                         </>
                     )}

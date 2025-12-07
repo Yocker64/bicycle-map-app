@@ -145,7 +145,7 @@ const PostPage = () => {
                                 </h3>
                                 <div className="flex items-center">
                                     <p className="text-sm text-gray-400">
-                                        {post?.createdAt && formatTime(post?.createdAt)} on
+                                        {post?.createdAt && formatTime(post?.createdAt)}
                                     </p>
                                     <div className="flex items-center ml-2">
                                         <img 
@@ -178,7 +178,7 @@ const PostPage = () => {
                                                 className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faPenToSquare} />
-                                                <span>Edit</span>
+                                                <span>編集</span>
                                             </button>
                                     </MenuItem>
                                     <MenuItem>
@@ -187,7 +187,7 @@ const PostPage = () => {
                                                 className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faTrashCan} />
-                                                <span>Delete</span>
+                                                <span>削除</span>
                                             </button>
                                     </MenuItem>
                                     </>
@@ -198,7 +198,7 @@ const PostPage = () => {
                                         className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                     >
                                         <FontAwesomeIcon icon={faHeartFilled} />
-                                        <span>Liked Users</span>
+                                        <span>いいねしたユーザー</span>
                                     </button>
                                     </MenuItem>
                                 </MenuItems>
@@ -225,7 +225,7 @@ const PostPage = () => {
                                         <img
                                             key={index}
                                             src={image.url}
-                                            alt={`Post Image ${index + 1}`}
+                                            alt={`投稿画像 ${index + 1}`}
                                             className="w-32 h-32 object-cover rounded-md cursor-pointer hover:opacity-80 transition-opacity duration-200"
                                             onClick={(e) => handleImageClick(e, image.url)}
                                         />

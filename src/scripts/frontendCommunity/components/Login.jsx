@@ -39,7 +39,7 @@ const Login = () => {
       }
     } catch (error) {
       console.error('Login failed', error);
-      setError('Login failed. Please check your username and password and try again.');
+      setError('ログインに失敗しました。ユーザー名とパスワードを確認し、もう一度お試しください。');
     }
   };
 
@@ -63,17 +63,17 @@ const Login = () => {
       }
     } catch (error) {
       console.error('Demo login failed', error);
-      setError('Unable to login to the demo account. Please try again later.');
+      setError('デモアカウントにログインできません。後でもう一度お試しください。');
     }
   };
 
   return (
     <div className="p-6 max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-white">Login</h2>
+      <h2 className="text-2xl font-bold mb-6 text-white">ログイン</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-2">
-            Username
+            ユーザー名
           </label>
           <input
             id="username"
@@ -81,13 +81,13 @@ const Login = () => {
             value={formData.username}
             onChange={handleChange}
             className="w-full p-3 black-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            placeholder="Enter your username"
+            placeholder="ユーザー名を入力してください"
             required
           />
         </div>
         <div>
           <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-2">
-            Password
+            パスワード
           </label>
           <input
             id="password"
@@ -95,7 +95,7 @@ const Login = () => {
             value={formData.password}
             onChange={handleChange}
             className="w-full p-3 black-700 text-white border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            placeholder="Enter your password"
+            placeholder="パスワードを入力してください"
             required
           />
         </div>
@@ -104,7 +104,7 @@ const Login = () => {
           type="submit"
           className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 transition-colors duration-300"
         >
-          Login
+          ログイン
         </button>
         {/* Demo Login Button */}
         <button
@@ -112,7 +112,7 @@ const Login = () => {
           onClick={handleDemoLogin}
           className="w-full p-3 bg-black-600 text-white font-semibold rounded-lg hover:bg-black-700 transition-colors duration-300 mt-4"
         >
-          Try Demo
+          デモを試す
         </button>
       </form>
     </div>

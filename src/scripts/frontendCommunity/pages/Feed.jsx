@@ -13,30 +13,31 @@ const FeedPage = () => {
       {/* Page Title and Tabs */}
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0 mb-6">
-          <h1 className="text-2xl sm:text-3xl font-bold">Home</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold">ホーム</h1>
           {/* Tabs for All and Following */}
-          <div className="flex space-x-4 text-xs sm:text-base">
+          <div className="flex space-x-4 text-xs sm:text-base justify-between">
             <button
               className={`px-4 py-2 rounded-lg transition-colors ${activeTab === 'posts_all' ? 'bg-yellow-600 text-white' : 'black-800 text-gray-400'} hover:bg-yellow-700`}
               onClick={() => setActiveTab('posts_all')}
             >
-              All
+              すべて
             </button>
             <button
               className={`px-4 py-2 rounded-lg transition-colors ${activeTab === 'posts_following' ? 'bg-yellow-600 text-white' : 'black-800 text-gray-400'} hover:bg-yellow-700`}
               onClick={() => setActiveTab('posts_following')}
             >
-              For You
+              おすすめ
             </button>
-            <div className="border-l border-gray-700 mx-4 my-2"></div>
               <button onClick={() => navigate('/submit-post')}
                   className={`px-4 py-2 rounded-lg bg-black-300 hover:bg-black-700`}
               >
                   <FontAwesomeIcon icon={faPlus} className="mr-2"/>
-                  New Post
+                  新規投稿
               </button>
           </div>
         </div>
+          <div className='border-t border-gray-700 my-6'></div>
+
 
         {/* Post Content */}
         <PostsList 

@@ -74,7 +74,7 @@ const RealmForm = () => {
 
         // Check for valid file type (only PNG, JPEG, GIF)
         if (file && !['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
-            setFileError("Invalid file type - only PNG, JPEG, and GIF allowed.");
+            setFileError("無効なファイル形式です。PNG、JPEG、GIFのみ許可されています。");
             setRealmPictureFile(null);
             setImagePreview(null);
             return;
@@ -115,12 +115,12 @@ const RealmForm = () => {
                 }
             } else {
                 const response = await api.post('/realms', formData);
-                const newRealmId = response.data.realm.id;
+                const newrealmId = response.data.realm.id;
                 if (realmPictureFile) {
                     const pictureData = new FormData();
                     pictureData.append('realmPicture', realmPictureFile);
                     
-                    await api.put(`/images/${newRealmId}/realm-picture`, pictureData, {
+                    await api.put(`/images/${newrealmId}/realm-picture`, pictureData, {
                         headers: {
                             'Content-Type': 'multipart/form-data'
                         }
@@ -131,10 +131,10 @@ const RealmForm = () => {
         } catch (error) {
             console.error('Error submitting form:', error);
             if (error.response.data.error === "Realm name is already taken") {
-                setNameError(error.response.data.error);
+                setNameError("このグループ名はすでに使用されています");
             }
             if (error.response.data.message === "Invalid file type") {
-                setFileError("Invalid file type - only png, jpeg, and gif allowed");
+                setFileError("無効なファイル形式です。PNG、JPEG、GIFのみ許可されています。");
             }
         } finally {
             setLoading(false);
@@ -149,7 +149,7 @@ const RealmForm = () => {
         <div className="black-800 min-h-screen p-6">
             <div className="max-w-4xl mx-auto black-800 p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-bold text-white mb-6">
-                    {realmId ? 'Edit Realm' : 'Create a New Realm'}
+                    {realmId ? 'グループの編集' : '新しいグループの作成'}
                 </h2>
 
                 <div className='border-t border-gray-700 my-6'></div>
@@ -173,7 +173,7 @@ const RealmForm = () => {
                                 className="space-x-2 my-4 p-2 text-sm text-gray-100 black-700 border border-gray-600 rounded-md shadow-sm hover:black-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faImages} className="ml-2" />
-                                <span>Group Picture <span className='text-sm text-gray-500'>(Optional)</span></span>
+                                <span>グループ画像 <span className='text-sm text-gray-500'>(任意)</span></span>
                             </label>
                             {imagePreview && (
                                 <div className="mt-4 flex justify-center">
@@ -190,7 +190,7 @@ const RealmForm = () => {
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                                 <span className='text-red-600 text-lg mr-1'>*</span>
-                                Group Name:
+                                グループ名:
                             </label>
                             <input
                                 id="name"
@@ -206,7 +206,7 @@ const RealmForm = () => {
                         <div className="mb-4">
                             <label htmlFor="description" className="block text-sm font-medium text-gray-300">
                                 <span className='text-red-600 text-lg mr-1'>*</span>
-                                Description:
+                                説明:
                             </label>
                             <textarea
                                 id="description"
@@ -229,12 +229,12 @@ const RealmForm = () => {
                                     ?
                                     <>
                                         <FontAwesomeIcon icon={faFloppyDisk} />
-                                        <span>Save Changes</span>
+                                        <span>変更を保存</span>
                                     </>
                                     :
                                     <>
                                         <FontAwesomeIcon icon={faLayerGroup} />
-                                        <span>Create Group</span>
+                                        <span>グループを作成</span>
                                     </>
                                 }
                             </button>
@@ -244,7 +244,7 @@ const RealmForm = () => {
                                 className="w-1/2 py-2 px-4 black-500 text-white font-semibold rounded-md shadow flex items-center justify-center space-x-2 hover:black-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
                             >
                                 <FontAwesomeIcon icon={faXmark} />
-                                <span>Cancel</span>
+                                <span>キャンセル</span>
                             </button>
                         </div>
                     </form>

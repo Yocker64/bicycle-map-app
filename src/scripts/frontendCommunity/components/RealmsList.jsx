@@ -99,7 +99,7 @@ const RealmsList = ( {type} ) => {
                     />
                 ))
                 :
-                !loading && <p className="text-gray-600 text-center mt-8">No realms available.</p>
+                !loading && <p className="text-gray-600 text-center mt-8">レルムはありません。</p>
                 }
                 {loading && 
                     <div className="flex justify-center items-center h-full">

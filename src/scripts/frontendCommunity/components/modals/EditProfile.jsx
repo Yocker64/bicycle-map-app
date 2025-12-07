@@ -15,8 +15,8 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
   const { updateSidebarUser } = useUser();
 
 
-  const modalRef = useRef(null); // Ref for the modal container
-  const isDemoUser = user?.username === 'demo'; // Check if the logged user is "demo"
+  const modalRef = useRef(null); // モーダルコンテナ用のRef
+  const isDemoUser = user?.username === 'demo'; // ログインユーザーが「demo」かどうかを確認
 
   useEffect(() => {
     if (open && user) {
@@ -54,9 +54,9 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
   const handleFileChange = (e) => {
     const file = e.target.files[0];
 
-    // Check for valid file type (only PNG, JPEG, GIF)
+    // 有効なファイル形式を確認（PNG、JPEG、GIFのみ）
     if (file && !['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
-      setFileError("Invalid file type - only PNG, JPEG, and GIF allowed.");
+      setFileError("無効なファイル形式です。PNG、JPEG、GIFのみ許可されています。");
       setProfilePictureFile(user.profilePictureUrl);
       setImagePreview(null);
       return;
@@ -87,7 +87,7 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
         });
       }
       const response = await api.put(`/users/${userId}`, formData);
-      updateSidebarUser(response.data.user); // Update the user context with the new data
+      updateSidebarUser(response.data.user); // 新しいデータでユーザーコンテキストを更新
       setProfileMeta(response.data.user);
       handleModalClose();
     } catch (error) {
@@ -99,22 +99,22 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
         setUsernameError(error.response.data.error);
       }
       if (error.response?.data?.message === 'Invalid file type') {
-        setFileError("Invalid file type - only PNG, JPEG, and GIF allowed.");
+        setFileError("無効なファイル形式です。PNG、JPEG、GIFのみ許可されています。");
       }
     } finally {
       setLoading(false);
     }
   };
 
-  if (!open) return null; // Don't render the modal if not open
+  if (!open) return null; // 開いていない場合はモーダルをレンダリングしない
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80">
       <div
         ref={modalRef}
         className="black-800 text-white rounded-lg shadow-lg max-w-lg w-full p-6"
       >
-        <h2 className="text-2xl mb-4">Update Your Profile</h2>
+        <h2 className="text-2xl mb-4">プロフィールの更新</h2>
         <div className='border-t border-gray-700 my-6'></div>
         <form onSubmit={handleFormSubmit}>
           {loading ? (
@@ -124,7 +124,7 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
           ) : (
             <>
               <div className="relative mt-4 flex flex-col items-center justify-center">
-                <div className='mb-1'>Change Profile Photo</div>
+                <div className='mb-1'>プロフィール写真の変更</div>
                 <input
                   type="file"
                   accept="image/*"
@@ -147,25 +147,25 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
                 {fileError && <p className="text-center text-red-500 mt-2">{fileError}</p>}
               </div>
               <div className="mt-4">
-                <label htmlFor='username'>Username</label>
+                <label htmlFor='username'>ユーザー名</label>
                 <input
                   id="username"
                   type="text"
-                  placeholder={isDemoUser ? "Feature locked for demo accounts" : "Username"}
+                  placeholder={isDemoUser ? "デモアカウントのため機能はロックされています" : "ユーザー名"}
                   value={formData.username}
                   onChange={handleChange}
-                  disabled={isDemoUser} // Disable the input if user is "demo"
+                  disabled={isDemoUser} // ユーザーが「demo」の場合、入力を無効化
                   className={`w-full p-2 rounded black-800 border-2 ${
                     usernameError ? 'border-red-500' : 'border-gray-700'
-                  } text-white ${isDemoUser ? 'cursor-not-allowed opacity-50' : ''}`} // Adjust styles when disabled
+                  } text-white ${isDemoUser ? 'cursor-not-allowed opacity-50' : ''}`} // 無効化時のスタイルを調整
                 />
                 {usernameError && <p className="text-red-500">{usernameError}</p>}
               </div>
               <div className="mt-4">
-                <label htmlFor='bio'>Bio&nbsp;<span className='text-sm'>(optional)</span></label>
+                <label htmlFor='bio'>自己紹介&nbsp;<span className='text-sm'>（任意）</span></label>
                 <textarea
                   id="bio"
-                  placeholder="Bio (optional)"
+                  placeholder="自己紹介（任意）"
                   rows="4"
                   value={formData.bio}
                   onChange={handleChange}
@@ -180,14 +180,14 @@ const EditProfileModal = ({ open, handleModalClose, user, userId, setProfileMeta
             onClick={handleModalClose}
             className="mr-2 px-4 py-2 rounded black-700 hover:black-600 text-white"
           >
-            Cancel
+            キャンセル
           </button>
           <button
             type="submit"
             onClick={handleFormSubmit}
             className="px-4 py-2 rounded bg-black-600 hover:bg-black-500 text-white"
           >
-            Save changes
+            変更を保存
           </button>
         </div>
       </div>

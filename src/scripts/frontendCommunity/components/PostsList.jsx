@@ -3,7 +3,7 @@ import api from '../services/api';
 import PostPreview from './PostPreview';
 import DraftPreview from './DraftPreview';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowsRotate, faArrowUp, faSort } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faSort } from '@fortawesome/free-solid-svg-icons';
 import { PuffLoader } from 'react-spinners';
 import { useOutletContext } from 'react-router-dom'; // Import useOutletContext for scrollevent to paginate
 
@@ -115,10 +115,6 @@ const PostsList = ({ sourceId, type }) => {
     };
   }, [scrollableRef, hasMore, loading]);
 
-  const handleRefresh = () => {
-    resetPost();
-    setRefresh(prev => !prev);
-  };
 
   const handleSortChange = (e) => {
     setSortField(e.target.value);
@@ -133,19 +129,19 @@ const PostsList = ({ sourceId, type }) => {
 
   return (
     <>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex justify-end">
         <div className='flex'>
           <div className="relative">
             {/* Sort Dropdown */}
               <select
-              className="text-sm block w-full black-800 border border-gray-700 text-gray-300 py-2 px-4 pr-8 rounded-lg appearance-none focus:outline-none"
+              className="text-sm block w-full black-800 border border-black-700 text-gray-300 py-2 px-4 pr-8 rounded-lg appearance-none focus:outline-none"
               value={type === 'user_drafts' ? 'New' : sortField}
               onChange={handleSortChange}
               disabled={type === 'user_drafts'}
             >
-              <option value="createdAt">New</option>
-              <option value="likes">Likes</option>
-              <option value="comments">Comments</option>
+              <option value="createdAt">新しい順</option>
+              <option value="likes">いいね順</option>
+              <option value="comments">コメント順</option>
             </select>
             <div className="text-sm pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
               <FontAwesomeIcon icon={faSort} />
@@ -154,21 +150,12 @@ const PostsList = ({ sourceId, type }) => {
 
           {/* Sort Order Button */}
           <button
-            className='ml-2 flex items-center p-2 border border-gray-700 rounded-lg black-800 text-gray-300 hover:black-600 transition'
+            className='ml-2 flex items-center p-2 border border-black-700 rounded-lg black-800 text-gray-300 hover:black-600 transition'
             onClick={toggleSortOrder}
             disabled={type === 'user_drafts'}
-            aria-label="Toggle sort order"
+            aria-label="ソート順を切り替える"
           >
             <span className="text-sm">{sortOrder === 'asc' ? <FontAwesomeIcon icon={faArrowUp} /> : <FontAwesomeIcon icon={faArrowDown}/>} </span>
-          </button>
-        </div>
-
-        <div className='flex items-center justify-center'>
-          <button
-            onClick={handleRefresh}
-            className='flex items-center p-2 border border-gray-700 rounded-lg black-800 text-gray-300 hover:black-600 transition'
-          >  
-            <FontAwesomeIcon icon={faArrowsRotate} />
           </button>
         </div>
       </div>
@@ -194,7 +181,7 @@ const PostsList = ({ sourceId, type }) => {
             )
           )
         ) : (
-          !loading && <p className="text-gray-500 text-center mt-8">No posts available.</p>
+          !loading && <p className="text-gray-500 text-center mt-8">投稿はありません。</p>
         )}
 
         {loading && 

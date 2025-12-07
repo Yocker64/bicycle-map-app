@@ -97,14 +97,14 @@ const CommentsList = ({ postId, setTotalCommentsCount }) => {
         <>
             {/* New Comment Section */}
             <div className="comments-section text-white rounded-lg ">
-                <h2 className="text-2xl font-semibold mb-4">Comments</h2>
+                <h2 className="text-2xl font-semibold mb-4">コメント</h2>
                 <form onSubmit={handleCommentSubmit} className="mb-6 flex items-center space-x-2">
                     <textarea
                         value={newComment}
                         onChange={handleNewCommentChange}
                         onKeyDown={handleKeyDown}
                         className="flex-1 black-800 text-gray-300 p-2 border border-gray-700 rounded-lg"
-                        placeholder="Add a comment..."
+                        placeholder="コメントを追加..."
                         required
                         rows="1"
                     />
@@ -126,9 +126,9 @@ const CommentsList = ({ postId, setTotalCommentsCount }) => {
                                 value={sortField}
                                 onChange={handleSortChange}
                             >
-                                <option value="createdAt">New</option>
-                                <option value="likes">Likes</option>
-                                <option value="nestedComments">Replies</option>
+                                <option value="createdAt">新しい順</option>
+                                <option value="likes">いいね順</option>
+                                <option value="nestedComments">返信順</option>
                             </select>
                             <div className="text-sm pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
                                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -141,7 +141,7 @@ const CommentsList = ({ postId, setTotalCommentsCount }) => {
                         <button
                             className='ml-2 flex items-center p-2 border border-gray-700 rounded-lg black-800 text-gray-300 hover:black-600 transition'
                             onClick={toggleSortOrder}
-                            aria-label="Toggle sort order"
+                            aria-label="ソート順を切り替える"
                         >
                             <span className="text-sm">{sortOrder === 'asc' ? <FontAwesomeIcon icon={faArrowUp} /> : <FontAwesomeIcon icon={faArrowDown}/>} </span>
                         </button>
@@ -161,7 +161,7 @@ const CommentsList = ({ postId, setTotalCommentsCount }) => {
                             />
                         ))
                     ) : (
-                        <p className="text-gray-400">No comments yet. Be the first to comment!</p>
+                        <p className="text-gray-400">まだコメントはありません。最初のコメントをどうぞ！</p>
                     )}
                     {loading && 
                         <div className="flex justify-center items-center h-full">

@@ -1,7 +1,7 @@
 const NotFoundPage = () => {
     return (
         <div>
-            Sorry this page does not exist.
+            ごめんなさい、このページは存在しません。
         </div>
     )
 }

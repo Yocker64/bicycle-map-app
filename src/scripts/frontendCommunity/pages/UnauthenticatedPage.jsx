@@ -16,7 +16,7 @@ const UnauthenticatedPage = () => {
         {/* Welcome Section */}
         <div className="welcome-section">
           <h2 className="welcome-title">
-            Welcome to <span className="accent-text">Link</span>
+            <span className="accent-text">Link</span>へようこそ
           </h2>
         </div>
 
@@ -31,7 +31,7 @@ const UnauthenticatedPage = () => {
                 onClick={toggleForm}
                 className="toggle-button"
               >
-                Don't have an account? Sign Up
+                アカウントをお持ちではありませんか？新規登録
               </button>
             </>
           ) : (
@@ -42,7 +42,7 @@ const UnauthenticatedPage = () => {
                 onClick={toggleForm}
                 className="toggle-button"
               >
-                Already have an account? Log In
+                すでにアカウントをお持ちですか？ログイン
               </button>
             </>
           )}

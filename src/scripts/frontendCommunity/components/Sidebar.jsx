@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useUser } from '../contexts/UserContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Import GitHub icon
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; // GitHub icon
 import api from '../services/api';
 import { PuffLoader } from 'react-spinners';
 
@@ -105,7 +105,7 @@ const Sidebar = () => {
                   </div>
                 ))
               ) : (
-                <p className="text-gray-400 text-sm">Wow! You know all of our users.</p>
+                <p className="text-gray-400 text-sm">Wow! You know all bikers around.</p>
               )}
             </div>
 

@@ -93,7 +93,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
     return (
         <div
             key={realmId}
-            className="black-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-6 cursor-pointer transition-colors"
+            className="black-800 text-white p-2  rounded-lg flex items-center space-x-6 cursor-pointer transition-colors"
             onClick={(e) => redirectToRealm(e, realmId)}
         >
             {loading 
@@ -136,7 +136,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                                         className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                     >
                                                         <FontAwesomeIcon icon={faPenToSquare} />
-                                                        <span>Edit</span>
+                                                        <span>編集</span>
                                                     </button>
                                             </MenuItem>
                                             <MenuItem>
@@ -145,7 +145,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                                         className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                                     >
                                                         <FontAwesomeIcon icon={faTrashCan} />
-                                                        <span>Delete</span>
+                                                        <span>削除</span>
                                                     </button>
                                             </MenuItem>
                                             </>
@@ -156,7 +156,7 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                                 className='pl-6 text-left space-x-3 w-full py-2 text-sm hover:black-600'
                                             >
                                                 <FontAwesomeIcon icon={faUsers} />
-                                                <span>Joined Users</span>
+                                                <span>参加ユーザー</span>
                                             </button>
                                         </MenuItem>
 
@@ -175,11 +175,11 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                                 navigate(`/realms/${realmId}/joined`)
                             }}>
                                 <FontAwesomeIcon icon={faUsers} />
-                                <span>{realm._count?.joined} Joined</span>
+                                <span>{realm._count?.joined} 参加</span>
                             </div>
                             <div className="text-gray-400 space-x-1">
                                 <FontAwesomeIcon icon={faMicroblog} />
-                                <span>{realm._count?.posts} Posts</span>
+                                <span>{realm._count?.posts} 投稿</span>
                             </div>
                         </div>
                         {/* Join Button */}
@@ -192,12 +192,12 @@ const RealmPreview = ({ realm, realmId, setRealms }) => {
                             {joined ? 
                             <div className="space-x-2">
                                 <FontAwesomeIcon icon={faCheck} />
-                                <span>Joined</span>
+                                <span>参加済み</span>
                             </div>
                             : 
                             <div className="space-x-2">
                                 <FontAwesomeIcon icon={faArrowRightToBracket}/>
-                                <span>Join</span>
+                                <span>参加</span>
                             </div>
                             }
                         </button>

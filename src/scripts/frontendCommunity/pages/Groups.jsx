@@ -13,33 +13,32 @@ const Realms = () => {
             {/* Page Title and Tabs */}
             <div className="container mx-auto">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0 mb-6">
-                    <h1 className="text-2xl sm:text-3xl font-bold">Groups</h1>
+                    <h1 className="text-2xl sm:text-3xl font-bold">グループ</h1>
                     {/* Tabs for All, Joined, and Created */}
                     <div className="flex space-x-4 text-xs sm:text-base">
                         <button
                             onClick={() => setSelectedTab('all')}
                             className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'all' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
-                            All
+                            すべて
                         </button>
                         <button
                             onClick={() => setSelectedTab('joined')}
                             className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'joined' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
-                            Joined
+                            参加済み
                         </button>
                         <button
                             onClick={() => setSelectedTab('created')}
                             className={`px-4 py-2 rounded-lg transition-colors ${selectedTab === 'created' ? 'bg-black-600 text-white' : 'black-800 text-gray-400'} hover:bg-black-700`}
                         >
-                            Created
+                            作成済み
                         </button>
-                        <div className="border-l border-gray-700 mx-4 my-2"></div>
                         <button onClick={() => navigate('/submit-realm')}
                             className={`px-4 py-2 rounded-lg bg-black-500`}
                         >
                             <FontAwesomeIcon icon={faPlus} className="mr-2"/>
-                            New Group
+                            新規グループ
                         </button>
                     </div>
                 </div>
