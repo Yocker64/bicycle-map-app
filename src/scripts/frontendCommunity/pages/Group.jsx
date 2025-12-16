@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../services/api";
 import PostsList from "../components/PostsList";
-import { faArrowRightToBracket, faCakeCandles, faCheck, faEllipsis, faPenToSquare, faTrashCan, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightToBracket, faCheck, faEllipsis, faPenToSquare, faTrashCan, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicroblog } from "@fortawesome/free-brands-svg-icons";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { formatDate } from "../utils/formatters";
+// import { formatDate } from "../utils/formatters";
 import { PuffLoader } from 'react-spinners';
 
 const Realm = () => {
@@ -100,7 +100,7 @@ const Realm = () => {
                         </div>
                     </div>
 
-                    {/* Realm Info */}
+                    {/* Grooup Info */}
                     <div className="flex-1 ml-6">
                         <div className="flex flex-col justify-between h-full">
                             <div>
@@ -191,10 +191,10 @@ const Realm = () => {
                                         <FontAwesomeIcon icon={faMicroblog} />
                                         <div>{realm._count?.posts} 投稿</div>
                                     </div>
-                                    <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center">
+                                    {/* <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center">
                                         <FontAwesomeIcon icon={faCakeCandles} />
                                         <div>{formatDate(realm.createdAt)}</div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 {/* Join Button */}
                                 <button

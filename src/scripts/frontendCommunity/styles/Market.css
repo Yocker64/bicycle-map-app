@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+#root {
+    --gold: #D4AF37;
+    --gold-hover: #b5952f;
+    --black: #1a1a1a;
+    --grey: #f4f4f4;
+    width: 100%;
+}
+
+
+
+/* Lado Derecho: Iconos SVG */
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon-btn svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--grey);
+    stroke-width: 2;
+    fill: none;
+    transition: stroke 0.3s;
+}
+
+.icon-btn:hover svg {
+    stroke: var(--gold);
+}
+
+
+/* --- PRODUCT GRID --- */
+.products-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    background-color: var(--black);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 2rem;
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1E2122;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #555;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
