@@ -89,7 +89,7 @@ const Realm = () => {
         <div className="black-800 text-white min-h-screen p-6">
             {realm && (
                 <div className="container mx-auto flex justify-center flex-wrap rounded-lg mb-8">
-                    {/* Realm Image */}
+                    {/* Group Image */}
                     <div className="flex-shrink-0 w-1/2 sm:w-1/4 md:w-1/3 lg:w-1/4 mb-6 sm:mb-0">
                         <div className="relative pb-[100%]"> {/* Aspect Ratio Container */}
                             <img
@@ -191,10 +191,7 @@ const Realm = () => {
                                         <FontAwesomeIcon icon={faMicroblog} />
                                         <div>{realm._count?.posts} 投稿</div>
                                     </div>
-                                    {/* <div className="space-y-1 cursor-pointer flex flex-col justify-center items-center">
-                                        <FontAwesomeIcon icon={faCakeCandles} />
-                                        <div>{formatDate(realm.createdAt)}</div>
-                                    </div> */}
+                                 
                                 </div>
                                 {/* Join Button */}
                                 <button

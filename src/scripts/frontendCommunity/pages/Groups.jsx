@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RealmsList from "../components/RealmsList";
+import RealmsList from "../components/GroupsList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -43,7 +43,7 @@ const Realms = () => {
                     </div>
                 </div>
 
-                {/* Realms Content */}
+                {/* Groups Content */}
                 <RealmsList type={selectedTab} />
             </div>
         </div>

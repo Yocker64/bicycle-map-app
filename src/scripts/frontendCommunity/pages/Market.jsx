@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import api from "../services/api";
+import PostsList from "../components/PostsList";
+import { faArrowRightToBracket, faCheck, faEllipsis, faPenToSquare, faTrashCan, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faMicroblog } from "@fortawesome/free-brands-svg-icons";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+// import { formatDate } from "../utils/formatters";
+import { PuffLoader } from 'react-spinners';
 import "../styles/Market.css"
 
 const MarketPage = () => {
 
-    // Placeholder data to simulate a fetched item
-    
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(true);
+    const userId = localStorage.getItem('userId');
 
    
     return (

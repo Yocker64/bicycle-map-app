@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import api from "../services/api";
-import RealmPreview from "../components/RealmPreview";
+import RealmPreview from "./GroupPreview";
 import { PuffLoader } from 'react-spinners';
 import { useOutletContext } from 'react-router-dom'; // Import useOutletContext for scrollevent to paginate
 
