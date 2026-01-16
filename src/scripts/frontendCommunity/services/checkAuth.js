@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://10.40.211.54:5000";
 
 export const checkAuth = async () => {
   try {

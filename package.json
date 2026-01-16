@@ -1,8 +1,20 @@
 {
   "name": "bicycle-map-app",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/Yocker64/bicycle-map-app#readme",
+  "bugs": {
+    "url": "https://github.com/Yocker64/bicycle-map-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yocker64/bicycle-map-app.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": ".eslintrc.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

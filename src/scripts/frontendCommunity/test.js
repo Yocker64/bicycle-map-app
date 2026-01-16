@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Set environment variable for Node.js
-const API_BASE_URL = process.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+const API_BASE_URL = "10.40.211.54:5173";
 
 const testApi = async () => {
   try {

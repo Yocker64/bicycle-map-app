@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const API_BASE_URL =  "http://localhost:5000/";
+      const API_BASE_URL =  "http://10.40.211.54:5000/";
       const response = await api({
         method: 'post',
         url: `${API_BASE_URL}/auth/login`,
@@ -45,7 +45,7 @@ const Login = () => {
 
   const handleDemoLogin = async () => {
     try {
-      const API_BASE_URL =  "http://localhost:5000";
+      const API_BASE_URL =  "http://10.40.211.54:5000";
       const response = await api({
         method: 'post',
         url: `${API_BASE_URL}/auth/login/demo`,

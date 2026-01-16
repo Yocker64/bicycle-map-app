@@ -3,6 +3,7 @@ import { useNotifications } from '../contexts/NotificationsContext';
 import NotificationsImage from '../assets/svgs/notification.svg';
 import HomeImage from '../assets/svgs/home.svg';
 import GroupImage from '../assets/svgs/group.svg';
+import MapImage from '../assets/svgs/map.svg';
 import NewPostImage from '../assets/svgs/plus.svg';
 import UserImage from '../assets/svgs/user.svg';
 import DoorImage from '../assets/svgs/door.svg';
@@ -56,7 +57,12 @@ const Navbar = () => {
                    <img src={NewPostImage} alt="新規投稿" className="w-5 h-5" />
                   <span className="hidden md:inline">新規投稿</span>
                 </Link>
+            {/* Map */}
 
+            <Link to={`http://10.40.211.54:map.html`} className="h-8 flex items-center space-x-4 hover:text-gray-400 text-stone-200 transition">
+          <img src={MapImage} alt="プロフィール" className="w-5 h-5" />
+            <span className="hidden md:inline">マップ</span>
+          </Link>
                 {/* Free market */}
           <Link to={`/market`} className="h-8 flex items-center space-x-4 hover:text-gray-400 text-stone-200 transition">
           <img src={MarketImage} alt="フリーマーケット" className="w-5 h-5" />
@@ -68,6 +74,7 @@ const Navbar = () => {
           <img src={UserImage} alt="プロフィール" className="w-5 h-5" />
             <span className="hidden md:inline">プロフィール</span>
           </Link>
+
 
           
           {/* Logout Button */}

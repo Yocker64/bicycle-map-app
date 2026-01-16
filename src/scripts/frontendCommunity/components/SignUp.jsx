@@ -24,7 +24,7 @@ const SignUp = () => {
     try {
       const response = await axios({
         method: 'post',
-        url: `${"http://localhost:5000"}/auth/signup`,
+        url: `${"http://10.40.211.54:5000"}/auth/signup`,
         headers: {
           'Content-Type': 'application/json', // Set the content type header
         },
@@ -45,7 +45,7 @@ const SignUp = () => {
     try {
       const response = await axios({
         method: 'post',
-        url: `${"http://localhost:5000"}/auth/login`,
+        url: `${"http://10.40.211.54:5000"}/auth/login`,
         headers: {
           'Content-Type': 'application/json', // Set the content type header
         },
